@@ -1,11 +1,21 @@
-Working on: Vender Resale — NY prison package vendor storefront + research system
-Last action: Rebuilt index.html with 65 real products + prices + images; set up nightly research cron; committed and pushed all work (commit a0279cd)
-Next step: 1) Open vender.nyctailblazers.com to verify site looks correct 2) Replace 888-000-0000 placeholder phone in index.html with real number 3) Consider Shopify for real cart/checkout (current uses mailto order flow)
+Working on: Vender Resale — full multi-page storefront with 3,016 products
+Last action: Built and pushed complete site rebuild (commit 149788a) — 4 pages + shared JS + 3016-product catalog
+Next step: 1) Open vender.nyctailblazers.com and verify all 4 pages load correctly 2) Replace phone placeholder 888-000-0000 in cart.html 3) Sign up for Formspree (formspree.io) if you want form submissions going to a dashboard instead of mailto 4) Test "Add to Cart" → product.html → cart.html → submit order flow end-to-end
+
 Key files:
-  - index.html — full product catalog (65 products, 7 category tabs, mailto order flow)
-  - scripts/nightly_research.py — runs at 2am, scrapes competitors, monitors DOCCS compliance
-  - docs/disapproved-vendor-analysis.md — full analysis of 65 banned vendors + why each was banned
-  - docs/wholesale-suppliers.md — wholesale sourcing guide with specific suppliers + margin data
-  - research/ — daily research output folder (auto-populated by cron at 2am)
-  - research/README.md — explains the folder structure and what runs nightly
-Blockers: Phone number placeholder (888-000-0000) needs to be replaced with real number before going live
+  - index.html — landing page (category grid, featured products, hero)
+  - shop.html — full catalog (3016 products, filter/search/sort/pagination)
+  - product.html — product detail (gallery, variants, Add to Cart) — loaded via ?id=N
+  - cart.html — cart + order form (mailto-based order submission)
+  - js/store.js — shared cart logic, catalog loader, toast, product card renderer
+  - data/catalog.json — 3,016 products (2.3MB minified, Shopify CDN images)
+  - scripts/scrape_shopify.py — re-run to refresh product catalog from competitor sites
+  - scripts/nightly_research.py — cron at 2am, monitors prices + DOCCS compliance
+
+Architecture notes:
+  - Static site (Cloudflare Pages) — no backend, no npm
+  - Cart lives in localStorage, order goes via mailto
+  - catalog.json loads once, cached in sessionStorage between page navigations
+  - All product images are Shopify CDN URLs from competitor sites (always present)
+
+Blockers: none — phone number placeholder (888-000-0000) needs real number before going live

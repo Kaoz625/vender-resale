@@ -31,17 +31,6 @@
       overflow-x: hidden;
     }
 
-    /* grain overlay */
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-      pointer-events: none;
-      z-index: 999;
-      opacity: 0.4;
-    }
-
     /* ─── NAV ─── */
     nav {
       position: fixed;
@@ -1101,15 +1090,45 @@
         // Filter empty lines at end
         var body = bodyLines.filter(function (l) { return l !== undefined; }).join('\n');
 
-        var mailtoLink = 'mailto:orders@vender.nyctailblazers.com'
+        var mailtoLink = 'mailto:vender@nyctailblazers.com'
           + '?subject=' + encodeURIComponent(subject)
           + '&body='    + encodeURIComponent(body);
 
-        window.open(mailtoLink);
+        // Submit to Formspree, fall back to mailto
+        var submitBtn = orderForm.querySelector('.submit-btn');
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending…';
 
-        // Show confirmation
-        orderFormWrap.style.display = 'none';
-        confirmCard.classList.add('show');
+        var formPayload = {
+          customerName: name, email: email, phone: phone || 'Not provided',
+          inmateName: inmateName, din: din, facility: facility,
+          notes: notes || 'None',
+          orderItems: body,
+          subtotal: VR.formatPrice(total),
+          _subject: subject,
+          _replyto: email,
+        };
+
+        fetch('https://formspree.io/f/mvzynowp', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(formPayload),
+        })
+        .then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }); })
+        .catch(function() { return { ok: false }; })
+        .then(function(result) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Send Order Request';
+          if (!result.ok) {
+            // Formspree failed — fall back to mailto
+            window.open(mailtoLink);
+          }
+          // Show confirmation either way
+          orderFormWrap.style.display = 'none';
+          confirmCard.classList.add('show');
+        });
+
+        return; // wait for fetch to show confirmation
       });
 
       // ─── Confirmation actions ─────────────────────────────────────────────────
