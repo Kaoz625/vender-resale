@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vender Resale — NY State DOCCS Directive 4911 compliant care package delivery. Send food, clothing, and hygiene products to your loved ones in NY State facilities.">
+  <meta name="keywords" content="NY state prison packages, DOCCS vendor, inmate care packages, Directive 4911, NY DOCCS approved vendor">
+  <meta property="og:title" content="Vender Resale — NY Prison Care Packages">
+  <meta property="og:description" content="DOCCS Directive 4911 compliant. Fast shipping. Trusted by NY families.">
+  <meta property="og:type" content="website">
+  <title>Vender Resale — NY Prison Care Packages</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:   #0b1628;
+      --navy2:  #111f38;
+      --navy3:  #1a2f50;
+      --gold:   #c9a84c;
+      --gold2:  #e8c96a;
+      --cream:  #f5f0e8;
+      --white:  #ffffff;
+      --muted:  #8a9ab5;
+      --text:   #d4dde8;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--navy);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    /* grain overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 999;
+      opacity: 0.4;
+    }
+
+    /* ─── NAV ─── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 1.2rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(11,22,40,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(201,168,76,0.15);
+    }
+
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: 0.02em;
+    }
+
+    .nav-logo span { color: var(--gold); }
+
+    .nav-cta {
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--navy);
+      background: var(--gold);
+      padding: 0.55rem 1.2rem;
+      border-radius: 2px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .nav-cta:hover { background: var(--gold2); }
+
+    /* ─── HERO ─── */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 7rem 2rem 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #hero::before {
+      content: '';
+      position: absolute;
+      top: -20%;
+      right: -10%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(ellipse, rgba(201,168,76,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    #hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201,168,76,0.3), transparent);
+    }
+
+    .hero-inner {
+      max-width: 780px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(201,168,76,0.1);
+      border: 1px solid rgba(201,168,76,0.3);
+      border-radius: 100px;
+      padding: 0.4rem 1rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 2rem;
+      animation: fadeUp 0.6s ease both;
+    }
+
+    .hero-badge::before {
+      content: '';
+      width: 6px; height: 6px;
+      background: var(--gold);
+      border-radius: 50%;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.6rem, 6vw, 4.4rem);
+      font-weight: 700;
+      line-height: 1.1;
+      color: var(--white);
+      margin-bottom: 1.5rem;
+      animation: fadeUp 0.6s 0.1s ease both;
+    }
+
+    h1 em {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    .hero-sub {
+      font-size: 1.05rem;
+      font-weight: 300;
+      color: var(--muted);
+      line-height: 1.7;
+      max-width: 520px;
+      margin-bottom: 2.5rem;
+      animation: fadeUp 0.6s 0.2s ease both;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      animation: fadeUp 0.6s 0.3s ease both;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.9rem 2rem;
+      border-radius: 2px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .btn-primary:hover { background: var(--gold2); transform: translateY(-1px); }
+
+    .btn-secondary {
+      display: inline-block;
+      border: 1px solid rgba(201,168,76,0.4);
+      color: var(--gold);
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.9rem 2rem;
+      border-radius: 2px;
+      text-decoration: none;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--gold);
+      background: rgba(201,168,76,0.07);
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 3rem;
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      animation: fadeUp 0.6s 0.4s ease both;
+      flex-wrap: wrap;
+    }
+
+    .stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-top: 0.2rem;
+    }
+
+    /* ─── SECTIONS ─── */
+    section { padding: 5rem 2rem; }
+
+    .section-inner { max-width: 900px; margin: 0 auto; }
+
+    .section-label {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.8rem;
+    }
+
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-desc {
+      font-size: 1rem;
+      color: var(--muted);
+      line-height: 1.7;
+      max-width: 520px;
+      margin-bottom: 3rem;
+    }
+
+    /* ─── HOW IT WORKS ─── */
+    #how { background: var(--navy2); }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .step {
+      background: var(--navy2);
+      padding: 2.5rem 2rem;
+      position: relative;
+    }
+
+    .step-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: rgba(201,168,76,0.15);
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+
+    .step h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 0.6rem;
+    }
+
+    .step p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    /* ─── PRODUCTS ─── */
+    #products { background: var(--navy); }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .product-card {
+      background: var(--navy2);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 4px;
+      padding: 2rem;
+      transition: border-color 0.2s, transform 0.2s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .product-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--gold);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover { border-color: rgba(201,168,76,0.25); transform: translateY(-3px); }
+    .product-card:hover::before { transform: scaleX(1); }
+
+    .product-icon {
+      font-size: 2rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .product-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 0.6rem;
+    }
+
+    .product-card p {
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    .product-items {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .tag {
+      font-size: 0.72rem;
+      letter-spacing: 0.04em;
+      color: var(--gold);
+      background: rgba(201,168,76,0.08);
+      border: 1px solid rgba(201,168,76,0.2);
+      padding: 0.25rem 0.65rem;
+      border-radius: 100px;
+    }
+
+    /* ─── WHY US ─── */
+    #why { background: var(--navy3); }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+
+    .why-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .why-icon {
+      width: 40px; height: 40px;
+      background: rgba(201,168,76,0.1);
+      border: 1px solid rgba(201,168,76,0.25);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .why-item strong {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--white);
+    }
+
+    .why-item span {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    /* ─── ORDER ─── */
+    #order {
+      background: var(--navy);
+      text-align: center;
+    }
+
+    #order .section-inner { max-width: 600px; }
+
+    #order .section-label,
+    #order h2,
+    #order .section-desc { margin-left: auto; margin-right: auto; text-align: center; }
+
+    .order-box {
+      background: var(--navy2);
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 6px;
+      padding: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      align-items: center;
+    }
+
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--gold);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 400;
+      transition: color 0.2s;
+    }
+
+    .contact-link:hover { color: var(--gold2); }
+
+    .divider { color: rgba(255,255,255,0.15); }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: #070f1d;
+      padding: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .footer-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: gap;
+      gap: 1rem;
+    }
+
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--white);
+    }
+
+    .footer-logo span { color: var(--gold); }
+
+    .footer-links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--gold); }
+
+    .footer-copy {
+      font-size: 0.75rem;
+      color: rgba(138,154,181,0.5);
+      text-align: right;
+    }
+
+    /* ─── ANIMATIONS ─── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 600px) {
+      nav { padding: 1rem 1.2rem; }
+      #hero { padding: 6rem 1.2rem 3rem; }
+      section { padding: 3.5rem 1.2rem; }
+      .hero-stats { gap: 2rem; }
+      .footer-inner { flex-direction: column; align-items: flex-start; }
+      .footer-copy { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Vender<span>Resale</span></div>
+  <a href="mailto:vender@nyctailblazers.com" class="nav-cta">Order Now</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">NY State DOCCS Approved Vendor</div>
+    <h1>Sending Care Packages to Your<br><em>Loved Ones,</em> Made Easy</h1>
+    <p class="hero-sub">DOCCS Directive 4911 compliant. Fast shipping to all NY State facilities. Trusted by families across New York.</p>
+    <div class="hero-actions">
+      <a href="#products" class="btn-primary">Browse Packages</a>
+      <a href="mailto:vender@nyctailblazers.com" class="btn-secondary">Order Now</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">4911</div>
+        <div class="stat-label">DOCCS Directive Compliant</div>
+      </div>
+      <div>
+        <div class="stat-num">60+</div>
+        <div class="stat-label">NY State Facilities Served</div>
+      </div>
+      <div>
+        <div class="stat-num">3</div>
+        <div class="stat-label">Product Categories</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="section-inner">
+    <div class="section-label">The Process</div>
+    <h2>How It Works</h2>
+    <p class="section-desc">Three simple steps — we handle everything from order to delivery at the facility.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h3>Choose Your Package</h3>
+        <p>Browse food, clothing, and hygiene items. All products are pre-screened and DOCCS Directive 4911 compliant.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h3>Enter Inmate Info</h3>
+        <p>Provide the facility name and your loved one's DIN (Department Identification Number) when ordering.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h3>We Ship Directly</h3>
+        <p>We pack and ship via UPS, FedEx, or USPS directly to the DOCCS facility — same-week processing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="section-inner">
+    <div class="section-label">What We Offer</div>
+    <h2>Product Categories</h2>
+    <p class="section-desc">Everything shipped is hermetically sealed, alcohol-free where applicable, and verified against Directive 4911.</p>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-icon">🥩</div>
+        <h3>Food</h3>
+        <p>Commercially sealed meats, snacks, beverages, and grocery staples — all vacuum-sealed or hermetically packaged per DOCCS requirements.</p>
+        <div class="product-items">
+          <span class="tag">Cured Meats</span>
+          <span class="tag">Snacks</span>
+          <span class="tag">Coffee & Tea</span>
+          <span class="tag">Beverages</span>
+          <span class="tag">Condiments</span>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-icon">👕</div>
+        <h3>Clothing</h3>
+        <p>Seasonal wear, undergarments, and accessories. All items meet DOCCS facility specifications for materials and colors.</p>
+        <div class="product-items">
+          <span class="tag">Sweatsuits</span>
+          <span class="tag">Thermals</span>
+          <span class="tag">Socks</span>
+          <span class="tag">Underwear</span>
+          <span class="tag">Footwear</span>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-icon">🧴</div>
+        <h3>Hygiene</h3>
+        <p>Alcohol-free personal care products. Every item is pre-approved — no returns due to facility rejection.</p>
+        <div class="product-items">
+          <span class="tag">Deodorant</span>
+          <span class="tag">Body Wash</span>
+          <span class="tag">Lotion</span>
+          <span class="tag">Oral Care</span>
+          <span class="tag">Shampoo</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why">
+  <div class="section-inner">
+    <div class="section-label">Why Vender Resale</div>
+    <h2>Built for NY Families</h2>
+    <p class="section-desc">We know the rules so your package gets through — every time.</p>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-icon">✓</div>
+        <strong>Directive 4911 Compliant</strong>
+        <span>Every product we carry is verified against DOCCS Directive 4911 and 4911A requirements.</span>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">📦</div>
+        <strong>Ships via UPS / FedEx / USPS</strong>
+        <span>All packages ship directly to the facility via DOCCS-approved carriers.</span>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">⚡</div>
+        <strong>Same-Week Processing</strong>
+        <span>Orders placed by Tuesday ship the same week. We don't sit on your order.</span>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">🗽</div>
+        <strong>All NY DOCCS Facilities</strong>
+        <span>We serve all 60+ New York State DOCCS correctional facilities statewide.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ORDER -->
+<section id="order">
+  <div class="section-inner">
+    <div class="section-label">Get Started</div>
+    <h2>Ready to Send a Package?</h2>
+    <p class="section-desc">Contact us to place an order or ask any questions. We'll walk you through the whole process.</p>
+    <div class="order-box">
+      <div class="contact-row">
+        <a href="mailto:vender@nyctailblazers.com" class="contact-link">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 4h16v16H4V4zm0 0l8 8 8-8"/></svg>
+          vender@nyctailblazers.com
+        </a>
+        <span class="divider">|</span>
+        <a href="tel:8880000000" class="contact-link">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.07 11.5 19.79 19.79 0 011 2.18 2 2 0 013 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"/></svg>
+          (888) 000-0000
+        </a>
+      </div>
+      <p style="font-size:0.78rem;color:var(--muted);">Serving all NY State DOCCS facilities · Max 3 packages/month · 40 lbs combined weight limit</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Vender<span>Resale</span></div>
+    <div class="footer-links">
+      <a href="https://nyctailblazers.com">nyctailblazers.com</a>
+      <a href="mailto:vender@nyctailblazers.com">vender@nyctailblazers.com</a>
+      <a href="https://doccs.ny.gov/mail-packages" target="_blank" rel="noopener">DOCCS Package Info</a>
+    </div>
+    <div class="footer-copy">© 2026 Vender Resale<br>NY DOCCS Directive 4911 Compliant</div>
+  </div>
+</footer>
+
+</body>
+</html>
