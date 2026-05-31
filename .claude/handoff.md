@@ -1,25 +1,38 @@
-Working on: Vender Resale — live on Cloudflare Pages, auto-deploy via GitHub Actions
-Last action: Fixed blur (removed grain overlay), wired Formspree, created Pages project, deployed live (commit a0f796d)
-Next step:
-  1) Add 2 GitHub secrets so auto-deploy works on every push:
-     → Go to https://github.com/Kaoz625/vender-resale/settings/secrets/actions
-     → Add secret: CLOUDFLARE_API_TOKEN = (value of CLOUDFLARE_WRANGLER_OAUTH from ~/.credentials/api-keys.env)
-     → Add secret: CLOUDFLARE_ACCOUNT_ID = 4589ead053bd6785d78f5096068625ba
-     → After that, every git push to main auto-deploys within ~30 seconds
-  2) Verify vender.nyctailblazers.com loads correctly (DNS may take a few minutes to propagate)
-  3) Test order flow: add item → cart.html → submit form → should hit Formspree + send email
+Working on: Vender Resale — competitive analysis complete, Phase 1 improvements queued
+Last action: Full competitive analysis of 4 competitor sites (2026-05-31). Report delivered to Markus.
+
+Next step — PRIORITY ORDER:
+  1) PAYMENT PROCESSING — site cannot take money (biggest blocker, kills all other work)
+     Fastest: Add PayPal checkout button to cart.html
+     Better:  Stripe Payment Links — generate per-order, email to customer post-form-submit
+     Full:    Migrate to Shopify (all 4 competitors run on Shopify)
+  2) Add phone number to nav header (Google Voice takes 5 min — every competitor has one)
+  3) Add policy pages: Refund, Substitution, Shipping Schedule, Privacy, Terms of Service
+  4) Add DOCCS Inmate Lookup link to cart checkout → doccs.ny.gov
+  5) Add "Guaranteed Facility Acceptance or Full Refund" badge to hero + cart
+
+Still-open previous blocker (GitHub Actions auto-deploy):
+  → https://github.com/Kaoz625/vender-resale/settings/secrets/actions
+  → CLOUDFLARE_API_TOKEN = (from ~/.credentials/api-keys.env → CLOUDFLARE_WRANGLER_OAUTH)
+  → CLOUDFLARE_ACCOUNT_ID = 4589ead053bd6785d78f5096068625ba
 
 Live URLs:
   - https://vender-resale.pages.dev (always works)
-  - https://vender.nyctailblazers.com (custom domain, connected)
+  - https://vender.nyctailblazers.com (custom domain)
 
 Key files:
-  - index.html / shop.html / product.html / cart.html — the 4 pages
-  - js/store.js — shared cart + catalog logic
-  - data/catalog.json — 3,016 products with Shopify CDN images
-  - .github/workflows/deploy.yml — auto-deploy to Cloudflare Pages on push
-  - scripts/nightly_research.py — cron 2am, refreshes prices + DOCCS compliance check
+  - index.html / shop.html / product.html / cart.html
+  - js/store.js — cart + catalog logic
+  - data/catalog.json — 3,016 products
+  - .github/workflows/deploy.yml — auto-deploy on push
+  - scripts/nightly_research.py — 2am cron, price refresh + compliance check
 
-Formspree endpoint: https://formspree.io/f/mvzynowp (orders go here + to vender@nyctailblazers.com)
+Formspree: https://formspree.io/f/mvzynowp (orders → vender@nyctailblazers.com)
 Cloudflare Pages project: vender-resale (account 4589ead053bd6785d78f5096068625ba)
-Blockers: GitHub Actions secrets need to be added manually (30 seconds — see step 1 above)
+
+Competitive summary (2026-05-31):
+  STRENGTHS: best design, largest catalog (3,016), best product detail pages, nutrition facts
+  GAPS: no real payments, no BNPL, no order tracking, no phone, no reviews, no guarantee badge,
+        no bundles, no policy pages, no sort/filter, no Rikers section, no blog/SEO content
+  Biggest single gap: payment processing — without it nothing converts
+  Full prioritized roadmap: ask claude to re-run analysis or see docs/competitors.md

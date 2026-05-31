@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-Two-level categorization:
+Two-level categorization — uses word-boundary matching for short keywords
+to avoid "hen" in "henry", "pea" in "peanut", "ham" in "shampoo", etc.
   top_category  — 8 broad groups (for homepage grid + sidebar top-level)
   category      — specific subcategory (for sidebar drill-down + filtering)
 
@@ -9,6 +10,17 @@ Nuts, seeds, protein powder, jerky → Proteins (not Snacks).
 import json, re, os
 from pathlib import Path
 from collections import Counter
+
+def kw_match(name_lower, keywords):
+    """Match keywords against name. Short keywords (<=4 alpha chars) use word boundaries."""
+    for kw in keywords:
+        if len(kw) <= 4 and kw.isalpha():
+            if re.search(r'\b' + re.escape(kw) + r'\b', name_lower):
+                return True
+        else:
+            if kw in name_lower:
+                return True
+    return False
 
 ROOT = Path(__file__).parent.parent
 DATA = ROOT / "data"
@@ -163,6 +175,18 @@ RAW_MAP = {
 
 # ── Name keyword rules — checked top to bottom, first match wins ──────────────
 NAME_RULES = [
+    # JEWELRY / ACCESSORIES — FIRST (jewelry names can contain food words like "gold", "ring")
+    (["necklace", "bracelet", "earring", "anklet", "pendant", "chain necklace",
+      "pvd coated", "pvd ring", "stainless steel ring", "hug ring", "rope chain",
+      "cuban link", "gold chain", "silver chain", "jewelry", "pvd stainless"], "Accessories"),
+    # CANDY — before fruit/produce (sour belts, gummies named after fruits)
+    (["gummy bear", "gummy worm", "gummy ring", "sour belt", "sour worm",
+      "sour ring", "sour gummy", "candy ring", "jelly bean", "lollipop",
+      "neon worm", "cinnamon bear", "sour patch", "airhead", "air head",
+      "sour candy", "sweet candy", "enchilokas",
+      "warhead", "laffy taffy", "nerds candy", "skittle", "starburst candy",
+      "fruit slice candy", "peach ring candy", "jolly rancher",
+      "cherry sour", "apple ring candy", "gummy worms", "gummy bears"], "Candy & Sweets"),
     # Protein powder FIRST (before nuts/snacks)
     (["protein powder", "whey", "casein", "creatine", "mass gainer",
       "pre-workout", "pre workout", "bcaa", "amino acid"], "Protein Powder"),
@@ -178,6 +202,11 @@ NAME_RULES = [
     (["tuna", "salmon", "sardine", "shrimp", "crab", "lobster", "clam",
       "oyster", "tilapia", "cod", "catfish", "anchovy", "mackerel",
       "herring", "trout", "halibut", "snapper"], "Seafood & Fish"),
+    # Pork BEFORE Beef — ham contains "steak" which would match beef otherwise
+    (["pork", "bacon", "ham", "sausage", "pepperoni", "chorizo",
+      "pulled pork", "pork ribs", "hot dog", "salami", "luncheon", "spam",
+      "pork belly", "pork rind", "chicharron", "carnitas", "cochinita",
+      "deviled ham", "potted meat"], "Pork"),
     # Poultry
     (["chicken", "turkey", "poultry", "wing", "rotisserie", "fajita",
       "nugget", "breast", "thigh", "drumstick", "hen"], "Poultry"),
@@ -185,10 +214,6 @@ NAME_RULES = [
     (["beef", "steak", "brisket", "roast beef", "ground beef",
       "burger", "braised", "meatball", "taco filling", "corned beef",
       "bourguignon", "hereford beef", "shredded beef"], "Beef"),
-    # Pork
-    (["pork", "bacon", "ham", "sausage", "pepperoni", "chorizo",
-      "pulled pork", "ribs", "hot dog", "salami", "luncheon", "spam",
-      "pork belly", "pork rind", "chicharron"], "Pork"),
     # Candy
     (["candy", "gummy", "gummi", "lollipop", "m&m", "skittles",
       "starburst", "twizzler", "jolly rancher", "reese", "snicker",
@@ -311,7 +336,8 @@ NAME_RULES = [
       "knit hat", "fleece hat", "watch cap", "toboggan",
       "rain jacket", "rain coat", "windbreaker", "earmuff"], "Winter Gear"),
     # Socks & Underwear
-    (["sock", "underwear", "boxer", "brief", "trunk", "thong",
+    (["socks", "ankle sock", "tube sock", "wool sock", "crew sock",
+      "underwear", "boxer", "brief", "trunk", "thong",
       "boyshort", "bra", "sports bra", "panty", "lingerie",
       "thermal underwear"], "Socks & Underwear"),
     # Footwear
@@ -358,15 +384,31 @@ NAME_RULES = [
 
 
 def categorize(raw_cat, name):
+    name_lower = name.lower()
+
+    # 0. Name-first overrides — raw_cat can misclassify these
+    jewelry_kws = ["necklace", "bracelet", "earring", "anklet", "pendant",
+                   "pvd coated", "pvd ring", "rope chain", "cuban link",
+                   "gold chain", "silver chain", "hug ring", "pvd stainless",
+                   "gold ring", "silver ring", "18k gold ring", "stainless ring",
+                   "gold necklace", "silver necklace"]
+    if kw_match(name_lower, jewelry_kws):
+        return "Accessories"
+
+    # Socks/footwear get "CLOTHING" raw cat but need specific subcategory
+    if kw_match(name_lower, ["socks", "ankle sock", "tube sock", "crew sock",
+                               "boot sock", "wool sock", "quarter sock",
+                               "no-show sock", "diabetic sock"]):
+        return "Socks & Underwear"
+
     # 1. Direct raw map
     mapped = RAW_MAP.get(raw_cat.strip())
     if mapped:
         return mapped
 
     # 2. Name keywords
-    name_lower = name.lower()
     for keywords, subcat in NAME_RULES:
-        if any(kw in name_lower for kw in keywords):
+        if kw_match(name_lower, keywords):
             return subcat
 
     # 3. Fallback by raw category hint
