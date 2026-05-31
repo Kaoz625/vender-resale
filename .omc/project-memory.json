@@ -46,8 +46,8 @@
   "hotPaths": [
     {
       "path": "index.html",
-      "accessCount": 13,
-      "lastAccessed": 1780231468497,
+      "accessCount": 15,
+      "lastAccessed": 1780240461010,
       "type": "file"
     },
     {
@@ -58,8 +58,14 @@
     },
     {
       "path": ".claude/handoff.md",
-      "accessCount": 3,
-      "lastAccessed": 1780231676497,
+      "accessCount": 4,
+      "lastAccessed": 1780232059039,
+      "type": "file"
+    },
+    {
+      "path": "shop.html",
+      "accessCount": 4,
+      "lastAccessed": 1780240434864,
       "type": "file"
     },
     {
@@ -117,9 +123,9 @@
       "type": "file"
     },
     {
-      "path": "shop.html",
+      "path": "scripts/recategorize.py",
       "accessCount": 1,
-      "lastAccessed": 1780231441202,
+      "lastAccessed": 1780240369276,
       "type": "file"
     }
   ],

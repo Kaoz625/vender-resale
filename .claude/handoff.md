@@ -1,21 +1,25 @@
-Working on: Vender Resale — full multi-page storefront with 3,016 products
-Last action: Built and pushed complete site rebuild (commit 149788a) — 4 pages + shared JS + 3016-product catalog
-Next step: 1) Open vender.nyctailblazers.com and verify all 4 pages load correctly 2) Replace phone placeholder 888-000-0000 in cart.html 3) Sign up for Formspree (formspree.io) if you want form submissions going to a dashboard instead of mailto 4) Test "Add to Cart" → product.html → cart.html → submit order flow end-to-end
+Working on: Vender Resale — live on Cloudflare Pages, auto-deploy via GitHub Actions
+Last action: Fixed blur (removed grain overlay), wired Formspree, created Pages project, deployed live (commit a0f796d)
+Next step:
+  1) Add 2 GitHub secrets so auto-deploy works on every push:
+     → Go to https://github.com/Kaoz625/vender-resale/settings/secrets/actions
+     → Add secret: CLOUDFLARE_API_TOKEN = (value of CLOUDFLARE_WRANGLER_OAUTH from ~/.credentials/api-keys.env)
+     → Add secret: CLOUDFLARE_ACCOUNT_ID = 4589ead053bd6785d78f5096068625ba
+     → After that, every git push to main auto-deploys within ~30 seconds
+  2) Verify vender.nyctailblazers.com loads correctly (DNS may take a few minutes to propagate)
+  3) Test order flow: add item → cart.html → submit form → should hit Formspree + send email
+
+Live URLs:
+  - https://vender-resale.pages.dev (always works)
+  - https://vender.nyctailblazers.com (custom domain, connected)
 
 Key files:
-  - index.html — landing page (category grid, featured products, hero)
-  - shop.html — full catalog (3016 products, filter/search/sort/pagination)
-  - product.html — product detail (gallery, variants, Add to Cart) — loaded via ?id=N
-  - cart.html — cart + order form (mailto-based order submission)
-  - js/store.js — shared cart logic, catalog loader, toast, product card renderer
-  - data/catalog.json — 3,016 products (2.3MB minified, Shopify CDN images)
-  - scripts/scrape_shopify.py — re-run to refresh product catalog from competitor sites
-  - scripts/nightly_research.py — cron at 2am, monitors prices + DOCCS compliance
+  - index.html / shop.html / product.html / cart.html — the 4 pages
+  - js/store.js — shared cart + catalog logic
+  - data/catalog.json — 3,016 products with Shopify CDN images
+  - .github/workflows/deploy.yml — auto-deploy to Cloudflare Pages on push
+  - scripts/nightly_research.py — cron 2am, refreshes prices + DOCCS compliance check
 
-Architecture notes:
-  - Static site (Cloudflare Pages) — no backend, no npm
-  - Cart lives in localStorage, order goes via mailto
-  - catalog.json loads once, cached in sessionStorage between page navigations
-  - All product images are Shopify CDN URLs from competitor sites (always present)
-
-Blockers: none — phone number placeholder (888-000-0000) needs real number before going live
+Formspree endpoint: https://formspree.io/f/mvzynowp (orders go here + to vender@nyctailblazers.com)
+Cloudflare Pages project: vender-resale (account 4589ead053bd6785d78f5096068625ba)
+Blockers: GitHub Actions secrets need to be added manually (30 seconds — see step 1 above)
