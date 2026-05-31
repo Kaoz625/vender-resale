@@ -57,6 +57,7 @@
       align-items: center;
       justify-content: space-between;
       background: rgba(11,22,40,0.85);
+      -webkit-backdrop-filter: blur(12px);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid rgba(201,168,76,0.15);
     }
@@ -70,6 +71,24 @@
     }
 
     .nav-logo span { color: var(--gold); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      font-size: 0.78rem;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--gold); }
 
     .nav-cta {
       font-size: 0.8rem;
@@ -242,7 +261,8 @@
     /* ─── SECTIONS ─── */
     section { padding: 5rem 2rem; }
 
-    .section-inner { max-width: 900px; margin: 0 auto; }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+    .section-inner--narrow { max-width: 900px; margin: 0 auto; }
 
     .section-label {
       font-size: 0.72rem;
@@ -268,6 +288,304 @@
       line-height: 1.7;
       max-width: 520px;
       margin-bottom: 3rem;
+    }
+
+    /* ─── CATALOG SECTION ─── */
+    #products {
+      background: var(--navy);
+      padding-top: 5rem;
+      padding-bottom: 6rem;
+    }
+
+    .catalog-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-bottom: 0;
+      flex-wrap: wrap;
+    }
+
+    .catalog-header-left { flex: 1; min-width: 260px; }
+
+    .product-count-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(201,168,76,0.08);
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 100px;
+      padding: 0.3rem 0.8rem;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 2rem;
+    }
+
+    /* ─── STICKY FILTER BAR ─── */
+    .filter-bar-wrap {
+      position: sticky;
+      top: 64px;
+      z-index: 50;
+      background: rgba(11,22,40,0.95);
+      -webkit-backdrop-filter: blur(16px);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(201,168,76,0.12);
+      margin: 0 -2rem 2.5rem;
+      padding: 0 2rem;
+    }
+
+    .filter-bar {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 0;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .filter-bar::-webkit-scrollbar { display: none; }
+
+    .filter-btn {
+      flex-shrink: 0;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 1.1rem 1.4rem;
+      position: relative;
+      transition: color 0.2s;
+      white-space: nowrap;
+    }
+
+    .filter-btn::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--gold);
+      transform: scaleX(0);
+      transition: transform 0.25s;
+    }
+
+    .filter-btn:hover { color: var(--text); }
+
+    .filter-btn.active {
+      color: var(--gold);
+    }
+
+    .filter-btn.active::after {
+      transform: scaleX(1);
+    }
+
+    .filter-count {
+      display: inline-block;
+      background: rgba(201,168,76,0.12);
+      color: var(--gold);
+      font-size: 0.65rem;
+      font-weight: 500;
+      padding: 0.1rem 0.45rem;
+      border-radius: 100px;
+      margin-left: 0.4rem;
+      vertical-align: middle;
+    }
+
+    .filter-btn.active .filter-count {
+      background: rgba(201,168,76,0.2);
+    }
+
+    /* ─── PRODUCT GRID ─── */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    /* ─── PRODUCT CARD ─── */
+    .product-card {
+      background: var(--navy2);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 6px;
+      overflow: hidden;
+      transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--gold), var(--gold2));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s;
+      z-index: 1;
+    }
+
+    .product-card:hover {
+      border-color: rgba(201,168,76,0.28);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+    }
+
+    .product-card:hover::before { transform: scaleX(1); }
+
+    /* image area */
+    .card-img-wrap {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      background: var(--navy3);
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .card-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .product-card:hover .card-img-wrap img {
+      transform: scale(1.04);
+    }
+
+    .card-img-fallback {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.8rem;
+      background: linear-gradient(135deg, var(--navy3) 0%, #0f1e35 100%);
+    }
+
+    /* compliance badge */
+    .compliance-badge {
+      position: absolute;
+      bottom: 0.5rem;
+      left: 0.5rem;
+      background: rgba(11,22,40,0.88);
+      border: 1px solid rgba(201,168,76,0.35);
+      border-radius: 3px;
+      padding: 0.2rem 0.55rem;
+      font-size: 0.62rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--gold);
+      -webkit-backdrop-filter: blur(6px);
+      backdrop-filter: blur(6px);
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .compliance-badge::before {
+      content: '';
+      width: 5px; height: 5px;
+      background: #4ade80;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* card body */
+    .card-body {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .card-category {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.45rem;
+    }
+
+    .card-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--white);
+      line-height: 1.3;
+      margin-bottom: 0.5rem;
+      flex: 1;
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    .card-price {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: -0.01em;
+    }
+
+    .card-order-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(201,168,76,0.1);
+      border: 1px solid rgba(201,168,76,0.3);
+      border-radius: 3px;
+      color: var(--gold);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.5rem 0.9rem;
+      cursor: pointer;
+      transition: background 0.2s, border-color 0.2s, color 0.2s;
+      white-space: nowrap;
+    }
+
+    .card-order-btn:hover {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: var(--navy);
+    }
+
+    /* no-results state */
+    .no-results {
+      display: none;
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 4rem 2rem;
+      color: var(--muted);
+    }
+
+    .no-results-icon { font-size: 2rem; margin-bottom: 1rem; }
+
+    /* hidden product card */
+    .product-card[data-hidden="true"] {
+      display: none;
     }
 
     /* ─── HOW IT WORKS ─── */
@@ -309,75 +627,6 @@
       font-size: 0.9rem;
       color: var(--muted);
       line-height: 1.6;
-    }
-
-    /* ─── PRODUCTS ─── */
-    #products { background: var(--navy); }
-
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .product-card {
-      background: var(--navy2);
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 4px;
-      padding: 2rem;
-      transition: border-color 0.2s, transform 0.2s;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .product-card::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 2px;
-      background: var(--gold);
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform 0.3s;
-    }
-
-    .product-card:hover { border-color: rgba(201,168,76,0.25); transform: translateY(-3px); }
-    .product-card:hover::before { transform: scaleX(1); }
-
-    .product-icon {
-      font-size: 2rem;
-      margin-bottom: 1.2rem;
-    }
-
-    .product-card h3 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.4rem;
-      font-weight: 600;
-      color: var(--white);
-      margin-bottom: 0.6rem;
-    }
-
-    .product-card p {
-      font-size: 0.88rem;
-      color: var(--muted);
-      line-height: 1.65;
-    }
-
-    .product-items {
-      margin-top: 1rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-    }
-
-    .tag {
-      font-size: 0.72rem;
-      letter-spacing: 0.04em;
-      color: var(--gold);
-      background: rgba(201,168,76,0.08);
-      border: 1px solid rgba(201,168,76,0.2);
-      padding: 0.25rem 0.65rem;
-      border-radius: 100px;
     }
 
     /* ─── WHY US ─── */
@@ -425,7 +674,7 @@
       text-align: center;
     }
 
-    #order .section-inner { max-width: 600px; }
+    #order .section-inner--narrow { max-width: 600px; }
 
     #order .section-label,
     #order h2,
@@ -478,7 +727,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      flex-wrap: gap;
+      flex-wrap: wrap;
       gap: 1rem;
     }
 
@@ -518,7 +767,20 @@
       to   { opacity: 1; transform: translateY(0); }
     }
 
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    .product-card {
+      animation: fadeIn 0.3s ease both;
+    }
+
     /* ─── RESPONSIVE ─── */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+    }
+
     @media (max-width: 600px) {
       nav { padding: 1rem 1.2rem; }
       #hero { padding: 6rem 1.2rem 3rem; }
@@ -526,6 +788,10 @@
       .hero-stats { gap: 2rem; }
       .footer-inner { flex-direction: column; align-items: flex-start; }
       .footer-copy { text-align: left; }
+      .filter-bar-wrap { margin: 0 -1.2rem 2rem; padding: 0 1.2rem; }
+      .product-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1rem; }
+      .card-name { font-size: 1rem; }
+      .card-price { font-size: 1.2rem; }
     }
   </style>
 </head>
@@ -534,6 +800,11 @@
 <!-- NAV -->
 <nav>
   <div class="nav-logo">Vender<span>Resale</span></div>
+  <div class="nav-links">
+    <a href="#products">Products</a>
+    <a href="#how">How It Works</a>
+    <a href="#why">Why Us</a>
+  </div>
   <a href="mailto:vender@nyctailblazers.com" class="nav-cta">Order Now</a>
 </nav>
 
@@ -544,7 +815,7 @@
     <h1>Sending Care Packages to Your<br><em>Loved Ones,</em> Made Easy</h1>
     <p class="hero-sub">DOCCS Directive 4911 compliant. Fast shipping to all NY State facilities. Trusted by families across New York.</p>
     <div class="hero-actions">
-      <a href="#products" class="btn-primary">Browse Packages</a>
+      <a href="#products" class="btn-primary">Browse Products</a>
       <a href="mailto:vender@nyctailblazers.com" class="btn-secondary">Order Now</a>
     </div>
     <div class="hero-stats">
@@ -557,16 +828,70 @@
         <div class="stat-label">NY State Facilities Served</div>
       </div>
       <div>
-        <div class="stat-num">3</div>
-        <div class="stat-label">Product Categories</div>
+        <div class="stat-num">100+</div>
+        <div class="stat-label">Products Available</div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="section-inner">
+
+    <div class="catalog-header">
+      <div class="catalog-header-left">
+        <div class="section-label">What We Offer</div>
+        <h2>Product Catalog</h2>
+        <p class="section-desc" style="margin-bottom:0">Everything hermetically sealed, alcohol-free where applicable, and verified against Directive 4911. Click any product to order.</p>
+      </div>
+      <div class="product-count-tag">
+        <span id="visible-count">100</span>+ Products · All Directive 4911 Compliant
+      </div>
+    </div>
+
+    <!-- STICKY FILTER BAR -->
+    <div class="filter-bar-wrap">
+      <div class="filter-bar" role="tablist" aria-label="Product categories">
+        <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
+          All <span class="filter-count" id="count-all"></span>
+        </button>
+        <button type="button" class="filter-btn" data-filter="proteins" role="tab" aria-selected="false">
+          Proteins <span class="filter-count" id="count-proteins"></span>
+        </button>
+        <button type="button" class="filter-btn" data-filter="snacks" role="tab" aria-selected="false">
+          Snacks <span class="filter-count" id="count-snacks"></span>
+        </button>
+        <button type="button" class="filter-btn" data-filter="produce" role="tab" aria-selected="false">
+          Produce &amp; Rice <span class="filter-count" id="count-produce"></span>
+        </button>
+        <button type="button" class="filter-btn" data-filter="clothing" role="tab" aria-selected="false">
+          Clothing <span class="filter-count" id="count-clothing"></span>
+        </button>
+        <button type="button" class="filter-btn" data-filter="blankets" role="tab" aria-selected="false">
+          Blankets <span class="filter-count" id="count-blankets"></span>
+        </button>
+        <button type="button" class="filter-btn" data-filter="electronics" role="tab" aria-selected="false">
+          Electronics <span class="filter-count" id="count-electronics"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- PRODUCT GRID -->
+    <div class="product-grid" id="product-grid">
+      <!-- Products injected by JS -->
+      <div class="no-results" id="no-results">
+        <div class="no-results-icon">🔍</div>
+        <p>No products found in this category.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <!-- HOW IT WORKS -->
 <section id="how">
-  <div class="section-inner">
+  <div class="section-inner--narrow">
     <div class="section-label">The Process</div>
     <h2>How It Works</h2>
     <p class="section-desc">Three simple steps — we handle everything from order to delivery at the facility.</p>
@@ -590,56 +915,9 @@
   </div>
 </section>
 
-<!-- PRODUCTS -->
-<section id="products">
-  <div class="section-inner">
-    <div class="section-label">What We Offer</div>
-    <h2>Product Categories</h2>
-    <p class="section-desc">Everything shipped is hermetically sealed, alcohol-free where applicable, and verified against Directive 4911.</p>
-    <div class="product-grid">
-      <div class="product-card">
-        <div class="product-icon">🥩</div>
-        <h3>Food</h3>
-        <p>Commercially sealed meats, snacks, beverages, and grocery staples — all vacuum-sealed or hermetically packaged per DOCCS requirements.</p>
-        <div class="product-items">
-          <span class="tag">Cured Meats</span>
-          <span class="tag">Snacks</span>
-          <span class="tag">Coffee & Tea</span>
-          <span class="tag">Beverages</span>
-          <span class="tag">Condiments</span>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="product-icon">👕</div>
-        <h3>Clothing</h3>
-        <p>Seasonal wear, undergarments, and accessories. All items meet DOCCS facility specifications for materials and colors.</p>
-        <div class="product-items">
-          <span class="tag">Sweatsuits</span>
-          <span class="tag">Thermals</span>
-          <span class="tag">Socks</span>
-          <span class="tag">Underwear</span>
-          <span class="tag">Footwear</span>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="product-icon">🧴</div>
-        <h3>Hygiene</h3>
-        <p>Alcohol-free personal care products. Every item is pre-approved — no returns due to facility rejection.</p>
-        <div class="product-items">
-          <span class="tag">Deodorant</span>
-          <span class="tag">Body Wash</span>
-          <span class="tag">Lotion</span>
-          <span class="tag">Oral Care</span>
-          <span class="tag">Shampoo</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- WHY US -->
 <section id="why">
-  <div class="section-inner">
+  <div class="section-inner--narrow">
     <div class="section-label">Why Vender Resale</div>
     <h2>Built for NY Families</h2>
     <p class="section-desc">We know the rules so your package gets through — every time.</p>
@@ -670,10 +948,10 @@
 
 <!-- ORDER -->
 <section id="order">
-  <div class="section-inner">
+  <div class="section-inner--narrow" style="max-width:600px">
     <div class="section-label">Get Started</div>
     <h2>Ready to Send a Package?</h2>
-    <p class="section-desc">Contact us to place an order or ask any questions. We'll walk you through the whole process.</p>
+    <p class="section-desc" style="margin-left:auto;margin-right:auto;text-align:center">Contact us to place an order or ask any questions. We'll walk you through the whole process.</p>
     <div class="order-box">
       <div class="contact-row">
         <a href="mailto:vender@nyctailblazers.com" class="contact-link">
@@ -703,6 +981,688 @@
     <div class="footer-copy">© 2026 Vender Resale<br>NY DOCCS Directive 4911 Compliant</div>
   </div>
 </footer>
+
+<script>
+// ─── PRODUCT DATA ───────────────────────────────────────────────────────────
+const PRODUCTS = [
+  // PROTEINS
+  {
+    id: 1,
+    category: 'proteins',
+    name: 'Hereford Beef Ribs with BBQ Sauce, 6oz',
+    price: 5.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-05-25T140212.09',
+    emoji: '🥩'
+  },
+  {
+    id: 2,
+    category: 'proteins',
+    name: 'Hereford Fully Cooked Roast Beef with Gravy, 10oz',
+    price: 7.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-05-25T135006.36',
+    emoji: '🥩'
+  },
+  {
+    id: 3,
+    category: 'proteins',
+    name: 'Hereford Fully Cooked Shredded Beef with Broth, 7oz',
+    price: 7.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-05-25T140656.09',
+    emoji: '🥩'
+  },
+  {
+    id: 4,
+    category: 'proteins',
+    name: 'Hereford Meatballs with Spaghetti Sauce, 10oz',
+    price: 5.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-05-25T141823.74',
+    emoji: '🥩'
+  },
+  {
+    id: 5,
+    category: 'proteins',
+    name: 'Hereford Beef Taco Filling, 6oz',
+    price: 5.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-05-25T135644.08',
+    emoji: '🥩'
+  },
+  {
+    id: 6,
+    category: 'proteins',
+    name: 'John Soules Flame Grilled Chicken, 8oz',
+    price: 6.49,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitled_design_-_2025-12-24T071349',
+    emoji: '🍗'
+  },
+  {
+    id: 7,
+    category: 'proteins',
+    name: 'John Soules Chicken Fajita Strips',
+    price: 6.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitled_design_-_2025-12-24T072030',
+    emoji: '🍗'
+  },
+  {
+    id: 8,
+    category: 'proteins',
+    name: 'John Soules Rotisserie Chicken',
+    price: 6.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitled_design_-_2025-12-24T071720',
+    emoji: '🍗'
+  },
+  {
+    id: 9,
+    category: 'proteins',
+    name: 'John Soules Steak Fajitas',
+    price: 11.99,
+    img: null,
+    emoji: '🥩'
+  },
+  {
+    id: 10,
+    category: 'proteins',
+    name: 'Hardwood Smoked Pulled Chicken, 16oz',
+    price: 17.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-04-29T081323.31',
+    emoji: '🍗'
+  },
+  {
+    id: 11,
+    category: 'proteins',
+    name: 'Hardwood Smoked Pulled Pork, 16oz',
+    price: 17.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-04-29T081953.53',
+    emoji: '🥩'
+  },
+  {
+    id: 12,
+    category: 'proteins',
+    name: 'Sous Vide Turkey Breast Tenderloins, 16oz',
+    price: 17.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-04-29T082644.51',
+    emoji: '🍗'
+  },
+  {
+    id: 13,
+    category: 'proteins',
+    name: 'Sous Vide Chicken Thighs, 16oz',
+    price: 17.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-04-29T083849.61',
+    emoji: '🍗'
+  },
+  {
+    id: 14,
+    category: 'proteins',
+    name: 'Fully Cooked Pork Belly, 12oz',
+    price: 14.49,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-04-29T085105.52',
+    emoji: '🥩'
+  },
+  {
+    id: 15,
+    category: 'proteins',
+    name: 'Artichoke Stuffed Chicken Breast, 16oz',
+    price: 13.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2024-11-03T200538.54',
+    emoji: '🍗'
+  },
+  {
+    id: 16,
+    category: 'proteins',
+    name: 'Broccoli & Cheddar Stuffed Chicken Breast, 16oz',
+    price: 13.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2024-11-03T212416.66',
+    emoji: '🍗'
+  },
+  {
+    id: 17,
+    category: 'proteins',
+    name: 'Boneless Pork Ribs, 16oz',
+    price: 13.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2024-11-03T210645.91',
+    emoji: '🥩'
+  },
+  {
+    id: 18,
+    category: 'proteins',
+    name: 'Beef Bourguignon, 16oz',
+    price: 16.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2024-11-03T214232.79',
+    emoji: '🥩'
+  },
+  {
+    id: 19,
+    category: 'proteins',
+    name: 'Chicken in Korean Style BBQ Sauce, 16oz',
+    price: 13.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2024-11-03T210124.87',
+    emoji: '🍗'
+  },
+  {
+    id: 20,
+    category: 'proteins',
+    name: 'Soules Kitchen Orange Sesame Chicken Meal Kit, 15oz',
+    price: 18.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitled_design_-_2026-05-14T004553',
+    emoji: '🍗'
+  },
+  {
+    id: 21,
+    category: 'proteins',
+    name: 'GV Herb & Garlic Tuna 24ct, 3.9lbs',
+    price: 54.96,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-05-25T114551.83',
+    emoji: '🐟'
+  },
+  {
+    id: 22,
+    category: 'proteins',
+    name: 'GV Hickory Smoked Tuna 24ct, 3.9lbs',
+    price: 54.96,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-05-24T222451.95',
+    emoji: '🐟'
+  },
+  {
+    id: 23,
+    category: 'proteins',
+    name: 'GV Hot Buffalo Tuna 24ct, 3.9lbs',
+    price: 54.96,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-05-24T222238.81',
+    emoji: '🐟'
+  },
+  {
+    id: 24,
+    category: 'proteins',
+    name: 'GV Spicy Thai Chili Tuna 24ct, 3.9lbs',
+    price: 54.96,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitled_design_-_2026-05-25T120339',
+    emoji: '🐟'
+  },
+
+  // SNACKS & COOKIES
+  {
+    id: 25,
+    category: 'snacks',
+    name: 'Belgian Butter Waffle Cookies, 8.8oz',
+    price: 5.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitled_300x300px_8.png?v=17734403',
+    emoji: '🍪'
+  },
+  {
+    id: 26,
+    category: 'snacks',
+    name: 'Blueberry Muffins, 14oz',
+    price: 9.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitled_300x300px_1.png?v=17734363',
+    emoji: '🧁'
+  },
+  {
+    id: 27,
+    category: 'snacks',
+    name: 'Dark Chocolate French Butter Cookies, 4.6oz',
+    price: 6.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitled_300x300px.png?v=1773432865',
+    emoji: '🍫'
+  },
+  {
+    id: 28,
+    category: 'snacks',
+    name: 'French Galettes Butter Cookies, 7.75oz',
+    price: 7.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitled_300x300px_4.png?v=17734392',
+    emoji: '🍪'
+  },
+  {
+    id: 29,
+    category: 'snacks',
+    name: 'Raspberry Mousse Cakes, 5oz',
+    price: 7.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitled_300x300px_2.png?v=17734367',
+    emoji: '🍰'
+  },
+  {
+    id: 30,
+    category: 'snacks',
+    name: 'Dutch Maid Duplex Creme Cookies, 16oz',
+    price: 2.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitled_300x300px_21.png?v=1773627',
+    emoji: '🍪'
+  },
+  {
+    id: 31,
+    category: 'snacks',
+    name: 'Dutch Maid Vanilla Creme Cookies, 16oz',
+    price: 2.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitled_300x300px_20.png?v=1773627',
+    emoji: '🍪'
+  },
+  {
+    id: 32,
+    category: 'snacks',
+    name: 'Dutch Maid Lemon Creme Cookies, 16oz',
+    price: 2.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitled_300x300px_23.png?v=1773628',
+    emoji: '🍋'
+  },
+  {
+    id: 33,
+    category: 'snacks',
+    name: 'Dutch Maid Butter Ring Cookies, 11.5oz',
+    price: 2.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitled_300x300px_28.png?v=1773630',
+    emoji: '🍪'
+  },
+  {
+    id: 34,
+    category: 'snacks',
+    name: 'Dutch Maid Almond Windmill Cookies, 10oz',
+    price: 2.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitled_300x300px_27.png?v=1773629',
+    emoji: '🍪'
+  },
+  {
+    id: 35,
+    category: 'snacks',
+    name: 'GV Lemonade 12-10ct Boxes',
+    price: 39.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-05-24T222204.42',
+    emoji: '🍋'
+  },
+
+  // PRODUCE & RICE
+  {
+    id: 36,
+    category: 'produce',
+    name: "Uncle Ben's Garden Vegetable Rice",
+    price: 4.49,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/uncle-bens-long-grain-white-rice-30',
+    emoji: '🍚'
+  },
+  {
+    id: 37,
+    category: 'produce',
+    name: "Uncle Ben's Long Grain White Rice",
+    price: 4.49,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/uncle-bens-roasted-chicken-rice-687',
+    emoji: '🍚'
+  },
+  {
+    id: 38,
+    category: 'produce',
+    name: "Uncle Ben's Roasted Chicken Rice",
+    price: 4.49,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/uncle-bens-spanish-style-rice-312.w',
+    emoji: '🍚'
+  },
+  {
+    id: 39,
+    category: 'produce',
+    name: "Uncle Ben's Spanish Style Rice",
+    price: 4.49,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/uncle-bens-jasmine-family-size-17-3',
+    emoji: '🍚'
+  },
+  {
+    id: 40,
+    category: 'produce',
+    name: "Uncle Ben's Jasmine Family Size, 17.3oz",
+    price: 6.29,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/uncle-bens-spanish-style-17-3oz-ric',
+    emoji: '🍚'
+  },
+  {
+    id: 41,
+    category: 'produce',
+    name: 'Fresh Tomatoes on the Vine, 1.9lbs',
+    price: 6.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2024-08-16T031313.28',
+    emoji: '🍅'
+  },
+  {
+    id: 42,
+    category: 'produce',
+    name: 'Microwaveable Russet Potato, 2ct',
+    price: 4.29,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2024-08-16T032724.58',
+    emoji: '🥔'
+  },
+  {
+    id: 43,
+    category: 'produce',
+    name: 'Microwaveable Sweet Potato, 2ct',
+    price: 3.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2024-08-16T032245.93',
+    emoji: '🍠'
+  },
+  {
+    id: 44,
+    category: 'produce',
+    name: 'Yellow Pepper, 2ct',
+    price: 2.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2024-08-16T040850.06',
+    emoji: '🫑'
+  },
+  {
+    id: 45,
+    category: 'produce',
+    name: 'Fresh Yellow Squash, 2ct',
+    price: 3.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2024-08-16T033752.44',
+    emoji: '🥒'
+  },
+  {
+    id: 46,
+    category: 'produce',
+    name: '10 Seasoning Kit',
+    price: 24.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/5-seasonings-kit-958.webp?v=1761354',
+    emoji: '🧂'
+  },
+  {
+    id: 47,
+    category: 'produce',
+    name: '5 Seasonings Kit',
+    price: 14.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/steamer-w-flavors-kit-533.webp?v=17',
+    emoji: '🧂'
+  },
+
+  // CLOTHING
+  {
+    id: 48,
+    category: 'clothing',
+    name: 'Basketball Shorts w/Polo Short Sleeve Set (Maroon)',
+    price: 27.49,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-04-22T013638.33',
+    emoji: '👕'
+  },
+  {
+    id: 49,
+    category: 'clothing',
+    name: 'Basketball Shorts w/Polo Short Sleeve Set (Green)',
+    price: 27.49,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-04-22T013704.75',
+    emoji: '👕'
+  },
+  {
+    id: 50,
+    category: 'clothing',
+    name: 'Basketball Shorts w/Polo Short Sleeve Set (Brown)',
+    price: 27.49,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-04-22T013738.00',
+    emoji: '👕'
+  },
+  {
+    id: 51,
+    category: 'clothing',
+    name: 'Basketball Shorts w/Polo Short Sleeve Set (Beige)',
+    price: 27.49,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-04-22T013806.18',
+    emoji: '👕'
+  },
+  {
+    id: 52,
+    category: 'clothing',
+    name: 'Basketball Shorts w/Polo Short Sleeve Set (Red)',
+    price: 27.49,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-04-22T013841.86',
+    emoji: '👕'
+  },
+  {
+    id: 53,
+    category: 'clothing',
+    name: 'Military Field Jacket',
+    price: 79.99,
+    img: 'https://emmaspremiumservices.com/cdn/shop/products/rothco-m-65-field-jacket-9_13',
+    emoji: '🧥'
+  },
+
+  // BLANKETS
+  {
+    id: 54,
+    category: 'blankets',
+    name: 'Fire Retardant Blanket (Brown)',
+    price: 41.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/261791e7-2fb2-4b24-a4db-6c4d43e273e',
+    emoji: '🛏️'
+  },
+  {
+    id: 55,
+    category: 'blankets',
+    name: 'Fire Retardant Blanket (Purple)',
+    price: 37.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/a8f47fb7-943b-4e29-8ce5-3dfdd7abb3b',
+    emoji: '🛏️'
+  },
+  {
+    id: 56,
+    category: 'blankets',
+    name: 'Fire Retardant Blanket (White)',
+    price: 37.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/b1171d0f-cb80-4283-87ee-41bc1fbaa43',
+    emoji: '🛏️'
+  },
+  {
+    id: 57,
+    category: 'blankets',
+    name: 'Fire Retardant Blanket (Camel)',
+    price: 37.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/94e9ea3b-5674-40de-9fb4-1473710d7a0',
+    emoji: '🛏️'
+  },
+  {
+    id: 58,
+    category: 'blankets',
+    name: 'Fire Retardant Blanket (Maroon)',
+    price: 37.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/eb16d3a9-77cd-4a46-84e0-a167db17d5a',
+    emoji: '🛏️'
+  },
+  {
+    id: 59,
+    category: 'blankets',
+    name: 'Fleece Blanket (Fire Retardant)',
+    price: 27.50,
+    img: 'https://emmaspremiumservices.com/cdn/shop/files/Blanket_Tan_1_1_0c05e7b7-f4e8-40',
+    emoji: '🛏️'
+  },
+
+  // ELECTRONICS
+  {
+    id: 60,
+    category: 'electronics',
+    name: 'Clear Transparent In-Ear Bud, Retro Style w/Mic',
+    price: 19.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitled_300x300px_15.png?v=1773620',
+    emoji: '🎧'
+  },
+  {
+    id: 61,
+    category: 'electronics',
+    name: 'HiFi Sport Earphones for Running w/Mic',
+    price: 18.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitled_300x300px_18.png?v=1773621',
+    emoji: '🎧'
+  },
+  {
+    id: 62,
+    category: 'electronics',
+    name: 'Earphones for Running/Gym w/Dynamic Bass & Mic',
+    price: 24.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitled_300x300px_17.png?v=1773620',
+    emoji: '🎧'
+  },
+  {
+    id: 63,
+    category: 'electronics',
+    name: 'Earbuds Wired IEM In-Ear Headphones w/Mic',
+    price: 32.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitled_300x300px_14.png?v=1773619',
+    emoji: '🎧'
+  },
+  {
+    id: 64,
+    category: 'electronics',
+    name: 'Memory Wire Headset Microphone, 3.5mm Clear',
+    price: 31.99,
+    img: 'https://nysapprovedvendor.com/cdn/shop/files/Untitled_300x300px_13.png?v=1773616',
+    emoji: '🎙️'
+  },
+  {
+    id: 65,
+    category: 'electronics',
+    name: 'Deep Bass Hi-Res In-Ear Monitor w/Mic',
+    price: 25.99,
+    img: null,
+    emoji: '🎧'
+  }
+];
+
+// ─── CATEGORY CONFIG ─────────────────────────────────────────────────────────
+const CATEGORY_LABELS = {
+  proteins:    'Proteins',
+  snacks:      'Snacks & Cookies',
+  produce:     'Produce & Rice',
+  clothing:    'Clothing',
+  blankets:    'Blankets',
+  electronics: 'Electronics'
+};
+
+// ─── HELPERS ─────────────────────────────────────────────────────────────────
+function formatPrice(price) {
+  return '$' + price.toFixed(2);
+}
+
+function makeMailtoLink(name, price) {
+  const subject = encodeURIComponent('Order: ' + name);
+  const body = encodeURIComponent(
+    "I'd like to order: " + name + ' - ' + formatPrice(price) +
+    '\n\nInmate Name:\nDIN:\nFacility:'
+  );
+  return 'mailto:vender@nyctailblazers.com?subject=' + subject + '&body=' + body;
+}
+
+function createCard(product) {
+  const card = document.createElement('div');
+  card.className = 'product-card';
+  card.dataset.category = product.category;
+
+  const catLabel = CATEGORY_LABELS[product.category] || product.category;
+  const mailtoHref = makeMailtoLink(product.name, product.price);
+
+  // Build image HTML
+  let imgHTML;
+  if (product.img) {
+    imgHTML = `
+      <img
+        src="${product.img}"
+        alt="${product.name}"
+        loading="lazy"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+      >
+      <div class="card-img-fallback" style="display:none">${product.emoji}</div>
+    `;
+  } else {
+    imgHTML = `<div class="card-img-fallback">${product.emoji}</div>`;
+  }
+
+  card.innerHTML = `
+    <div class="card-img-wrap">
+      ${imgHTML}
+      <div class="compliance-badge" aria-label="Directive 4911 Compliant">Directive 4911 ✓</div>
+    </div>
+    <div class="card-body">
+      <div class="card-category">${catLabel}</div>
+      <div class="card-name">${product.name}</div>
+      <div class="card-footer">
+        <div class="card-price">${formatPrice(product.price)}</div>
+        <a href="${mailtoHref}" class="card-order-btn" aria-label="Order ${product.name}">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 4h16v16H4V4zm0 0l8 8 8-8"/></svg>
+          Order
+        </a>
+      </div>
+    </div>
+  `;
+
+  return card;
+}
+
+// ─── RENDER ──────────────────────────────────────────────────────────────────
+function renderProducts(filter) {
+  const grid = document.getElementById('product-grid');
+  const noResults = document.getElementById('no-results');
+
+  // Remove existing cards (keep no-results sentinel)
+  const existingCards = grid.querySelectorAll('.product-card');
+  existingCards.forEach(c => c.remove());
+
+  const filtered = filter === 'all'
+    ? PRODUCTS
+    : PRODUCTS.filter(p => p.category === filter);
+
+  if (filtered.length === 0) {
+    noResults.style.display = 'block';
+    return;
+  }
+
+  noResults.style.display = 'none';
+
+  // Stagger animation using fragment
+  const fragment = document.createDocumentFragment();
+  filtered.forEach((product, i) => {
+    const card = createCard(product);
+    card.style.animationDelay = Math.min(i * 0.04, 0.6) + 's';
+    fragment.appendChild(card);
+  });
+  grid.insertBefore(fragment, noResults);
+}
+
+// ─── FILTER COUNTS ───────────────────────────────────────────────────────────
+function updateCounts() {
+  const total = PRODUCTS.length;
+  document.getElementById('count-all').textContent = total;
+  document.getElementById('visible-count').textContent = total;
+
+  const categories = ['proteins', 'snacks', 'produce', 'clothing', 'blankets', 'electronics'];
+  categories.forEach(cat => {
+    const count = PRODUCTS.filter(p => p.category === cat).length;
+    const el = document.getElementById('count-' + cat);
+    if (el) el.textContent = count;
+  });
+}
+
+// ─── FILTER BAR ──────────────────────────────────────────────────────────────
+function initFilters() {
+  const buttons = document.querySelectorAll('.filter-btn');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Update active state
+      buttons.forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+
+      const filter = btn.dataset.filter;
+      renderProducts(filter);
+
+      // Update count display
+      const count = filter === 'all'
+        ? PRODUCTS.length
+        : PRODUCTS.filter(p => p.category === filter).length;
+      document.getElementById('visible-count').textContent = count;
+    });
+  });
+}
+
+// ─── INIT ────────────────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  updateCounts();
+  renderProducts('all');
+  initFilters();
+});
+</script>
 
 </body>
 </html>
