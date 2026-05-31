@@ -47,7 +47,7 @@ def search_cheapest_price(product_name: str) -> dict:
     )
 
     payload = json.dumps({
-        "model": "llama-3.1-sonar-small-128k-online",
+        "model": "sonar",
         "messages": [
             {"role": "system", "content": "You are a price comparison tool. Return only valid JSON."},
             {"role": "user", "content": prompt}

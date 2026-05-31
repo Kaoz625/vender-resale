@@ -93,6 +93,12 @@
       "type": "file"
     },
     {
+      "path": "scripts/price_research.py",
+      "accessCount": 2,
+      "lastAccessed": 1780264375100,
+      "type": "file"
+    },
+    {
       "path": "scripts/scrape_competitors.py",
       "accessCount": 1,
       "lastAccessed": 1780228217523,
@@ -129,9 +135,9 @@
       "type": "file"
     },
     {
-      "path": "scripts/price_research.py",
+      "path": "research/price-research/README.md",
       "accessCount": 1,
-      "lastAccessed": 1780263875579,
+      "lastAccessed": 1780264852197,
       "type": "file"
     }
   ],
