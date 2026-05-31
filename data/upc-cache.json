@@ -188,5 +188,5523 @@
     "product_name": "StarKist Light Tuna in Water, 2.6 oz (24 pack), 3.9lbs",
     "upc": null,
     "nutrition": null
+  },
+  "40": {
+    "product_id": 40,
+    "product_name": "GV Hickory Smoked Tuna 24ct, 3.9lbs",
+    "upc": null,
+    "nutrition": null
+  },
+  "41": {
+    "product_id": 41,
+    "product_name": "GV Herb & Garlic Tuna 24ct, 3.9lbs",
+    "upc": null,
+    "nutrition": null
+  },
+  "42": {
+    "product_id": 42,
+    "product_name": "GV Hot Buffalo Tuna 24ct, 3.9lbs",
+    "upc": null,
+    "nutrition": null
+  },
+  "43": {
+    "product_id": 43,
+    "product_name": "GV Spicy Thai Chili Tuna 24ct, 3.9lbs",
+    "upc": null,
+    "nutrition": null
+  },
+  "44": {
+    "product_id": 44,
+    "product_name": "Welch's Grape Drink Mix 6 - 30ct Boxes, 14.34oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "45": {
+    "product_id": 45,
+    "product_name": "GV Lemonade 12 - 10ct Boxes Discount, 1.32oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "46": {
+    "product_id": 46,
+    "product_name": "GV Fruit Punch 12 - 10ct Boxes Discount, 1.32oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "47": {
+    "product_id": 47,
+    "product_name": "Smoked Ham & Cheddar Mini Twin Pack Sub Sandwich, 7.2 oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "48": {
+    "product_id": 48,
+    "product_name": "Turkey & Cheddar Sub Sandwich, Half, 6.5oz, 1 Count (Fresh)",
+    "upc": null,
+    "nutrition": null
+  },
+  "49": {
+    "product_id": 49,
+    "product_name": "Extra Meat Turkey & Cheddar Sub Sandwich, Half, 8.5oz, 1 Count",
+    "upc": null,
+    "nutrition": null
+  },
+  "50": {
+    "product_id": 50,
+    "product_name": "Ham and Swiss Sub Sandwich, Half, 6.5oz, 1 Count (Fresh)",
+    "upc": null,
+    "nutrition": null
+  },
+  "51": {
+    "product_id": 51,
+    "product_name": "New York Deli Sub Sandwich, Half, 6.5oz, 1 Count (Fresh)",
+    "upc": null,
+    "nutrition": null
+  },
+  "52": {
+    "product_id": 52,
+    "product_name": "Italian Hero Sub Sandwich, Half, 6.5 oz, 1 Count (Always Fresh)",
+    "upc": null,
+    "nutrition": null
+  },
+  "53": {
+    "product_id": 53,
+    "product_name": "Soules Kitchen Fresh Creamy Garlic & Herb Chicken Meal Kit, 15oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "54": {
+    "product_id": 54,
+    "product_name": "Soules Kitchen Fresh Meal Kit, Orange Sesame Chicken, 15oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "55": {
+    "product_id": 55,
+    "product_name": "Amylu Apple & Gouda Chicken Sausage, 12oz",
+    "upc": "0092227757126",
+    "off_name": "Apple & Gouda Chicken Sausages",
+    "similarity": 0.89,
+    "nutrition": {
+      "serving_size": "1 link (85 g)",
+      "calories": 170.0,
+      "total_fat_g": 10.0,
+      "saturated_fat_g": 3.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.1,
+      "sodium_mg": 640.0,
+      "total_carbs_g": 6.0,
+      "fiber_g": 1.0,
+      "sugars_g": 4.0,
+      "added_sugars_g": 1.0,
+      "protein_g": 15.0,
+      "calcium_mg": 50.0,
+      "iron_mg": 1.0,
+      "potassium_mg": 148.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "56": {
+    "product_id": 56,
+    "product_name": "Amylu Andouille Chicken Sausages, 12oz",
+    "upc": "0092227753128",
+    "off_name": "Andouille Chicken Sausages",
+    "similarity": 0.9,
+    "nutrition": {
+      "serving_size": "85g",
+      "calories": 160.0,
+      "total_fat_g": 10.0,
+      "saturated_fat_g": 2.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.1,
+      "sodium_mg": 540.0,
+      "total_carbs_g": 1.0,
+      "fiber_g": 0.0,
+      "sugars_g": 0.0,
+      "added_sugars_g": 0.0,
+      "protein_g": 14.0,
+      "calcium_mg": 11.0,
+      "iron_mg": 1.0,
+      "potassium_mg": 151.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "57": {
+    "product_id": 57,
+    "product_name": "Amylu Roasted Garlic & Asiago Chicken Sausage, 12oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "58": {
+    "product_id": 58,
+    "product_name": "Amylu Sea Salt & Cracked Black Pepper Chicken Meatballs, 10oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "59": {
+    "product_id": 59,
+    "product_name": "Amylu Roasted Garlic Chicken Meatballs, 10oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "60": {
+    "product_id": 60,
+    "product_name": "Amylu Foods Caramelized Onion Chicken Burgers, 2LBS",
+    "upc": "0092227975322",
+    "off_name": "Caramelized Onion & Aged White Cheddar Charbroiled Chicken Burgers",
+    "similarity": 0.59,
+    "nutrition": {
+      "serving_size": "1 burger (112 g)",
+      "calories": 170.0,
+      "total_fat_g": 9.0,
+      "saturated_fat_g": 3.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.1,
+      "sodium_mg": 620.0,
+      "total_carbs_g": 3.0,
+      "fiber_g": 0.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": 1.0,
+      "protein_g": 19.0,
+      "calcium_mg": 4.0,
+      "iron_mg": 1.0,
+      "potassium_mg": 4.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "61": {
+    "product_id": 61,
+    "product_name": "Amylu Burgers Spinach & Feta Chicken Burgers, 2lbs",
+    "upc": "0092227853323",
+    "off_name": "Chicken Burgers Spinach & Feta",
+    "similarity": 0.62,
+    "nutrition": {
+      "serving_size": "112g",
+      "calories": 170.0,
+      "total_fat_g": 10.0,
+      "saturated_fat_g": 3.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.1,
+      "sodium_mg": 600.0,
+      "total_carbs_g": 2.0,
+      "fiber_g": 0.0,
+      "sugars_g": 0.0,
+      "added_sugars_g": 0.0,
+      "protein_g": 19.0,
+      "calcium_mg": 30.0,
+      "iron_mg": 1.0,
+      "potassium_mg": 231.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "62": {
+    "product_id": 62,
+    "product_name": "Amylu Classic Breakfast Chicken Sausages, 2lbs",
+    "upc": null,
+    "nutrition": null
+  },
+  "63": {
+    "product_id": 63,
+    "product_name": "Amylu Basil & Parmesan Chicken Sausage, 2lbs",
+    "upc": null,
+    "nutrition": null
+  },
+  "64": {
+    "product_id": 64,
+    "product_name": "Amylu Roasted Garlic Chicken Meatballs, 2lbs",
+    "upc": null,
+    "nutrition": null
+  },
+  "65": {
+    "product_id": 65,
+    "product_name": "Roasted Carved Chicken Breast Strips, 2pk 1.63lbs",
+    "upc": null,
+    "nutrition": null
+  },
+  "66": {
+    "product_id": 66,
+    "product_name": "Land O'Frost Roast Beef, 10oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "67": {
+    "product_id": 67,
+    "product_name": "Land O'Frost Hickory Black Forest Ham, 1lb",
+    "upc": null,
+    "nutrition": null
+  },
+  "68": {
+    "product_id": 68,
+    "product_name": "Land O'Frost Hickory Oven Roasted Chicken Breast, 1lb",
+    "upc": null,
+    "nutrition": null
+  },
+  "69": {
+    "product_id": 69,
+    "product_name": "Land O'Frost Hickory Honey Smoked Turkey Breast, 1 lb",
+    "upc": null,
+    "nutrition": null
+  },
+  "70": {
+    "product_id": 70,
+    "product_name": "Land O' Frost Oven Roasted Turkey Breast, 1lb",
+    "upc": "0051900020032",
+    "off_name": "Oven Roasted Turkey Breast",
+    "similarity": 0.79,
+    "nutrition": {
+      "serving_size": "2 ONZ (56 g)",
+      "calories": 60.0,
+      "total_fat_g": 0.5,
+      "saturated_fat_g": 0.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 370.0,
+      "total_carbs_g": 1.0,
+      "fiber_g": null,
+      "sugars_g": 0.0,
+      "added_sugars_g": null,
+      "protein_g": 13.0,
+      "calcium_mg": null,
+      "iron_mg": 0.7,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "71": {
+    "product_id": 71,
+    "product_name": "Land O'Frost Hickory Smoked Turkey Breast, 1lb",
+    "upc": "0051900016080",
+    "off_name": "Hickory Smoked Turkey Breast & White Turkey | Lean",
+    "similarity": 0.62,
+    "nutrition": {
+      "serving_size": "1 portion (50 g)",
+      "calories": 70.0,
+      "total_fat_g": 1.5,
+      "saturated_fat_g": 0.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 260.0,
+      "total_carbs_g": 1.5,
+      "fiber_g": 0.0,
+      "sugars_g": 0.5,
+      "added_sugars_g": 1.0,
+      "protein_g": 4.0,
+      "calcium_mg": 2.0,
+      "iron_mg": null,
+      "potassium_mg": 117.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "72": {
+    "product_id": 72,
+    "product_name": "Braised Beef Roast, 14oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "73": {
+    "product_id": 73,
+    "product_name": "Fully Cooked Pork Belly, 12oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "74": {
+    "product_id": 74,
+    "product_name": "Sous Vide Chicken Thighs, 16oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "75": {
+    "product_id": 75,
+    "product_name": "Sous Vide Turkey Breast Tenderloins, 16oz",
+    "upc": "00736626",
+    "off_name": "Sous Vide Turkey Breast Tenderloins",
+    "similarity": 1.0,
+    "nutrition": {
+      "serving_size": "1 serving (84 g)",
+      "calories": 84.0,
+      "total_fat_g": 2.1,
+      "saturated_fat_g": 0.4,
+      "trans_fat_g": null,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 286.0,
+      "total_carbs_g": 0.0,
+      "fiber_g": null,
+      "sugars_g": null,
+      "added_sugars_g": 0.0,
+      "protein_g": 16.8,
+      "calcium_mg": null,
+      "iron_mg": 0.3,
+      "potassium_mg": 269.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "76": {
+    "product_id": 76,
+    "product_name": "Hardwood Smoked Pulled Pork, 16oz",
+    "upc": "0011110207906",
+    "off_name": "HARDWOOD SMOKED PULLED PORK",
+    "similarity": 1.0,
+    "nutrition": {
+      "serving_size": "1 serving (84 g)",
+      "calories": 190.0,
+      "total_fat_g": 9.0,
+      "saturated_fat_g": 4.2,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 536.0,
+      "total_carbs_g": 2.0,
+      "fiber_g": null,
+      "sugars_g": 1.2,
+      "added_sugars_g": null,
+      "protein_g": 24.0,
+      "calcium_mg": null,
+      "iron_mg": 1.2,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "77": {
+    "product_id": 77,
+    "product_name": "Hardwood Smoked Pulled Chicken, 16oz",
+    "upc": "00749671",
+    "off_name": "Hardwood Smoked Pulled Chicken",
+    "similarity": 1.0,
+    "nutrition": {
+      "serving_size": "1 portion (85.048 g)",
+      "calories": 111.0,
+      "total_fat_g": 2.0,
+      "saturated_fat_g": 0.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.1,
+      "sodium_mg": 200.0,
+      "total_carbs_g": 1.0,
+      "fiber_g": 0.0,
+      "sugars_g": 0.0,
+      "added_sugars_g": 0.0,
+      "protein_g": 21.0,
+      "calcium_mg": null,
+      "iron_mg": 0.4,
+      "potassium_mg": 280.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "99": {
+    "product_id": 99,
+    "product_name": "Blackened Chicken Strips, 8 oz",
+    "upc": "0761088802411",
+    "off_name": "Blackened chicken strips",
+    "similarity": 1.0,
+    "nutrition": {
+      "serving_size": "3 ONZ (85 g)",
+      "calories": 130.0,
+      "total_fat_g": 5.0,
+      "saturated_fat_g": 0.5,
+      "trans_fat_g": null,
+      "cholesterol_mg": 0.1,
+      "sodium_mg": 560.0,
+      "total_carbs_g": 1.0,
+      "fiber_g": 1.0,
+      "sugars_g": 0.0,
+      "added_sugars_g": null,
+      "protein_g": 17.0,
+      "calcium_mg": null,
+      "iron_mg": 0.7,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "100": {
+    "product_id": 100,
+    "product_name": "Chocolate Croissants, 16oz 12ct.",
+    "upc": "20399412",
+    "off_name": "Croissants Hazelnut",
+    "similarity": 0.51,
+    "nutrition": {
+      "serving_size": "1 croissant (48 g)",
+      "calories": 229.0,
+      "total_fat_g": 13.7,
+      "saturated_fat_g": 6.7,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 90.0,
+      "total_carbs_g": 22.5,
+      "fiber_g": 1.1,
+      "sugars_g": 8.0,
+      "added_sugars_g": 5.3,
+      "protein_g": 3.5,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "101": {
+    "product_id": 101,
+    "product_name": "Butter Baked Mini Croissants, 10.9 oz, 11ct",
+    "upc": "2470198004995",
+    "off_name": "8pk Store Baked Mini Butter Croissants",
+    "similarity": 0.73,
+    "nutrition": null
+  },
+  "102": {
+    "product_id": 102,
+    "product_name": "Wellsley Farms Mini Naan, 12 ct.",
+    "upc": "0888670040072",
+    "off_name": "MINI NAAN",
+    "similarity": 0.55,
+    "nutrition": {
+      "serving_size": "1 serving (45 g)",
+      "calories": 130.0,
+      "total_fat_g": 3.5,
+      "saturated_fat_g": 0.5,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 320.0,
+      "total_carbs_g": 22.0,
+      "fiber_g": 1.0,
+      "sugars_g": 2.0,
+      "added_sugars_g": 1.0,
+      "protein_g": 4.0,
+      "calcium_mg": null,
+      "iron_mg": 1.2,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "103": {
+    "product_id": 103,
+    "product_name": "Wellsley Original Naan Bread, 4ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "104": {
+    "product_id": 104,
+    "product_name": "Pepperidge Farm Swirl Strawberry Bread, 16oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "105": {
+    "product_id": 105,
+    "product_name": "Lil' Dutch Maid Lemon Creme Cookies, 16oz",
+    "upc": "0086106152522",
+    "off_name": "lemon cr\u00e8me cookies",
+    "similarity": 0.67,
+    "nutrition": {
+      "serving_size": "3 cookie (34 g)",
+      "calories": 160.0,
+      "total_fat_g": 6.0,
+      "saturated_fat_g": 2.5,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 65.0,
+      "total_carbs_g": 25.0,
+      "fiber_g": 1.0,
+      "sugars_g": 12.0,
+      "added_sugars_g": 12.0,
+      "protein_g": 2.0,
+      "calcium_mg": 10.0,
+      "iron_mg": 1.0,
+      "potassium_mg": 20.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "106": {
+    "product_id": 106,
+    "product_name": "Dutch Maid Cookies, Coconut Bar, 10oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "107": {
+    "product_id": 107,
+    "product_name": "Dutch Maid Cookies, Butter Rings, 11.5oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "108": {
+    "product_id": 108,
+    "product_name": "Dutch Maid Duplex Creme Cookies, 16oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "109": {
+    "product_id": 109,
+    "product_name": "Lil' Dutch Maid Vanilla Creme Cookies, 16oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "110": {
+    "product_id": 110,
+    "product_name": "LIL DUTCH MAID Cookies, Almond Windmill, 10oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "111": {
+    "product_id": 111,
+    "product_name": "Dutch Maid Cookies, Chocolate Chip, 12oz",
+    "upc": "0086106152614",
+    "off_name": "Chocolate Chip Cookies",
+    "similarity": 0.5,
+    "nutrition": {
+      "serving_size": "36 g",
+      "calories": 160.0,
+      "total_fat_g": 7.0,
+      "saturated_fat_g": 3.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 135.0,
+      "total_carbs_g": 23.0,
+      "fiber_g": 0.0,
+      "sugars_g": 10.0,
+      "added_sugars_g": 10.0,
+      "protein_g": 1.0,
+      "calcium_mg": 25.0,
+      "iron_mg": 1.0,
+      "potassium_mg": 25.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "112": {
+    "product_id": 112,
+    "product_name": "Global Brands Sandwich Cookies, 10 Packs, 16oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "113": {
+    "product_id": 113,
+    "product_name": "Dutch Maid Cookies, Iced Oatmeal, 12oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "114": {
+    "product_id": 114,
+    "product_name": "Oreo Golden Sandwich Cookies, 3oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "115": {
+    "product_id": 115,
+    "product_name": "Oreo Chocolate Sandwich Cookies, 3oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "116": {
+    "product_id": 116,
+    "product_name": "CHIPS AHOY! Mini Chocolate Chip Cookies, 3oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "117": {
+    "product_id": 117,
+    "product_name": "Dutch Maid Cookies, Ginger Snaps, Old Fashioned, 10oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "118": {
+    "product_id": 118,
+    "product_name": "Stauffers Chocolate Animal Crackers, .5oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "119": {
+    "product_id": 119,
+    "product_name": "Stauffers Original Animal Crackers, .5oz",
+    "upc": "0072320114125",
+    "off_name": "Original Animal Crackers",
+    "similarity": 0.79,
+    "nutrition": {
+      "serving_size": "1.1 ONZ (30 g)",
+      "calories": 120.0,
+      "total_fat_g": 2.0,
+      "saturated_fat_g": 0.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 105.0,
+      "total_carbs_g": 25.0,
+      "fiber_g": 1.0,
+      "sugars_g": 7.0,
+      "added_sugars_g": null,
+      "protein_g": 2.0,
+      "calcium_mg": null,
+      "iron_mg": 1.1,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "120": {
+    "product_id": 120,
+    "product_name": "Keebler Chips Deluxe Cookies w/Rainbow M&M Candies, 3oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "121": {
+    "product_id": 121,
+    "product_name": "Oreo Mini Peanut Butter Chocolate Sandwich Cookies, 3oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "122": {
+    "product_id": 122,
+    "product_name": "Cheez-It White Cheddar Baked Crackers, 3oz",
+    "upc": "0024100126606",
+    "off_name": "Cheez-It White Cheddar Baked Snack Crackers",
+    "similarity": 0.93,
+    "nutrition": {
+      "serving_size": "1 Pouch (42 g)",
+      "calories": 210.0,
+      "total_fat_g": 10.0,
+      "saturated_fat_g": 2.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 295.0,
+      "total_carbs_g": 26.0,
+      "fiber_g": 1.0,
+      "sugars_g": 0.5,
+      "added_sugars_g": 0.0,
+      "protein_g": 4.0,
+      "calcium_mg": 25.0,
+      "iron_mg": 1.7,
+      "potassium_mg": 45.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "123": {
+    "product_id": 123,
+    "product_name": "Cheez-It Cheddar Jack Cheese Crackers, 3oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "124": {
+    "product_id": 124,
+    "product_name": "Cheez-It Original Cheese Crackers, 3oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "125": {
+    "product_id": 125,
+    "product_name": "Ritz Cheese Sandwich Crackers, 3oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "126": {
+    "product_id": 126,
+    "product_name": "Trader Joe's Fig Cookies, 10oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "127": {
+    "product_id": 127,
+    "product_name": "Dark Chocolate Dipped French Butter Cookies, 4.6oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "128": {
+    "product_id": 128,
+    "product_name": "French Galettes Butter Cookies, 7.75oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "129": {
+    "product_id": 129,
+    "product_name": "Blueberry Muffins, 14oz",
+    "upc": "5060088700143",
+    "off_name": "Blueberry Muffin",
+    "similarity": 0.97,
+    "nutrition": {
+      "serving_size": "1.0 portion (100.0 g)",
+      "calories": 369.0,
+      "total_fat_g": 12.0,
+      "saturated_fat_g": 1.7,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 12.0,
+      "total_carbs_g": 55.0,
+      "fiber_g": 8.4,
+      "sugars_g": 45.0,
+      "added_sugars_g": 0.0,
+      "protein_g": 6.4,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "130": {
+    "product_id": 130,
+    "product_name": "Vegan Banana Bread with Walnuts, 16oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "131": {
+    "product_id": 131,
+    "product_name": "Raspberry Mousse Cakes, 5oz",
+    "upc": "00650601",
+    "off_name": "Raspberry Mousse Cakes",
+    "similarity": 1.0,
+    "nutrition": {
+      "serving_size": "1 portion (71 g)",
+      "calories": 350.0,
+      "total_fat_g": 15.0,
+      "saturated_fat_g": 10.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 170.0,
+      "total_carbs_g": 51.0,
+      "fiber_g": 0.0,
+      "sugars_g": 30.0,
+      "added_sugars_g": 27.0,
+      "protein_g": 3.0,
+      "calcium_mg": 70.0,
+      "iron_mg": 0.7,
+      "potassium_mg": 40.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "132": {
+    "product_id": 132,
+    "product_name": "Belgian Butter Waffle Cookies, 8.8oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "140": {
+    "product_id": 140,
+    "product_name": "Certified Angus Beef Beef Bacon, Fully Cooked, 12oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "141": {
+    "product_id": 141,
+    "product_name": "Classic Variety Pack Drink Mix, 30ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "142": {
+    "product_id": 142,
+    "product_name": "Hormel Beef Roast Au Jus 15oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "143": {
+    "product_id": 143,
+    "product_name": "Hormel  Roasted Chicken Breasts & Gravy, 15 OZ",
+    "upc": "0037600287012",
+    "off_name": "roasted CHICKEN BREASTS WITH RIB MEAT AND GRAVY",
+    "similarity": 0.71,
+    "nutrition": {
+      "serving_size": "1 serving (142 g)",
+      "calories": 110.0,
+      "total_fat_g": 2.5,
+      "saturated_fat_g": 1.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": 0.1,
+      "sodium_mg": 600.0,
+      "total_carbs_g": 2.0,
+      "fiber_g": null,
+      "sugars_g": null,
+      "added_sugars_g": 0.0,
+      "protein_g": 21.0,
+      "calcium_mg": null,
+      "iron_mg": 0.9,
+      "potassium_mg": 190.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "144": {
+    "product_id": 144,
+    "product_name": "Del Real Carnitas 16oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "145": {
+    "product_id": 145,
+    "product_name": "Kingsford  Boneless Pork Ribs 16oz",
+    "upc": "0792338105969",
+    "off_name": "Kingsford Boneless Pork Ribs",
+    "similarity": 1.0,
+    "nutrition": {
+      "serving_size": "5 ONZ (140 g)",
+      "calories": 290.0,
+      "total_fat_g": 13.0,
+      "saturated_fat_g": 4.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.1,
+      "sodium_mg": 840.0,
+      "total_carbs_g": 23.0,
+      "fiber_g": 0.0,
+      "sugars_g": 19.0,
+      "added_sugars_g": null,
+      "protein_g": 20.0,
+      "calcium_mg": 41.0,
+      "iron_mg": 1.8,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "146": {
+    "product_id": 146,
+    "product_name": "Kingsford Seasoned Pork Carnitas 16oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "147": {
+    "product_id": 147,
+    "product_name": "Gwaltney Original Chicken Hot Dogs 24 ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "148": {
+    "product_id": 148,
+    "product_name": "Amylu Caramelized Onion & White Cheddar Chicken Sausages, 2lbs",
+    "upc": "0092227875325",
+    "off_name": "Caramelized Onion & White Cheddar Chicken Sausages",
+    "similarity": 0.94,
+    "nutrition": {
+      "serving_size": "1 link (76 g)",
+      "calories": 127.0,
+      "total_fat_g": 8.0,
+      "saturated_fat_g": 2.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.1,
+      "sodium_mg": 420.0,
+      "total_carbs_g": 2.0,
+      "fiber_g": 0.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": 1.0,
+      "protein_g": 13.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "149": {
+    "product_id": 149,
+    "product_name": "Hebrew National Beef Franks 2.25lbs",
+    "upc": "0074956283008",
+    "off_name": "Jumbo Beef Franks",
+    "similarity": 0.64,
+    "nutrition": {
+      "serving_size": "1 Frank (85 g)",
+      "calories": 260.0,
+      "total_fat_g": 23.0,
+      "saturated_fat_g": 9.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.1,
+      "sodium_mg": 830.0,
+      "total_carbs_g": 3.0,
+      "fiber_g": 0.0,
+      "sugars_g": 0.0,
+      "added_sugars_g": 0.0,
+      "protein_g": 10.0,
+      "calcium_mg": null,
+      "iron_mg": 6.0,
+      "potassium_mg": 2.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "150": {
+    "product_id": 150,
+    "product_name": "Sabrett Natural Casing Beef Frankfurters",
+    "upc": null,
+    "nutrition": null
+  },
+  "151": {
+    "product_id": 151,
+    "product_name": "Nathan's Beef Franks 24ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "152": {
+    "product_id": 152,
+    "product_name": "Nathan's Bun Length Beef Franks 12oz",
+    "upc": "06181307",
+    "off_name": "Nathan's Bun Length Skinless Beef Franks",
+    "similarity": 0.87,
+    "nutrition": null
+  },
+  "153": {
+    "product_id": 153,
+    "product_name": "Hormel Pepperoni Original 1.5lbs",
+    "upc": "0037600636605",
+    "off_name": "Pepperoni Original",
+    "similarity": 0.84,
+    "nutrition": {
+      "serving_size": "1 serving (28 g)",
+      "calories": 150.0,
+      "total_fat_g": 14.0,
+      "saturated_fat_g": 6.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": 0.1,
+      "sodium_mg": 2.0,
+      "total_carbs_g": 0.0,
+      "fiber_g": null,
+      "sugars_g": null,
+      "added_sugars_g": 0.0,
+      "protein_g": 5.0,
+      "calcium_mg": null,
+      "iron_mg": 1.3,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "154": {
+    "product_id": 154,
+    "product_name": "Hormel Turkey Pepperoni 6oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "155": {
+    "product_id": 155,
+    "product_name": "Hormel Pepperoni 6oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "156": {
+    "product_id": 156,
+    "product_name": "Buffalo Style Chicken Meatballs",
+    "upc": "4099100011098",
+    "off_name": "Buffalo Style Chicken Meatballs",
+    "similarity": 1.0,
+    "nutrition": {
+      "serving_size": "6 meatballs (85 g)",
+      "calories": 130.0,
+      "total_fat_g": 8.0,
+      "saturated_fat_g": 2.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": 0.1,
+      "sodium_mg": 810.0,
+      "total_carbs_g": 6.0,
+      "fiber_g": 2.0,
+      "sugars_g": 2.0,
+      "added_sugars_g": 1.0,
+      "protein_g": 12.0,
+      "calcium_mg": 30.0,
+      "iron_mg": 1.2,
+      "potassium_mg": 230.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "157": {
+    "product_id": 157,
+    "product_name": "Chicken Meatballs",
+    "upc": "00745789",
+    "off_name": "Chicken Meatballs",
+    "similarity": 1.0,
+    "nutrition": {
+      "serving_size": "4 meatballs (85 g)",
+      "calories": 150.0,
+      "total_fat_g": 9.0,
+      "saturated_fat_g": 2.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.1,
+      "sodium_mg": 300.0,
+      "total_carbs_g": 2.0,
+      "fiber_g": 0.0,
+      "sugars_g": 0.0,
+      "added_sugars_g": 0.0,
+      "protein_g": 16.0,
+      "calcium_mg": 20.0,
+      "iron_mg": 1.3,
+      "potassium_mg": 1.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "158": {
+    "product_id": 158,
+    "product_name": "Italian Style Turkey Meatloaf",
+    "upc": "00124621",
+    "off_name": "Italian Style Turkey Meatloaf topped with Tomato Sauce",
+    "similarity": 0.7,
+    "nutrition": {
+      "serving_size": "0.25 package (170 g)",
+      "calories": 250.0,
+      "total_fat_g": 21.0,
+      "saturated_fat_g": 6.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.1,
+      "sodium_mg": 520.0,
+      "total_carbs_g": 15.0,
+      "fiber_g": 3.0,
+      "sugars_g": 5.0,
+      "added_sugars_g": 2.0,
+      "protein_g": 20.0,
+      "calcium_mg": 110.0,
+      "iron_mg": 3.1,
+      "potassium_mg": 110.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "159": {
+    "product_id": 159,
+    "product_name": "Grilled Lemon Pepper Chicken 2pk",
+    "upc": null,
+    "nutrition": null
+  },
+  "160": {
+    "product_id": 160,
+    "product_name": "Roasted Green Vegetables",
+    "upc": null,
+    "nutrition": null
+  },
+  "161": {
+    "product_id": 161,
+    "product_name": "Fully Cooked Maple Chicken Sausage",
+    "upc": "0092227767279",
+    "off_name": "Maple Breakfast Sausage Fully Cooked Chicken Mini Links",
+    "similarity": 0.49,
+    "nutrition": {
+      "serving_size": "3 links (65 g)",
+      "calories": 120.0,
+      "total_fat_g": 7.0,
+      "saturated_fat_g": null,
+      "trans_fat_g": null,
+      "cholesterol_mg": 0.1,
+      "sodium_mg": 410.0,
+      "total_carbs_g": 2.0,
+      "fiber_g": 0.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": 1.0,
+      "protein_g": 11.0,
+      "calcium_mg": 15.0,
+      "iron_mg": 1.0,
+      "potassium_mg": 123.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "162": {
+    "product_id": 162,
+    "product_name": "Pineapple Teriyaki Chicken Meatballs",
+    "upc": "0092227774468",
+    "off_name": "Teriyaki pineapple chicken meatballs",
+    "similarity": 0.75,
+    "nutrition": {
+      "serving_size": "4 meatballs (87 g)",
+      "calories": 150.0,
+      "total_fat_g": 7.0,
+      "saturated_fat_g": 2.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.1,
+      "sodium_mg": 750.0,
+      "total_carbs_g": 7.0,
+      "fiber_g": 0.0,
+      "sugars_g": 4.0,
+      "added_sugars_g": 2.0,
+      "protein_g": 14.0,
+      "calcium_mg": 23.0,
+      "iron_mg": 1.0,
+      "potassium_mg": 148.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "182": {
+    "product_id": 182,
+    "product_name": "Frito-Lay Cool & Tangy Variety Pack Chips, 50 pk.",
+    "upc": null,
+    "nutrition": null
+  },
+  "183": {
+    "product_id": 183,
+    "product_name": "Sabritas Chile Limon Mix, Variety Pack Snacks, 30 pk.",
+    "upc": null,
+    "nutrition": null
+  },
+  "184": {
+    "product_id": 184,
+    "product_name": "Frito-Lay Flamin' Hot Snacks, Variety Pack, 30 pk.",
+    "upc": null,
+    "nutrition": null
+  },
+  "185": {
+    "product_id": 185,
+    "product_name": "Frito-Lay Doritos & Cheetos Variety Pack Chips, 30 pk.",
+    "upc": null,
+    "nutrition": null
+  },
+  "186": {
+    "product_id": 186,
+    "product_name": "Frito-Lay Variety Pack Chips, 30 pk.",
+    "upc": null,
+    "nutrition": null
+  },
+  "187": {
+    "product_id": 187,
+    "product_name": "Frito-Lay Premiere Mix Variety Pack Chips, 30 pk.",
+    "upc": null,
+    "nutrition": null
+  },
+  "188": {
+    "product_id": 188,
+    "product_name": "Lay's Mix Variety Pack Potato Chips, 30 pk.",
+    "upc": null,
+    "nutrition": null
+  },
+  "189": {
+    "product_id": 189,
+    "product_name": "Cornbread  & Coffee",
+    "upc": null,
+    "nutrition": null
+  },
+  "190": {
+    "product_id": 190,
+    "product_name": "Fresh Okra 12oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "192": {
+    "product_id": 192,
+    "product_name": "Clear Communication Email Request",
+    "upc": null,
+    "nutrition": null
+  },
+  "209": {
+    "product_id": 209,
+    "product_name": "Fresh Spices Kit",
+    "upc": "5390054044712",
+    "off_name": "Vegetable Spice Bag Kit",
+    "similarity": 0.56,
+    "nutrition": {
+      "serving_size": "100 g",
+      "calories": 45.0,
+      "total_fat_g": 0.5,
+      "saturated_fat_g": 0.1,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 900.0,
+      "total_carbs_g": 7.7,
+      "fiber_g": 2.6,
+      "sugars_g": 5.4,
+      "added_sugars_g": null,
+      "protein_g": 1.2,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "210": {
+    "product_id": 210,
+    "product_name": "Chicken Dinner Kit",
+    "upc": "0041220338221",
+    "off_name": "Butter Chicken Dinner Kit",
+    "similarity": 0.84,
+    "nutrition": {
+      "serving_size": "112.99999999999999g",
+      "calories": 188.0,
+      "total_fat_g": 4.0,
+      "saturated_fat_g": 2.2,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 0.0,
+      "total_carbs_g": 34.5,
+      "fiber_g": 0.9,
+      "sugars_g": 3.5,
+      "added_sugars_g": null,
+      "protein_g": 3.5,
+      "calcium_mg": 0.0,
+      "iron_mg": 0.0,
+      "potassium_mg": 0.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "214": {
+    "product_id": 214,
+    "product_name": "10 Seasoning Kit",
+    "upc": null,
+    "nutrition": null
+  },
+  "215": {
+    "product_id": 215,
+    "product_name": "5 Seasonings Kit",
+    "upc": "5010421074523",
+    "off_name": "Fajita Seasoning",
+    "similarity": 0.62,
+    "nutrition": {
+      "serving_size": "100g",
+      "calories": 313.0,
+      "total_fat_g": 5.1,
+      "saturated_fat_g": 1.2,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 4550.0,
+      "total_carbs_g": 52.2,
+      "fiber_g": null,
+      "sugars_g": 16.9,
+      "added_sugars_g": 11.9,
+      "protein_g": 7.2,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "217": {
+    "product_id": 217,
+    "product_name": "GV Tuna & Crackers Kit",
+    "upc": null,
+    "nutrition": null
+  },
+  "218": {
+    "product_id": 218,
+    "product_name": "Tuna Break 2! Kit",
+    "upc": null,
+    "nutrition": null
+  },
+  "219": {
+    "product_id": 219,
+    "product_name": "Tuna Break Kit",
+    "upc": null,
+    "nutrition": null
+  },
+  "220": {
+    "product_id": 220,
+    "product_name": "Chicken Anyone! Kit",
+    "upc": null,
+    "nutrition": null
+  },
+  "221": {
+    "product_id": 221,
+    "product_name": "Taco Tuesday! Kit",
+    "upc": null,
+    "nutrition": null
+  },
+  "223": {
+    "product_id": 223,
+    "product_name": "Little Cookie Kit 9pcs.",
+    "upc": null,
+    "nutrition": null
+  },
+  "224": {
+    "product_id": 224,
+    "product_name": "Cookie Mix Kit",
+    "upc": "0715483859570",
+    "off_name": "Cookie Kit",
+    "similarity": 0.83,
+    "nutrition": {
+      "serving_size": "17 g (17 g)",
+      "calories": 60.0,
+      "total_fat_g": 0.0,
+      "saturated_fat_g": 0.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": null,
+      "total_carbs_g": 16.0,
+      "fiber_g": 0.0,
+      "sugars_g": 10.0,
+      "added_sugars_g": null,
+      "protein_g": 1.0,
+      "calcium_mg": null,
+      "iron_mg": 0.2,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "226": {
+    "product_id": 226,
+    "product_name": "Pulled Chicken in BBQ Sauce, 16oz",
+    "upc": "0053691599919",
+    "off_name": "Pulled chicken in BBQ sauce",
+    "similarity": 1.0,
+    "nutrition": {
+      "serving_size": "1 portion (55 g)",
+      "calories": 80.0,
+      "total_fat_g": 1.5,
+      "saturated_fat_g": 0.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 370.0,
+      "total_carbs_g": 9.0,
+      "fiber_g": 0.0,
+      "sugars_g": 7.0,
+      "added_sugars_g": 7.0,
+      "protein_g": 8.0,
+      "calcium_mg": 8.0,
+      "iron_mg": 0.4,
+      "potassium_mg": 120.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "227": {
+    "product_id": 227,
+    "product_name": "Pulled Pork, 16oz",
+    "upc": "20017088",
+    "off_name": "Pulled Pork",
+    "similarity": 1.0,
+    "nutrition": {
+      "serving_size": "100 g",
+      "calories": 144.0,
+      "total_fat_g": 7.0,
+      "saturated_fat_g": 2.7,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 472.0,
+      "total_carbs_g": 2.0,
+      "fiber_g": 0.5,
+      "sugars_g": 0.5,
+      "added_sugars_g": 0.1,
+      "protein_g": 18.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "228": {
+    "product_id": 228,
+    "product_name": "Boneless Pork Ribs, 16oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "229": {
+    "product_id": 229,
+    "product_name": "Park Street Deli Pulled Beef Brisket, 16oz",
+    "upc": "0055544092271",
+    "off_name": "Hardwood smoked pulled beef brisket",
+    "similarity": 0.73,
+    "nutrition": {
+      "serving_size": "5.0g",
+      "calories": 18.0,
+      "total_fat_g": 0.8,
+      "saturated_fat_g": null,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": null,
+      "total_carbs_g": 2.0,
+      "fiber_g": 0.1,
+      "sugars_g": null,
+      "added_sugars_g": null,
+      "protein_g": 0.7,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "230": {
+    "product_id": 230,
+    "product_name": "Park Street Deli Sliced Beef Brisket, 16oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "231": {
+    "product_id": 231,
+    "product_name": "Chicken in Korean Style BBQ Sauce",
+    "upc": null,
+    "nutrition": null
+  },
+  "232": {
+    "product_id": 232,
+    "product_name": "Pork Carnitas, 16 oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "233": {
+    "product_id": 233,
+    "product_name": "Broccoli & Cheddar Stuffed Chicken Breast, 16 oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "234": {
+    "product_id": 234,
+    "product_name": "Hawaiian Style Chicken, 16 oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "235": {
+    "product_id": 235,
+    "product_name": "Thai-Coconut Chicken, 16 oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "236": {
+    "product_id": 236,
+    "product_name": "Pork Burnt Ends in BBQ Sauce, 16 oz",
+    "upc": "0773220204847",
+    "off_name": "Pork Belly Burnt Ends In BBQ Sauce",
+    "similarity": 0.9,
+    "nutrition": {
+      "serving_size": "1 portion (140 g)",
+      "calories": 460.0,
+      "total_fat_g": 31.0,
+      "saturated_fat_g": 12.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.1,
+      "sodium_mg": 630.0,
+      "total_carbs_g": 21.0,
+      "fiber_g": 0.0,
+      "sugars_g": 15.0,
+      "added_sugars_g": 12.0,
+      "protein_g": 23.0,
+      "calcium_mg": 17.0,
+      "iron_mg": 1.0,
+      "potassium_mg": 461.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "237": {
+    "product_id": 237,
+    "product_name": "Artichoke Hand Stuffed Chicken Breast, 16 oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "238": {
+    "product_id": 238,
+    "product_name": "Sirloin Steak Tips With Chimichurri Sauce, 16oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "239": {
+    "product_id": 239,
+    "product_name": "Beef Bourguignon, 16 oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "240": {
+    "product_id": 240,
+    "product_name": "Herr's Salt & Vinegar Potato Chips, 2.2oz.",
+    "upc": "0072600006225",
+    "off_name": "Salt vinegar potato chips",
+    "similarity": 0.85,
+    "nutrition": {
+      "serving_size": "See package",
+      "calories": 536.0,
+      "total_fat_g": 32.1,
+      "saturated_fat_g": 8.9,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 1750.0,
+      "total_carbs_g": 57.1,
+      "fiber_g": 3.6,
+      "sugars_g": 3.6,
+      "added_sugars_g": null,
+      "protein_g": 7.1,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "241": {
+    "product_id": 241,
+    "product_name": "Herr's Sour Cream & Onion Flavored, 2.25oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "242": {
+    "product_id": 242,
+    "product_name": "Herr's Honey BBQ Flavored Potato Chips, 2.2oz.",
+    "upc": "0072600032163",
+    "off_name": "Honey BBQ Flavored Potato Chips",
+    "similarity": 0.9,
+    "nutrition": {
+      "serving_size": "1 ONZ (28 g)",
+      "calories": 150.0,
+      "total_fat_g": 8.0,
+      "saturated_fat_g": 2.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 180.0,
+      "total_carbs_g": 17.0,
+      "fiber_g": 1.0,
+      "sugars_g": 2.0,
+      "added_sugars_g": 2.0,
+      "protein_g": 2.0,
+      "calcium_mg": null,
+      "iron_mg": 0.3,
+      "potassium_mg": 320.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "243": {
+    "product_id": 243,
+    "product_name": "Herr\u2019s Sour Cream and Onion Potato Chips, 2.5oz.",
+    "upc": "0072600005761",
+    "off_name": "Sour Cream & Onion Potato Chips",
+    "similarity": 0.85,
+    "nutrition": {
+      "serving_size": "1 oz",
+      "calories": 15000.0,
+      "total_fat_g": 9.0,
+      "saturated_fat_g": 2.5,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 270.0,
+      "total_carbs_g": 16.0,
+      "fiber_g": 1.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": 100.0,
+      "protein_g": 2.0,
+      "calcium_mg": null,
+      "iron_mg": 30.0,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "244": {
+    "product_id": 244,
+    "product_name": "Herr\u2019s Creamy Ranch and Habanero Ripple, 2.5oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "245": {
+    "product_id": 245,
+    "product_name": "Herr's Crisp 'N Tasty Potato Chips, 2.5oz.",
+    "upc": "0072600006591",
+    "off_name": "Crisp 'n tasty potato chips",
+    "similarity": 0.89,
+    "nutrition": {
+      "serving_size": "1 ONZ (28 g)",
+      "calories": 140.0,
+      "total_fat_g": 8.0,
+      "saturated_fat_g": 2.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 180.0,
+      "total_carbs_g": 16.0,
+      "fiber_g": 1.0,
+      "sugars_g": 0.0,
+      "added_sugars_g": null,
+      "protein_g": 2.0,
+      "calcium_mg": null,
+      "iron_mg": 0.4,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "246": {
+    "product_id": 246,
+    "product_name": "Herr's Salt & Pepper Potato Chips, 2.75oz",
+    "upc": "0072600001619",
+    "off_name": "Herr's, potato chips, salt & pepper",
+    "similarity": 0.59,
+    "nutrition": {
+      "serving_size": "1 ONZ (28 g)",
+      "calories": 150.0,
+      "total_fat_g": 10.0,
+      "saturated_fat_g": 3.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 420.0,
+      "total_carbs_g": 14.0,
+      "fiber_g": 1.0,
+      "sugars_g": 3.0,
+      "added_sugars_g": null,
+      "protein_g": 2.0,
+      "calcium_mg": null,
+      "iron_mg": 0.4,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "247": {
+    "product_id": 247,
+    "product_name": "Herr\u2019s Stubbs Original BBQ Chips, 2.5oz",
+    "upc": "0072600073814",
+    "off_name": "Stubb's original bbq flavored potato chips imp",
+    "similarity": 0.64,
+    "nutrition": {
+      "serving_size": "13 CHIPS | ABOUT (28 g)",
+      "calories": 150.0,
+      "total_fat_g": 9.0,
+      "saturated_fat_g": 2.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 250.0,
+      "total_carbs_g": 16.0,
+      "fiber_g": 1.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": null,
+      "protein_g": 2.0,
+      "calcium_mg": 9.0,
+      "iron_mg": null,
+      "potassium_mg": 325.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "248": {
+    "product_id": 248,
+    "product_name": "Herr's Red Hot Potato Chips, 2.5oz.",
+    "upc": "0072600009622",
+    "off_name": "Red hot potato chips",
+    "similarity": 0.85,
+    "nutrition": {
+      "serving_size": "See package",
+      "calories": 500.0,
+      "total_fat_g": 30.0,
+      "saturated_fat_g": 8.3,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 1133.0,
+      "total_carbs_g": 53.3,
+      "fiber_g": 3.3,
+      "sugars_g": 3.3,
+      "added_sugars_g": null,
+      "protein_g": 6.7,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "249": {
+    "product_id": 249,
+    "product_name": "Herr\u2019s Baby Back Ribs Potato Chips, 2.5oz.",
+    "upc": null,
+    "nutrition": null
+  },
+  "250": {
+    "product_id": 250,
+    "product_name": "Utz Party Mix Snack Pack, Multipack, 1oz, 10ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "251": {
+    "product_id": 251,
+    "product_name": "Utz Ripples Original Chips Snack Pack, Potato Chips, 1oz, 10ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "252": {
+    "product_id": 252,
+    "product_name": "Utz Cheese Balls Snack Pack, Multipack, 1 oz, 10ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "253": {
+    "product_id": 253,
+    "product_name": "Utz Original Chip Snack Pack, Multipack, Gluten-Free, 1 oz, 10ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "254": {
+    "product_id": 254,
+    "product_name": "Utz Snack Pack, Variety Pack, Potato Chips, 1oz, 10ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "255": {
+    "product_id": 255,
+    "product_name": "Little Debbie Strawberry Swiss Rolls",
+    "upc": null,
+    "nutrition": null
+  },
+  "256": {
+    "product_id": 256,
+    "product_name": "Little Debbie Zebra Cake Rolls, 6 ct, 13.10 oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "257": {
+    "product_id": 257,
+    "product_name": "Little Debbie Swiss Rolls, 12 Cake Rolls",
+    "upc": null,
+    "nutrition": null
+  },
+  "258": {
+    "product_id": 258,
+    "product_name": "Little Debbie Family Pack Strawberry Shortcake Rolls",
+    "upc": null,
+    "nutrition": null
+  },
+  "259": {
+    "product_id": 259,
+    "product_name": "Little Debbie Family Pack Honey Buns",
+    "upc": null,
+    "nutrition": null
+  },
+  "260": {
+    "product_id": 260,
+    "product_name": "Little Debbie Cosmic Brownies, 13oz",
+    "upc": "0024300041068",
+    "off_name": "Cosmic Brownies",
+    "similarity": 0.68,
+    "nutrition": {
+      "serving_size": "1 brownie (62 g)",
+      "calories": 270.0,
+      "total_fat_g": 11.0,
+      "saturated_fat_g": 5.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 160.0,
+      "total_carbs_g": 41.0,
+      "fiber_g": 1.0,
+      "sugars_g": 23.0,
+      "added_sugars_g": 23.0,
+      "protein_g": 2.0,
+      "calcium_mg": 20.0,
+      "iron_mg": 1.8,
+      "potassium_mg": 90.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "261": {
+    "product_id": 261,
+    "product_name": "Little Debbie Nutty Buddy \u00ae Wafers Bar",
+    "upc": null,
+    "nutrition": null
+  },
+  "262": {
+    "product_id": 262,
+    "product_name": "Little Debbie Family Pack Oatmeal Creme Pies",
+    "upc": null,
+    "nutrition": null
+  },
+  "263": {
+    "product_id": 263,
+    "product_name": "Entenmann's Little Bites Mini Muffins, 5pk,",
+    "upc": null,
+    "nutrition": null
+  },
+  "264": {
+    "product_id": 264,
+    "product_name": "Entenmann's  Sprinkled Iced Brownies, 8pk,  17oz",
+    "upc": "0072030024165",
+    "off_name": "Mini sprinkled iced brownies",
+    "similarity": 0.79,
+    "nutrition": {
+      "serving_size": "See package",
+      "calories": 433.0,
+      "total_fat_g": 20.0,
+      "saturated_fat_g": 6.7,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 233.0,
+      "total_carbs_g": 60.0,
+      "fiber_g": 3.3,
+      "sugars_g": 45.0,
+      "added_sugars_g": null,
+      "protein_g": 3.3,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "265": {
+    "product_id": 265,
+    "product_name": "Entenmann's  Fudge Iced Golden Cakes, 8pk, 13.2 oz",
+    "upc": "0072030022871",
+    "off_name": "Minis fudge iced golden cakes",
+    "similarity": 0.81,
+    "nutrition": {
+      "serving_size": "1 CAKE (47 g)",
+      "calories": 190.0,
+      "total_fat_g": 8.0,
+      "saturated_fat_g": 2.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 142.0,
+      "total_carbs_g": 28.0,
+      "fiber_g": 0.0,
+      "sugars_g": 20.0,
+      "added_sugars_g": null,
+      "protein_g": 1.0,
+      "calcium_mg": 20.0,
+      "iron_mg": 0.7,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "266": {
+    "product_id": 266,
+    "product_name": "Entenmann's Brownie Chocolate Chip Cakes, 8pk",
+    "upc": "07204111",
+    "off_name": "Minis Brownie Chocolate Chip Cakes",
+    "similarity": 0.84,
+    "nutrition": {
+      "serving_size": "50g",
+      "calories": 220.0,
+      "total_fat_g": 11.0,
+      "saturated_fat_g": 3.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 56.0,
+      "total_carbs_g": 29.0,
+      "fiber_g": 1.0,
+      "sugars_g": 20.0,
+      "added_sugars_g": null,
+      "protein_g": 2.0,
+      "calcium_mg": 15.0,
+      "iron_mg": 1.7,
+      "potassium_mg": 130.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "267": {
+    "product_id": 267,
+    "product_name": "Entenmann's Cherry Pies, 6pk, 12oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "268": {
+    "product_id": 268,
+    "product_name": "Entenmann's Baker's Delights Apple Snack Pies, 6pk  12 oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "269": {
+    "product_id": 269,
+    "product_name": "Entenmann's Pound Cakes, 6 packs, Mini Pound Cakes, 9.25oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "270": {
+    "product_id": 270,
+    "product_name": "Entenmann's Baker's Delights Cinnamon Sugar Crumb Cakes, 6 packs",
+    "upc": null,
+    "nutrition": null
+  },
+  "271": {
+    "product_id": 271,
+    "product_name": "Drake's Cakes Funny Bones, 10 cakes, 13.03oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "272": {
+    "product_id": 272,
+    "product_name": "Drake's Yodels Snack Cakes, 5ct, 11.16oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "273": {
+    "product_id": 273,
+    "product_name": "Drake's Boston Creme Yodels, 10ct 10.3oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "274": {
+    "product_id": 274,
+    "product_name": "Drake's Yankee Doodles, 8ct,",
+    "upc": null,
+    "nutrition": null
+  },
+  "275": {
+    "product_id": 275,
+    "product_name": "Drake's Coffee Cakes, 10.4oz 8ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "276": {
+    "product_id": 276,
+    "product_name": "Drake's Cherry Fruit Pies, 8ct",
+    "upc": "0024300014062",
+    "off_name": "Cherry Fruit Pie",
+    "similarity": 0.78,
+    "nutrition": {
+      "serving_size": "1 pie (64 g)",
+      "calories": 260.0,
+      "total_fat_g": 13.0,
+      "saturated_fat_g": 6.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 160.0,
+      "total_carbs_g": 34.0,
+      "fiber_g": 1.0,
+      "sugars_g": 16.0,
+      "added_sugars_g": null,
+      "protein_g": 2.0,
+      "calcium_mg": 20.0,
+      "iron_mg": 1.0,
+      "potassium_mg": 50.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "277": {
+    "product_id": 277,
+    "product_name": "Drake's Apple Fruit Pies, 8ct, 18.04oz",
+    "upc": "0024300014055",
+    "off_name": "Apple Fruit Pie",
+    "similarity": 0.77,
+    "nutrition": {
+      "serving_size": "1 and 2.3 ounces",
+      "calories": 406.0,
+      "total_fat_g": 20.3,
+      "saturated_fat_g": 9.4,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 266.0,
+      "total_carbs_g": 51.6,
+      "fiber_g": null,
+      "sugars_g": 23.4,
+      "added_sugars_g": null,
+      "protein_g": 3.1,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "278": {
+    "product_id": 278,
+    "product_name": "Drake's Devil Dogs - 8 Ct, 13.63oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "279": {
+    "product_id": 279,
+    "product_name": "Hostess Chocolate Cupcakes, Chocolate Snack Cakes, Family, 14ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "280": {
+    "product_id": 280,
+    "product_name": "Hostess Twinkies, Golden Sponge Cake,  Family Pack 16ct, 21.73oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "281": {
+    "product_id": 281,
+    "product_name": "Hostess Banana Flavored Twinkies, Banana Flavored Filling ? 13.58oz, 10ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "282": {
+    "product_id": 282,
+    "product_name": "Hostess Chocolate Ding Dongs Snack Cakes - 12.70oz, 10ct",
+    "upc": "0888109114381",
+    "off_name": "Little Valentine DING DONGS",
+    "similarity": 0.49,
+    "nutrition": {
+      "serving_size": "1 cake (33 g)",
+      "calories": 140.0,
+      "total_fat_g": 7.0,
+      "saturated_fat_g": 5.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 90.0,
+      "total_carbs_g": 20.0,
+      "fiber_g": 1.0,
+      "sugars_g": 15.0,
+      "added_sugars_g": 14.0,
+      "protein_g": 1.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "283": {
+    "product_id": 283,
+    "product_name": "Hostess ZingerDingers Mashups 10ct,  14.46oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "284": {
+    "product_id": 284,
+    "product_name": "Hostess Twinkies,  Individually Wrapped - 13.58oz, 10ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "285": {
+    "product_id": 285,
+    "product_name": "Hostess Cinnamon Coffee Cake, Wrapped, 8ct, 11.6oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "286": {
+    "product_id": 286,
+    "product_name": "Hostess Chocolate Cup Cakes, Creamy, 8ct, 12.7oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "287": {
+    "product_id": 287,
+    "product_name": "Maruchan Instant Lunch Hot & Spicy Shrimp Flavor Noodle Soup, 2.25 Oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "288": {
+    "product_id": 288,
+    "product_name": "Nongshim Shin Ramyun Spicy Beef Ramen Noodle Soup Big Bowl, 4.02oz, 1ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "289": {
+    "product_id": 289,
+    "product_name": "Maruchan Instant Lunch Lime Chili Flavor w/Shrimp, 2.25oz, 12ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "290": {
+    "product_id": 290,
+    "product_name": "Maruchan Ramen Chicken, 3oz (12 Count)",
+    "upc": null,
+    "nutrition": null
+  },
+  "291": {
+    "product_id": 291,
+    "product_name": "Klass Aguas Frescas Tamarind,  Drink Mix, 14.1oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "292": {
+    "product_id": 292,
+    "product_name": "Klass Aguas Frescas Melon, with Vitamin C, Drink Mix, 14.1oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "293": {
+    "product_id": 293,
+    "product_name": "Klass Aguas Frescas Hibiscus,  Drink Mix, 14.1oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "294": {
+    "product_id": 294,
+    "product_name": "Klass Aguas Frescas Cucumber Limeade, 14.1oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "295": {
+    "product_id": 295,
+    "product_name": "Klass Aguas Frescas Mango, Drink Mix, 14.1oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "296": {
+    "product_id": 296,
+    "product_name": "Klass Aguas Frescas Pineapple,  Drink Mix, 14.1oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "297": {
+    "product_id": 297,
+    "product_name": "Quaker Instant Oatmeal, Apple & Cinnamon, 12.1oz, 8pk",
+    "upc": null,
+    "nutrition": null
+  },
+  "298": {
+    "product_id": 298,
+    "product_name": "Quaker Instant Oatmeal, Fruit Fusion Blueberry Blackberry, , 8.4oz, 6pk",
+    "upc": null,
+    "nutrition": null
+  },
+  "299": {
+    "product_id": 299,
+    "product_name": "Quaker Instant Oatmeal, Fruit Fusion Raspberry Strawberry,, 8.4oz, 6pk",
+    "upc": "0030000577042",
+    "off_name": "Fruit Fusion Instant Oatmeal Raspberry Strawberry",
+    "similarity": 0.71,
+    "nutrition": {
+      "serving_size": "40 g (1 packet)",
+      "calories": 140.0,
+      "total_fat_g": 2.5,
+      "saturated_fat_g": 0.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": null,
+      "sodium_mg": 105.0,
+      "total_carbs_g": null,
+      "fiber_g": 3.0,
+      "sugars_g": 7.0,
+      "added_sugars_g": 5.0,
+      "protein_g": 4.0,
+      "calcium_mg": 180000.0,
+      "iron_mg": 3.5,
+      "potassium_mg": 150.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "300": {
+    "product_id": 300,
+    "product_name": "Quaker Fruit Fusion Strawberry Peach flavored Oatmeal, 8.4oz, 6pk",
+    "upc": null,
+    "nutrition": null
+  },
+  "301": {
+    "product_id": 301,
+    "product_name": "Quaker Instant Oatmeal, Blueberry & Strawberry, 1.37oz Box, 6pk",
+    "upc": null,
+    "nutrition": null
+  },
+  "302": {
+    "product_id": 302,
+    "product_name": "Quaker Instant Oatmeal Strawberries & Cream 8.4oz, 8ct",
+    "upc": "0030000570517",
+    "off_name": "Instant Oatmeal Strawberries & Cream",
+    "similarity": 0.91,
+    "nutrition": {
+      "serving_size": "1 packet (30 g)",
+      "calories": 110.0,
+      "total_fat_g": 2.0,
+      "saturated_fat_g": 0.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 150.0,
+      "total_carbs_g": 23.0,
+      "fiber_g": 2.0,
+      "sugars_g": 8.0,
+      "added_sugars_g": 0.0,
+      "protein_g": 3.0,
+      "calcium_mg": 10.0,
+      "iron_mg": 0.7,
+      "potassium_mg": 90.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "303": {
+    "product_id": 303,
+    "product_name": "Better Oats Original Steel Cut Oatmeal with Flax Seed, 10pk, 11.6oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "304": {
+    "product_id": 304,
+    "product_name": "Better Oats Maple & Brown Sugar Oatmeal with Flax Seeds, 10pk, 15.1oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "305": {
+    "product_id": 305,
+    "product_name": "Quaker, Fruit & Cream Instant Oatmeal, Variety Packl, 1.05 oz, 8pk",
+    "upc": null,
+    "nutrition": null
+  },
+  "306": {
+    "product_id": 306,
+    "product_name": "Quaker Instant Oatmeal, Original, 9.8 oz, 10pk",
+    "upc": "0030000012109",
+    "off_name": "Quaker Instant Oatmeal Original",
+    "similarity": 0.98,
+    "nutrition": {
+      "serving_size": "1 packet 28 g",
+      "calories": 100.0,
+      "total_fat_g": 2.0,
+      "saturated_fat_g": 0.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 75.0,
+      "total_carbs_g": 18.0,
+      "fiber_g": 3.0,
+      "sugars_g": 0.0,
+      "added_sugars_g": 0.0,
+      "protein_g": 4.0,
+      "calcium_mg": 120.0,
+      "iron_mg": 7.8,
+      "potassium_mg": 100.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "307": {
+    "product_id": 307,
+    "product_name": "Quaker Instant Oatmeal, Maple Brown Sugar, 12.1oz, 8pk",
+    "upc": null,
+    "nutrition": null
+  },
+  "308": {
+    "product_id": 308,
+    "product_name": "Quaker Instant Grits, Regular, 0.98oz Packets, 10pk",
+    "upc": null,
+    "nutrition": null
+  },
+  "309": {
+    "product_id": 309,
+    "product_name": "Quaker Instant Grits, Butter, Shelf Stable Granules, 9.8oz Box, 10ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "310": {
+    "product_id": 310,
+    "product_name": "Quaker Instant Grits, Butter, Value Pack, 22 Packets",
+    "upc": null,
+    "nutrition": null
+  },
+  "311": {
+    "product_id": 311,
+    "product_name": "Quaker, Instant Grits Variety Pack, 0.98oz, 22pk",
+    "upc": null,
+    "nutrition": null
+  },
+  "312": {
+    "product_id": 312,
+    "product_name": "Quaker Instant Oatmeal Fruit & Cream, Variety Pack 42.3oz., 40pk.",
+    "upc": "0030000568286",
+    "off_name": "Instant Oatmeal Fruit & Cream",
+    "similarity": 0.73,
+    "nutrition": {
+      "serving_size": "1 Packet (30 g)",
+      "calories": 110.0,
+      "total_fat_g": 2.0,
+      "saturated_fat_g": 0.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 160.0,
+      "total_carbs_g": 23.0,
+      "fiber_g": 2.0,
+      "sugars_g": 9.0,
+      "added_sugars_g": 7.0,
+      "protein_g": 3.0,
+      "calcium_mg": 10.0,
+      "iron_mg": 0.7,
+      "potassium_mg": 90.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "313": {
+    "product_id": 313,
+    "product_name": "Quaker Instant Grits, Variety Pack 45.4oz., 46pk.",
+    "upc": null,
+    "nutrition": null
+  },
+  "314": {
+    "product_id": 314,
+    "product_name": "Cream of Wheat Instant Cocoa Hot Cereal, 1.23oz, 10ct",
+    "upc": "0072400060304",
+    "off_name": "Cocoa instant hot cereal",
+    "similarity": 0.67,
+    "nutrition": {
+      "serving_size": "1 packet (35 g)",
+      "calories": 130.0,
+      "total_fat_g": 0.0,
+      "saturated_fat_g": null,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 160.0,
+      "total_carbs_g": 29.0,
+      "fiber_g": 1.0,
+      "sugars_g": 12.0,
+      "added_sugars_g": null,
+      "protein_g": 2.0,
+      "calcium_mg": 260.0,
+      "iron_mg": 3.6,
+      "potassium_mg": 60.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "315": {
+    "product_id": 315,
+    "product_name": "Cream of Wheat Instant Hot Breakfast Cereal, 1oz, 12ct",
+    "upc": "0013130060257",
+    "off_name": "Cream of Wheat Instant Original Hot Cereal",
+    "similarity": 0.78,
+    "nutrition": null
+  },
+  "316": {
+    "product_id": 316,
+    "product_name": "Cream of Wheat Instant Hot Cereal, Maple Brown Sugar, 10Ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "317": {
+    "product_id": 317,
+    "product_name": "Golden Grahams S'mores Soft Baked Oat Bars,  6ct, 5.76oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "318": {
+    "product_id": 318,
+    "product_name": "Reese's Puffs Breakfast Cereal Peanut Butter & Cocoa Bars, 8ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "319": {
+    "product_id": 319,
+    "product_name": "Lucky Charms Breakfast Cereal Bars, 6.8oz, 8ct",
+    "upc": "0016000146419",
+    "off_name": "Lucky Charms Treats",
+    "similarity": 0.64,
+    "nutrition": null
+  },
+  "320": {
+    "product_id": 320,
+    "product_name": "Post Fruity Pebbles Cereal Bars, 8ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "321": {
+    "product_id": 321,
+    "product_name": "Reese's Puffs Cereal Peanut Butter & Cocoa Treat Bars, 16 Bars",
+    "upc": null,
+    "nutrition": null
+  },
+  "322": {
+    "product_id": 322,
+    "product_name": "Lucky Charms Breakfast Cereal Bars, 16ct",
+    "upc": "0016000146419",
+    "off_name": "Lucky Charms Treats",
+    "similarity": 0.64,
+    "nutrition": null
+  },
+  "323": {
+    "product_id": 323,
+    "product_name": "Cinnamon Toast Crunch Breakfast Bars, 16ct",
+    "upc": "0016000467583",
+    "off_name": "Cinnamon Toast Crunch TREATS",
+    "similarity": 0.81,
+    "nutrition": {
+      "serving_size": "1 bar (24 g)",
+      "calories": 100.0,
+      "total_fat_g": 3.0,
+      "saturated_fat_g": 1.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 200.0,
+      "total_carbs_g": 18.0,
+      "fiber_g": 5.0,
+      "sugars_g": 15.0,
+      "added_sugars_g": 14.0,
+      "protein_g": 0.0,
+      "calcium_mg": 150.0,
+      "iron_mg": 1.2,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "324": {
+    "product_id": 324,
+    "product_name": "Cinnamon Toast Crunch Cereal Treat Bars, 8ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "325": {
+    "product_id": 325,
+    "product_name": "Reese's Puffs Cinnamon Toast Crunch Cereal Treat Bars, 28ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "326": {
+    "product_id": 326,
+    "product_name": "Golden Grahams Breakfast  S'mores, Snack Bars, 16ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "327": {
+    "product_id": 327,
+    "product_name": "G V Cotton Candy Breakfast Cereal, 13.5 oz",
+    "upc": "0030000568071",
+    "off_name": "Cap& n crunch cotton candy breakfast cereal",
+    "similarity": 0.82,
+    "nutrition": {
+      "serving_size": "1-1/4 cup (38 g)",
+      "calories": 150.0,
+      "total_fat_g": 1.5,
+      "saturated_fat_g": 0.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 170.0,
+      "total_carbs_g": 33.0,
+      "fiber_g": 1.0,
+      "sugars_g": 17.0,
+      "added_sugars_g": null,
+      "protein_g": 2.0,
+      "calcium_mg": null,
+      "iron_mg": 8.1,
+      "potassium_mg": 70.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "328": {
+    "product_id": 328,
+    "product_name": "G V Vanilla Almond Awake Cereal, 12.4 oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "329": {
+    "product_id": 329,
+    "product_name": "G V Honey Graham Crunch Cereal, 12oz",
+    "upc": "0041497538560",
+    "off_name": "Honey Graham Crunch Cereal",
+    "similarity": 0.93,
+    "nutrition": {
+      "serving_size": "30g",
+      "calories": 437.0,
+      "total_fat_g": 10.0,
+      "saturated_fat_g": 1.7,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 1.0,
+      "total_carbs_g": 83.3,
+      "fiber_g": 3.3,
+      "sugars_g": 33.3,
+      "added_sugars_g": null,
+      "protein_g": 3.3,
+      "calcium_mg": 0.0,
+      "iron_mg": 0.0,
+      "potassium_mg": 0.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "330": {
+    "product_id": 330,
+    "product_name": "Great Value Oven Toasted Corn Squares Cereal, 12oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "331": {
+    "product_id": 331,
+    "product_name": "G V Toasted Rice Crisps Breakfast Cereal, 12 oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "332": {
+    "product_id": 332,
+    "product_name": "G V Fruit Spin Loops, Breakfast Cereal, 11.7oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "333": {
+    "product_id": 333,
+    "product_name": "G V Magic Treasures Whole Grain Oat with Marshmallow Cereal, 11.5 oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "334": {
+    "product_id": 334,
+    "product_name": "Great Value Bran Flakes Breakfast Cereal, 15.6oz",
+    "upc": "0078742122113",
+    "off_name": "Bran Flakes",
+    "similarity": 0.43,
+    "nutrition": {
+      "serving_size": "1 cup (38 g)",
+      "calories": 120.0,
+      "total_fat_g": 1.0,
+      "saturated_fat_g": 0.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 180.0,
+      "total_carbs_g": 30.0,
+      "fiber_g": 7.0,
+      "sugars_g": 6.0,
+      "added_sugars_g": 6.0,
+      "protein_g": 4.0,
+      "calcium_mg": 20.0,
+      "iron_mg": 12.6,
+      "potassium_mg": 220.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "335": {
+    "product_id": 335,
+    "product_name": "Great Value Strawberry Awake Breakfast Cereal, 11.2oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "336": {
+    "product_id": 336,
+    "product_name": "G V Peanut Butter Chocolate Puffs Cereal, 12.3oz",
+    "upc": "0713733803571",
+    "off_name": "Peanut Butter Chocolate Puff Cereal",
+    "similarity": 0.93,
+    "nutrition": {
+      "serving_size": "1 cup (37 g)",
+      "calories": 160.0,
+      "total_fat_g": 4.0,
+      "saturated_fat_g": 0.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 190.0,
+      "total_carbs_g": 29.0,
+      "fiber_g": 1.0,
+      "sugars_g": 12.0,
+      "added_sugars_g": 12.0,
+      "protein_g": 2.0,
+      "calcium_mg": 120.0,
+      "iron_mg": 6.3,
+      "potassium_mg": 50.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "337": {
+    "product_id": 337,
+    "product_name": "Great Value Frosted Flakes, Breakfast Cereal,13.5oz",
+    "upc": "0078742373348",
+    "off_name": "Frosted Flakes",
+    "similarity": 0.48,
+    "nutrition": {
+      "serving_size": "1.25 cup (41 g)",
+      "calories": 160.0,
+      "total_fat_g": 0.0,
+      "saturated_fat_g": 0.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 190.0,
+      "total_carbs_g": 37.0,
+      "fiber_g": 0.0,
+      "sugars_g": 15.0,
+      "added_sugars_g": 15.0,
+      "protein_g": 2.0,
+      "calcium_mg": null,
+      "iron_mg": 5.4,
+      "potassium_mg": 30.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "338": {
+    "product_id": 338,
+    "product_name": "G V Toasted O's Breakfast Cereal, 12oz",
+    "upc": "0016000435094",
+    "off_name": "Toasted Whole Grain Oat Cereal",
+    "similarity": 0.68,
+    "nutrition": {
+      "serving_size": "1 1/2 cup/taza (39 g)",
+      "calories": 140.0,
+      "total_fat_g": 1.0,
+      "saturated_fat_g": 0.2,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 74.0,
+      "total_carbs_g": null,
+      "fiber_g": 1.6,
+      "sugars_g": 0.8,
+      "added_sugars_g": 1.0,
+      "protein_g": 1.9,
+      "calcium_mg": 51.0,
+      "iron_mg": 12.5,
+      "potassium_mg": 110.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "339": {
+    "product_id": 339,
+    "product_name": "G V Honey Nut O's Oat Breakfast Cereal, 12.25 oz",
+    "upc": "4099100207934",
+    "off_name": "Honey Nut Crispy Oats",
+    "similarity": 0.54,
+    "nutrition": {
+      "serving_size": "1 portion (41 g)",
+      "calories": 160.0,
+      "total_fat_g": 2.0,
+      "saturated_fat_g": null,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": null,
+      "total_carbs_g": 33.0,
+      "fiber_g": null,
+      "sugars_g": null,
+      "added_sugars_g": 29.3,
+      "protein_g": 3.0,
+      "calcium_mg": null,
+      "iron_mg": 13.2,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "340": {
+    "product_id": 340,
+    "product_name": "Kellogg's Froot Loops Original, 7.9 oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "341": {
+    "product_id": 341,
+    "product_name": "Multi Grain Cheerios Heart Healthy Cereal, 9oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "342": {
+    "product_id": 342,
+    "product_name": "Cinnamon Toast Crunch Crispy Cinnamon Cereal, 12 oz",
+    "upc": "0016000445376",
+    "off_name": "General Mills, French Toast Crunch, Crispy, Sweetened Corn Cereal, Cinnamon & Syrup, Cinnamon & Syrup",
+    "similarity": 0.46,
+    "nutrition": {
+      "serving_size": "0.75 cup (28 g)",
+      "calories": 110.0,
+      "total_fat_g": 1.0,
+      "saturated_fat_g": 0.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 140.0,
+      "total_carbs_g": 24.0,
+      "fiber_g": 1.0,
+      "sugars_g": 9.0,
+      "added_sugars_g": null,
+      "protein_g": 1.0,
+      "calcium_mg": 100.0,
+      "iron_mg": 4.5,
+      "potassium_mg": 45.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "343": {
+    "product_id": 343,
+    "product_name": "Kellogg's Frosted Flakes Original, 10.9oz",
+    "upc": "0041192107160",
+    "off_name": "Donut Holes Glazed Original",
+    "similarity": 0.47,
+    "nutrition": {
+      "serving_size": "1 serving (36 g)",
+      "calories": 140.0,
+      "total_fat_g": 1.5,
+      "saturated_fat_g": null,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 140.0,
+      "total_carbs_g": 31.0,
+      "fiber_g": 3.0,
+      "sugars_g": 11.0,
+      "added_sugars_g": 30.6,
+      "protein_g": 0.0,
+      "calcium_mg": null,
+      "iron_mg": 13.1,
+      "potassium_mg": 60.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "344": {
+    "product_id": 344,
+    "product_name": "Post Cocoa Pebbles Cereal, Original, 11oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "345": {
+    "product_id": 345,
+    "product_name": "Post Fruity Pebbles, Sweetened Rice Cereal, 11 oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "346": {
+    "product_id": 346,
+    "product_name": "Kellogg's Apple Jacks Original Cold Breakfast Cereal, 7.9oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "347": {
+    "product_id": 347,
+    "product_name": "Reese's Puffs Chocolatey Peanut Butter Cereal, 11.5 oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "348": {
+    "product_id": 348,
+    "product_name": "Kellogg's Special K Fruit and Yogurt Breakfast Cereal, 13oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "349": {
+    "product_id": 349,
+    "product_name": "Cap'n Crunch Sweetened Crunchy Cereal, 12.6oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "350": {
+    "product_id": 350,
+    "product_name": "Cap'n Crunch, Crunch Berries, 11.7oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "351": {
+    "product_id": 351,
+    "product_name": "Red Hots - 5.5oz Theater Box",
+    "upc": "0041500888125",
+    "off_name": "Frank's Red Hot Original",
+    "similarity": 0.47,
+    "nutrition": {
+      "serving_size": "148 ml",
+      "calories": 25.0,
+      "total_fat_g": 0.6,
+      "saturated_fat_g": 0.1,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 3360.0,
+      "total_carbs_g": 1.8,
+      "fiber_g": 1.5,
+      "sugars_g": 0.3,
+      "added_sugars_g": 0.0,
+      "protein_g": 2.5,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "353": {
+    "product_id": 353,
+    "product_name": "Laffy Taffy Ropes, Sold Individually (Single), .81oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "354": {
+    "product_id": 354,
+    "product_name": "Now & Later Original Grape, .93oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "355": {
+    "product_id": 355,
+    "product_name": "Now & Later Original Strawberry, .93oz",
+    "upc": "0041420016349",
+    "off_name": "Now and later, original mixed fruit chews, apple, strawberry, grape, cherry, banana",
+    "similarity": 0.55,
+    "nutrition": {
+      "serving_size": "8 PIECES (40 g)",
+      "calories": 150.0,
+      "total_fat_g": 1.5,
+      "saturated_fat_g": 0.5,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 55.0,
+      "total_carbs_g": 35.0,
+      "fiber_g": null,
+      "sugars_g": 28.0,
+      "added_sugars_g": null,
+      "protein_g": 0.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "356": {
+    "product_id": 356,
+    "product_name": "Now & Later Original Cherry, .93oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "357": {
+    "product_id": 357,
+    "product_name": "Now & Later Original Banana, .93",
+    "upc": null,
+    "nutrition": null
+  },
+  "358": {
+    "product_id": 358,
+    "product_name": "Now & Later Original Apple, .93oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "359": {
+    "product_id": 359,
+    "product_name": "Now & Later Original Watermelon, .93oz",
+    "upc": "0041420103964",
+    "off_name": "Now And Later, Long Lasting Original Mixed Fruit Chews, Cherry, Grape, Strawberry, Watermelon, Apple",
+    "similarity": 0.48,
+    "nutrition": {
+      "serving_size": "9 PIECES (39 g)",
+      "calories": 150.0,
+      "total_fat_g": 1.0,
+      "saturated_fat_g": null,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 45.0,
+      "total_carbs_g": 34.0,
+      "fiber_g": null,
+      "sugars_g": 23.0,
+      "added_sugars_g": null,
+      "protein_g": 0.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "360": {
+    "product_id": 360,
+    "product_name": "Now & Later Original Blue Raspberry, .93oz",
+    "upc": "0093922521043",
+    "off_name": "Now later original taffy chews candy blue raspberry ounce bar",
+    "similarity": 0.69,
+    "nutrition": {
+      "serving_size": "See package",
+      "calories": 385.0,
+      "total_fat_g": 3.8,
+      "saturated_fat_g": 1.9,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 135.0,
+      "total_carbs_g": 88.5,
+      "fiber_g": null,
+      "sugars_g": 57.7,
+      "added_sugars_g": null,
+      "protein_g": 0.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "361": {
+    "product_id": 361,
+    "product_name": "Mike & Ike Berry Blast Chewy Fruit Candy Movie Theater Box",
+    "upc": null,
+    "nutrition": null
+  },
+  "362": {
+    "product_id": 362,
+    "product_name": "Mike & Ike Mega Mix Sour Chewy Candy Movie Theater Box",
+    "upc": null,
+    "nutrition": null
+  },
+  "363": {
+    "product_id": 363,
+    "product_name": "Mike & Ike Mega Mix Fruit Flavored Chewy Candy Movie Theater Box",
+    "upc": null,
+    "nutrition": null
+  },
+  "364": {
+    "product_id": 364,
+    "product_name": "Mike & Ike Original Fruit Chewy Candy Movie Theater Box",
+    "upc": null,
+    "nutrition": null
+  },
+  "365": {
+    "product_id": 365,
+    "product_name": "Mike & Ike Sour Watermelon Chewy Candy Movie Theater Box",
+    "upc": null,
+    "nutrition": null
+  },
+  "366": {
+    "product_id": 366,
+    "product_name": "SunChips Variety Pack Whole Grain Chips, 30pk",
+    "upc": null,
+    "nutrition": null
+  },
+  "367": {
+    "product_id": 367,
+    "product_name": "Frito-Lay Flamin' Hot Variety Pack Snacks, 30pk",
+    "upc": null,
+    "nutrition": null
+  },
+  "368": {
+    "product_id": 368,
+    "product_name": "Frito-Lay Doritos & Cheetos Variety Pack Chips, 30pk",
+    "upc": null,
+    "nutrition": null
+  },
+  "369": {
+    "product_id": 369,
+    "product_name": "Frito-Lay Premiere Mix Variety Pack Chips, 30pk",
+    "upc": null,
+    "nutrition": null
+  },
+  "370": {
+    "product_id": 370,
+    "product_name": "Frito-Lay Variety Pack Chips, 30pk",
+    "upc": null,
+    "nutrition": null
+  },
+  "371": {
+    "product_id": 371,
+    "product_name": "Frito-Lay Classic Mix Variety Pack Chips, 50pk",
+    "upc": null,
+    "nutrition": null
+  },
+  "372": {
+    "product_id": 372,
+    "product_name": "Frito-Lay Bold Mix Variety Pack Snack Chips, 18ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "373": {
+    "product_id": 373,
+    "product_name": "Frito-Lay Family Fun Mix Variety Pack Snack Chips, 18ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "374": {
+    "product_id": 374,
+    "product_name": "Frito-Lay Snacks Mix Variety Pack 18 oz, 18ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "375": {
+    "product_id": 375,
+    "product_name": "Frito-Lay Flamin' Hot Mix Variety Pack Snack Chips, 18ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "376": {
+    "product_id": 376,
+    "product_name": "Frito-Lay Flavor Mix Variety Pack Snack Chips, 1oz Bags, 18ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "382": {
+    "product_id": 382,
+    "product_name": "Tropical Cheese Arepa de Queso/ Cheese Arepa 16oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "383": {
+    "product_id": 383,
+    "product_name": "Tropical Queso Fresco, Fresh Cheese In Banana Leaf, 12oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "384": {
+    "product_id": 384,
+    "product_name": "Tropical Queso De Freir, White Frying Cheese, 10oz,",
+    "upc": null,
+    "nutrition": null
+  },
+  "385": {
+    "product_id": 385,
+    "product_name": "Tropical Queso Blanco 16oz, Fresh White Cheese,",
+    "upc": "0027568010166",
+    "off_name": "Tropical, Queso Blanco White Cheese",
+    "similarity": 0.75,
+    "nutrition": {
+      "serving_size": "28 g (1 oz)",
+      "calories": 81.0,
+      "total_fat_g": 6.1,
+      "saturated_fat_g": 3.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 216.0,
+      "total_carbs_g": 1.0,
+      "fiber_g": 0.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": null,
+      "protein_g": 6.1,
+      "calcium_mg": 152.0,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "386": {
+    "product_id": 386,
+    "product_name": "Sliced Gouda Cheese, 8oz, 12 Count",
+    "upc": "4056489924784",
+    "off_name": "Gouda in Scheiben",
+    "similarity": 0.56,
+    "nutrition": {
+      "serving_size": "1 serving (100 g)",
+      "calories": 348.0,
+      "total_fat_g": 28.0,
+      "saturated_fat_g": 18.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 680.0,
+      "total_carbs_g": 0.1,
+      "fiber_g": 0.0,
+      "sugars_g": 0.1,
+      "added_sugars_g": 0.0,
+      "protein_g": 24.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "387": {
+    "product_id": 387,
+    "product_name": "Non-Smoked Provolone Cheese, 8oz, 12 Count",
+    "upc": null,
+    "nutrition": null
+  },
+  "388": {
+    "product_id": 388,
+    "product_name": "Colby & Monterey Jack Cheese, 8oz, 12 Slices",
+    "upc": null,
+    "nutrition": null
+  },
+  "389": {
+    "product_id": 389,
+    "product_name": "Low-Moisture Part-Skim Sliced Mozzarella Cheese, 8oz, 12 Count",
+    "upc": "0041497084609",
+    "off_name": "Low-Moisture Part-Skim Mozzarella Sliced Cheese",
+    "similarity": 0.85,
+    "nutrition": {
+      "serving_size": "1 serving (23 g)",
+      "calories": 70.0,
+      "total_fat_g": 4.8,
+      "saturated_fat_g": 2.5,
+      "trans_fat_g": null,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 1.0,
+      "total_carbs_g": 1.0,
+      "fiber_g": null,
+      "sugars_g": null,
+      "added_sugars_g": 0.0,
+      "protein_g": 5.0,
+      "calcium_mg": 1.0,
+      "iron_mg": 0.4,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "390": {
+    "product_id": 390,
+    "product_name": "Sliced Provolone Cheese, 8oz, 19 Slices",
+    "upc": "0078742117706",
+    "off_name": "Sliced Provolone",
+    "similarity": 0.82,
+    "nutrition": {
+      "serving_size": "1 slice (19 g)",
+      "calories": 70.0,
+      "total_fat_g": 5.0,
+      "saturated_fat_g": 3.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 170.0,
+      "total_carbs_g": 0.0,
+      "fiber_g": 0.0,
+      "sugars_g": 0.0,
+      "added_sugars_g": 0.0,
+      "protein_g": 5.0,
+      "calcium_mg": 140.0,
+      "iron_mg": 0.1,
+      "potassium_mg": 20.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "391": {
+    "product_id": 391,
+    "product_name": "Sliced Mild Cheddar Cheese, 8oz, 12 Count",
+    "upc": "00445405",
+    "off_name": "10 Mild Cheddar cheese slices",
+    "similarity": 0.73,
+    "nutrition": {
+      "serving_size": "1 slice (20 g)",
+      "calories": 8.0,
+      "total_fat_g": 7.0,
+      "saturated_fat_g": 4.3,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 145.0,
+      "total_carbs_g": 0.1,
+      "fiber_g": 0.1,
+      "sugars_g": 0.1,
+      "added_sugars_g": 0.0,
+      "protein_g": 5.1,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "392": {
+    "product_id": 392,
+    "product_name": "Sharp Cheddar Cheese, 8oz Block",
+    "upc": null,
+    "nutrition": null
+  },
+  "393": {
+    "product_id": 393,
+    "product_name": "Mild Cheddar Cheese, 8oz Block",
+    "upc": "4088600209524",
+    "off_name": "Mild Cheddar Slices",
+    "similarity": 0.84,
+    "nutrition": {
+      "serving_size": "1 slice (20 g)",
+      "calories": 345.0,
+      "total_fat_g": 7.0,
+      "saturated_fat_g": 4.3,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 142.0,
+      "total_carbs_g": 0.0,
+      "fiber_g": 0.0,
+      "sugars_g": 0.0,
+      "added_sugars_g": 0.0,
+      "protein_g": 5.1,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "394": {
+    "product_id": 394,
+    "product_name": "Extra Sharp Cheddar Cheese, 8oz Block",
+    "upc": null,
+    "nutrition": null
+  },
+  "395": {
+    "product_id": 395,
+    "product_name": "Swiss Cheese Block, 8oz",
+    "upc": "9300633295615",
+    "off_name": "Swiss cheese block",
+    "similarity": 1.0,
+    "nutrition": {
+      "serving_size": "See package",
+      "calories": 345.0,
+      "total_fat_g": 27.0,
+      "saturated_fat_g": 18.5,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 550.0,
+      "total_carbs_g": 5.0,
+      "fiber_g": null,
+      "sugars_g": 5.0,
+      "added_sugars_g": null,
+      "protein_g": 25.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "396": {
+    "product_id": 396,
+    "product_name": "Pepper Jack Cheese, 8oz Block",
+    "upc": "0023278101088",
+    "off_name": "Pepper Jack Cheese Crisps",
+    "similarity": 0.84,
+    "nutrition": {
+      "serving_size": "1 serving (28 g)",
+      "calories": 132.0,
+      "total_fat_g": 5.9,
+      "saturated_fat_g": 4.2,
+      "trans_fat_g": null,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 110.0,
+      "total_carbs_g": 10.1,
+      "fiber_g": 1.9,
+      "sugars_g": 0.7,
+      "added_sugars_g": 0.0,
+      "protein_g": 9.8,
+      "calcium_mg": 82.0,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "397": {
+    "product_id": 397,
+    "product_name": "Block Gouda Cheese, 8oz Block",
+    "upc": "0811355701838",
+    "off_name": "Organic Gouda Cheese - Block",
+    "similarity": 0.65,
+    "nutrition": null
+  },
+  "398": {
+    "product_id": 398,
+    "product_name": "Muenster Cheese, 8oz Block",
+    "upc": "0046100001073",
+    "off_name": "Sliced Muenster Cheese",
+    "similarity": 0.81,
+    "nutrition": {
+      "serving_size": "1 slice (21 g)",
+      "calories": 80.0,
+      "total_fat_g": 6.0,
+      "saturated_fat_g": 4.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 140.0,
+      "total_carbs_g": 0.0,
+      "fiber_g": null,
+      "sugars_g": null,
+      "added_sugars_g": 0.0,
+      "protein_g": 5.0,
+      "calcium_mg": 150.0,
+      "iron_mg": 0.1,
+      "potassium_mg": 30.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "399": {
+    "product_id": 399,
+    "product_name": "Colby & Monterey Jack Cheese, 8oz Block",
+    "upc": null,
+    "nutrition": null
+  },
+  "400": {
+    "product_id": 400,
+    "product_name": "Medium Cheddar Cheese, 8oz Block",
+    "upc": null,
+    "nutrition": null
+  },
+  "401": {
+    "product_id": 401,
+    "product_name": "Extra Sharp White Cheddar Cheese Block, 8oz",
+    "upc": "0034500420655",
+    "off_name": "Extra Sharp White Cheddar Cheese",
+    "similarity": 0.91,
+    "nutrition": null
+  },
+  "402": {
+    "product_id": 402,
+    "product_name": "Pepper Jack Cheese, 16oz Block",
+    "upc": null,
+    "nutrition": null
+  },
+  "403": {
+    "product_id": 403,
+    "product_name": "Swiss Cheese Block, 16oz Block",
+    "upc": "9300633295615",
+    "off_name": "Swiss cheese block",
+    "similarity": 1.0,
+    "nutrition": {
+      "serving_size": "See package",
+      "calories": 345.0,
+      "total_fat_g": 27.0,
+      "saturated_fat_g": 18.5,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 550.0,
+      "total_carbs_g": 5.0,
+      "fiber_g": null,
+      "sugars_g": 5.0,
+      "added_sugars_g": null,
+      "protein_g": 25.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "404": {
+    "product_id": 404,
+    "product_name": "Colby & Monterey Jack Cheese, 16oz Block",
+    "upc": null,
+    "nutrition": null
+  },
+  "405": {
+    "product_id": 405,
+    "product_name": "Block Medium Cheddar Cheese, 16oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "406": {
+    "product_id": 406,
+    "product_name": "Low-Moisture Part-Skim Mozzarella Cheese, 16 oz Block",
+    "upc": "0078742430195",
+    "off_name": "Low-Moisture Part-Skim Mozzarella Cheese",
+    "similarity": 1.0,
+    "nutrition": {
+      "serving_size": "28 g (1 oz)",
+      "calories": 81.0,
+      "total_fat_g": 5.1,
+      "saturated_fat_g": 3.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 172.0,
+      "total_carbs_g": 1.0,
+      "fiber_g": 0.0,
+      "sugars_g": 0.0,
+      "added_sugars_g": 0.0,
+      "protein_g": 8.1,
+      "calcium_mg": 202.0,
+      "iron_mg": 0.1,
+      "potassium_mg": 25.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "407": {
+    "product_id": 407,
+    "product_name": "Mild Cheddar Cheese, 16oz Block",
+    "upc": "4088600209524",
+    "off_name": "Mild Cheddar Slices",
+    "similarity": 0.84,
+    "nutrition": {
+      "serving_size": "1 slice (20 g)",
+      "calories": 345.0,
+      "total_fat_g": 7.0,
+      "saturated_fat_g": 4.3,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 142.0,
+      "total_carbs_g": 0.0,
+      "fiber_g": 0.0,
+      "sugars_g": 0.0,
+      "added_sugars_g": 0.0,
+      "protein_g": 5.1,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "408": {
+    "product_id": 408,
+    "product_name": "Kraft Singles American Cheese Slices Twin Pk, 32ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "409": {
+    "product_id": 409,
+    "product_name": "Kraft Singles White Cheese American, 16ct, 12oz",
+    "upc": "0021000615278",
+    "off_name": "White American",
+    "similarity": 0.57,
+    "nutrition": {
+      "serving_size": "1 serving (19 g)",
+      "calories": 50.0,
+      "total_fat_g": 3.0,
+      "saturated_fat_g": 2.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 210.0,
+      "total_carbs_g": 2.0,
+      "fiber_g": null,
+      "sugars_g": 1.0,
+      "added_sugars_g": 0.0,
+      "protein_g": 3.0,
+      "calcium_mg": 290.0,
+      "iron_mg": null,
+      "potassium_mg": 60.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "410": {
+    "product_id": 410,
+    "product_name": "Kraft Singles Sharp Cheddar Singles, 12oz",
+    "upc": "0021000083381",
+    "off_name": "Singles Sharp Cheddar",
+    "similarity": 0.75,
+    "nutrition": null
+  },
+  "411": {
+    "product_id": 411,
+    "product_name": "Kraft Singles American Cheese Singles, 12oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "412": {
+    "product_id": 412,
+    "product_name": "Arnold's Red Hots Chicken, Beef, and Pork Sausage, 16oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "413": {
+    "product_id": 413,
+    "product_name": "Arnold's Smoked Hot Beef Sausage, 16oz (Pork Free)",
+    "upc": "0025325120202",
+    "off_name": "Smoked Hot, Chicken, Beef, And Pork Product",
+    "similarity": 0.48,
+    "nutrition": {
+      "serving_size": "2 ONZ (56 g)",
+      "calories": 150.0,
+      "total_fat_g": 13.0,
+      "saturated_fat_g": 4.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 570.0,
+      "total_carbs_g": 3.0,
+      "fiber_g": 0.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": null,
+      "protein_g": 7.0,
+      "calcium_mg": 60.0,
+      "iron_mg": 1.1,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "414": {
+    "product_id": 414,
+    "product_name": "Arnold's Smoked Beef Sausage 16 oz (Pork Free)",
+    "upc": "0025325120202",
+    "off_name": "Smoked Hot, Chicken, Beef, And Pork Product",
+    "similarity": 0.39,
+    "nutrition": {
+      "serving_size": "2 ONZ (56 g)",
+      "calories": 150.0,
+      "total_fat_g": 13.0,
+      "saturated_fat_g": 4.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 570.0,
+      "total_carbs_g": 3.0,
+      "fiber_g": 0.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": null,
+      "protein_g": 7.0,
+      "calcium_mg": 60.0,
+      "iron_mg": 1.1,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "415": {
+    "product_id": 415,
+    "product_name": "Caroline Hot Beef Sausage, 40oz (Pork Free)",
+    "upc": null,
+    "nutrition": null
+  },
+  "416": {
+    "product_id": 416,
+    "product_name": "Caroline Beef Sausage 40oz (Pork Free)",
+    "upc": null,
+    "nutrition": null
+  },
+  "417": {
+    "product_id": 417,
+    "product_name": "Caroline Turkey 40oz (Pork Free)",
+    "upc": "0025325123166",
+    "off_name": "Caroline Turkey Sausage",
+    "similarity": 0.79,
+    "nutrition": {
+      "serving_size": "See package",
+      "calories": 240.0,
+      "total_fat_g": 16.0,
+      "saturated_fat_g": 5.3,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 1240.0,
+      "total_carbs_g": 2.7,
+      "fiber_g": 0.0,
+      "sugars_g": 2.7,
+      "added_sugars_g": null,
+      "protein_g": 17.3,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "418": {
+    "product_id": 418,
+    "product_name": "Perdue Breaded Chicken Breast Strips, 12oz",
+    "upc": "0072745804779",
+    "off_name": "Whole Grain Breaded Chicken Breast Strips",
+    "similarity": 0.83,
+    "nutrition": {
+      "serving_size": "1 portion (84 g)",
+      "calories": 180.0,
+      "total_fat_g": 8.0,
+      "saturated_fat_g": 1.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 500.0,
+      "total_carbs_g": 14.0,
+      "fiber_g": 1.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": 1.0,
+      "protein_g": 14.0,
+      "calcium_mg": 8.0,
+      "iron_mg": 1.0,
+      "potassium_mg": 270.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "419": {
+    "product_id": 419,
+    "product_name": "Perdue Breaded Chicken Breast Nuggets, 12 oz.",
+    "upc": "0072745806223",
+    "off_name": "Breaded Chicken Breast Nuggets",
+    "similarity": 0.9,
+    "nutrition": {
+      "serving_size": "85g",
+      "calories": 210.0,
+      "total_fat_g": 11.0,
+      "saturated_fat_g": 2.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 450.0,
+      "total_carbs_g": 15.0,
+      "fiber_g": 0.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": 1.0,
+      "protein_g": 12.0,
+      "calcium_mg": 9.0,
+      "iron_mg": 2.0,
+      "potassium_mg": 236.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "420": {
+    "product_id": 420,
+    "product_name": "Perdue, Breaded Chicken Breast Cutlet Patties, 12oz.",
+    "upc": null,
+    "nutrition": null
+  },
+  "421": {
+    "product_id": 421,
+    "product_name": "Perdue Breaded Chicken Breast Strips, 3 pk./12 oz.",
+    "upc": "0072745804779",
+    "off_name": "Whole Grain Breaded Chicken Breast Strips",
+    "similarity": 0.83,
+    "nutrition": {
+      "serving_size": "1 portion (84 g)",
+      "calories": 180.0,
+      "total_fat_g": 8.0,
+      "saturated_fat_g": 1.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 500.0,
+      "total_carbs_g": 14.0,
+      "fiber_g": 1.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": 1.0,
+      "protein_g": 14.0,
+      "calcium_mg": 8.0,
+      "iron_mg": 1.0,
+      "potassium_mg": 270.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "422": {
+    "product_id": 422,
+    "product_name": "Perdue Breaded Chicken Breast Nuggets, 3 pk./12 oz.",
+    "upc": "0072745806223",
+    "off_name": "Breaded Chicken Breast Nuggets",
+    "similarity": 0.9,
+    "nutrition": {
+      "serving_size": "85g",
+      "calories": 210.0,
+      "total_fat_g": 11.0,
+      "saturated_fat_g": 2.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 450.0,
+      "total_carbs_g": 15.0,
+      "fiber_g": 0.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": 1.0,
+      "protein_g": 12.0,
+      "calcium_mg": 9.0,
+      "iron_mg": 2.0,
+      "potassium_mg": 236.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "423": {
+    "product_id": 423,
+    "product_name": "Perdue Breaded Chicken Breast Cutlets, 3pk./12 oz.",
+    "upc": "0072745805899",
+    "off_name": "Breaded Chicken Breast Tenders",
+    "similarity": 0.78,
+    "nutrition": {
+      "serving_size": "3 PIECES (87 g)",
+      "calories": 190.0,
+      "total_fat_g": 8.0,
+      "saturated_fat_g": 1.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 450.0,
+      "total_carbs_g": 19.0,
+      "fiber_g": 0.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": null,
+      "protein_g": 10.0,
+      "calcium_mg": null,
+      "iron_mg": 0.7,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "424": {
+    "product_id": 424,
+    "product_name": "Perdue Short Cuts, Rotisserie Chicken Breast Strips, 8oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "425": {
+    "product_id": 425,
+    "product_name": "Perdue Short Cuts, Roasted Chicken Breast Strips, 8oz",
+    "upc": "0788745001468",
+    "off_name": "Short Cuts Roasted Chicken breast Strips",
+    "similarity": 0.91,
+    "nutrition": {
+      "serving_size": "1 portion (84 g)",
+      "calories": 100.0,
+      "total_fat_g": 2.0,
+      "saturated_fat_g": 0.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.1,
+      "sodium_mg": 400.0,
+      "total_carbs_g": 1.0,
+      "fiber_g": 0.0,
+      "sugars_g": 0.0,
+      "added_sugars_g": null,
+      "protein_g": 20.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "426": {
+    "product_id": 426,
+    "product_name": "Perdue Short Cuts, Grilled Chicken Breasts Strips, 8oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "428": {
+    "product_id": 428,
+    "product_name": "Hillshire Farm Beef Summer Sausage 20oz",
+    "upc": "0044500330472",
+    "off_name": "Hillshire farm, beef summer sausage",
+    "similarity": 0.99,
+    "nutrition": {
+      "serving_size": "2 ONZ (56 g)",
+      "calories": 190.0,
+      "total_fat_g": 16.0,
+      "saturated_fat_g": 7.0,
+      "trans_fat_g": 0.5,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 710.0,
+      "total_carbs_g": 1.0,
+      "fiber_g": 1.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": null,
+      "protein_g": 11.0,
+      "calcium_mg": null,
+      "iron_mg": 1.1,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "429": {
+    "product_id": 429,
+    "product_name": "Wisconsin's Best Smoked Garlic Summer Sausage 12oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "430": {
+    "product_id": 430,
+    "product_name": "Wisconsin's Best Jalapeno Cheddar Summer Sausage 12 oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "431": {
+    "product_id": 431,
+    "product_name": "Wisconsin's Best Smoked Summer Sausage 12 oz",
+    "upc": "0813608012562",
+    "off_name": "Smoked Summer Sausage",
+    "similarity": 0.71,
+    "nutrition": {
+      "serving_size": "56.0g",
+      "calories": 180.0,
+      "total_fat_g": 15.0,
+      "saturated_fat_g": 7.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": null,
+      "total_carbs_g": 2.0,
+      "fiber_g": null,
+      "sugars_g": 2.0,
+      "added_sugars_g": null,
+      "protein_g": 9.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "432": {
+    "product_id": 432,
+    "product_name": "Klement's Hot & Spicy Summer Sausage 5oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "433": {
+    "product_id": 433,
+    "product_name": "Klement's Beef Summer Sausage 5oz",
+    "upc": "0073608036870",
+    "off_name": "beef summer sausage",
+    "similarity": 0.79,
+    "nutrition": {
+      "serving_size": "1 piece (56 g)",
+      "calories": 210.0,
+      "total_fat_g": 19.0,
+      "saturated_fat_g": 8.0,
+      "trans_fat_g": 1.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 730.0,
+      "total_carbs_g": 2.0,
+      "fiber_g": 0.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": null,
+      "protein_g": 10.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "434": {
+    "product_id": 434,
+    "product_name": "Klement's Cajun Style Beef Summer Sausage 5oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "435": {
+    "product_id": 435,
+    "product_name": "Klement's Turkey Summer Sausage 5oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "436": {
+    "product_id": 436,
+    "product_name": "Hometown Select Beef Hot & Spicy Summer Sausage 5oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "437": {
+    "product_id": 437,
+    "product_name": "Hometown Select Beef Salami Summer Sausage 5oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "438": {
+    "product_id": 438,
+    "product_name": "Hometown Select Turkey Honey Pepper Sausage 5oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "439": {
+    "product_id": 439,
+    "product_name": "Hometown Select Beef Summer Sausage 5oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "440": {
+    "product_id": 440,
+    "product_name": "Midamar Halal Hot & Spicy Beef Summer Sausage 5oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "441": {
+    "product_id": 441,
+    "product_name": "Midamar Halal Beef Summer Sausage 5oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "442": {
+    "product_id": 442,
+    "product_name": "Hillshire Farm Summer Sausage 9oz (Pork)",
+    "upc": null,
+    "nutrition": null
+  },
+  "443": {
+    "product_id": 443,
+    "product_name": "Johnsonville Beef Summer Sausage 12oz",
+    "upc": "0077782000108",
+    "off_name": "Beef Summer Sausage",
+    "similarity": 0.75,
+    "nutrition": {
+      "serving_size": "2 ONZ (56 g)",
+      "calories": 180.0,
+      "total_fat_g": 15.0,
+      "saturated_fat_g": 6.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 680.0,
+      "total_carbs_g": 1.0,
+      "fiber_g": 0.0,
+      "sugars_g": 0.0,
+      "added_sugars_g": 0.8,
+      "protein_g": 10.0,
+      "calcium_mg": null,
+      "iron_mg": 0.7,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "444": {
+    "product_id": 444,
+    "product_name": "Johnsonville Garlic Summer Sausage 12oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "445": {
+    "product_id": 445,
+    "product_name": "Smoky Valley Spicy Beef Summer Sausage 5oz",
+    "upc": "0071189091752",
+    "off_name": "Smoky Valley, Spicy Beef Summer Sausage",
+    "similarity": 0.99,
+    "nutrition": {
+      "serving_size": "2 ONZ (56 g)",
+      "calories": 170.0,
+      "total_fat_g": 17.0,
+      "saturated_fat_g": 5.0,
+      "trans_fat_g": 1.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 640.0,
+      "total_carbs_g": 2.0,
+      "fiber_g": 0.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": null,
+      "protein_g": 10.0,
+      "calcium_mg": 40.0,
+      "iron_mg": 1.4,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "446": {
+    "product_id": 446,
+    "product_name": "Highland Beef Farms American Premium Turkey Log 4.5oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "447": {
+    "product_id": 447,
+    "product_name": "Highland Farms Hot Beef w/Pepper Jack Cheese Summer Sausage 4 oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "448": {
+    "product_id": 448,
+    "product_name": "Highland Beef Farms Beef w/Cheddar Cheese Summer Sausage 4oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "449": {
+    "product_id": 449,
+    "product_name": "Highland Beef Farms Hot Summer Sausage 4.5oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "450": {
+    "product_id": 450,
+    "product_name": "Smoky Valley Classic Beef Summer Sausage 5oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "451": {
+    "product_id": 451,
+    "product_name": "Roasted Garlic Sage Summer Sausage 5oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "452": {
+    "product_id": 452,
+    "product_name": "Smoky Valley Italian Beef Salami 5oz.",
+    "upc": null,
+    "nutrition": null
+  },
+  "453": {
+    "product_id": 453,
+    "product_name": "Aqua Bay Mackerel Fillet with Lemon Sauce 3.53oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "454": {
+    "product_id": 454,
+    "product_name": "Fresh Yellow Squash, 2ct",
+    "upc": "0095829420368",
+    "off_name": "Fresh Yellow Squash",
+    "similarity": 1.0,
+    "nutrition": {
+      "serving_size": "1 SQUASH (196 g)",
+      "calories": 35.0,
+      "total_fat_g": 0.5,
+      "saturated_fat_g": 0.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 4.0,
+      "total_carbs_g": 8.0,
+      "fiber_g": 2.0,
+      "sugars_g": 7.0,
+      "added_sugars_g": null,
+      "protein_g": 2.0,
+      "calcium_mg": 39.0,
+      "iron_mg": 0.7,
+      "potassium_mg": 439.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "455": {
+    "product_id": 455,
+    "product_name": "Microwaveable Russet Potato Whole Fresh, 2ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "456": {
+    "product_id": 456,
+    "product_name": "Microwaveable Sweet Potato Whole Fresh, 2ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "457": {
+    "product_id": 457,
+    "product_name": "Fresh Tomato on the Vine, Bag 1.9lbs",
+    "upc": null,
+    "nutrition": null
+  },
+  "458": {
+    "product_id": 458,
+    "product_name": "Fresh Garlic Sleeve, 3 Count",
+    "upc": null,
+    "nutrition": null
+  },
+  "459": {
+    "product_id": 459,
+    "product_name": "Fresh Mini Cucumbers, 16oz",
+    "upc": "0689259001619",
+    "off_name": "Mini Cucumbers",
+    "similarity": 0.82,
+    "nutrition": null
+  },
+  "460": {
+    "product_id": 460,
+    "product_name": "Baby Peeled Carrots, 1lb",
+    "upc": null,
+    "nutrition": null
+  },
+  "461": {
+    "product_id": 461,
+    "product_name": "Fresh Cut Harvested Asparagus, Bunch, 10oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "462": {
+    "product_id": 462,
+    "product_name": "Fresh Papaya, Each, 1 Count",
+    "upc": null,
+    "nutrition": null
+  },
+  "463": {
+    "product_id": 463,
+    "product_name": "Zespri Sungold Fresh Kiwi Fruit, 2lb",
+    "upc": null,
+    "nutrition": null
+  },
+  "464": {
+    "product_id": 464,
+    "product_name": "Wise Lightly Salted Potato Chips, 7.5oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "465": {
+    "product_id": 465,
+    "product_name": "Wise Salt & Vinegar Potato Chips, 7.5oz",
+    "upc": "0041262287266",
+    "off_name": "Golden Potato Salt & Vinegar Chips",
+    "similarity": 0.67,
+    "nutrition": {
+      "serving_size": "14 chips (28 g)",
+      "calories": 150.0,
+      "total_fat_g": 10.0,
+      "saturated_fat_g": 3.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 290.0,
+      "total_carbs_g": 14.0,
+      "fiber_g": 1.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": 1.0,
+      "protein_g": 1.0,
+      "calcium_mg": 6.0,
+      "iron_mg": 0.4,
+      "potassium_mg": 264.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "466": {
+    "product_id": 466,
+    "product_name": "Wise Onion & Garlic Potato Chips, 7.5oz",
+    "upc": "0041262275553",
+    "off_name": "Onion & Garlic Flavored Potato Chips",
+    "similarity": 0.79,
+    "nutrition": {
+      "serving_size": "See package",
+      "calories": 150.0,
+      "total_fat_g": 10.0,
+      "saturated_fat_g": 2.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 230.0,
+      "total_carbs_g": 14.0,
+      "fiber_g": null,
+      "sugars_g": 0.0,
+      "added_sugars_g": null,
+      "protein_g": 2.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "467": {
+    "product_id": 467,
+    "product_name": "Wise Golden Original Potato Chips, 7.5oz",
+    "upc": "0041262286221",
+    "off_name": "Wise Golden Original Potato Chips",
+    "similarity": 1.0,
+    "nutrition": {
+      "serving_size": "See package",
+      "calories": 536.0,
+      "total_fat_g": 35.7,
+      "saturated_fat_g": 7.1,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 571.0,
+      "total_carbs_g": 50.0,
+      "fiber_g": 3.6,
+      "sugars_g": 0.0,
+      "added_sugars_g": null,
+      "protein_g": 7.1,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "468": {
+    "product_id": 468,
+    "product_name": "Wise BBQ Potato Chips, 7.5 oz",
+    "upc": "0041262286665",
+    "off_name": "Wise BBQ Potato Chips",
+    "similarity": 1.0,
+    "nutrition": {
+      "serving_size": "See package",
+      "calories": 536.0,
+      "total_fat_g": 32.1,
+      "saturated_fat_g": 7.1,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 607.0,
+      "total_carbs_g": 50.0,
+      "fiber_g": 3.6,
+      "sugars_g": 3.6,
+      "added_sugars_g": null,
+      "protein_g": 7.1,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "469": {
+    "product_id": 469,
+    "product_name": "Lay's Wavy Funyuns Onion Potato Chips, 7.5oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "470": {
+    "product_id": 470,
+    "product_name": "Lay's Poppables White Cheddar Potato Snacks, 5oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "471": {
+    "product_id": 471,
+    "product_name": "Lay's Potato Chips, Flamin' Hot Flavor, 7.75on",
+    "upc": null,
+    "nutrition": null
+  },
+  "472": {
+    "product_id": 472,
+    "product_name": "Lay's Potato Chips, Cheddar & Sour Cream, 7.75oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "473": {
+    "product_id": 473,
+    "product_name": "Lay's Wavy Potato Chips, Lightly Salted, 7.5oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "474": {
+    "product_id": 474,
+    "product_name": "Lay's Potato Chips, Sweet Southern Heat BBQ, 7.75oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "475": {
+    "product_id": 475,
+    "product_name": "Lay's Wavy Potato Chips, Hickory BBQ, 7.5oz",
+    "upc": "0028400200615",
+    "off_name": "Lay'S, Wavy Potato Chips, Hickory Bbq, Hickory Bbq",
+    "similarity": 0.84,
+    "nutrition": {
+      "serving_size": "1 ONZ (28 g)",
+      "calories": 160.0,
+      "total_fat_g": 10.0,
+      "saturated_fat_g": 1.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 140.0,
+      "total_carbs_g": 16.0,
+      "fiber_g": 1.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": null,
+      "protein_g": 2.0,
+      "calcium_mg": null,
+      "iron_mg": 0.4,
+      "potassium_mg": 330.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "476": {
+    "product_id": 476,
+    "product_name": "Lay's Salt & Vinegar Potato Chips, 7.75oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "477": {
+    "product_id": 477,
+    "product_name": "Lay's Wavy Potato Chips, Original, 7.75oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "478": {
+    "product_id": 478,
+    "product_name": "Lay's Honey Barbecue Potato Chips, 7.75oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "479": {
+    "product_id": 479,
+    "product_name": "Lay's Potato Chips, Limon Flavor, 7.75",
+    "upc": null,
+    "nutrition": null
+  },
+  "480": {
+    "product_id": 480,
+    "product_name": "Lay's Potato Chips, Sour Cream & Onion, 7.75",
+    "upc": null,
+    "nutrition": null
+  },
+  "481": {
+    "product_id": 481,
+    "product_name": "Lay's Dill Pickle Potato Chips 7.75oz",
+    "upc": "0028400160285",
+    "off_name": "Lay's Dill Pickle Potato Chips 9.5 Ounce Bag",
+    "similarity": 0.81,
+    "nutrition": {
+      "serving_size": "28 g",
+      "calories": 160.0,
+      "total_fat_g": 10.0,
+      "saturated_fat_g": 1.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 220.0,
+      "total_carbs_g": 15.0,
+      "fiber_g": 1.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": null,
+      "protein_g": 2.0,
+      "calcium_mg": null,
+      "iron_mg": 0.4,
+      "potassium_mg": 320.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "482": {
+    "product_id": 482,
+    "product_name": "Lay's Barbecue Potato Chips, 7.75oz",
+    "upc": "3168930174653",
+    "off_name": "Lay's barbecue",
+    "similarity": 0.68,
+    "nutrition": {
+      "serving_size": "27.5g",
+      "calories": 139.0,
+      "total_fat_g": 7.4,
+      "saturated_fat_g": 0.6,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 72.0,
+      "total_carbs_g": 15.1,
+      "fiber_g": 1.5,
+      "sugars_g": 0.8,
+      "added_sugars_g": 0.4,
+      "protein_g": 1.8,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "483": {
+    "product_id": 483,
+    "product_name": "Lay's Classic Potato Chips 8oz",
+    "upc": "0028400090858",
+    "off_name": "Classic Potato Chips",
+    "similarity": 0.87,
+    "nutrition": {
+      "serving_size": "1 portion (28.3 g)",
+      "calories": 160.0,
+      "total_fat_g": 10.0,
+      "saturated_fat_g": 1.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 140.0,
+      "total_carbs_g": 15.0,
+      "fiber_g": 1.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": 0.0,
+      "protein_g": 2.0,
+      "calcium_mg": 10.0,
+      "iron_mg": 0.6,
+      "potassium_mg": 350.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "484": {
+    "product_id": 484,
+    "product_name": "Pepperidge Farm Gingerman Cookies, Ginger Cookies, 5oz.",
+    "upc": null,
+    "nutrition": null
+  },
+  "485": {
+    "product_id": 485,
+    "product_name": "Pepperidge Farm Zurich Sugar Cookies, 5.25oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "486": {
+    "product_id": 486,
+    "product_name": "Pepperidge Farm Captiva Dark Chocolate Cookies, 8.6 oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "487": {
+    "product_id": 487,
+    "product_name": "Pepperidge Farm Charleston Birthday Cake Cookies, 8.6oz",
+    "upc": "0014100054030",
+    "off_name": "Charleston Birthday Cake",
+    "similarity": 0.67,
+    "nutrition": {
+      "serving_size": "31g",
+      "calories": 150.0,
+      "total_fat_g": 7.0,
+      "saturated_fat_g": 3.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 65.0,
+      "total_carbs_g": 20.0,
+      "fiber_g": 0.0,
+      "sugars_g": 9.0,
+      "added_sugars_g": 8.0,
+      "protein_g": 1.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "488": {
+    "product_id": 488,
+    "product_name": "Pepperidge Farm Newport Dark Chocolate Cookies with Sea Salt, 8.6",
+    "upc": null,
+    "nutrition": null
+  },
+  "489": {
+    "product_id": 489,
+    "product_name": "Pepperidge Farm Bordeaux Caramelized Crisp Cookies, 6.75oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "490": {
+    "product_id": 490,
+    "product_name": "Pepperidge Farm Farmhouse Milk Chocolate Chip Cookies, 6.9oz",
+    "upc": "0014100049838",
+    "off_name": "Pepperidge Farm Farmhouse Cookies, Thin & Crispy Milk Chocolate Chip, 8 Packs, 2 Cookies Per Pack",
+    "similarity": 0.71,
+    "nutrition": {
+      "serving_size": "Amount per serving (28 g)",
+      "calories": 140.0,
+      "total_fat_g": 6.0,
+      "saturated_fat_g": 4.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 135.0,
+      "total_carbs_g": 19.0,
+      "fiber_g": 0.0,
+      "sugars_g": 12.0,
+      "added_sugars_g": null,
+      "protein_g": 1.0,
+      "calcium_mg": 20.0,
+      "iron_mg": 1.0,
+      "potassium_mg": 40.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "491": {
+    "product_id": 491,
+    "product_name": "Pepperidge Farm Farmhouse Thin & Crispy Butter Pecan Cookies, 5.9oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "492": {
+    "product_id": 492,
+    "product_name": "Pepperidge Farm Soft Baked Ojai Lemon Sugar Cookies, 8.6oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "493": {
+    "product_id": 493,
+    "product_name": "Pepperidge Farm Verona Apricot Raspberry Thumbprint Cookies, 6.75oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "494": {
+    "product_id": 494,
+    "product_name": "Pepperidge Farm Dublin Shortbread Cookies, 5.5oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "495": {
+    "product_id": 495,
+    "product_name": "Pepperidge Farm Tahoe White Chocolate Macadamia Nut Cookies, 7.2oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "496": {
+    "product_id": 496,
+    "product_name": "Pepperidge Farm Milano Double Dark Chocolate Cookies, 7.5oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "497": {
+    "product_id": 497,
+    "product_name": "Pepperidge Farm Sausalito Crispy Milk Chocolate Macadamia Nut Cookies, 7.2oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "498": {
+    "product_id": 498,
+    "product_name": "Pepperidge Farm Milano Cookies, Chocolate Strawberry, 7oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "499": {
+    "product_id": 499,
+    "product_name": "Pepperidge Farm Farmhouse Thin & Crispy Toffee Milk, 6.9oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "500": {
+    "product_id": 500,
+    "product_name": "Pepperidge Farm Verona Strawberry Thumbprint Cookies, 6.75",
+    "upc": null,
+    "nutrition": null
+  },
+  "501": {
+    "product_id": 501,
+    "product_name": "Pepperidge Farm Milano Dark Chocolate Cookies, 6oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "502": {
+    "product_id": 502,
+    "product_name": "Pepperidge Farm Montauk Chocolate Chunk Cookies, 8.6oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "503": {
+    "product_id": 503,
+    "product_name": "Pepperidge Farm Santa Cruz Oatmeal Raisin Cookies, 8.6 oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "504": {
+    "product_id": 504,
+    "product_name": "Pepperidge Farm Chesapeake Dark Chocolate Pecan Cookies, 7.2oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "505": {
+    "product_id": 505,
+    "product_name": "Nabisco Sweet & Savory Variety Pack, 20ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "506": {
+    "product_id": 506,
+    "product_name": "Nabisco Nutter Butter Cookies, 10",
+    "upc": null,
+    "nutrition": null
+  },
+  "507": {
+    "product_id": 507,
+    "product_name": "Nutter Butter Fudge Covered Peanut Butter Cookies, 7.9 oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "508": {
+    "product_id": 508,
+    "product_name": "Nutter Butter Peanut Butter Sandwich Cookies, 24ct",
+    "upc": "0044000020187",
+    "off_name": "Nutter Butter Bites peanut butter sandwich cookies",
+    "similarity": 0.94,
+    "nutrition": {
+      "serving_size": "1 pack, (28 g)",
+      "calories": 140.0,
+      "total_fat_g": 5.0,
+      "saturated_fat_g": 1.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": null,
+      "total_carbs_g": 20.0,
+      "fiber_g": 1.0,
+      "sugars_g": 8.0,
+      "added_sugars_g": 6.0,
+      "protein_g": 2.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "509": {
+    "product_id": 509,
+    "product_name": "Nabisco Cookie Variety Packs,  10ct",
+    "upc": "0044000047382",
+    "off_name": "Nabisco cookie variety packs",
+    "similarity": 1.0,
+    "nutrition": {
+      "serving_size": "See package",
+      "calories": 500.0,
+      "total_fat_g": 22.7,
+      "saturated_fat_g": 8.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 318.0,
+      "total_carbs_g": 68.2,
+      "fiber_g": 2.3,
+      "sugars_g": 31.8,
+      "added_sugars_g": null,
+      "protein_g": 4.5,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "510": {
+    "product_id": 510,
+    "product_name": "Nabisco Crowd Favorites Cookie Variety Pack, 30ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "511": {
+    "product_id": 511,
+    "product_name": "Nabisco Team Favorites Variety Pack, 30ct",
+    "upc": "0044000050382",
+    "off_name": "Team Favorites Variety Pack",
+    "similarity": 0.87,
+    "nutrition": {
+      "serving_size": "30 x 28 g",
+      "calories": 429.0,
+      "total_fat_g": 14.3,
+      "saturated_fat_g": 0.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 304.0,
+      "total_carbs_g": 75.0,
+      "fiber_g": 3.6,
+      "sugars_g": 25.0,
+      "added_sugars_g": null,
+      "protein_g": 7.1,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "512": {
+    "product_id": 512,
+    "product_name": "Nabisco Fun Shapes Variety Pack, 20ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "513": {
+    "product_id": 513,
+    "product_name": "Nabisco Oreo Mini Mix Sandwich Cookies Variety Pack, 20",
+    "upc": null,
+    "nutrition": null
+  },
+  "514": {
+    "product_id": 514,
+    "product_name": "Nabisco Classic Mix Variety Pack, 20ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "526": {
+    "product_id": 526,
+    "product_name": "Hawaiian Punch Fruit Juicy Red, on-the-Go Packets, 20ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "527": {
+    "product_id": 527,
+    "product_name": "Crush Powder Drink Mix, Pineapple, 6ct,",
+    "upc": null,
+    "nutrition": null
+  },
+  "528": {
+    "product_id": 528,
+    "product_name": "Crush Grape, Powdered Drink Mix, 6ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "529": {
+    "product_id": 529,
+    "product_name": "Crush On-the-Go Drink Mix, (Orange), 6 Count",
+    "upc": null,
+    "nutrition": null
+  },
+  "530": {
+    "product_id": 530,
+    "product_name": "Crush Powdered Drink Mix Variety Pack, 30ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "531": {
+    "product_id": 531,
+    "product_name": "Hawaiian Punch Powder Drink Mix Variety Pack, 30ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "532": {
+    "product_id": 532,
+    "product_name": "Swiss Miss Chocolate Hot Cocoa Mix With Marshmallows, 8ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "533": {
+    "product_id": 533,
+    "product_name": "Swiss Miss Milk Chocolate Hot Cocoa Mix, 8ct",
+    "upc": "0070920476537",
+    "off_name": "SWISS MISS, milk chocolate, hot cocoa mix",
+    "similarity": 0.97,
+    "nutrition": {
+      "serving_size": "1 envelope (39 g)",
+      "calories": 160.0,
+      "total_fat_g": 2.5,
+      "saturated_fat_g": 2.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 170.0,
+      "total_carbs_g": 34.0,
+      "fiber_g": 1.0,
+      "sugars_g": 28.0,
+      "added_sugars_g": 23.0,
+      "protein_g": 1.0,
+      "calcium_mg": 103.0,
+      "iron_mg": 0.7,
+      "potassium_mg": 821.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "534": {
+    "product_id": 534,
+    "product_name": "Caf\u00e9 Bustelo Instant Coffee Single Serve Packets, 6 Ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "535": {
+    "product_id": 535,
+    "product_name": "Cafe Bustelo, Espresso Style Ground Coffee, 10oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "536": {
+    "product_id": 536,
+    "product_name": "Nescafe Taster's Choice House Blend, 6ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "537": {
+    "product_id": 537,
+    "product_name": "Nescafe Taster's Choice House Blend, 16ct",
+    "upc": "0028000593933",
+    "off_name": "Taster's Choice House Blend",
+    "similarity": 0.87,
+    "nutrition": null
+  },
+  "538": {
+    "product_id": 538,
+    "product_name": "Nescafe Taster's Choice Colombian Flavored, 16ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "539": {
+    "product_id": 539,
+    "product_name": "Nescafe Taster's Choice Hazelnut Flavored, 16ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "540": {
+    "product_id": 540,
+    "product_name": "Plantains, (Green), 3ct",
+    "upc": "00972086",
+    "off_name": "Plantain Chips",
+    "similarity": 0.75,
+    "nutrition": {
+      "serving_size": "20 chips (28.349 g)",
+      "calories": 142.0,
+      "total_fat_g": 7.0,
+      "saturated_fat_g": 0.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 40.0,
+      "total_carbs_g": 19.0,
+      "fiber_g": 1.0,
+      "sugars_g": 0.0,
+      "added_sugars_g": 0.0,
+      "protein_g": 0.0,
+      "calcium_mg": null,
+      "iron_mg": 0.2,
+      "potassium_mg": 240.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "541": {
+    "product_id": 541,
+    "product_name": "Plantains, (Yellow), 3ct",
+    "upc": "00972086",
+    "off_name": "Plantain Chips",
+    "similarity": 0.75,
+    "nutrition": {
+      "serving_size": "20 chips (28.349 g)",
+      "calories": 142.0,
+      "total_fat_g": 7.0,
+      "saturated_fat_g": 0.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 40.0,
+      "total_carbs_g": 19.0,
+      "fiber_g": 1.0,
+      "sugars_g": 0.0,
+      "added_sugars_g": 0.0,
+      "protein_g": 0.0,
+      "calcium_mg": null,
+      "iron_mg": 0.2,
+      "potassium_mg": 240.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "542": {
+    "product_id": 542,
+    "product_name": "Acme Classic Brooklyn Smoked Nova Atlantic Salmon, 8 oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "543": {
+    "product_id": 543,
+    "product_name": "Latitude 45 Cold Smoked Atlantic Salmon Loin, 8oz,",
+    "upc": null,
+    "nutrition": null
+  },
+  "544": {
+    "product_id": 544,
+    "product_name": "Latitude 45 Cold Smoked Gravlax Style Atlantic Salmon, 4oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "545": {
+    "product_id": 545,
+    "product_name": "Latitude 45 Cold Smoked Atlantic Salmon, 4oz.",
+    "upc": null,
+    "nutrition": null
+  },
+  "546": {
+    "product_id": 546,
+    "product_name": "Latitude 45 Roasted Smoked Atlantic Salmon, 4oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "547": {
+    "product_id": 547,
+    "product_name": "Latitude 45 Smoke Roasted Atlantic Salmon 12oz,",
+    "upc": "0688264916376",
+    "off_name": "Smoke roasted atlantic salmon",
+    "similarity": 0.83,
+    "nutrition": {
+      "serving_size": "1 portion (57 g)",
+      "calories": 110.0,
+      "total_fat_g": 6.0,
+      "saturated_fat_g": 1.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 392.0,
+      "total_carbs_g": 0.0,
+      "fiber_g": 0.0,
+      "sugars_g": 0.0,
+      "added_sugars_g": 0.0,
+      "protein_g": 13.0,
+      "calcium_mg": 2.0,
+      "iron_mg": null,
+      "potassium_mg": 222.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "548": {
+    "product_id": 548,
+    "product_name": "Naturally Smoked Whitefish-Wild Caught, 14oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "549": {
+    "product_id": 549,
+    "product_name": "Tropical Boned Salted Pollock Fillets (Abadejo Salado) 12oz, Wild Caught",
+    "upc": null,
+    "nutrition": null
+  },
+  "550": {
+    "product_id": 550,
+    "product_name": "Chicken of the Sea Smoked Oysters 3.53oz.",
+    "upc": "0048000000668",
+    "off_name": "Fancy Smoked Oysters",
+    "similarity": 0.6,
+    "nutrition": {
+      "serving_size": "1 can drained (85 g)",
+      "calories": 120.0,
+      "total_fat_g": 7.0,
+      "saturated_fat_g": 1.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.1,
+      "sodium_mg": 320.0,
+      "total_carbs_g": 4.0,
+      "fiber_g": 0.0,
+      "sugars_g": 0.0,
+      "added_sugars_g": 0.0,
+      "protein_g": 18.0,
+      "calcium_mg": 46.0,
+      "iron_mg": 7.0,
+      "potassium_mg": 80.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "551": {
+    "product_id": 551,
+    "product_name": "Chicken of the Sea Smoked Clams 3.53 oz.",
+    "upc": null,
+    "nutrition": null
+  },
+  "552": {
+    "product_id": 552,
+    "product_name": "Chicken of the Sea Crab Meat 3.53oz.",
+    "upc": "0843237003426",
+    "off_name": "Real crab meat",
+    "similarity": 0.57,
+    "nutrition": {
+      "serving_size": "8 oz",
+      "calories": 94.0,
+      "total_fat_g": 0.6,
+      "saturated_fat_g": 0.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 318.0,
+      "total_carbs_g": 0.0,
+      "fiber_g": 0.0,
+      "sugars_g": 0.0,
+      "added_sugars_g": null,
+      "protein_g": 21.2,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "553": {
+    "product_id": 553,
+    "product_name": "Geisha Whole Mackerel 12 oz.",
+    "upc": null,
+    "nutrition": null
+  },
+  "554": {
+    "product_id": 554,
+    "product_name": "Geisha Fish Steak with Green Chilies 3.53oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "555": {
+    "product_id": 555,
+    "product_name": "Geisha Fish in Louisiana Hot Sauce 3.53 oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "556": {
+    "product_id": 556,
+    "product_name": "Geisha Smoked Oysters in Oil 3.53 oz.",
+    "upc": null,
+    "nutrition": null
+  },
+  "557": {
+    "product_id": 557,
+    "product_name": "Geisha Mackerel Fillet 3.53 oz.",
+    "upc": null,
+    "nutrition": null
+  },
+  "558": {
+    "product_id": 558,
+    "product_name": "Geisha Imitation Crab 3.53 oz.",
+    "upc": null,
+    "nutrition": null
+  },
+  "559": {
+    "product_id": 559,
+    "product_name": "G-V Premium Sweet & Spicy Chunk Tuna, 2.6oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "560": {
+    "product_id": 560,
+    "product_name": "G-V Ranch Chunk Light Tuna, 2.6 oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "561": {
+    "product_id": 561,
+    "product_name": "G-V Premium Sweet & Spicy Light Tuna, 2.6oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "562": {
+    "product_id": 562,
+    "product_name": "G-V Premium Tomato Basil Light Tuna, 2.6oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "563": {
+    "product_id": 563,
+    "product_name": "G-V Chunk Light Tuna, Lemon Pepper, 2.6 oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "564": {
+    "product_id": 564,
+    "product_name": "G-V Chunk Light Tuna, 2.6oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "565": {
+    "product_id": 565,
+    "product_name": "StarKist Albacore White Tuna in Water, 2.6oz",
+    "upc": "0080000495228",
+    "off_name": "Wild Caught Albacore White Tuna in Water",
+    "similarity": 0.81,
+    "nutrition": {
+      "serving_size": "1 pouch (74 g)",
+      "calories": 80.0,
+      "total_fat_g": 1.5,
+      "saturated_fat_g": 0.5,
+      "trans_fat_g": null,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 244.0,
+      "total_carbs_g": 0.0,
+      "fiber_g": null,
+      "sugars_g": null,
+      "added_sugars_g": 0.0,
+      "protein_g": 17.0,
+      "calcium_mg": null,
+      "iron_mg": 0.4,
+      "potassium_mg": 210.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "566": {
+    "product_id": 566,
+    "product_name": "StarKist Tuna Creations, Bold Hot Buffalo, 2.6oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "567": {
+    "product_id": 567,
+    "product_name": "StarKist Tuna Creations, Bacon Ranch, 2.6oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "568": {
+    "product_id": 568,
+    "product_name": "StarKist Tuna Creations, Sweet and Spicy, 2.6oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "569": {
+    "product_id": 569,
+    "product_name": "StarKist Tuna Creations, BOLD Jalapeno, 2.6oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "570": {
+    "product_id": 570,
+    "product_name": "StarKist Creations, Grain Dijon Mustard, 3oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "571": {
+    "product_id": 571,
+    "product_name": "StarKist Tuna Creations, Hickory Smoked, 2.6oz",
+    "upc": "0080444513069",
+    "off_name": "Tuna Creations Hickory Smoked",
+    "similarity": 0.85,
+    "nutrition": {
+      "serving_size": "1 pouch (74 g)",
+      "calories": 110.0,
+      "total_fat_g": 4.5,
+      "saturated_fat_g": 0.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 340.0,
+      "total_carbs_g": 0.0,
+      "fiber_g": null,
+      "sugars_g": null,
+      "added_sugars_g": 0.0,
+      "protein_g": 17.0,
+      "calcium_mg": null,
+      "iron_mg": 1.0,
+      "potassium_mg": 180.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "572": {
+    "product_id": 572,
+    "product_name": "StarKist Tuna Creations, Ranch, 2.6oz",
+    "upc": "0080000514202",
+    "off_name": "Tuna Creations Ranch",
+    "similarity": 0.8,
+    "nutrition": {
+      "serving_size": "74g",
+      "calories": 70.0,
+      "total_fat_g": 1.0,
+      "saturated_fat_g": 0.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 360.0,
+      "total_carbs_g": 1.0,
+      "fiber_g": 0.0,
+      "sugars_g": 0.5,
+      "added_sugars_g": 0.5,
+      "protein_g": 15.0,
+      "calcium_mg": 20.0,
+      "iron_mg": 1.0,
+      "potassium_mg": 210.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "573": {
+    "product_id": 573,
+    "product_name": "StarKist Tuna Creations, Herb and Garlic, 2.6oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "574": {
+    "product_id": 574,
+    "product_name": "StarKist Creations, Deli Style Tuna Salad, 3oz",
+    "upc": "0080000502391",
+    "off_name": "Deli Style Tuna Salad",
+    "similarity": 0.68,
+    "nutrition": {
+      "serving_size": "1 pouch (85 g)",
+      "calories": 80.0,
+      "total_fat_g": 1.5,
+      "saturated_fat_g": 0.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 460.0,
+      "total_carbs_g": 3.0,
+      "fiber_g": 1.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": 1.0,
+      "protein_g": 13.0,
+      "calcium_mg": null,
+      "iron_mg": 0.6,
+      "potassium_mg": 170.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "575": {
+    "product_id": 575,
+    "product_name": "StarKist Tuna Creations, Lemon Pepper, 2.6oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "576": {
+    "product_id": 576,
+    "product_name": "Arnold Country White Bread, 24oz",
+    "upc": "0073410003411",
+    "off_name": "Country style white bread",
+    "similarity": 0.75,
+    "nutrition": {
+      "serving_size": "See package",
+      "calories": 286.0,
+      "total_fat_g": 4.1,
+      "saturated_fat_g": 2.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 551.0,
+      "total_carbs_g": 53.1,
+      "fiber_g": 2.0,
+      "sugars_g": 10.2,
+      "added_sugars_g": null,
+      "protein_g": 8.2,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "577": {
+    "product_id": 577,
+    "product_name": "Arnold Whole Grains 100% Bread, 24oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "578": {
+    "product_id": 578,
+    "product_name": "Arnold 12 Grains and Seeds Bread, 24oz",
+    "upc": "0073410000267",
+    "off_name": "Whole Grains 12 Grains and Seeds Bread",
+    "similarity": 0.8,
+    "nutrition": {
+      "serving_size": "1 slice (43 g)",
+      "calories": 110.0,
+      "total_fat_g": 2.5,
+      "saturated_fat_g": null,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 190.0,
+      "total_carbs_g": 18.0,
+      "fiber_g": 4.0,
+      "sugars_g": 2.0,
+      "added_sugars_g": 2.0,
+      "protein_g": 5.0,
+      "calcium_mg": 60.0,
+      "iron_mg": 1.8,
+      "potassium_mg": 200.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "579": {
+    "product_id": 579,
+    "product_name": "Arnold Whole Grains Healthy Bread, 24oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "580": {
+    "product_id": 580,
+    "product_name": "Pepperidge Farm Sourdough, 24oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "581": {
+    "product_id": 581,
+    "product_name": "Pepperidge Farm Light Style 7 Grain Bread, 16oz",
+    "upc": "0014100070641",
+    "off_name": "Light style 7 grain bread",
+    "similarity": 0.76,
+    "nutrition": {
+      "serving_size": "2 slices (38 g)",
+      "calories": 90.0,
+      "total_fat_g": 0.5,
+      "saturated_fat_g": null,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 190.0,
+      "total_carbs_g": 18.0,
+      "fiber_g": 2.0,
+      "sugars_g": 2.0,
+      "added_sugars_g": null,
+      "protein_g": 5.0,
+      "calcium_mg": 40.0,
+      "iron_mg": 1.1,
+      "potassium_mg": 0.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "582": {
+    "product_id": 582,
+    "product_name": "Pepperidge Farm Jewish Rye Seedless Bread, 16 oz.",
+    "upc": null,
+    "nutrition": null
+  },
+  "583": {
+    "product_id": 583,
+    "product_name": "Pepperidge Farm Rye & Pumpernickel Swirl Bread, 16oz",
+    "upc": "0014100070092",
+    "off_name": "Jewish Rye & Pumpernickel Deli Swirl",
+    "similarity": 0.66,
+    "nutrition": {
+      "serving_size": "1 slice (32 g)",
+      "calories": 80.0,
+      "total_fat_g": 1.0,
+      "saturated_fat_g": null,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 230.0,
+      "total_carbs_g": 15.0,
+      "fiber_g": 1.0,
+      "sugars_g": null,
+      "added_sugars_g": 1.0,
+      "protein_g": 3.0,
+      "calcium_mg": 20.0,
+      "iron_mg": 1.0,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "584": {
+    "product_id": 584,
+    "product_name": "Pepperidge Farm Farmhouse Multigrain Bread, 24oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "585": {
+    "product_id": 585,
+    "product_name": "Pepperidge Farm Swirl Cinnamon Breakfast Bread, 16oz.",
+    "upc": null,
+    "nutrition": null
+  },
+  "586": {
+    "product_id": 586,
+    "product_name": "Pepperidge Farm Brown Sugar Cinnamon Swirl Bread, 16 oz",
+    "upc": "0014100087229",
+    "off_name": "Brown Sugar Cinnamon Swirl",
+    "similarity": 0.7,
+    "nutrition": {
+      "serving_size": "1.3 ONZ (38 g)",
+      "calories": 110.0,
+      "total_fat_g": 2.0,
+      "saturated_fat_g": 0.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 142.0,
+      "total_carbs_g": 21.0,
+      "fiber_g": 1.0,
+      "sugars_g": 7.0,
+      "added_sugars_g": 7.0,
+      "protein_g": 4.0,
+      "calcium_mg": 20.0,
+      "iron_mg": 1.1,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "587": {
+    "product_id": 587,
+    "product_name": "Pepperidge Farm Whole Grain Bread, 24oz.",
+    "upc": null,
+    "nutrition": null
+  },
+  "588": {
+    "product_id": 588,
+    "product_name": "Pepperidge Farm Whole Grain 15 Grain Bread, 24oz",
+    "upc": "0014100085980",
+    "off_name": "Whole Grain 15 Grain Bread",
+    "similarity": 0.76,
+    "nutrition": {
+      "serving_size": "1 slice (43 g)",
+      "calories": 129.0,
+      "total_fat_g": 2.5,
+      "saturated_fat_g": 0.5,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 150.0,
+      "total_carbs_g": 20.0,
+      "fiber_g": 3.0,
+      "sugars_g": 4.0,
+      "added_sugars_g": 2.1,
+      "protein_g": 5.0,
+      "calcium_mg": 40.0,
+      "iron_mg": 1.3,
+      "potassium_mg": 110.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "589": {
+    "product_id": 589,
+    "product_name": "Pepperidge Farm Farmhouse Butter Bread, 22oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "590": {
+    "product_id": 590,
+    "product_name": "Pepperidge Farm Farmhouse Hearty White Bread, 24oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "591": {
+    "product_id": 591,
+    "product_name": "Large Avocado, 1 count",
+    "upc": null,
+    "nutrition": null
+  },
+  "592": {
+    "product_id": 592,
+    "product_name": "Avocado Bag, 3-5 Count",
+    "upc": "0011110181800",
+    "off_name": "Avocado bag",
+    "similarity": 0.85,
+    "nutrition": {
+      "serving_size": "2",
+      "calories": 205.0,
+      "total_fat_g": 20.6,
+      "saturated_fat_g": 4.5,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 15.0,
+      "total_carbs_g": 0.8,
+      "fiber_g": 3.6,
+      "sugars_g": 0.4,
+      "added_sugars_g": null,
+      "protein_g": 1.6,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "593": {
+    "product_id": 593,
+    "product_name": "Bananas, 6 count",
+    "upc": "8718403887518",
+    "off_name": "Banana chips",
+    "similarity": 0.74,
+    "nutrition": {
+      "serving_size": "150g",
+      "calories": 528.0,
+      "total_fat_g": 32.0,
+      "saturated_fat_g": 29.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 4.0,
+      "total_carbs_g": 56.0,
+      "fiber_g": null,
+      "sugars_g": 16.0,
+      "added_sugars_g": 8.2,
+      "protein_g": 2.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "594": {
+    "product_id": 594,
+    "product_name": "Mini Watermelon, 2-3lbs",
+    "upc": "20008529",
+    "off_name": "Mini Watermelon",
+    "similarity": 0.88,
+    "nutrition": null
+  },
+  "595": {
+    "product_id": 595,
+    "product_name": "Dragon Fruit, 1 count",
+    "upc": "3760079798310",
+    "off_name": "Mystic Dragon",
+    "similarity": 0.48,
+    "nutrition": {
+      "serving_size": "0.2l",
+      "calories": 36.0,
+      "total_fat_g": 0.0,
+      "saturated_fat_g": 0.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": null,
+      "total_carbs_g": 8.7,
+      "fiber_g": null,
+      "sugars_g": 8.6,
+      "added_sugars_g": 7.5,
+      "protein_g": 0.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "596": {
+    "product_id": 596,
+    "product_name": "Fresh Plums, 2 lb Bag",
+    "upc": "5055540062068",
+    "off_name": "Plums",
+    "similarity": 0.62,
+    "nutrition": null
+  },
+  "597": {
+    "product_id": 597,
+    "product_name": "Fresh Red Grapefruit, 1 Count",
+    "upc": "03201572",
+    "off_name": "Red grapefruit",
+    "similarity": 0.82,
+    "nutrition": null
+  },
+  "598": {
+    "product_id": 598,
+    "product_name": "Red Seedless Grapes, 3 lbs.",
+    "upc": "10066140",
+    "off_name": "RED SEEDLESS GRAPES",
+    "similarity": 1.0,
+    "nutrition": {
+      "serving_size": "1 serving (100 g)",
+      "calories": 333.0,
+      "total_fat_g": 0.1,
+      "saturated_fat_g": 0.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": null,
+      "total_carbs_g": 17.0,
+      "fiber_g": 0.6,
+      "sugars_g": 17.0,
+      "added_sugars_g": 0.0,
+      "protein_g": 0.6,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "599": {
+    "product_id": 599,
+    "product_name": "Cotton Candy Grapes, 3lbs.",
+    "upc": "0895321002457",
+    "off_name": "Cotton candy grapes",
+    "similarity": 1.0,
+    "nutrition": null
+  },
+  "600": {
+    "product_id": 600,
+    "product_name": "Apples, 3lb Bag",
+    "upc": "5449000036964",
+    "off_name": "Poms",
+    "similarity": 0.4,
+    "nutrition": {
+      "serving_size": "1,5 l",
+      "calories": 41.0,
+      "total_fat_g": 0.0,
+      "saturated_fat_g": 0.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": null,
+      "total_carbs_g": 10.8,
+      "fiber_g": null,
+      "sugars_g": 9.6,
+      "added_sugars_g": 0.0,
+      "protein_g": 0.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "601": {
+    "product_id": 601,
+    "product_name": "Navel Oranges, 4 count",
+    "upc": null,
+    "nutrition": null
+  },
+  "602": {
+    "product_id": 602,
+    "product_name": "Jalape\u00f1o Pepper, 3 count",
+    "upc": "5025820000738",
+    "off_name": "Sliced Green Jalape\u00f1o Peppers",
+    "similarity": 0.68,
+    "nutrition": {
+      "serving_size": "100 g",
+      "calories": 17.0,
+      "total_fat_g": 0.3,
+      "saturated_fat_g": 0.1,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 1200.0,
+      "total_carbs_g": 1.3,
+      "fiber_g": 2.2,
+      "sugars_g": 0.4,
+      "added_sugars_g": 0.0,
+      "protein_g": 1.1,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
   }
 }
