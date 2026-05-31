@@ -69,6 +69,12 @@
       "type": "file"
     },
     {
+      "path": "cart.html",
+      "accessCount": 9,
+      "lastAccessed": 1780269391480,
+      "type": "file"
+    },
+    {
       "path": ".claude/handoff.md",
       "accessCount": 8,
       "lastAccessed": 1780267642934,
@@ -76,20 +82,14 @@
     },
     {
       "path": "js/store.js",
-      "accessCount": 7,
-      "lastAccessed": 1780258075881,
+      "accessCount": 8,
+      "lastAccessed": 1780269220694,
       "type": "file"
     },
     {
       "path": "scripts/enrich_upcs.py",
       "accessCount": 7,
       "lastAccessed": 1780266600654,
-      "type": "file"
-    },
-    {
-      "path": "cart.html",
-      "accessCount": 4,
-      "lastAccessed": 1780263559904,
       "type": "file"
     },
     {

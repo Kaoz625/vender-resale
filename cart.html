@@ -635,6 +635,27 @@
       gap: 0.75rem;
     }
 
+    /* ─── WEIGHT TRACKER ─── */
+    .weight-tracker { background: var(--navy2); border-left: 3px solid var(--gold); border-radius: 6px; padding: 1.2rem 1.4rem; margin-bottom: 1.5rem; }
+    .weight-tracker-title { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 700; color: var(--gold); margin-bottom: 1rem; }
+    .weight-bar-wrap { margin-bottom: 0.8rem; }
+    .weight-bar-label { display: flex; justify-content: space-between; font-size: 0.82rem; color: var(--text); margin-bottom: 0.3rem; }
+    .weight-bar-label .weight-val { font-weight: 600; }
+    .weight-bar-track { height: 8px; background: rgba(255,255,255,0.08); border-radius: 100px; overflow: hidden; }
+    .weight-bar-fill { height: 100%; border-radius: 100px; transition: width 0.4s ease, background 0.3s; }
+    .weight-bar-fill.ok   { background: #2d7a3a; }
+    .weight-bar-fill.warn { background: var(--gold); }
+    .weight-bar-fill.over { background: #c0392b; }
+    .weight-unknown { font-size: 0.75rem; color: var(--muted); margin-top: 0.5rem; font-style: italic; }
+    .weight-limit-note { font-size: 0.72rem; color: var(--muted); margin-top: 0.6rem; }
+
+    /* ─── COMPLIANCE ─── */
+    .compliance-warning { background: rgba(192,57,43,0.1); border: 1px solid rgba(192,57,43,0.4); border-radius: 6px; padding: 0.9rem 1rem; margin-bottom: 1rem; color: #e07060; font-size: 0.85rem; }
+    .compliance-info    { background: rgba(45,122,58,0.1);  border: 1px solid rgba(45,122,58,0.4);  border-radius: 6px; padding: 0.8rem 1rem; margin-bottom: 1rem; color: #5cb85c;  font-size: 0.82rem; }
+    .compliance-caution { background: rgba(201,168,76,0.1); border: 1px solid rgba(201,168,76,0.3); border-radius: 6px; padding: 0.8rem 1rem; margin-bottom: 1rem; color: var(--gold); font-size: 0.82rem; }
+    .compliance-check { display: flex; align-items: flex-start; gap: 0.6rem; font-size: 0.82rem; color: var(--text); margin: 0.6rem 0; cursor: pointer; }
+    .compliance-check input[type="checkbox"] { margin-top: 2px; flex-shrink: 0; accent-color: var(--gold); width: 15px; height: 15px; }
+
     /* ─── RESPONSIVE ─── */
     @media (max-width: 820px) {
       .cart-layout {
@@ -700,6 +721,14 @@
 
       <!-- LEFT: CART ITEMS -->
       <div class="cart-panel">
+
+        <!-- WEIGHT TRACKER (rendered by JS) -->
+        <div class="weight-tracker" id="weight-tracker" style="display:none;">
+          <p class="weight-tracker-title">Package Weight Check</p>
+          <div id="weight-tracker-body"><!-- rendered by JS --></div>
+          <p class="weight-limit-note">DOCCS Directive 4911: Max 30 lbs per shipment. Max 40 lbs food per month (3 packages combined).</p>
+        </div>
+
         <div class="cart-items-list" id="cart-items-list">
           <!-- items rendered by JS -->
         </div>
@@ -793,6 +822,9 @@
               </div>
             </div>
 
+            <!-- Compliance notices rendered by JS at submit time -->
+            <div id="compliance-notices"></div>
+
             <button class="btn-primary submit-btn" type="submit">Send Order Request</button>
 
             <p class="fine-print">
@@ -830,20 +862,23 @@
       'use strict';
 
       // ─── DOM refs ────────────────────────────────────────────────────────────
-      var emptyState      = document.getElementById('empty-state');
-      var cartLayout      = document.getElementById('cart-layout');
-      var cartItemsList   = document.getElementById('cart-items-list');
-      var subtotalDisplay = document.getElementById('subtotal-display');
-      var cartSubtitle    = document.getElementById('cart-subtitle');
+      var emptyState        = document.getElementById('empty-state');
+      var cartLayout        = document.getElementById('cart-layout');
+      var cartItemsList     = document.getElementById('cart-items-list');
+      var subtotalDisplay   = document.getElementById('subtotal-display');
+      var cartSubtitle      = document.getElementById('cart-subtitle');
       var formSummaryItems  = document.getElementById('form-summary-items');
       var formSummaryTotal  = document.getElementById('form-summary-subtotal');
-      var clearCartBtn    = document.getElementById('clear-cart-btn');
-      var orderForm       = document.getElementById('order-form');
-      var orderFormWrap   = document.getElementById('order-form-wrap');
-      var confirmCard     = document.getElementById('confirmation-card');
-      var placeAnotherBtn = document.getElementById('place-another-btn');
-      var confirmClearBtn = document.getElementById('confirm-clear-btn');
-      var pageToast       = document.getElementById('page-toast');
+      var clearCartBtn      = document.getElementById('clear-cart-btn');
+      var orderForm         = document.getElementById('order-form');
+      var orderFormWrap     = document.getElementById('order-form-wrap');
+      var confirmCard       = document.getElementById('confirmation-card');
+      var placeAnotherBtn   = document.getElementById('place-another-btn');
+      var confirmClearBtn   = document.getElementById('confirm-clear-btn');
+      var pageToast         = document.getElementById('page-toast');
+      var weightTracker     = document.getElementById('weight-tracker');
+      var weightTrackerBody = document.getElementById('weight-tracker-body');
+      var complianceNotices = document.getElementById('compliance-notices');
 
       var _toastTimer = null;
 
@@ -857,13 +892,145 @@
         }, 2500);
       }
 
+      // ─── Helpers ─────────────────────────────────────────────────────────────
+      function escHtml(str) {
+        return String(str || '')
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;');
+      }
+      function escAttr(str) {
+        return String(str || '').replace(/"/g, '&quot;');
+      }
+
+      // ─── Weight helpers ───────────────────────────────────────────────────────
+      var FOOD_CATEGORIES = ['proteins & meat', 'snacks', 'grocery', 'produce'];
+
+      function isFood(item) {
+        var cat = (item.top_category || item.category || '').toLowerCase();
+        for (var i = 0; i < FOOD_CATEGORIES.length; i++) {
+          if (cat === FOOD_CATEGORIES[i]) return true;
+        }
+        return false;
+      }
+
+      // Look up weight_oz from catalog by product id.
+      // Returns a number (oz) or null if not found / not set.
+      function getProductWeight(item) {
+        var catalog = window._VR_CATALOG;
+        if (!catalog || !catalog.length) return null;
+        var idNum = parseInt(item.id, 10);
+        for (var i = 0; i < catalog.length; i++) {
+          if (catalog[i].id === idNum) {
+            var w = parseFloat(catalog[i].weight_oz);
+            return isNaN(w) ? null : w;
+          }
+        }
+        return null;
+      }
+
+      // Returns { totalOz, foodOz, unknownCount }
+      function calcWeights(items) {
+        var totalOz = 0;
+        var foodOz  = 0;
+        var unknownCount = 0;
+        for (var i = 0; i < items.length; i++) {
+          var item = items[i];
+          var qty  = item.quantity || 1;
+          var woz  = getProductWeight(item);
+          if (woz === null) {
+            unknownCount++;
+          } else {
+            totalOz += woz * qty;
+            if (isFood(item)) foodOz += woz * qty;
+          }
+        }
+        return { totalOz: totalOz, foodOz: foodOz, unknownCount: unknownCount };
+      }
+
+      function ozToLbs(oz) { return oz / 16; }
+      function fmtLbs(oz) { return (ozToLbs(oz)).toFixed(1); }
+
+      // Returns CSS class for bar state given a pct (0–1+)
+      function barClass(pct) {
+        if (pct >= 1)    return 'over';
+        if (pct >= 0.75) return 'warn';
+        return 'ok';
+      }
+
+      // ─── Weight tracker render ────────────────────────────────────────────────
+      function renderWeightTracker(items) {
+        if (!items || items.length === 0) {
+          weightTracker.style.display = 'none';
+          return;
+        }
+
+        // Try to use catalog; if not loaded yet, render as "loading" then retry
+        if (!window._VR_CATALOG) {
+          weightTracker.style.display = 'none';
+          VR.getCatalog().then(function () { renderWeightTracker(VR.cart.get()); });
+          return;
+        }
+
+        weightTracker.style.display = '';
+
+        var w = calcWeights(items);
+
+        var SHIP_LIMIT_OZ    = 30 * 16;  // 480 oz
+        var FOOD_LIMIT_OZ    = 40 * 16;  // 640 oz
+
+        var shipPct = Math.min(w.totalOz / SHIP_LIMIT_OZ, 1);
+        var foodPct = Math.min(w.foodOz  / FOOD_LIMIT_OZ, 1);
+        var shipPctRaw = w.totalOz / SHIP_LIMIT_OZ;
+        var foodPctRaw = w.foodOz  / FOOD_LIMIT_OZ;
+
+        var html = '';
+
+        // Shipment weight bar
+        html += '<div class="weight-bar-wrap">';
+        html += '<div class="weight-bar-label">';
+        html += '<span>Total Cart Weight</span>';
+        html += '<span class="weight-val">' + fmtLbs(w.totalOz) + ' lbs / 30 lbs</span>';
+        html += '</div>';
+        html += '<div class="weight-bar-track">';
+        html += '<div class="weight-bar-fill ' + barClass(shipPctRaw) + '" style="width:' + (shipPct * 100).toFixed(1) + '%"></div>';
+        html += '</div>';
+        html += '</div>';
+
+        // Food weight bar
+        html += '<div class="weight-bar-wrap">';
+        html += '<div class="weight-bar-label">';
+        html += '<span>Food Weight</span>';
+        html += '<span class="weight-val">' + fmtLbs(w.foodOz) + ' lbs / 40 lbs monthly limit</span>';
+        html += '</div>';
+        html += '<div class="weight-bar-track">';
+        html += '<div class="weight-bar-fill ' + barClass(foodPctRaw) + '" style="width:' + (foodPct * 100).toFixed(1) + '%"></div>';
+        html += '</div>';
+        html += '</div>';
+
+        // Unknown weight note
+        if (w.unknownCount > 0) {
+          html += '<p class="weight-unknown">* Weight of ' + w.unknownCount + ' item' + (w.unknownCount > 1 ? 's' : '') + ' unknown — not included in totals</p>';
+        }
+
+        // Limit warnings
+        if (shipPctRaw > 1) {
+          html += '<p class="compliance-warning" style="margin-top:0.6rem;margin-bottom:0;">&#9888; Order exceeds 30 lb shipment limit. Please reduce quantity or remove items.</p>';
+        }
+        if (foodPctRaw > 1) {
+          html += '<p class="compliance-warning" style="margin-top:0.6rem;margin-bottom:0;">&#9888; Food weight exceeds the 40 lb monthly limit.</p>';
+        }
+
+        weightTrackerBody.innerHTML = html;
+      }
+
       // ─── Render cart items ───────────────────────────────────────────────────
       function renderCart() {
         var items = VR.cart.get();
         var count = VR.cart.count();
         var total = VR.cart.total();
 
-        // Update subtitle
         cartSubtitle.textContent = count === 0
           ? '0 items'
           : count === 1 ? '1 item' : count + ' items';
@@ -871,6 +1038,7 @@
         if (count === 0) {
           emptyState.style.display  = 'flex';
           cartLayout.style.display  = 'none';
+          weightTracker.style.display = 'none';
           return;
         }
 
@@ -884,7 +1052,7 @@
           var lineTotal = (parseFloat(item.price) || 0) * (item.quantity || 1);
           var imgHtml = item.image_url
             ? '<img class="cart-item-img" src="' + escHtml(item.image_url) + '" alt="' + escHtml(item.name) + '" onerror="this.style.background=\'var(--navy3)\'">'
-            : '<div class="cart-item-img-placeholder">📦</div>';
+            : '<div class="cart-item-img-placeholder">&#128230;</div>';
 
           var variantHtml = (item.variant && item.variant !== 'Default Title')
             ? '<span class="cart-item-variant">' + escHtml(item.variant) + '</span>'
@@ -912,11 +1080,9 @@
         }
         cartItemsList.innerHTML = html;
 
-        // Totals
         subtotalDisplay.textContent = VR.formatPrice(total);
-
-        // Form summary
         renderFormSummary(items, total);
+        renderWeightTracker(items);
       }
 
       function renderFormSummary(items, total) {
@@ -936,23 +1102,10 @@
         formSummaryTotal.textContent = VR.formatPrice(total);
       }
 
-      // ─── Helpers ─────────────────────────────────────────────────────────────
-      function escHtml(str) {
-        return String(str || '')
-          .replace(/&/g, '&amp;')
-          .replace(/</g, '&lt;')
-          .replace(/>/g, '&gt;')
-          .replace(/"/g, '&quot;');
-      }
-      function escAttr(str) {
-        return String(str || '').replace(/"/g, '&quot;');
-      }
-
       // ─── Quantity & remove delegation ────────────────────────────────────────
       cartItemsList.addEventListener('click', function (e) {
         var target = e.target;
 
-        // Remove button
         var removeBtn = target.closest('.cart-item-remove');
         if (removeBtn) {
           var id      = parseInt(removeBtn.getAttribute('data-id'), 10);
@@ -961,7 +1114,6 @@
           return;
         }
 
-        // Minus button
         var minusBtn = target.closest('.qty-minus');
         if (minusBtn) {
           var id      = parseInt(minusBtn.getAttribute('data-id'), 10);
@@ -976,7 +1128,6 @@
           return;
         }
 
-        // Plus button
         var plusBtn = target.closest('.qty-plus');
         if (plusBtn) {
           var id      = parseInt(plusBtn.getAttribute('data-id'), 10);
@@ -998,7 +1149,7 @@
         showPageToast('Cart cleared.');
       });
 
-      // ─── Form validation & submit ─────────────────────────────────────────────
+      // ─── Form helpers ─────────────────────────────────────────────────────────
       function getVal(id) {
         var el = document.getElementById(id);
         return el ? el.value.trim() : '';
@@ -1014,6 +1165,121 @@
         }, { once: true });
       }
 
+      // ─── Compliance checks (pre-submit) ───────────────────────────────────────
+      var BLOCKED_KEYWORDS = [
+        'lakeview shock', 'drug treatment', 'work release', 'casat', 'iasat', 'edgecombe'
+      ];
+
+      // Returns true if facility is blocked, false otherwise
+      function checkBlockedFacility(facilityName) {
+        var f = facilityName.toLowerCase();
+        for (var i = 0; i < BLOCKED_KEYWORDS.length; i++) {
+          if (f.indexOf(BLOCKED_KEYWORDS[i]) !== -1) return true;
+        }
+        return false;
+      }
+
+      // Returns { hasElectronics, hasTobacco, hasHighValue }
+      function scanCartCategories(items) {
+        var hasElectronics = false;
+        var hasTobacco     = false;
+        var hasHighValue   = false;
+        for (var i = 0; i < items.length; i++) {
+          var cat = (items[i].top_category || items[i].category || '').toLowerCase();
+          if (cat === 'electronics') hasElectronics = true;
+          if (cat === 'tobacco')     hasTobacco     = true;
+          if ((parseFloat(items[i].price) || 0) * (items[i].quantity || 1) > 30) hasHighValue = true;
+          // Also check per-unit price
+          if ((parseFloat(items[i].price) || 0) > 30) hasHighValue = true;
+        }
+        return { hasElectronics: hasElectronics, hasTobacco: hasTobacco, hasHighValue: hasHighValue };
+      }
+
+      // Injects compliance UI above submit button.
+      // Returns true if all required checks pass, false if submission must be blocked.
+      function buildComplianceUI(facilityName, items) {
+        complianceNotices.innerHTML = '';
+
+        var scan = scanCartCategories(items);
+        var blocked = checkBlockedFacility(facilityName);
+
+        if (blocked) {
+          var div = document.createElement('div');
+          div.className = 'compliance-warning';
+          div.innerHTML = '&#9888; Packages cannot be shipped to <strong>' + escHtml(facilityName) + '</strong>. This facility is on the DOCCS restricted list (Lakeview Shock Incarceration, Drug Treatment Centers, CASAT, Work Release, IASAT, and Edgecombe are not permitted to receive vendor packages per Directive 4911).';
+          complianceNotices.appendChild(div);
+          return false; // hard block
+        }
+
+        var allChecksPassed = true;
+
+        // Electronics — caution + required checkbox
+        if (scan.hasElectronics) {
+          var elecDiv = document.createElement('div');
+          elecDiv.className = 'compliance-caution';
+          elecDiv.innerHTML =
+            '<p>&#9888; <strong>Electronics Reminder:</strong> Radios, headphones, and audio equipment require a local permit from the facility. Please confirm the recipient has an approved local permit before ordering.</p>';
+
+          var elecLabel = document.createElement('label');
+          elecLabel.className = 'compliance-check';
+          var elecCb = document.createElement('input');
+          elecCb.type = 'checkbox';
+          elecCb.id   = 'compliance-electronics-cb';
+          elecLabel.appendChild(elecCb);
+          var elecText = document.createTextNode('I confirm the recipient has a local permit for electronic items');
+          elecLabel.appendChild(elecText);
+          elecDiv.appendChild(elecLabel);
+          complianceNotices.appendChild(elecDiv);
+
+          if (!elecCb.checked) allChecksPassed = false;
+        }
+
+        // Tobacco — age attestation + quantity limits note
+        if (scan.hasTobacco) {
+          var tobDiv = document.createElement('div');
+          tobDiv.className = 'compliance-caution';
+
+          var tobLabel = document.createElement('label');
+          tobLabel.className = 'compliance-check';
+          var tobCb = document.createElement('input');
+          tobCb.type = 'checkbox';
+          tobCb.id   = 'compliance-tobacco-cb';
+          tobLabel.appendChild(tobCb);
+          var tobText = document.createTextNode('I confirm the recipient is 21 years of age or older (required for tobacco purchases per DOCCS Directive 4911)');
+          tobLabel.appendChild(tobText);
+          tobDiv.appendChild(tobLabel);
+
+          var tobNote = document.createElement('p');
+          tobNote.style.cssText = 'font-size:0.78rem;color:var(--muted);margin-top:0.5rem;';
+          tobNote.textContent = 'Monthly tobacco limits: Cigarettes max 2 cartons | Cigars max 50 | Loose tobacco max 12 oz';
+          tobDiv.appendChild(tobNote);
+
+          complianceNotices.appendChild(tobDiv);
+
+          if (!tobCb.checked) allChecksPassed = false;
+        }
+
+        // Receipt notice — informational only
+        if (scan.hasHighValue) {
+          var rcptDiv = document.createElement('div');
+          rcptDiv.className = 'compliance-info';
+          rcptDiv.textContent = '✓ A printed receipt will be included with your order (required for items over $30 per Directive 4911). Keep a copy for your records.';
+          complianceNotices.appendChild(rcptDiv);
+        }
+
+        return allChecksPassed;
+      }
+
+      // Re-validates checkboxes on change so the button state can be re-checked
+      complianceNotices.addEventListener('change', function (e) {
+        if (e.target && e.target.type === 'checkbox') {
+          // Remove any prior "must check" warnings painted over the boxes
+          var warns = complianceNotices.querySelectorAll('.compliance-cb-warn');
+          for (var i = 0; i < warns.length; i++) warns[i].remove();
+        }
+      });
+
+      // ─── Form validation & submit ─────────────────────────────────────────────
       orderForm.addEventListener('submit', function (e) {
         e.preventDefault();
 
@@ -1043,7 +1309,41 @@
           return;
         }
 
-        // Build email body
+        // ── Compliance checks ─────────────────────────────────────────────────
+        var complianceOk = buildComplianceUI(facility, items);
+
+        // If blocked facility — already shown error, stop here
+        if (!complianceOk) {
+          // Check if it is a hard-block (blocked facility) or unchecked checkboxes
+          var isBlocked = checkBlockedFacility(facility);
+          if (isBlocked) {
+            complianceNotices.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            showPageToast('This facility cannot receive vendor packages.');
+            return;
+          }
+
+          // Soft block — required checkboxes not yet checked
+          // Highlight unchecked required checkboxes
+          var unchecked = complianceNotices.querySelectorAll('input[type="checkbox"]:not(:checked)');
+          for (var i = 0; i < unchecked.length; i++) {
+            var cb = unchecked[i];
+            // Animate the parent label
+            cb.parentElement.style.color = '#e07060';
+            cb.style.outline = '2px solid #c0392b';
+            (function(el) {
+              el.addEventListener('change', function fix() {
+                el.style.outline = '';
+                el.parentElement.style.color = '';
+                el.removeEventListener('change', fix);
+              });
+            }(cb));
+          }
+          complianceNotices.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          showPageToast('Please confirm all required compliance checkboxes.');
+          return;
+        }
+
+        // ── Build email body ──────────────────────────────────────────────────
         var phone  = getVal('f-phone');
         var notes  = getVal('f-notes');
         var total  = VR.cart.total();
@@ -1088,14 +1388,13 @@
         bodyLines.push('Max 3 packages/month per individual. 35 lb combined limit.');
         bodyLines.push('All items Directive 4911 compliant.');
 
-        // Filter empty lines at end
         var body = bodyLines.filter(function (l) { return l !== undefined; }).join('\n');
 
         var mailtoLink = 'mailto:vender@nyctailblazers.com'
           + '?subject=' + encodeURIComponent(subject)
           + '&body='    + encodeURIComponent(body);
 
-        // Submit to Formspree, fall back to mailto
+        // ── Submit to Formspree ───────────────────────────────────────────────
         var submitBtn = orderForm.querySelector('.submit-btn');
         submitBtn.disabled = true;
         submitBtn.textContent = 'Sending…';
@@ -1121,27 +1420,24 @@
           submitBtn.disabled = false;
           submitBtn.textContent = 'Send Order Request';
           if (!result.ok) {
-            // Formspree failed — fall back to mailto
             window.open(mailtoLink);
           }
-          // Show confirmation either way
           orderFormWrap.style.display = 'none';
           confirmCard.classList.add('show');
         });
-
-        return; // wait for fetch to show confirmation
       });
 
       // ─── Confirmation actions ─────────────────────────────────────────────────
       placeAnotherBtn.addEventListener('click', function () {
-        // Reset form only — keep cart
         orderForm.reset();
+        complianceNotices.innerHTML = '';
         confirmCard.classList.remove('show');
         orderFormWrap.style.display = '';
       });
 
       confirmClearBtn.addEventListener('click', function () {
         VR.cart.clear();
+        complianceNotices.innerHTML = '';
         confirmCard.classList.remove('show');
         orderFormWrap.style.display = '';
         showPageToast('Cart cleared.');
@@ -1150,10 +1446,17 @@
       // ─── Subscribe to cart changes ────────────────────────────────────────────
       VR.cart.onChange(function () {
         renderCart();
+        // Clear stale compliance notices when cart changes
+        complianceNotices.innerHTML = '';
       });
 
       // ─── Initial render ───────────────────────────────────────────────────────
-      renderCart();
+      // Ensure catalog is loaded before first weight render
+      VR.getCatalog().then(function () {
+        renderCart();
+      }).catch(function () {
+        renderCart(); // render cart anyway even if catalog fails
+      });
 
     }());
   </script>
