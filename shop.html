@@ -814,18 +814,51 @@
     { top: 'Electronics',             icon: '🎧', count: 25   }
   ];
 
-  var BROWSE_PER_SECTION = 25;
-  var FILTERED_PAGE_SIZE = 48;
+  // ─── SUBCATEGORY MAP ──────────────────────────────────────────────────────
+  var SUBCATEGORY_MAP = {
+    'Proteins & Meat':        ['Beef', 'Poultry', 'Pork', 'Seafood & Fish', 'Nuts & Seeds', 'Jerky & Meat Snacks'],
+    'Snacks':                  ['Chips & Crisps', 'Cookies & Cakes', 'Candy & Sweets', 'Crackers', 'Popcorn', 'Other Snacks'],
+    'Grocery':                 ['Bread & Bakery', 'Dairy & Cheese', 'Rice & Grains', 'Breakfast & Cereal', 'Beverages', 'Condiments & Sauces', 'Canned & Packaged Food', 'Soup'],
+    'Produce':                 ['Fresh Vegetables', 'Fresh Fruit'],
+    'Hygiene & Personal Care': ['Soap & Body Wash', 'Oral Care', 'Deodorant', 'Hair Care', 'Skin Care & Lotion', 'Feminine Care', 'Shaving'],
+    'Clothing':                ['Sweatsuits & Sets', 'Shirts & Tops', 'Pants & Bottoms', 'Winter Gear', 'Socks & Underwear', 'Footwear'],
+    'Bedding & Home':          ['Blankets & Bedding', 'Towels', 'Kitchen & Supplies'],
+    'Electronics':             ['Headphones & Earbuds', 'Radios', 'Electronics Accessories'],
+    'Other':                   ['Tobacco', 'Bundles', 'Books & Cards', 'Gift Cards']
+  };
+
+  var BROWSE_PER_SECTION  = 25;
+  var FILTERED_PAGE_SIZE  = 48;
 
   // ─── STATE ────────────────────────────────────────────────────────────────
-  var _catalog       = [];
-  var _mode          = 'browse';   // 'browse' | 'filtered'
-  var _activeTopCat  = null;       // filtered mode top_category
-  var _activeSubCat  = null;       // filtered mode subcategory chip
-  var _currentPage   = 1;
-  var _searchQ       = '';
-  var _searchTimer   = null;
-  var _toastTimer    = null;
+  // mode: 'browse' | 'top' | 'sub'
+  var _catalog      = [];
+  var _mode         = 'browse';
+  var _activeTop    = null;   // top category name  (?top=)
+  var _activeCat    = null;   // subcategory name    (?cat=)
+  var _currentPage  = 1;
+  var _searchQ      = '';
+  var _searchTimer  = null;
+  var _toastTimer   = null;
+
+  // ─── HELPERS: find parent top for a given subcategory ────────────────────
+  function getParentTop(subcat) {
+    var tops = Object.keys(SUBCATEGORY_MAP);
+    for (var i = 0; i < tops.length; i++) {
+      var subs = SUBCATEGORY_MAP[tops[i]];
+      for (var j = 0; j < subs.length; j++) {
+        if (subs[j] === subcat) return tops[i];
+      }
+    }
+    return null;
+  }
+
+  function getTaxEntry(topName) {
+    for (var i = 0; i < TAXONOMY.length; i++) {
+      if (TAXONOMY[i].top === topName) return TAXONOMY[i];
+    }
+    return null;
+  }
 
   // ─── TOAST ────────────────────────────────────────────────────────────────
   function toast(msg) {
@@ -847,31 +880,35 @@
 
   // ─── HTML HELPERS ─────────────────────────────────────────────────────────
   function esc(s) {
-    return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
+    return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
   }
 
   function fmtPrice(p, pmax) {
     if (!p) return '';
-    if (pmax && pmax !== p && pmax > p) {
-      return 'From ' + VR.formatPrice(p);
-    }
+    if (pmax && pmax !== p && pmax > p) return 'From ' + VR.formatPrice(p);
     return VR.formatPrice(p);
+  }
+
+  function backArrow() {
+    return '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>';
+  }
+
+  function fwdArrow() {
+    return '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';
   }
 
   // ─── BUILD CARD HTML ──────────────────────────────────────────────────────
   function buildCard(product) {
-    var img     = esc(product.image_url || (product.images && product.images[0]) || '');
-    var name    = esc(product.name || '');
-    var subcat  = esc(product.category || '');
-    var topcat  = product.top_category || '';
-    var price   = fmtPrice(product.price, product.price_max);
-    var id      = product.id;
+    var img    = esc(product.image_url || (product.images && product.images[0]) || '');
+    var name   = esc(product.name || '');
+    var subcat = esc(product.category || '');
+    var topcat = product.top_category || '';
+    var price  = fmtPrice(product.price, product.price_max);
+    var id     = product.id;
 
-    // Pick a fallback emoji from TAXONOMY
     var fallbackEmoji = '📦';
-    for (var ti = 0; ti < TAXONOMY.length; ti++) {
-      if (TAXONOMY[ti].top === topcat) { fallbackEmoji = TAXONOMY[ti].icon; break; }
-    }
+    var tax = getTaxEntry(topcat);
+    if (tax) fallbackEmoji = tax.icon;
 
     return [
       '<div class="prod-card" data-id="', id, '">',
@@ -879,7 +916,7 @@
           '<img src="', img, '" alt="', name, '" loading="lazy"',
             ' onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">',
           '<div class="prod-img-fallback" aria-hidden="true">', fallbackEmoji, '</div>',
-          subcat ? '<span class="prod-subcat">' + esc(subcat) + '</span>' : '',
+          subcat ? '<span class="prod-subcat">' + subcat + '</span>' : '',
         '</div>',
         '<div class="prod-info">',
           '<div class="prod-name">', name, '</div>',
@@ -909,28 +946,6 @@
     return html;
   }
 
-  // ─── CATEGORY PILLS ───────────────────────────────────────────────────────
-  function renderPills() {
-    var row = document.getElementById('pills-row');
-    if (!row) return;
-
-    var activePill = _mode === 'filtered' ? _activeTopCat : null;
-
-    var html = '<button class="cat-pill' + (!activePill ? ' active' : '') + '" data-pill="all">All</button>';
-
-    for (var i = 0; i < TAXONOMY.length; i++) {
-      var t = TAXONOMY[i];
-      var isActive = (activePill === t.top);
-      html += [
-        '<button class="cat-pill', isActive ? ' active' : '', '" data-pill="', esc(t.top), '">',
-          t.icon, ' ', esc(t.top),
-        '</button>'
-      ].join('');
-    }
-
-    row.innerHTML = html;
-  }
-
   // ─── SEARCH COUNT LABEL ───────────────────────────────────────────────────
   function updateSearchCount(visible) {
     var el = document.getElementById('search-count');
@@ -942,8 +957,50 @@
     }
   }
 
-  // ─── BROWSE MODE ──────────────────────────────────────────────────────────
-  function renderBrowse() {
+  // ─── PILLS ────────────────────────────────────────────────────────────────
+  // Mode 'browse'  → top-category pills (clicking navigates to ?top=X)
+  // Mode 'top'     → subcategory pills for _activeTop (clicking navigates to ?cat=X)
+  // Mode 'sub'     → sibling subcategory pills (active = current, clicking navigates to ?cat=X)
+  function renderPills() {
+    var row = document.getElementById('pills-row');
+    if (!row) return;
+
+    var html = '';
+
+    if (_mode === 'browse') {
+      // All top-category pills — none active (we're showing all)
+      for (var i = 0; i < TAXONOMY.length; i++) {
+        var t = TAXONOMY[i];
+        html += '<a class="cat-pill" href="shop.html?top=' + encodeURIComponent(t.top) + '" role="button">' +
+                  t.icon + ' ' + esc(t.top) +
+                '</a>';
+      }
+    } else if (_mode === 'top') {
+      // Subcategories of _activeTop
+      var subs = SUBCATEGORY_MAP[_activeTop] || [];
+      for (var si = 0; si < subs.length; si++) {
+        html += '<a class="cat-pill" href="shop.html?cat=' + encodeURIComponent(subs[si]) + '" role="button">' +
+                  esc(subs[si]) +
+                '</a>';
+      }
+    } else if (_mode === 'sub') {
+      // Sibling subcategories — active pill = _activeCat
+      var parentTop = getParentTop(_activeCat);
+      var siblings  = parentTop ? (SUBCATEGORY_MAP[parentTop] || []) : [];
+      for (var bi = 0; bi < siblings.length; bi++) {
+        var isActive = (siblings[bi] === _activeCat);
+        html += '<a class="cat-pill' + (isActive ? ' active' : '') +
+                '" href="shop.html?cat=' + encodeURIComponent(siblings[bi]) + '" role="button">' +
+                  esc(siblings[bi]) +
+                '</a>';
+      }
+    }
+
+    row.innerHTML = html;
+  }
+
+  // ─── MODE 1 — BROWSE ALL ──────────────────────────────────────────────────
+  function renderBrowseAll() {
     var body = document.getElementById('shop-body');
     if (!body) return;
 
@@ -956,20 +1013,18 @@
       groups[tc].push(p);
     }
 
-    // Apply search filter across all
-    var searchQ = _searchQ.toLowerCase();
+    var searchQ     = _searchQ.toLowerCase();
     var totalVisible = 0;
+    var html        = '';
 
-    var html = '';
     for (var ti = 0; ti < TAXONOMY.length; ti++) {
-      var tax = TAXONOMY[ti];
-      var prods = groups[tax.top] || [];
+      var tax    = TAXONOMY[ti];
+      var prods  = groups[tax.top] || [];
 
-      // Filter by search if active
       var filtered = prods;
       if (searchQ) {
         filtered = prods.filter(function (p) {
-          return (p.name && p.name.toLowerCase().indexOf(searchQ) !== -1) ||
+          return (p.name        && p.name.toLowerCase().indexOf(searchQ) !== -1) ||
                  (p.description && p.description.toLowerCase().indexOf(searchQ) !== -1);
         });
       }
@@ -977,32 +1032,27 @@
       if (filtered.length === 0) continue;
       totalVisible += filtered.length;
 
-      var show = filtered.slice(0, BROWSE_PER_SECTION);
-      var catUrl = 'shop.html?category=' + encodeURIComponent(tax.top);
+      var show   = filtered.slice(0, BROWSE_PER_SECTION);
+      var topUrl = 'shop.html?top=' + encodeURIComponent(tax.top);
 
-      html += '<section class="cat-section" id="section-' + esc(tax.top).replace(/\s+/g,'-').replace(/[&]/g,'') + '">';
+      html += '<section class="cat-section" id="section-' + esc(tax.top).replace(/\s+/g, '-').replace(/[&]/g, '') + '">';
 
-      // Section header
       html += '<div class="section-header">';
       html += '<div class="section-title-group">';
       html += '<span class="section-emoji">' + tax.icon + '</span>';
       html += '<h2 class="section-title">' + esc(tax.top) + '</h2>';
       html += '<span class="section-badge">' + filtered.length.toLocaleString() + ' products</span>';
       html += '</div>';
-      html += '<a href="' + catUrl + '" class="section-view-all">View all <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>';
+      html += '<a href="' + topUrl + '" class="section-view-all">View all ' + fwdArrow() + '</a>';
       html += '</div>';
 
-      // Grid
       html += '<div class="prod-grid">';
-      for (var ci = 0; ci < show.length; ci++) {
-        html += buildCard(show[ci]);
-      }
+      for (var ci = 0; ci < show.length; ci++) html += buildCard(show[ci]);
       html += '</div>';
 
-      // Section footer if there are more
       if (filtered.length > BROWSE_PER_SECTION) {
         html += '<div class="section-footer">';
-        html += '<a href="' + catUrl + '" class="btn-secondary">View all ' + filtered.length.toLocaleString() + ' products in ' + esc(tax.top) + ' &rarr;</a>';
+        html += '<a href="' + topUrl + '" class="btn-secondary">View all ' + filtered.length.toLocaleString() + ' ' + esc(tax.top) + ' products &rarr;</a>';
         html += '</div>';
       }
 
@@ -1018,50 +1068,121 @@
     updateSearchCount(totalVisible);
   }
 
-  // ─── FILTERED MODE ────────────────────────────────────────────────────────
-  function renderFiltered() {
+  // ─── MODE 2 — TOP CATEGORY VIEW ───────────────────────────────────────────
+  function renderTopCategory() {
     var body = document.getElementById('shop-body');
     if (!body) return;
 
-    var tax = null;
-    for (var ti = 0; ti < TAXONOMY.length; ti++) {
-      if (TAXONOMY[ti].top === _activeTopCat) { tax = TAXONOMY[ti]; break; }
-    }
-    if (!tax) { renderBrowse(); return; }
+    var tax = getTaxEntry(_activeTop);
+    if (!tax) { _mode = 'browse'; renderBrowseAll(); return; }
 
-    // Get products for this top category
+    var subcats = SUBCATEGORY_MAP[_activeTop] || [];
+
+    // Group products for this top category by subcategory
+    var subGroups = {};
+    for (var i = 0; i < _catalog.length; i++) {
+      var p = _catalog[i];
+      if (p.top_category !== _activeTop) continue;
+      var sc = p.category || 'Other';
+      if (!subGroups[sc]) subGroups[sc] = [];
+      subGroups[sc].push(p);
+    }
+
+    var searchQ      = _searchQ.toLowerCase();
+    var totalVisible = 0;
+    var html         = '';
+
+    // Back link → browse all
+    html += '<a href="shop.html" class="back-link">' + backArrow() + ' All Categories</a>';
+
+    // Page header
+    html += '<div class="filtered-header">';
+    html += '<div class="filtered-title-row">';
+    html += '<span class="filtered-emoji">' + tax.icon + '</span>';
+    html += '<h1 class="filtered-title">' + esc(tax.top) + '</h1>';
+    html += '</div>';
+    html += '</div>';
+
+    // One section per subcategory
+    // Use taxonomy-defined order; fall back to whatever is in subGroups
+    var orderedSubs = subcats.length ? subcats : Object.keys(subGroups);
+
+    for (var si = 0; si < orderedSubs.length; si++) {
+      var subName = orderedSubs[si];
+      var prods   = subGroups[subName] || [];
+
+      var filtered = prods;
+      if (searchQ) {
+        filtered = prods.filter(function (p) {
+          return (p.name        && p.name.toLowerCase().indexOf(searchQ) !== -1) ||
+                 (p.description && p.description.toLowerCase().indexOf(searchQ) !== -1);
+        });
+      }
+
+      if (filtered.length === 0) continue;
+      totalVisible += filtered.length;
+
+      var show   = filtered.slice(0, BROWSE_PER_SECTION);
+      var catUrl = 'shop.html?cat=' + encodeURIComponent(subName);
+
+      html += '<section class="cat-section" id="section-sub-' + esc(subName).replace(/\s+/g, '-').replace(/[&]/g, '') + '">';
+
+      html += '<div class="section-header">';
+      html += '<div class="section-title-group">';
+      html += '<h2 class="section-title">' + esc(subName) + '</h2>';
+      html += '<span class="section-badge">' + prods.length.toLocaleString() + ' products</span>';
+      html += '</div>';
+      html += '<a href="' + catUrl + '" class="section-view-all">View all ' + fwdArrow() + '</a>';
+      html += '</div>';
+
+      html += '<div class="prod-grid">';
+      for (var ci = 0; ci < show.length; ci++) html += buildCard(show[ci]);
+      html += '</div>';
+
+      if (prods.length > BROWSE_PER_SECTION) {
+        html += '<div class="section-footer">';
+        html += '<a href="' + catUrl + '" class="btn-secondary">View all ' + prods.length.toLocaleString() + ' ' + esc(subName) + ' products &rarr;</a>';
+        html += '</div>';
+      }
+
+      html += '</section>';
+      html += '<div class="section-divider"></div>';
+    }
+
+    if (totalVisible === 0) {
+      html += '<div class="no-results"><h3>No products found</h3><p>Try a different search term.</p></div>';
+    }
+
+    body.innerHTML = html;
+    updateSearchCount(totalVisible);
+  }
+
+  // ─── MODE 3 — SUBCATEGORY ALL PRODUCTS ───────────────────────────────────
+  function renderSubcategory() {
+    var body = document.getElementById('shop-body');
+    if (!body) return;
+
+    var parentTop = getParentTop(_activeCat);
+    var tax       = parentTop ? getTaxEntry(parentTop) : null;
+
+    // All products in this subcategory
     var prods = _catalog.filter(function (p) {
-      return p.top_category === _activeTopCat;
+      return p.category === _activeCat;
     });
-
-    // Collect subcategories
-    var subcatMap = {};
-    for (var i = 0; i < prods.length; i++) {
-      var sc = prods[i].category || 'Other';
-      subcatMap[sc] = (subcatMap[sc] || 0) + 1;
-    }
-    var subcats = Object.keys(subcatMap).sort(function (a, b) {
-      return subcatMap[b] - subcatMap[a]; // sort by count desc
-    });
-
-    // Apply subcategory filter
-    var filtered = prods;
-    if (_activeSubCat) {
-      filtered = prods.filter(function (p) { return p.category === _activeSubCat; });
-    }
 
     // Apply search
-    var searchQ = _searchQ.toLowerCase();
+    var searchQ  = _searchQ.toLowerCase();
+    var filtered = prods;
     if (searchQ) {
-      filtered = filtered.filter(function (p) {
-        return (p.name && p.name.toLowerCase().indexOf(searchQ) !== -1) ||
+      filtered = prods.filter(function (p) {
+        return (p.name        && p.name.toLowerCase().indexOf(searchQ) !== -1) ||
                (p.description && p.description.toLowerCase().indexOf(searchQ) !== -1);
       });
     }
 
     updateSearchCount(filtered.length);
 
-    var total = filtered.length;
+    var total      = filtered.length;
     var totalPages = Math.max(1, Math.ceil(total / FILTERED_PAGE_SIZE));
     if (_currentPage > totalPages) _currentPage = 1;
     var start = (_currentPage - 1) * FILTERED_PAGE_SIZE;
@@ -1070,40 +1191,26 @@
 
     var html = '';
 
-    // Back link
-    html += '<a href="shop.html" class="back-link">';
-    html += '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>';
-    html += 'Back to all categories</a>';
+    // Back link → parent top category
+    var backHref  = parentTop ? 'shop.html?top=' + encodeURIComponent(parentTop) : 'shop.html';
+    var backLabel = parentTop ? (tax ? tax.icon + ' ' + esc(parentTop) : esc(parentTop)) : 'All Categories';
+    html += '<a href="' + backHref + '" class="back-link">' + backArrow() + ' ' + backLabel + '</a>';
 
-    // Filtered header
+    // Page header
     html += '<div class="filtered-header">';
     html += '<div class="filtered-title-row">';
-    html += '<span class="filtered-emoji">' + tax.icon + '</span>';
-    html += '<h1 class="filtered-title">' + esc(tax.top) + '</h1>';
+    if (tax) html += '<span class="filtered-emoji">' + tax.icon + '</span>';
+    html += '<h1 class="filtered-title">' + esc(_activeCat) + '</h1>';
     html += '</div>';
     html += '<div class="filtered-sub">Showing <strong>' + filtered.length.toLocaleString() + '</strong> of <strong>' + prods.length.toLocaleString() + '</strong> products</div>';
     html += '</div>';
 
-    // Subcategory chips
-    if (subcats.length > 1) {
-      html += '<div class="subcat-chips" id="subcat-chips">';
-      html += '<button class="subcat-chip' + (!_activeSubCat ? ' active' : '') + '" data-subcat="">All <span class="chip-count">(' + prods.length.toLocaleString() + ')</span></button>';
-      for (var si = 0; si < subcats.length; si++) {
-        var sc2 = subcats[si];
-        var isActive = (_activeSubCat === sc2);
-        html += '<button class="subcat-chip' + (isActive ? ' active' : '') + '" data-subcat="' + esc(sc2) + '">' + esc(sc2) + ' <span class="chip-count">(' + subcatMap[sc2].toLocaleString() + ')</span></button>';
-      }
-      html += '</div>';
-    }
-
     // Product grid
     if (slice.length === 0) {
-      html += '<div class="no-results"><h3>No products found</h3><p>Try adjusting your search or subcategory filter.</p></div>';
+      html += '<div class="no-results"><h3>No products found</h3><p>Try adjusting your search.</p></div>';
     } else {
-      html += '<div class="prod-grid" id="filtered-grid">';
-      for (var ci2 = 0; ci2 < slice.length; ci2++) {
-        html += buildCard(slice[ci2]);
-      }
+      html += '<div class="prod-grid" id="sub-grid">';
+      for (var ci = 0; ci < slice.length; ci++) html += buildCard(slice[ci]);
       html += '</div>';
     }
 
@@ -1150,22 +1257,24 @@
     var left  = Math.max(2, current - 2);
     var right = Math.min(total - 1, current + 2);
     if (left > 2) pages.push('...');
-    for (var p = left; p <= right; p++) pages.push(p);
+    for (var pp = left; pp <= right; pp++) pages.push(pp);
     if (right < total - 1) pages.push('...');
     pages.push(total);
     return pages;
   }
 
-  // ─── RENDER (dispatch) ───────────────────────────────────────────────────
+  // ─── RENDER DISPATCH ──────────────────────────────────────────────────────
   function render() {
-    if (_mode === 'filtered') {
-      renderFiltered();
+    if (_mode === 'sub') {
+      renderSubcategory();
+    } else if (_mode === 'top') {
+      renderTopCategory();
     } else {
-      renderBrowse();
+      renderBrowseAll();
     }
   }
 
-  // ─── SKELETON (browse) ────────────────────────────────────────────────────
+  // ─── SKELETONS ────────────────────────────────────────────────────────────
   function renderBrowseSkeleton() {
     var body = document.getElementById('shop-body');
     if (!body) return;
@@ -1173,73 +1282,43 @@
     for (var ti = 0; ti < TAXONOMY.length; ti++) {
       var tax = TAXONOMY[ti];
       html += '<section class="cat-section">';
-      html += '<div class="section-header">';
-      html += '<div class="section-title-group">';
+      html += '<div class="section-header"><div class="section-title-group">';
       html += '<span class="section-emoji">' + tax.icon + '</span>';
       html += '<h2 class="section-title" style="color:var(--navy3);">' + esc(tax.top) + '</h2>';
       html += '</div></div>';
       html += '<div class="prod-grid">' + buildSkeletons(BROWSE_PER_SECTION) + '</div>';
-      html += '</section>';
-      html += '<div class="section-divider"></div>';
+      html += '</section><div class="section-divider"></div>';
     }
     body.innerHTML = html;
   }
 
-  function renderFilteredSkeleton() {
+  function renderTopSkeleton() {
+    var body = document.getElementById('shop-body');
+    if (!body) return;
+    var tax  = getTaxEntry(_activeTop);
+    var icon = tax ? tax.icon : '';
+    var name = tax ? esc(_activeTop) : '';
+    var html = '<a href="shop.html" class="back-link">' + backArrow() + ' All Categories</a>';
+    html += '<div class="filtered-header"><div class="filtered-title-row">';
+    if (icon) html += '<span class="filtered-emoji">' + icon + '</span>';
+    html += '<h1 class="filtered-title" style="color:var(--navy3);">' + name + '</h1>';
+    html += '</div></div>';
+    var subs = SUBCATEGORY_MAP[_activeTop] || [];
+    for (var i = 0; i < subs.length; i++) {
+      html += '<section class="cat-section">';
+      html += '<div class="section-header"><div class="section-title-group">';
+      html += '<h2 class="section-title" style="color:var(--navy3);">' + esc(subs[i]) + '</h2>';
+      html += '</div></div>';
+      html += '<div class="prod-grid">' + buildSkeletons(8) + '</div>';
+      html += '</section><div class="section-divider"></div>';
+    }
+    body.innerHTML = html;
+  }
+
+  function renderSubSkeleton() {
     var body = document.getElementById('shop-body');
     if (!body) return;
     body.innerHTML = '<div class="prod-grid">' + buildSkeletons(FILTERED_PAGE_SIZE) + '</div>';
-  }
-
-  // ─── SCROLL TO SECTION ────────────────────────────────────────────────────
-  function scrollToSection(topCat) {
-    var id = 'section-' + topCat.replace(/\s+/g, '-').replace(/[&]/g, '');
-    var el = document.getElementById(id);
-    if (!el) return;
-    var offset = el.getBoundingClientRect().top + window.pageYOffset - 120;
-    window.scrollTo({ top: Math.max(0, offset), behavior: 'smooth' });
-  }
-
-  // ─── PILL CLICK ───────────────────────────────────────────────────────────
-  function onPillClick(e) {
-    var btn = e.target.closest('[data-pill]');
-    if (!btn) return;
-    var val = btn.getAttribute('data-pill');
-
-    if (val === 'all') {
-      if (_mode === 'filtered') {
-        // Navigate to browse
-        window.location.href = 'shop.html';
-      } else {
-        // Already in browse, deactivate
-        _activeTopCat = null;
-        renderPills();
-      }
-      return;
-    }
-
-    if (_mode === 'filtered') {
-      // Navigate to that category
-      window.location.href = 'shop.html?category=' + encodeURIComponent(val);
-    } else {
-      // Scroll to section in browse mode
-      _activeTopCat = val;
-      renderPills();
-      scrollToSection(val);
-    }
-  }
-
-  // ─── SUBCAT CHIP CLICK ────────────────────────────────────────────────────
-  function onSubcatChipClick(e) {
-    var btn = e.target.closest('[data-subcat]');
-    if (!btn) return;
-    _activeSubCat = btn.getAttribute('data-subcat') || null;
-    _currentPage  = 1;
-    renderFiltered();
-    // Update URL without reload
-    var newUrl = 'shop.html?category=' + encodeURIComponent(_activeTopCat);
-    if (_activeSubCat) newUrl += '&sub=' + encodeURIComponent(_activeSubCat);
-    history.replaceState(null, '', newUrl);
   }
 
   // ─── PAGINATION CLICK ─────────────────────────────────────────────────────
@@ -1247,10 +1326,10 @@
     var btn = e.target.closest('[data-pgbtn]');
     if (!btn || btn.disabled) return;
     var val = btn.getAttribute('data-pgbtn');
-    if (val === 'prev') { _currentPage = Math.max(1, _currentPage - 1); }
-    else if (val === 'next') { _currentPage++; }
-    else { _currentPage = parseInt(val, 10) || 1; }
-    renderFiltered();
+    if (val === 'prev')       { _currentPage = Math.max(1, _currentPage - 1); }
+    else if (val === 'next')  { _currentPage++; }
+    else                      { _currentPage = parseInt(val, 10) || 1; }
+    renderSubcategory();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
@@ -1263,8 +1342,7 @@
     VR.getProduct(id).then(function (product) {
       if (!product) return;
       VR.cart.add(product, 1, null);
-      var label = product.name.length > 38 ? product.name.slice(0, 38) + '…' : product.name;
-      toast(label + ' added to cart');
+      toast('Added to cart!');
     });
   }
 
@@ -1273,48 +1351,48 @@
     var val = e.target.value;
     clearTimeout(_searchTimer);
     _searchTimer = setTimeout(function () {
-      _searchQ = val.trim();
+      _searchQ     = val.trim();
       _currentPage = 1;
       render();
     }, 300);
   }
 
   // ─── READ URL PARAMS ──────────────────────────────────────────────────────
+  // ?top=X  → Mode 2 (top category view)
+  // ?cat=X  → Mode 3 (subcategory all products)
+  // (none)  → Mode 1 (browse all)
   function readParams() {
     var params = new URLSearchParams(window.location.search);
-    var cat = params.get('category');
-    var sub = params.get('sub');
+    var top    = params.get('top');
+    var cat    = params.get('cat');
+
     if (cat) {
-      _mode         = 'filtered';
-      _activeTopCat = decodeURIComponent(cat);
-      _activeSubCat = sub ? decodeURIComponent(sub) : null;
+      _mode      = 'sub';
+      _activeCat = decodeURIComponent(cat);
+      _activeTop = getParentTop(_activeCat);
+    } else if (top) {
+      _mode      = 'top';
+      _activeTop = decodeURIComponent(top);
+      _activeCat = null;
     } else {
-      _mode         = 'browse';
-      _activeTopCat = null;
-      _activeSubCat = null;
+      _mode      = 'browse';
+      _activeTop = null;
+      _activeCat = null;
     }
+
     _currentPage = parseInt(params.get('page') || '1', 10) || 1;
   }
 
   // ─── BIND EVENTS ──────────────────────────────────────────────────────────
   function bindEvents() {
-    // Pills
-    var pillsRow = document.getElementById('pills-row');
-    if (pillsRow) pillsRow.addEventListener('click', onPillClick);
-
-    // Search
     var searchEl = document.getElementById('search-input');
     if (searchEl) searchEl.addEventListener('input', onSearchInput);
 
-    // Delegated cart add + pagination + subcat chips on body
-    var body = document.getElementById('shop-body');
-    if (body) {
-      body.addEventListener('click', function (e) {
+    var shopBody = document.getElementById('shop-body');
+    if (shopBody) {
+      shopBody.addEventListener('click', function (e) {
         onCartAdd(e);
-        if (_mode === 'filtered') {
-          onSubcatChipClick(e);
-          onPaginationClick(e);
-        }
+        if (_mode === 'sub') onPaginationClick(e);
       });
     }
   }
@@ -1325,15 +1403,16 @@
     renderPills();
     bindEvents();
 
-    // Cart badge
     VR.cart.onChange(updateCartBadge);
     updateCartBadge();
 
-    // Show skeleton while loading
-    if (_mode === 'browse') {
-      renderBrowseSkeleton();
+    // Show skeleton while catalog loads
+    if (_mode === 'sub') {
+      renderSubSkeleton();
+    } else if (_mode === 'top') {
+      renderTopSkeleton();
     } else {
-      renderFilteredSkeleton();
+      renderBrowseSkeleton();
     }
 
     VR.getCatalog()
