@@ -31,9 +31,8 @@
       overflow-x: hidden;
     }
 
-
     /* ─── NAV ─── */
-    nav {
+    nav.site-nav {
       position: fixed;
       top: 0; left: 0; right: 0;
       z-index: 100;
@@ -151,6 +150,8 @@
       cursor: pointer;
       transition: background 0.2s, transform 0.15s;
       font-family: 'DM Sans', sans-serif;
+      width: 100%;
+      text-align: center;
     }
 
     .btn-primary:hover { background: var(--gold2); transform: translateY(-1px); }
@@ -170,22 +171,13 @@
       cursor: pointer;
       transition: border-color 0.2s, background 0.2s;
       font-family: 'DM Sans', sans-serif;
+      width: 100%;
+      text-align: center;
     }
 
     .btn-secondary:hover {
       border-color: var(--gold2);
       background: rgba(201,168,76,0.08);
-    }
-
-    /* ─── TOAST ─── */
-    #vr-toast {
-      background: var(--navy2) !important;
-      color: var(--text) !important;
-      border: 1px solid var(--gold) !important;
-      font-size: 0.85rem !important;
-      font-family: 'DM Sans', sans-serif !important;
-      border-radius: 4px !important;
-      padding: 0.75rem 1.2rem !important;
     }
 
     /* ─── MAIN CONTENT ─── */
@@ -214,22 +206,20 @@
     }
 
     .breadcrumb a:hover { color: var(--gold); }
-
     .breadcrumb-sep { opacity: 0.45; }
-
     .breadcrumb-current { color: var(--text); }
 
     /* ─── PRODUCT LAYOUT ─── */
     .product-section {
       max-width: 1100px;
       margin: 0 auto;
-      padding: 2rem 2rem 4rem;
+      padding: 2rem 2rem 3rem;
     }
 
     .product-grid {
       display: grid;
       grid-template-columns: 55% 45%;
-      gap: 3rem;
+      gap: 3.5rem;
       align-items: start;
     }
 
@@ -241,23 +231,23 @@
 
     .main-image-wrap {
       width: 100%;
-      background: var(--navy2);
-      border-radius: 4px;
+      background: var(--navy3);
+      border-radius: 8px;
       overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 340px;
-      max-height: 500px;
+      min-height: 300px;
+      max-height: 480px;
     }
 
     .main-image-wrap img {
       width: 100%;
       height: 100%;
-      max-height: 500px;
+      max-height: 480px;
       object-fit: contain;
       display: block;
-      transition: opacity 0.25s ease;
+      transition: opacity 0.2s ease;
     }
 
     .main-image-wrap img.fading { opacity: 0; }
@@ -265,64 +255,82 @@
     .thumb-row {
       display: flex;
       gap: 0.6rem;
-      margin-top: 0.85rem;
+      margin-top: 0.75rem;
       flex-wrap: wrap;
     }
 
     .thumb {
-      width: 64px;
-      height: 64px;
+      width: 70px;
+      height: 70px;
       object-fit: cover;
-      border-radius: 3px;
+      border-radius: 4px;
       border: 2px solid transparent;
       cursor: pointer;
       transition: border-color 0.2s, opacity 0.2s;
       background: var(--navy2);
     }
 
-    .thumb:hover { border-color: rgba(201,168,76,0.5); opacity: 0.9; }
+    .thumb:hover { border-color: rgba(201,168,76,0.5); opacity: 0.85; }
     .thumb.selected { border-color: var(--gold); }
 
     /* ─── INFO COLUMN ─── */
     .info-col {
       display: flex;
       flex-direction: column;
-      gap: 1.2rem;
+      gap: 1.1rem;
     }
 
-    /* Category badge */
-    .cat-badge {
+    /* Subcategory pill */
+    .subcat-pill {
       display: inline-block;
-      background: rgba(201,168,76,0.1);
-      border: 1px solid rgba(201,168,76,0.3);
-      color: var(--gold);
-      font-size: 0.7rem;
-      font-weight: 500;
+      background: var(--gold);
+      color: var(--navy);
+      font-size: 0.68rem;
+      font-weight: 600;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      padding: 0.3rem 0.75rem;
+      padding: 0.28rem 0.8rem;
       border-radius: 100px;
     }
 
     /* Product name */
     .product-name {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 2.2rem;
+      font-size: 2rem;
       font-weight: 700;
       color: var(--white);
       line-height: 1.18;
     }
 
-    /* Source badge */
-    .source-badge {
-      font-size: 0.78rem;
+    /* Source line */
+    .source-line {
+      font-size: 0.8rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    /* Rating row */
+    .rating-row {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .stars {
+      color: var(--gold);
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+    }
+
+    .rating-label {
+      font-size: 0.75rem;
       color: var(--muted);
     }
 
     /* Price */
     .product-price {
-      font-size: 1.8rem;
-      font-weight: 600;
+      font-size: 2rem;
+      font-weight: 700;
       color: var(--gold);
       font-family: 'Cormorant Garamond', serif;
       letter-spacing: 0.01em;
@@ -332,41 +340,47 @@
     .compliance-pill {
       display: inline-flex;
       align-items: center;
-      gap: 0.4rem;
-      background: #2d5a27;
-      color: #6fcf6f;
+      gap: 0.35rem;
+      background: #1a3a1a;
+      color: #5cb85c;
       font-size: 0.72rem;
       font-weight: 500;
       letter-spacing: 0.06em;
-      padding: 0.3rem 0.85rem;
+      padding: 0.28rem 0.85rem;
       border-radius: 100px;
+    }
+
+    /* Divider */
+    .info-divider {
+      height: 1px;
+      background: rgba(255,255,255,0.07);
     }
 
     /* Description */
     .product-desc {
       font-size: 0.92rem;
       color: var(--text);
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     /* Variants */
     .variants-label {
-      font-size: 0.78rem;
+      font-size: 0.72rem;
       font-weight: 500;
       color: var(--muted);
       text-transform: uppercase;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.1em;
       margin-bottom: 0.5rem;
     }
 
     .variant-pills {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.5rem;
+      gap: 0.45rem;
     }
 
     .variant-pill {
-      padding: 0.4rem 0.9rem;
+      padding: 0.35rem 0.9rem;
       border-radius: 100px;
       font-size: 0.8rem;
       font-weight: 400;
@@ -378,14 +392,8 @@
       font-family: 'DM Sans', sans-serif;
     }
 
-    .variant-pill:hover {
-      background: rgba(201,168,76,0.12);
-    }
-
-    .variant-pill.active {
-      background: var(--gold);
-      color: var(--navy);
-    }
+    .variant-pill:hover { background: rgba(201,168,76,0.1); }
+    .variant-pill.active { background: var(--gold); color: var(--navy); }
 
     /* Quantity row */
     .qty-row {
@@ -395,19 +403,18 @@
     }
 
     .qty-label {
-      font-size: 0.78rem;
+      font-size: 0.72rem;
       font-weight: 500;
       color: var(--muted);
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      min-width: 2rem;
+      letter-spacing: 0.1em;
+      min-width: 2.2rem;
     }
 
     .qty-control {
       display: flex;
       align-items: center;
-      gap: 0;
-      border: 1px solid rgba(201,168,76,0.3);
+      border: 1px solid rgba(201,168,76,0.28);
       border-radius: 3px;
       overflow: hidden;
     }
@@ -430,7 +437,7 @@
     .qty-btn:hover { background: var(--navy3); }
 
     .qty-display {
-      min-width: 40px;
+      min-width: 42px;
       height: 36px;
       display: flex;
       align-items: center;
@@ -439,44 +446,204 @@
       font-weight: 500;
       color: var(--white);
       background: var(--navy2);
-      border-left: 1px solid rgba(201,168,76,0.2);
-      border-right: 1px solid rgba(201,168,76,0.2);
+      border-left: 1px solid rgba(201,168,76,0.18);
+      border-right: 1px solid rgba(201,168,76,0.18);
     }
 
-    /* Add to cart */
-    .add-to-cart-btn {
-      width: 100%;
-      padding: 1rem;
-      font-size: 0.9rem;
-      letter-spacing: 0.12em;
+    /* Action buttons stacked */
+    .action-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
     }
 
-    /* Shipping note */
-    .shipping-note {
-      font-size: 0.75rem;
+    /* Shipping box */
+    .shipping-box {
+      background: var(--navy3);
+      border: 1px solid rgba(201,168,76,0.14);
+      border-radius: 6px;
+      padding: 0.85rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+
+    .shipping-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.55rem;
+      font-size: 0.78rem;
       color: var(--muted);
-      line-height: 1.55;
-      padding-top: 0.4rem;
-      border-top: 1px solid rgba(255,255,255,0.06);
+      line-height: 1.4;
     }
 
-    /* Back link */
-    .back-link {
-      display: inline-flex;
+    .shipping-icon {
+      flex-shrink: 0;
+      font-size: 0.85rem;
+      margin-top: 0.05rem;
+    }
+
+    /* ─── BELOW FOLD ─── */
+    .below-fold {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 2rem 4rem;
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    /* ─── NUTRITION FACTS ─── */
+    .nutrition-section {}
+
+    .nutrition-heading {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+
+    .nutrition-loading {
+      display: flex;
       align-items: center;
-      gap: 0.4rem;
+      gap: 0.6rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    .nf-spinner {
+      width: 14px;
+      height: 14px;
+      border: 2px solid rgba(138,154,181,0.3);
+      border-top-color: var(--gold);
+      border-radius: 50%;
+      animation: nf-spin 0.7s linear infinite;
+      flex-shrink: 0;
+    }
+
+    @keyframes nf-spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .nutrition-na {
       font-size: 0.8rem;
       color: var(--muted);
-      text-decoration: none;
-      transition: color 0.2s;
+      font-style: italic;
     }
 
-    .back-link:hover { color: var(--gold); }
+    /* FDA-style nutrition label — light theme */
+    .nutrition-label {
+      border: 2px solid #000;
+      padding: 0.5rem 0.6rem;
+      max-width: 320px;
+      background: #fff;
+      color: #000;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    .nutrition-label .nf-title {
+      font-size: 2rem;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .nutrition-label .nf-serving {
+      font-size: 0.85rem;
+      margin: 0.3rem 0;
+    }
+
+    .nutrition-label .nf-divider {
+      height: 8px;
+      background: #000;
+      margin: 0.3rem 0;
+    }
+
+    .nutrition-label .nf-calories-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .nutrition-label .nf-calories-label {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .nutrition-label .nf-calories-val {
+      font-size: 2.5rem;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .nutrition-label .nf-thin-divider {
+      height: 3px;
+      background: #000;
+      margin: 0.2rem 0;
+    }
+
+    .nutrition-label .nf-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      padding: 0.15rem 0;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .nutrition-label .nf-row.bold { font-weight: 700; }
+    .nutrition-label .nf-row.indent { padding-left: 1.2rem; }
+
+    .nutrition-label .nf-footnote {
+      font-size: 0.7rem;
+      margin-top: 0.4rem;
+      line-height: 1.4;
+    }
+
+    /* ─── PRODUCT DETAILS TABLE ─── */
+    .details-section {}
+
+    .details-heading {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+
+    .details-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .details-table tr {
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .details-table td {
+      padding: 0.7rem 0;
+      font-size: 0.85rem;
+      vertical-align: top;
+    }
+
+    .details-table td:first-child {
+      color: var(--muted);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      width: 42%;
+      padding-right: 1rem;
+    }
+
+    .details-table td:last-child {
+      color: var(--text);
+    }
 
     /* ─── RELATED SECTION ─── */
     .related-section {
       background: var(--navy2);
-      padding: 3.5rem 0;
+      padding: 3.5rem 0 4rem;
+      border-top: 1px solid rgba(255,255,255,0.04);
     }
 
     .related-inner {
@@ -495,46 +662,109 @@
 
     .related-scroll {
       display: flex;
-      gap: 1.25rem;
+      gap: 1rem;
       overflow-x: auto;
-      padding-bottom: 1rem;
+      padding-bottom: 0.75rem;
       scrollbar-width: thin;
-      scrollbar-color: rgba(201,168,76,0.3) transparent;
+      scrollbar-color: rgba(201,168,76,0.28) transparent;
     }
 
     .related-scroll::-webkit-scrollbar { height: 4px; }
     .related-scroll::-webkit-scrollbar-track { background: transparent; }
     .related-scroll::-webkit-scrollbar-thumb { background: rgba(201,168,76,0.3); border-radius: 2px; }
 
-    .related-scroll .vr-product-card {
-      flex: 0 0 220px;
-      background: var(--navy) !important;
-      border: 1px solid rgba(255,255,255,0.06) !important;
-      border-radius: 6px !important;
+    .rel-card {
+      flex: 0 0 160px;
+      background: var(--navy);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 6px;
       overflow: hidden;
-      position: relative;
-      transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s !important;
+      cursor: pointer;
+      transition: border-color 0.22s, transform 0.22s, box-shadow 0.22s;
+      display: flex;
+      flex-direction: column;
     }
 
-    .related-scroll .vr-product-card::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 2px;
-      background: linear-gradient(90deg, var(--gold), var(--gold2));
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform 0.3s;
-      z-index: 1;
+    .rel-card:hover {
+      border-color: rgba(201,168,76,0.3);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.35);
     }
 
-    .related-scroll .vr-product-card:hover {
-      transform: translateY(-3px) !important;
-      box-shadow: 0 12px 36px rgba(0,0,0,0.35) !important;
-      border-color: rgba(201,168,76,0.26) !important;
+    .rel-card-img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      background: var(--navy3);
+      display: block;
     }
 
-    .related-scroll .vr-product-card:hover::before { transform: scaleX(1); }
+    .rel-card-body {
+      padding: 0.65rem 0.7rem 0.75rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      gap: 0.4rem;
+    }
+
+    .rel-card-name {
+      font-size: 0.75rem;
+      color: var(--text);
+      line-height: 1.35;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .rel-card-price {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--gold);
+    }
+
+    .rel-card-btn {
+      margin-top: auto;
+      padding: 0.35rem 0;
+      background: var(--gold);
+      color: var(--navy);
+      border: none;
+      border-radius: 2px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.15s;
+      font-family: 'DM Sans', sans-serif;
+      width: 100%;
+    }
+
+    .rel-card-btn:hover { background: var(--gold2); }
+
+    /* ─── SKELETON ─── */
+    .skeleton-wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 2rem 4rem;
+    }
+
+    .skeleton-product-grid {
+      display: grid;
+      grid-template-columns: 55% 45%;
+      gap: 3.5rem;
+    }
+
+    .sk-block {
+      background: linear-gradient(90deg, var(--navy2) 25%, var(--navy3) 50%, var(--navy2) 75%);
+      background-size: 200% 100%;
+      animation: sk-shimmer 1.4s infinite linear;
+      border-radius: 4px;
+    }
+
+    @keyframes sk-shimmer {
+      0%   { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
 
     /* ─── NOT FOUND ─── */
     .not-found {
@@ -555,35 +785,7 @@
       color: var(--white);
     }
 
-    .not-found p {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    /* ─── SKELETON ─── */
-    .skeleton-wrap {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 2rem 2rem 4rem;
-    }
-
-    .skeleton-product-grid {
-      display: grid;
-      grid-template-columns: 55% 45%;
-      gap: 3rem;
-    }
-
-    .sk-block {
-      background: linear-gradient(90deg, var(--navy2) 25%, var(--navy3) 50%, var(--navy2) 75%);
-      background-size: 200% 100%;
-      animation: sk-shimmer 1.4s infinite linear;
-      border-radius: 4px;
-    }
-
-    @keyframes sk-shimmer {
-      0%   { background-position: 200% 0; }
-      100% { background-position: -200% 0; }
-    }
+    .not-found p { color: var(--muted); font-size: 0.95rem; }
 
     /* ─── FOOTER ─── */
     footer {
@@ -640,10 +842,11 @@
     }
 
     /* ─── RESPONSIVE ─── */
-    @media (max-width: 860px) {
+    @media (max-width: 900px) {
       .product-grid { grid-template-columns: 1fr; gap: 2rem; }
       .skeleton-product-grid { grid-template-columns: 1fr; }
       .image-col { position: static; }
+      .below-fold { grid-template-columns: 1fr; gap: 2.5rem; }
     }
 
     @media (max-width: 768px) {
@@ -651,20 +854,21 @@
     }
 
     @media (max-width: 600px) {
-      nav { padding: 1rem 1.2rem; }
-      .product-section { padding: 1.5rem 1.2rem 3rem; }
+      nav.site-nav { padding: 1rem 1.2rem; }
+      .product-section { padding: 1.5rem 1.2rem 2rem; }
+      .below-fold { padding: 0 1.2rem 3rem; }
       .related-inner { padding: 0 1.2rem; }
       .breadcrumb { padding: 1.2rem 1.2rem 0; }
       .footer-inner { grid-template-columns: 1fr; }
       .footer-copy { text-align: left; }
-      .product-name { font-size: 1.8rem; }
+      .product-name { font-size: 1.75rem; }
     }
   </style>
 </head>
 <body>
 
 <!-- NAV -->
-<nav>
+<nav class="site-nav" aria-label="Site navigation">
   <a href="/" class="nav-logo">Vender<span>Resale</span></a>
   <div class="nav-links">
     <a href="shop.html">Shop</a>
@@ -673,11 +877,11 @@
   </div>
   <div class="nav-right">
     <a href="cart.html" class="nav-cart" aria-label="Shopping cart">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
         <path d="M1 1h4l2.68 13.39a2 2 0 001.99 1.61h9.72a2 2 0 001.98-1.69L23 6H6"/>
       </svg>
-      <span class="cart-count" id="cart-count-nav"></span>
+      <span class="cart-count" id="cart-count-nav" aria-live="polite"></span>
     </a>
     <a href="cart.html" class="nav-cta">Order Now</a>
   </div>
@@ -685,49 +889,56 @@
 
 <!-- PAGE CONTENT -->
 <div class="page-wrap" id="page-wrap">
+
   <!-- Skeleton while loading -->
-  <div id="skeleton-view">
+  <div id="skeleton-view" aria-hidden="true">
     <div class="skeleton-wrap">
-      <div style="height:14px;width:260px;margin-bottom:2rem;" class="sk-block"></div>
+      <div style="height:13px;width:280px;margin-bottom:2rem;" class="sk-block"></div>
       <div class="skeleton-product-grid">
         <div>
-          <div class="sk-block" style="width:100%;padding-top:75%;margin-bottom:0.85rem;"></div>
+          <div class="sk-block" style="width:100%;padding-top:72%;border-radius:8px;margin-bottom:0.75rem;"></div>
           <div style="display:flex;gap:0.6rem;">
-            <div class="sk-block" style="width:64px;height:64px;"></div>
-            <div class="sk-block" style="width:64px;height:64px;"></div>
-            <div class="sk-block" style="width:64px;height:64px;"></div>
+            <div class="sk-block" style="width:70px;height:70px;border-radius:4px;"></div>
+            <div class="sk-block" style="width:70px;height:70px;border-radius:4px;"></div>
+            <div class="sk-block" style="width:70px;height:70px;border-radius:4px;"></div>
           </div>
         </div>
         <div style="display:flex;flex-direction:column;gap:1rem;">
-          <div class="sk-block" style="height:24px;width:80px;border-radius:100px;"></div>
-          <div class="sk-block" style="height:40px;width:85%;"></div>
-          <div class="sk-block" style="height:14px;width:160px;"></div>
-          <div class="sk-block" style="height:36px;width:100px;"></div>
+          <div class="sk-block" style="height:22px;width:80px;border-radius:100px;"></div>
+          <div class="sk-block" style="height:44px;width:88%;"></div>
+          <div class="sk-block" style="height:13px;width:170px;"></div>
+          <div class="sk-block" style="height:13px;width:100px;"></div>
+          <div class="sk-block" style="height:38px;width:110px;"></div>
           <div class="sk-block" style="height:80px;width:100%;"></div>
-          <div class="sk-block" style="height:48px;width:100%;"></div>
+          <div class="sk-block" style="height:50px;width:100%;"></div>
+          <div class="sk-block" style="height:50px;width:100%;"></div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Not found view (hidden initially) -->
-  <div id="not-found-view" style="display:none;">
+  <!-- Not found (hidden initially) -->
+  <div id="not-found-view" style="display:none;" role="main">
     <div class="not-found">
       <h2>Product Not Found</h2>
       <p>This product doesn't exist or may have been removed.</p>
-      <a href="shop.html" class="btn-primary">Back to Shop</a>
+      <a href="shop.html" class="btn-primary" style="width:auto;">Back to Shop</a>
     </div>
   </div>
 
   <!-- Product content (hidden until loaded) -->
-  <div id="product-view" style="display:none;">
+  <div id="product-view" style="display:none;" role="main">
 
     <!-- Breadcrumb -->
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="index.html">Home</a>
-      <span class="breadcrumb-sep">/</span>
-      <a href="shop.html" id="bc-category-link">Shop</a>
-      <span class="breadcrumb-sep">/</span>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <a href="shop.html">Shop</a>
+      <span class="breadcrumb-sep" aria-hidden="true" id="bc-sep-top"></span>
+      <a href="#" id="bc-top-cat-link" style="display:none;"></a>
+      <span class="breadcrumb-sep" aria-hidden="true" id="bc-sep-sub" style="display:none;">/</span>
+      <a href="#" id="bc-sub-cat-link" style="display:none;"></a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
       <span class="breadcrumb-current" id="bc-name"></span>
     </nav>
 
@@ -745,19 +956,27 @@
 
         <!-- INFO COLUMN -->
         <div class="info-col">
+
           <div>
-            <span class="cat-badge" id="cat-badge"></span>
+            <span class="subcat-pill" id="subcat-pill"></span>
           </div>
 
           <h1 class="product-name" id="product-name"></h1>
 
-          <div class="source-badge" id="source-badge"></div>
+          <div class="source-line" id="source-line"></div>
+
+          <div class="rating-row">
+            <span class="stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="rating-label">(DOCCS Verified)</span>
+          </div>
 
           <div class="product-price" id="product-price"></div>
 
           <div>
             <span class="compliance-pill">&#10003; Directive 4911 Verified</span>
           </div>
+
+          <div class="info-divider"></div>
 
           <p class="product-desc" id="product-desc"></p>
 
@@ -767,37 +986,74 @@
             <div class="variant-pills" id="variant-pills"></div>
           </div>
 
-          <!-- Quantity row -->
+          <!-- Quantity -->
           <div class="qty-row">
-            <span class="qty-label">Qty</span>
+            <span class="qty-label">Qty:</span>
             <div class="qty-control">
               <button class="qty-btn" id="qty-minus" aria-label="Decrease quantity">&#8722;</button>
-              <div class="qty-display" id="qty-display">1</div>
+              <div class="qty-display" id="qty-display" aria-live="polite">1</div>
               <button class="qty-btn" id="qty-plus" aria-label="Increase quantity">&#43;</button>
             </div>
           </div>
 
-          <!-- Add to Cart -->
-          <button class="btn-primary add-to-cart-btn" id="add-to-cart-btn">Add to Cart</button>
-
-          <div class="shipping-note">
-            Ships via UPS, FedEx, or USPS directly to the DOCCS facility
+          <!-- Action buttons -->
+          <div class="action-buttons">
+            <button class="btn-primary" id="add-to-cart-btn">Add to Cart</button>
+            <button class="btn-secondary" id="buy-now-btn">Buy Now</button>
           </div>
 
-          <a href="shop.html" class="back-link" id="back-link">&#8592; Continue Shopping</a>
-        </div>
+          <!-- Shipping box -->
+          <div class="shipping-box" aria-label="Shipping information">
+            <div class="shipping-row">
+              <span class="shipping-icon">&#128230;</span>
+              <span>Ships via UPS, FedEx, or USPS directly to the facility</span>
+            </div>
+            <div class="shipping-row">
+              <span class="shipping-icon">&#10003;</span>
+              <span>All NY DOCCS Facilities</span>
+            </div>
+            <div class="shipping-row">
+              <span class="shipping-icon">&#9889;</span>
+              <span>Same-week processing</span>
+            </div>
+          </div>
 
+        </div>
       </div>
     </div>
 
-  </div><!-- /product-view -->
-</div>
+    <!-- Below fold: Nutrition + Details -->
+    <div class="below-fold" id="below-fold">
 
-<!-- RELATED PRODUCTS (outside page-wrap so it renders below) -->
-<div id="related-section" class="related-section" style="display:none;">
+      <!-- LEFT: Nutrition Facts (only for food categories) -->
+      <div class="nutrition-section" id="nutrition-section" style="display:none;">
+        <div class="nutrition-heading">Nutrition Facts</div>
+        <div id="nutrition-loading" class="nutrition-loading">
+          <div class="nf-spinner" aria-hidden="true"></div>
+          <span>Searching nutrition database...</span>
+        </div>
+        <div id="nutrition-label-wrap" style="display:none;"></div>
+        <div id="nutrition-na" class="nutrition-na" style="display:none;">Nutrition information not available for this product.</div>
+      </div>
+
+      <!-- RIGHT (or full-width when no nutrition): Product Details -->
+      <div class="details-section">
+        <div class="details-heading">Product Details</div>
+        <table class="details-table" id="details-table">
+          <tbody id="details-tbody"></tbody>
+        </table>
+      </div>
+
+    </div>
+
+  </div><!-- /product-view -->
+</div><!-- /page-wrap -->
+
+<!-- RELATED PRODUCTS -->
+<div id="related-section" class="related-section" style="display:none;" aria-label="Related products">
   <div class="related-inner">
     <h2 class="related-heading" id="related-heading">More Products</h2>
-    <div class="related-scroll" id="related-scroll"></div>
+    <div class="related-scroll" id="related-scroll" role="list"></div>
   </div>
 </div>
 
@@ -825,13 +1081,14 @@
 (function () {
   'use strict';
 
-  // ─── Source slug → display name map ────────────────────────────────────────
+  // ─── Source slug → display name ─────────────────────────────────────────────
   var SOURCE_NAMES = {
+    'nysapprovedvendor':     'NYS Approved Vendor',
     'nys-approved-vendor':   'NYS Approved Vendor',
     'nys_approved_vendor':   'NYS Approved Vendor',
-    'emmas':                 "Emma's",
-    'emma-s':                "Emma's",
-    'emma_s':                "Emma's",
+    'emmas':                 "Emma's Premium Services",
+    'emma-s':                "Emma's Premium Services",
+    'emma_s':                "Emma's Premium Services",
     'cig-essentials':        'CIG Essentials',
     'cig_essentials':        'CIG Essentials',
     'cigessentials':         'CIG Essentials'
@@ -839,8 +1096,15 @@
 
   function sourceDisplay(slug) {
     if (!slug) return null;
-    var key = slug.toLowerCase().trim();
-    return SOURCE_NAMES[key] || slug;
+    return SOURCE_NAMES[slug.toLowerCase().trim()] || slug;
+  }
+
+  // ─── Food categories that get nutrition panel ────────────────────────────────
+  var FOOD_TOP_CATS = ['proteins & meat', 'snacks', 'grocery', 'produce'];
+
+  function isFoodProduct(product) {
+    if (!product.top_category) return false;
+    return FOOD_TOP_CATS.indexOf(product.top_category.toLowerCase()) !== -1;
   }
 
   // ─── State ──────────────────────────────────────────────────────────────────
@@ -857,7 +1121,7 @@
     }
   }
 
-  // ─── Show main image with fade ──────────────────────────────────────────────
+  // ─── Image swap ─────────────────────────────────────────────────────────────
   function swapMainImage(src, clickedThumb) {
     var img = document.getElementById('main-img');
     img.classList.add('fading');
@@ -866,122 +1130,325 @@
       img.onload = function () { img.classList.remove('fading'); };
       img.onerror = function () { img.classList.remove('fading'); };
     }, 150);
-
-    // Update thumb selected state
     var thumbs = document.querySelectorAll('.thumb');
-    for (var i = 0; i < thumbs.length; i++) {
-      thumbs[i].classList.remove('selected');
-    }
+    for (var i = 0; i < thumbs.length; i++) thumbs[i].classList.remove('selected');
     if (clickedThumb) clickedThumb.classList.add('selected');
   }
 
-  // ─── Render thumbnails ──────────────────────────────────────────────────────
+  // ─── Thumbnails ─────────────────────────────────────────────────────────────
   function renderThumbs(images) {
     var row = document.getElementById('thumb-row');
-    if (!images || images.length <= 1) {
-      row.style.display = 'none';
-      return;
-    }
+    if (!images || images.length <= 1) { row.style.display = 'none'; return; }
+    var max = Math.min(images.length, 3);
     var html = '';
-    for (var i = 0; i < images.length; i++) {
-      html += '<img class="thumb' + (i === 0 ? ' selected' : '') + '" src="' + images[i] + '" alt="Product image ' + (i + 1) + '" loading="lazy" onerror="this.style.display=\'none\'">';
+    for (var i = 0; i < max; i++) {
+      html += '<img class="thumb' + (i === 0 ? ' selected' : '') + '" src="' + escAttr(images[i]) + '" alt="Product view ' + (i + 1) + '" loading="lazy" onerror="this.style.display=\'none\'">';
     }
     row.innerHTML = html;
-
-    // Bind thumb clicks
     var thumbEls = row.querySelectorAll('.thumb');
     for (var j = 0; j < thumbEls.length; j++) {
       (function (el, src) {
-        el.addEventListener('click', function () {
-          swapMainImage(src, el);
-        });
+        el.addEventListener('click', function () { swapMainImage(src, el); });
       }(thumbEls[j], images[j]));
     }
   }
 
-  // ─── Render variants ────────────────────────────────────────────────────────
+  // ─── Variants ───────────────────────────────────────────────────────────────
   function renderVariants(variants) {
-    var section = document.getElementById('variants-section');
-    var pillsWrap = document.getElementById('variant-pills');
-
-    // Filter out default/blank
+    var section    = document.getElementById('variants-section');
+    var pillsWrap  = document.getElementById('variant-pills');
     var real = (variants || []).filter(function (v) {
       return v && v.title && v.title.toLowerCase() !== 'default title' && v.title.trim() !== '';
     });
-
-    if (!real.length) {
-      section.style.display = 'none';
-      _selectedVariant = null;
-      return;
-    }
+    if (!real.length) { section.style.display = 'none'; _selectedVariant = null; return; }
 
     section.style.display = 'block';
     _selectedVariant = real[0].title;
 
     var html = '';
     for (var i = 0; i < real.length; i++) {
-      html += '<button class="variant-pill' + (i === 0 ? ' active' : '') + '" data-variant="' + escAttr(real[i].title) + '">' + escHtml(real[i].title) + '</button>';
+      html += '<button class="variant-pill' + (i === 0 ? ' active' : '') +
+        '" data-variant="' + escAttr(real[i].title) + '"' +
+        (real[i].price ? ' data-price="' + escAttr(String(real[i].price)) + '"' : '') +
+        '>' + escHtml(real[i].title) + '</button>';
     }
     pillsWrap.innerHTML = html;
 
     pillsWrap.addEventListener('click', function (e) {
-      var btn = e.target.closest('.variant-pill');
+      var btn = e.target.closest ? e.target.closest('.variant-pill') : null;
       if (!btn) return;
       var allPills = pillsWrap.querySelectorAll('.variant-pill');
       for (var j = 0; j < allPills.length; j++) allPills[j].classList.remove('active');
       btn.classList.add('active');
       _selectedVariant = btn.getAttribute('data-variant');
+      // Update price if variant has one
+      var vPrice = btn.getAttribute('data-price');
+      if (vPrice) {
+        document.getElementById('product-price').textContent = VR.formatPrice(parseFloat(vPrice));
+      }
     });
   }
 
-  // ─── Render product ─────────────────────────────────────────────────────────
+  // ─── Breadcrumb ─────────────────────────────────────────────────────────────
+  function renderBreadcrumb(product) {
+    var topCat = product.top_category || '';
+    var subCat = product.category || '';
+
+    // Top category link
+    var topLink = document.getElementById('bc-top-cat-link');
+    var sepTop  = document.getElementById('bc-sep-top');
+    var subLink = document.getElementById('bc-sub-cat-link');
+    var sepSub  = document.getElementById('bc-sep-sub');
+
+    if (topCat) {
+      topLink.textContent = topCat;
+      topLink.href = 'shop.html?top=' + encodeURIComponent(topCat);
+      topLink.style.display = '';
+      sepTop.style.display  = '';
+      sepTop.textContent    = '/';
+    }
+
+    if (subCat) {
+      subLink.textContent = subCat;
+      subLink.href = 'shop.html?cat=' + encodeURIComponent(subCat);
+      subLink.style.display = '';
+      sepSub.style.display  = '';
+    }
+
+    document.getElementById('bc-name').textContent = truncate(product.name || '', 45);
+  }
+
+  // ─── Details table ───────────────────────────────────────────────────────────
+  function renderDetailsTable(product) {
+    var rows = [
+      ['Category',       product.top_category || '—'],
+      ['Subcategory',    product.category || '—'],
+      ['Source',         sourceDisplay(product.source) || '—'],
+      ['Directive 4911', 'Compliant — All items verified']
+    ];
+    var html = '';
+    for (var i = 0; i < rows.length; i++) {
+      html += '<tr><td>' + escHtml(rows[i][0]) + '</td><td>' + escHtml(rows[i][1]) + '</td></tr>';
+    }
+    document.getElementById('details-tbody').innerHTML = html;
+  }
+
+  // ─── Nutrition Facts API ─────────────────────────────────────────────────────
+  async function fetchNutrition(productName, handle) {
+    var cacheKey = 'nutrition_' + handle;
+    var cached   = null;
+    try {
+      var raw = localStorage.getItem(cacheKey);
+      if (raw !== null) cached = JSON.parse(raw);
+    } catch (e) {}
+    if (cached !== undefined && cached !== null || cached === null && localStorage.getItem(cacheKey) === 'null') {
+      return cached;
+    }
+
+    var query = encodeURIComponent(productName.replace(/[,()]/g, ' ').trim());
+    var url   = 'https://world.openfoodfacts.org/cgi/search.pl?search_terms=' + query + '&json=1&page_size=1&search_simple=1';
+
+    try {
+      var resp = await fetch(url);
+      var data = await resp.json();
+      var product = data.products && data.products[0];
+      if (!product || !product.nutriments) {
+        try { localStorage.setItem(cacheKey, 'null'); } catch (e) {}
+        return null;
+      }
+      var n = product.nutriments;
+      var result = {
+        servingSize:  product.serving_size || product.quantity || 'See package',
+        calories:     n['energy-kcal_serving'] || n['energy-kcal_100g'] || null,
+        totalFat:     n['fat_serving']          !== undefined ? n['fat_serving']          : n['fat_100g'],
+        saturatedFat: n['saturated-fat_serving'] !== undefined ? n['saturated-fat_serving'] : n['saturated-fat_100g'],
+        transFat:     n['trans-fat_serving']    !== undefined ? n['trans-fat_serving']    : n['trans-fat_100g'],
+        cholesterol:  n['cholesterol_serving']  !== undefined ? n['cholesterol_serving']  : n['cholesterol_100g'],
+        sodium:       n['sodium_serving']  ? Math.round(n['sodium_serving']  * 1000) : (n['sodium_100g']  ? Math.round(n['sodium_100g']  * 1000) : null),
+        carbs:        n['carbohydrates_serving'] !== undefined ? n['carbohydrates_serving'] : n['carbohydrates_100g'],
+        fiber:        n['fiber_serving']   !== undefined ? n['fiber_serving']   : n['fiber_100g'],
+        sugars:       n['sugars_serving']  !== undefined ? n['sugars_serving']  : n['sugars_100g'],
+        protein:      n['proteins_serving'] !== undefined ? n['proteins_serving'] : n['proteins_100g'],
+        vitaminD:     n['vitamin-d_serving'] || null,
+        calcium:      n['calcium_serving']   ? Math.round(n['calcium_serving']   * 1000) : null,
+        iron:         n['iron_serving']      ? Math.round(n['iron_serving']      * 1000) : null,
+        potassium:    n['potassium_serving'] ? Math.round(n['potassium_serving'] * 1000) : null
+      };
+      try { localStorage.setItem(cacheKey, JSON.stringify(result)); } catch (e) {}
+      return result;
+    } catch (err) {
+      return null;
+    }
+  }
+
+  // ─── Format nutrition value ──────────────────────────────────────────────────
+  function fmtG(val, unit) {
+    if (val === undefined || val === null) return null;
+    unit = unit || 'g';
+    return parseFloat(val).toFixed(1).replace(/\.0$/, '') + unit;
+  }
+
+  function fmtMg(val) {
+    if (val === undefined || val === null) return null;
+    return Math.round(val) + 'mg';
+  }
+
+  // ─── Render FDA-style nutrition label ────────────────────────────────────────
+  function renderNutritionLabel(n) {
+    var rows = [];
+
+    function nfRow(label, amount, dv, bold, indent) {
+      if (amount === null || amount === undefined) return '';
+      var cls = 'nf-row';
+      if (bold) cls += ' bold';
+      if (indent) cls += ' indent';
+      return '<div class="' + cls + '">' +
+        '<span>' + (bold ? '<b>' : '') + label + (bold ? '</b>' : '') + (amount ? ' ' + escHtml(String(amount)) : '') + '</span>' +
+        (dv ? '<span><b>' + escHtml(String(dv)) + '</b></span>' : '<span></span>') +
+        '</div>';
+    }
+
+    var calStr = n.calories !== null && n.calories !== undefined ? Math.round(n.calories) : '—';
+
+    var label = '<div class="nutrition-label" role="region" aria-label="Nutrition Facts">' +
+      '<div class="nf-title">Nutrition Facts</div>' +
+      '<div class="nf-serving">Serving size <b>' + escHtml(String(n.servingSize || 'See package')) + '</b></div>' +
+      '<div class="nf-divider"></div>' +
+      '<div class="nf-calories-row">' +
+        '<span class="nf-calories-label">Calories</span>' +
+        '<span class="nf-calories-val">' + calStr + '</span>' +
+      '</div>' +
+      '<div class="nf-thin-divider"></div>' +
+      '<div class="nf-row" style="font-size:0.7rem;border-bottom:none;justify-content:flex-end;">% Daily Value*</div>' +
+      nfRow('Total Fat', fmtG(n.totalFat), null, true, false) +
+      nfRow('Saturated Fat', fmtG(n.saturatedFat), null, false, true) +
+      nfRow('Trans Fat', fmtG(n.transFat), null, false, true) +
+      nfRow('Cholesterol', fmtMg(n.cholesterol), null, true, false) +
+      nfRow('Sodium', fmtMg(n.sodium), null, true, false) +
+      nfRow('Total Carbohydrate', fmtG(n.carbs), null, true, false) +
+      nfRow('Dietary Fiber', fmtG(n.fiber), null, false, true) +
+      nfRow('Total Sugars', fmtG(n.sugars), null, false, true) +
+      (n.sugars !== null && n.sugars !== undefined ? '<div class="nf-row indent" style="padding-left:2rem;">Includes Added Sugars <span></span></div>' : '') +
+      nfRow('Protein', fmtG(n.protein), null, true, false) +
+      '<div class="nf-divider" style="height:4px;"></div>' +
+      nfRow('Vitamin D', n.vitaminD !== null && n.vitaminD !== undefined ? fmtG(n.vitaminD, 'mcg') : null, null, false, false) +
+      nfRow('Calcium', n.calcium !== null && n.calcium !== undefined ? n.calcium + 'mg' : null, null, false, false) +
+      nfRow('Iron', n.iron !== null && n.iron !== undefined ? n.iron + 'mg' : null, null, false, false) +
+      nfRow('Potassium', n.potassium !== null && n.potassium !== undefined ? n.potassium + 'mg' : null, null, false, false) +
+      '<div class="nf-footnote">* The % Daily Value tells you how much a nutrient in a serving contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.</div>' +
+      '</div>';
+
+    return label;
+  }
+
+  // ─── Load nutrition panel ────────────────────────────────────────────────────
+  async function loadNutrition(product) {
+    var section = document.getElementById('nutrition-section');
+    if (!isFoodProduct(product)) {
+      section.style.display = 'none';
+      // make below-fold single column
+      var bf = document.getElementById('below-fold');
+      bf.style.gridTemplateColumns = '1fr';
+      return;
+    }
+
+    section.style.display = 'block';
+    document.getElementById('nutrition-loading').style.display = 'flex';
+    document.getElementById('nutrition-label-wrap').style.display = 'none';
+    document.getElementById('nutrition-na').style.display = 'none';
+
+    var nutrition = await fetchNutrition(product.name, product.handle || String(product.id));
+
+    document.getElementById('nutrition-loading').style.display = 'none';
+
+    if (nutrition) {
+      var wrap = document.getElementById('nutrition-label-wrap');
+      wrap.innerHTML = renderNutritionLabel(nutrition);
+      wrap.style.display = 'block';
+    } else {
+      document.getElementById('nutrition-na').style.display = 'block';
+    }
+  }
+
+  // ─── Render related products ─────────────────────────────────────────────────
+  function renderRelated(catalog, product) {
+    var same = catalog.filter(function (p) {
+      return p.category === product.category && p.id !== product.id;
+    });
+    if (!same.length) return;
+
+    var shown   = same.slice(0, 6);
+    var section = document.getElementById('related-section');
+    var scroll  = document.getElementById('related-scroll');
+    var heading = document.getElementById('related-heading');
+
+    heading.textContent = 'More ' + (product.category || 'Products');
+
+    var html = '';
+    for (var i = 0; i < shown.length; i++) {
+      var p    = shown[i];
+      var img  = p.image_url || (p.images && p.images[0]) || '';
+      var name = p.name || '';
+      var price = VR.formatPrice(p.price || 0);
+      html += '<div class="rel-card" role="listitem">' +
+        '<a href="product.html?id=' + p.id + '" tabindex="-1" aria-hidden="true">' +
+          '<img class="rel-card-img" src="' + escAttr(img) + '" alt="' + escAttr(name) + '" loading="lazy" onerror="this.style.background=\'#1a2f50\'">' +
+        '</a>' +
+        '<div class="rel-card-body">' +
+          '<a href="product.html?id=' + p.id + '" style="text-decoration:none;">' +
+            '<div class="rel-card-name" title="' + escAttr(name) + '">' + escHtml(name) + '</div>' +
+          '</a>' +
+          '<div class="rel-card-price">' + escHtml(price) + '</div>' +
+          '<button class="rel-card-btn vr-add-to-cart" data-id="' + p.id + '" aria-label="Add ' + escAttr(name) + ' to cart">Add to Cart</button>' +
+        '</div>' +
+      '</div>';
+    }
+
+    scroll.innerHTML = html;
+    section.style.display = 'block';
+  }
+
+  // ─── Render main product ─────────────────────────────────────────────────────
   function renderProduct(product) {
     _product = product;
 
-    var images = product.images && product.images.length
-      ? product.images
-      : [product.image_url];
-    // Remove empty entries
+    // Images
+    var images = (product.images && product.images.length) ? product.images : [product.image_url];
     images = images.filter(function (u) { return u && u.trim(); });
-    if (!images.length) images = [product.image_url || ''];
+    if (!images.length) images = [''];
 
-    // Main image
-    var mainImg = document.getElementById('main-img');
-    mainImg.src = images[0];
-    mainImg.alt = product.name || 'Product image';
-
-    // Thumbs
+    document.getElementById('main-img').src = images[0];
+    document.getElementById('main-img').alt = product.name || 'Product image';
     renderThumbs(images);
 
-    // Breadcrumb
-    var catLink = document.getElementById('bc-category-link');
-    catLink.textContent = product.category || 'Shop';
-    catLink.href = 'shop.html' + (product.category ? '?category=' + encodeURIComponent(product.category) : '');
-    document.getElementById('bc-name').textContent = truncate(product.name || '', 40);
-
-    // Title tag
+    // Title
     document.title = (product.name || 'Product') + ' — Vender Resale';
 
-    // Category badge
-    document.getElementById('cat-badge').textContent = product.category || '';
+    // Breadcrumb
+    renderBreadcrumb(product);
+
+    // Subcategory pill
+    var pill = document.getElementById('subcat-pill');
+    pill.textContent = product.category || product.top_category || '';
+    if (!pill.textContent) pill.style.display = 'none';
 
     // Name
     document.getElementById('product-name').textContent = product.name || '';
 
-    // Source badge
+    // Source line
     var srcDisplay = sourceDisplay(product.source);
-    var srcEl = document.getElementById('source-badge');
+    var srcEl = document.getElementById('source-line');
     if (srcDisplay) {
-      srcEl.textContent = 'Sourced from ' + srcDisplay;
+      srcEl.textContent = 'Available from ' + srcDisplay;
     } else {
       srcEl.style.display = 'none';
     }
 
     // Price
     var priceEl = document.getElementById('product-price');
-    var p = parseFloat(product.price) || 0;
+    var p    = parseFloat(product.price)     || 0;
     var pmax = parseFloat(product.price_max) || p;
-    if (p !== pmax && pmax > p) {
+    if (pmax > p) {
       priceEl.textContent = 'From ' + VR.formatPrice(p);
     } else {
       priceEl.textContent = VR.formatPrice(p);
@@ -993,75 +1460,53 @@
     // Variants
     renderVariants(product.variants);
 
-    // Back link
-    document.getElementById('back-link').href = 'shop.html' + (product.category ? '?category=' + encodeURIComponent(product.category) : '');
+    // Details table
+    renderDetailsTable(product);
 
     // Show product view
     document.getElementById('skeleton-view').style.display = 'none';
     document.getElementById('product-view').style.display = 'block';
+
+    // Nutrition (async, non-blocking)
+    loadNutrition(product);
   }
 
-  // ─── Render related products ────────────────────────────────────────────────
-  function renderRelated(catalog, product) {
-    var same = VR.filterByCategory(catalog, product.category).filter(function (p) {
-      return p.id !== product.id;
-    });
-
-    if (!same.length) return;
-
-    var section = document.getElementById('related-section');
-    var scroll  = document.getElementById('related-scroll');
-    var heading = document.getElementById('related-heading');
-
-    heading.textContent = 'More ' + (product.category || '') + ' Products';
-
-    var shown = same.slice(0, 6);
-    var html = '';
-    for (var i = 0; i < shown.length; i++) {
-      html += VR.productCardHTML(shown[i]);
-    }
-    scroll.innerHTML = html;
-    section.style.display = 'block';
-  }
-
-  // ─── Quantity controls ──────────────────────────────────────────────────────
+  // ─── Quantity controls ────────────────────────────────────────────────────────
   function initQtyControls() {
     document.getElementById('qty-minus').addEventListener('click', function () {
-      if (_qty > 1) {
-        _qty--;
-        document.getElementById('qty-display').textContent = _qty;
-      }
+      if (_qty > 1) { _qty--; document.getElementById('qty-display').textContent = _qty; }
     });
-
     document.getElementById('qty-plus').addEventListener('click', function () {
-      if (_qty < 20) {
-        _qty++;
-        document.getElementById('qty-display').textContent = _qty;
-      }
+      if (_qty < 20) { _qty++; document.getElementById('qty-display').textContent = _qty; }
     });
   }
 
-  // ─── Add to cart ─────────────────────────────────────────────────────────────
-  function initAddToCart() {
+  // ─── Cart buttons ─────────────────────────────────────────────────────────────
+  function initCartButtons() {
     document.getElementById('add-to-cart-btn').addEventListener('click', function () {
       if (!_product) return;
       VR.cart.add(_product, _qty, _selectedVariant);
       syncCartBadge();
-      VR.showToast('Added to cart!');
+      VR.showToast(_product.name + ' added to cart');
+    });
+
+    document.getElementById('buy-now-btn').addEventListener('click', function () {
+      if (!_product) return;
+      VR.cart.add(_product, _qty, _selectedVariant);
+      syncCartBadge();
+      window.location.href = 'cart.html';
     });
   }
 
-  // ─── Utilities ──────────────────────────────────────────────────────────────
+  // ─── Utilities ────────────────────────────────────────────────────────────────
   function escHtml(str) {
     return String(str)
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;');
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   }
 
   function escAttr(str) {
-    return String(str).replace(/"/g, '&quot;');
+    return String(str).replace(/"/g, '&quot;').replace(/</g, '&lt;');
   }
 
   function truncate(str, len) {
@@ -1069,12 +1514,12 @@
     return str.length > len ? str.slice(0, len) + '…' : str;
   }
 
-  // ─── Init ────────────────────────────────────────────────────────────────────
+  // ─── Init ─────────────────────────────────────────────────────────────────────
   document.addEventListener('DOMContentLoaded', function () {
     VR.cart.onChange(syncCartBadge);
     syncCartBadge();
     initQtyControls();
-    initAddToCart();
+    initCartButtons();
 
     var idParam = VR.getParam('id');
     var id = parseInt(idParam, 10);
@@ -1095,7 +1540,6 @@
 
         renderProduct(product);
 
-        // Load related after main render
         VR.getCatalog().then(function (catalog) {
           renderRelated(catalog, product);
         });
