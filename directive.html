@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plain-English guide to NY DOCCS Directive 4911 — what you can and can't send to incarcerated loved ones in New York State facilities.">
+  <meta name="keywords" content="DOCCS Directive 4911, NY prison care packages, inmate package rules, what can I send to prison, NY state inmate packages">
+  <meta property="og:title" content="Directive 4911 Plain-English Guide — Vender Resale">
+  <meta property="og:description" content="Everything NY State DOCCS allows — and doesn't allow — in one place. No legalese, no PDFs.">
+  <meta property="og:type" content="website">
+  <title>Directive 4911 Guide — What Can You Send? — Vender Resale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:  #0b1628;
+      --navy2: #111f38;
+      --navy3: #1a2f50;
+      --gold:  #c9a84c;
+      --gold2: #e8c96a;
+      --white: #fff;
+      --muted: #8a9ab5;
+      --text:  #d4dde8;
+      --yes-bg:   #0d2b0a;
+      --yes-text: #5cb85c;
+      --yes-border: rgba(92,184,92,0.22);
+      --no-bg:    #2a0e0e;
+      --no-text:  #e05555;
+      --no-border: rgba(224,85,85,0.22);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--navy);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    /* ─── NAV ─── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      height: 64px;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      background: rgba(11,22,40,0.92);
+      -webkit-backdrop-filter: blur(14px);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(201,168,76,0.18);
+    }
+
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+    .nav-logo span { color: var(--gold); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex: 1;
+      justify-content: center;
+    }
+    .nav-links a {
+      font-size: 0.78rem;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-links a.active { color: var(--gold); }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-shrink: 0;
+    }
+
+    .nav-cart {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+      padding: 0.3rem;
+    }
+    .nav-cart:hover { color: var(--gold); }
+
+    .cart-count {
+      position: absolute;
+      top: -4px; right: -6px;
+      min-width: 16px; height: 16px;
+      background: var(--gold);
+      color: var(--navy);
+      font-size: 0.6rem;
+      font-weight: 700;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 3px;
+      line-height: 1;
+    }
+    .cart-count:empty { display: none; }
+
+    .nav-cta {
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--navy);
+      background: var(--gold);
+      padding: 0.55rem 1.2rem;
+      border-radius: 2px;
+      text-decoration: none;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+    .nav-cta:hover { background: var(--gold2); }
+
+    /* ─── BUTTONS ─── */
+    .btn-primary {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.9rem 2rem;
+      border-radius: 2px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { background: var(--gold2); transform: translateY(-1px); }
+
+    .btn-secondary {
+      display: inline-block;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.9rem 2rem;
+      border-radius: 2px;
+      text-decoration: none;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .btn-secondary:hover {
+      border-color: var(--gold2);
+      background: rgba(201,168,76,0.08);
+    }
+
+    /* ─── HERO ─── */
+    #hero {
+      padding: 7.5rem 2rem 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #hero::before {
+      content: '';
+      position: absolute;
+      top: -10%;
+      right: -6%;
+      width: 560px;
+      height: 560px;
+      background: radial-gradient(ellipse, rgba(201,168,76,0.1) 0%, transparent 68%);
+      pointer-events: none;
+    }
+
+    #hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201,168,76,0.3), transparent);
+    }
+
+    .hero-inner {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(201,168,76,0.08);
+      border: 1px solid rgba(201,168,76,0.28);
+      border-radius: 100px;
+      padding: 0.4rem 1rem;
+      font-size: 0.73rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.75rem;
+      animation: fadeUp 0.5s ease both;
+    }
+    .hero-badge::before {
+      content: '';
+      width: 6px; height: 6px;
+      background: var(--gold);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    #hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.4rem, 5.5vw, 4rem);
+      font-weight: 700;
+      line-height: 1.1;
+      color: var(--white);
+      margin-bottom: 1.2rem;
+      animation: fadeUp 0.5s 0.08s ease both;
+    }
+
+    .hero-sub {
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--muted);
+      line-height: 1.72;
+      max-width: 540px;
+      margin-bottom: 2rem;
+      animation: fadeUp 0.5s 0.16s ease both;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      animation: fadeUp 0.5s 0.24s ease both;
+    }
+
+    /* ─── QUICK SUMMARY CARDS ─── */
+    #quick-summary {
+      background: var(--navy2);
+      padding: 3.5rem 2rem;
+    }
+
+    .summary-grid {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+
+    .summary-card {
+      background: var(--navy);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-top: 3px solid var(--gold);
+      border-radius: 6px;
+      padding: 1.6rem 1.4rem;
+    }
+
+    .summary-icon {
+      font-size: 1.75rem;
+      line-height: 1;
+      margin-bottom: 0.75rem;
+    }
+
+    .summary-card strong {
+      display: block;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+    }
+
+    .summary-card p {
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    /* ─── SHARED SECTION ─── */
+    .directive-section {
+      padding: 4.5rem 2rem;
+    }
+    .directive-section:nth-child(even) {
+      background: var(--navy2);
+    }
+
+    .section-inner {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.6rem;
+    }
+
+    .section-inner h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-desc {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+      max-width: 560px;
+    }
+
+    /* ─── ALLOWED CATEGORIES GRID ─── */
+    .allowed-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .allowed-card {
+      background: var(--yes-bg);
+      border: 1px solid var(--yes-border);
+      border-radius: 6px;
+      padding: 1.4rem 1.3rem;
+      position: relative;
+    }
+
+    .allowed-card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .allowed-emoji {
+      font-size: 1.5rem;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    .allowed-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.2;
+    }
+
+    .allowed-rule {
+      font-size: 0.84rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 0.9rem;
+      padding-bottom: 0.9rem;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .allowed-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .allowed-list li {
+      font-size: 0.83rem;
+      color: var(--text);
+      line-height: 1.5;
+      padding-left: 1.2rem;
+      position: relative;
+    }
+
+    .allowed-list li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--yes-text);
+      font-size: 0.78rem;
+      font-weight: 700;
+      top: 0.05em;
+    }
+
+    .allowed-list li.no {
+      color: var(--muted);
+      opacity: 0.75;
+    }
+
+    .allowed-list li.no::before {
+      content: '✗';
+      color: var(--no-text);
+    }
+
+    /* ─── NOT ALLOWED SECTION ─── */
+    .not-allowed-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.6rem;
+    }
+
+    .no-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+      background: var(--no-bg);
+      border: 1px solid var(--no-border);
+      border-radius: 5px;
+      padding: 0.75rem 1rem;
+    }
+
+    .no-icon {
+      color: var(--no-text);
+      font-size: 0.85rem;
+      font-weight: 700;
+      flex-shrink: 0;
+      line-height: 1.5;
+      margin-top: 0.05em;
+    }
+
+    .no-item span {
+      font-size: 0.88rem;
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    /* ─── PACKAGE RULES ─── */
+    .rules-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      counter-reset: rule-counter;
+    }
+
+    .rule-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.25rem;
+      background: var(--navy2);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 6px;
+      padding: 1.3rem 1.4rem;
+      counter-increment: rule-counter;
+    }
+
+    .rule-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: rgba(201,168,76,0.25);
+      line-height: 1;
+      flex-shrink: 0;
+      width: 2rem;
+      text-align: right;
+    }
+
+    .rule-body {
+      flex: 1;
+      padding-top: 0.1rem;
+    }
+
+    .rule-body strong {
+      display: block;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--white);
+      margin-bottom: 0.3rem;
+    }
+
+    .rule-body p {
+      font-size: 0.86rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    /* ─── ABOUT VENDER ─── */
+    #about-vender {
+      background: var(--navy3);
+    }
+
+    .about-inner {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .about-inner h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+
+    .about-inner p {
+      font-size: 1rem;
+      color: var(--muted);
+      line-height: 1.75;
+      margin-bottom: 2rem;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: #070f1d;
+      padding: 3rem 2rem 2rem;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-brand {}
+
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--white);
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 0.4rem;
+    }
+    .footer-logo span { color: var(--gold); }
+
+    .footer-tagline {
+      font-size: 0.75rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .footer-col h4 {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.9rem;
+    }
+
+    .footer-col a {
+      display: block;
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-decoration: none;
+      margin-bottom: 0.55rem;
+      transition: color 0.2s;
+      line-height: 1.5;
+    }
+    .footer-col a:hover { color: var(--gold); }
+
+    .footer-bottom {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-copy {
+      font-size: 0.72rem;
+      color: rgba(138,154,181,0.5);
+    }
+
+    /* ─── ANIMATIONS ─── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 900px) {
+      .summary-grid { grid-template-columns: 1fr; max-width: 480px; }
+      .not-allowed-grid { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .allowed-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 600px) {
+      nav { padding: 0 1.2rem; }
+      #hero { padding: 6rem 1.2rem 3rem; }
+      .directive-section { padding: 3rem 1.2rem; }
+      #quick-summary { padding: 2.5rem 1.2rem; }
+      .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">Vender<span>Resale</span></a>
+  <div class="nav-links">
+    <a href="shop.html">Shop</a>
+    <a href="directive.html" class="active">Directive 4911</a>
+    <a href="/#about">About</a>
+  </div>
+  <div class="nav-right">
+    <a href="cart.html" class="nav-cart" aria-label="Shopping cart">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+        <path d="M1 1h4l2.68 13.39a2 2 0 001.99 1.61h9.72a2 2 0 001.98-1.69L23 6H6"/>
+      </svg>
+      <span class="cart-count" id="cart-count-nav"></span>
+    </a>
+    <a href="cart.html" class="nav-cta">Order Now</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">Official DOCCS Directive 4911</div>
+    <h1>What Can You Send?<br>A Plain-English Guide</h1>
+    <p class="hero-sub">Everything NY State DOCCS allows — and doesn't allow — in one place. Updated from the official directive.</p>
+    <div class="hero-actions">
+      <a href="shop.html" class="btn-primary">Browse Compliant Products</a>
+      <a href="https://doccs.ny.gov/system/files/documents/2024/11/4911_0.pdf" target="_blank" rel="noopener" class="btn-secondary">View Official Directive (PDF)</a>
+    </div>
+  </div>
+</section>
+
+<!-- QUICK SUMMARY CARDS -->
+<section id="quick-summary" aria-label="Quick summary">
+  <div class="summary-grid">
+    <div class="summary-card">
+      <div class="summary-icon">📦</div>
+      <strong>3 Packages / Month</strong>
+      <p>Per incarcerated individual. 30 lbs maximum total weight combined across all packages that month.</p>
+    </div>
+    <div class="summary-card">
+      <div class="summary-icon">🚚</div>
+      <strong>Must Ship via UPS, FedEx, or USPS</strong>
+      <p>No hand delivery. No dropping off at the facility. Packages must be shipped through an approved carrier.</p>
+    </div>
+    <div class="summary-card">
+      <div class="summary-icon">🏪</div>
+      <strong>Must Come From a Vendor</strong>
+      <p>Families cannot ship directly. Under Directive 4911A, packages must come from an approved vendor like Vender Resale.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT IS ALLOWED -->
+<section class="directive-section" id="allowed" aria-labelledby="allowed-heading">
+  <div class="section-inner">
+    <div class="section-label">Permitted Items</div>
+    <h2 id="allowed-heading">What IS Allowed ✓</h2>
+    <p class="section-desc">These categories are permitted under Directive 4911. Each has specific requirements — read the rule before ordering.</p>
+
+    <div class="allowed-grid">
+
+      <!-- FOOD -->
+      <div class="allowed-card">
+        <div class="allowed-card-header">
+          <span class="allowed-emoji">🥩</span>
+          <h3>Food &amp; Beverages</h3>
+        </div>
+        <p class="allowed-rule">Must be commercially sealed — vacuum-packed, hermetically sealed, or factory-sealed packaging only. No homemade food, no bakery items, no glass containers, no metal cans.</p>
+        <ul class="allowed-list">
+          <li>Cooked/cured/smoked meats in pouches (tuna, salmon, chicken pouches)</li>
+          <li>Shelf-stable items: crackers, chips, candy, cookies</li>
+          <li>Coffee, tea, drink mixes, instant food, oatmeal, grits, cereal</li>
+          <li>Rice, pasta, dried beans</li>
+          <li>Fresh produce: whole, uncut only (apples, oranges, bananas)</li>
+          <li class="no">NOT: hot peppers (jalapeño, etc.)</li>
+          <li class="no">NOT: marshmallows</li>
+          <li class="no">NOT: energy drinks (Red Bull, Monster, etc.)</li>
+          <li class="no">NOT: homemade food or bakery items</li>
+        </ul>
+      </div>
+
+      <!-- CLOTHING -->
+      <div class="allowed-card">
+        <div class="allowed-card-header">
+          <span class="allowed-emoji">👕</span>
+          <h3>Clothing</h3>
+        </div>
+        <p class="allowed-rule">Standard civilian clothing is allowed. No camouflage patterns. No hooded sweatshirts with drawstrings.</p>
+        <ul class="allowed-list">
+          <li>Sweatsuits, sweatpants, sweatshirts (no hoods with strings)</li>
+          <li>T-shirts, polo shirts</li>
+          <li>Thermal underwear, socks, underwear, boxers</li>
+          <li>Winter accessories: hats, gloves, scarves</li>
+          <li class="no">NOT: camouflage patterns or military-style clothing</li>
+          <li class="no">NOT: hooded sweatshirts with drawstrings in the hood</li>
+        </ul>
+      </div>
+
+      <!-- FOOTWEAR -->
+      <div class="allowed-card">
+        <div class="allowed-card-header">
+          <span class="allowed-emoji">👟</span>
+          <h3>Footwear</h3>
+        </div>
+        <p class="allowed-rule">Flat soles only. The sole must be solid — nothing that could conceal contraband inside it.</p>
+        <ul class="allowed-list">
+          <li>Canvas sneakers with flat, solid soles</li>
+          <li>Boots with flat soles</li>
+          <li>Slippers with flat soles</li>
+          <li class="no">NOT: shoes with hollow soles or air chambers (Nike Air, etc.)</li>
+          <li class="no">NOT: shoes with memory foam insoles</li>
+          <li class="no">NOT: shoes with metal shanks</li>
+        </ul>
+      </div>
+
+      <!-- HYGIENE -->
+      <div class="allowed-card">
+        <div class="allowed-card-header">
+          <span class="allowed-emoji">🧴</span>
+          <h3>Hygiene &amp; Personal Care</h3>
+        </div>
+        <p class="allowed-rule">Alcohol-free products only. Check the ingredients list — if alcohol appears anywhere, it is not allowed.</p>
+        <ul class="allowed-list">
+          <li>Soap and body wash (alcohol-free)</li>
+          <li>Shampoo and conditioner (alcohol-free)</li>
+          <li>Lotion and skin care (alcohol-free)</li>
+          <li>Deodorant and antiperspirant (alcohol-free)</li>
+          <li>Toothpaste, toothbrush, dental floss</li>
+          <li class="no">NOT: hair coloring or dye products</li>
+          <li class="no">NOT: tanning products</li>
+          <li class="no">NOT: any product containing alcohol</li>
+        </ul>
+      </div>
+
+      <!-- ELECTRONICS -->
+      <div class="allowed-card">
+        <div class="allowed-card-header">
+          <span class="allowed-emoji">🎧</span>
+          <h3>Electronics</h3>
+        </div>
+        <p class="allowed-rule">Clear or transparent housing required — staff must be able to see inside the device. Wired only, no wireless or Bluetooth.</p>
+        <ul class="allowed-list">
+          <li>AM/FM radios (clear/transparent housing only)</li>
+          <li>Wired headphones and earbuds (no wireless)</li>
+          <li>CD/MP3 players (clear housing, no internet capability)</li>
+          <li class="no">NOT: smartphones or tablets</li>
+          <li class="no">NOT: smartwatches or fitness trackers</li>
+          <li class="no">NOT: Bluetooth or wireless devices</li>
+          <li class="no">NOT: any internet-connected device</li>
+        </ul>
+      </div>
+
+      <!-- BEDDING -->
+      <div class="allowed-card">
+        <div class="allowed-card-header">
+          <span class="allowed-emoji">🛏</span>
+          <h3>Bedding</h3>
+        </div>
+        <p class="allowed-rule">Fire-retardant material is required — this is not optional. Standard flame-resistant blankets and bedding are permitted.</p>
+        <ul class="allowed-list">
+          <li>Blankets (fire-retardant required)</li>
+          <li>Sheets and pillowcases</li>
+        </ul>
+      </div>
+
+      <!-- BOOKS & GAMES -->
+      <div class="allowed-card">
+        <div class="allowed-card-header">
+          <span class="allowed-emoji">📚</span>
+          <h3>Books, Magazines &amp; Games</h3>
+        </div>
+        <p class="allowed-rule">Books and magazines must be sent directly from the publisher or retailer — not from your home. Board games require superintendent approval.</p>
+        <ul class="allowed-list">
+          <li>Books shipped directly from publisher or retailer (Amazon, Barnes &amp; Noble, etc.)</li>
+          <li>Magazines shipped directly from publisher</li>
+          <li>Puzzles and crossword books</li>
+          <li>Board games and card games (with superintendent approval)</li>
+        </ul>
+      </div>
+
+      <!-- TOBACCO -->
+      <div class="allowed-card">
+        <div class="allowed-card-header">
+          <span class="allowed-emoji">🚬</span>
+          <h3>Tobacco</h3>
+        </div>
+        <p class="allowed-rule">Cigarettes and cigars are allowed but must carry New York State Tax Stamps. No exceptions — unstamped tobacco is rejected.</p>
+        <ul class="allowed-list">
+          <li>Cigarettes (NY State Tax Stamps required)</li>
+          <li>Cigars (NY State Tax Stamps required)</li>
+          <li class="no">NOT: loose tobacco</li>
+          <li class="no">NOT: chewing tobacco or dip</li>
+          <li class="no">NOT: snuff</li>
+          <li class="no">NOT: any tobacco without NY State Tax Stamps</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHAT IS NOT ALLOWED -->
+<section class="directive-section" id="not-allowed" aria-labelledby="not-allowed-heading">
+  <div class="section-inner">
+    <div class="section-label">Prohibited Items</div>
+    <h2 id="not-allowed-heading">What is NOT Allowed ✗</h2>
+    <p class="section-desc">These items will get your package rejected — and repeated violations can result in suspension of package privileges.</p>
+
+    <div class="not-allowed-grid">
+      <div class="no-item"><span class="no-icon">✗</span><span>Glass containers</span></div>
+      <div class="no-item"><span class="no-icon">✗</span><span>Metal cans</span></div>
+      <div class="no-item"><span class="no-icon">✗</span><span>Any alcohol-containing products</span></div>
+      <div class="no-item"><span class="no-icon">✗</span><span>Poppy seeds</span></div>
+      <div class="no-item"><span class="no-icon">✗</span><span>Marshmallows</span></div>
+      <div class="no-item"><span class="no-icon">✗</span><span>Hot peppers (jalapeño, habanero, etc.)</span></div>
+      <div class="no-item"><span class="no-icon">✗</span><span>Energy drinks (Red Bull, Monster, etc.)</span></div>
+      <div class="no-item"><span class="no-icon">✗</span><span>Homemade or bakery food</span></div>
+      <div class="no-item"><span class="no-icon">✗</span><span>Food that is not commercially sealed</span></div>
+      <div class="no-item"><span class="no-icon">✗</span><span>Smartphones or tablets</span></div>
+      <div class="no-item"><span class="no-icon">✗</span><span>Smartwatches or fitness trackers</span></div>
+      <div class="no-item"><span class="no-icon">✗</span><span>Bluetooth or wireless devices of any kind</span></div>
+      <div class="no-item"><span class="no-icon">✗</span><span>Shoes with hollow soles or air chambers</span></div>
+      <div class="no-item"><span class="no-icon">✗</span><span>Shoes with memory foam insoles</span></div>
+      <div class="no-item"><span class="no-icon">✗</span><span>Camouflage clothing</span></div>
+      <div class="no-item"><span class="no-icon">✗</span><span>Hair coloring or dye products</span></div>
+      <div class="no-item"><span class="no-icon">✗</span><span>Tobacco without NY State Tax Stamps</span></div>
+      <div class="no-item"><span class="no-icon">✗</span><span>Loose tobacco / chewing tobacco / snuff</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGE RULES -->
+<section class="directive-section" id="package-rules" aria-labelledby="rules-heading">
+  <div class="section-inner">
+    <div class="section-label">Shipping Requirements</div>
+    <h2 id="rules-heading">Package Rules</h2>
+    <p class="section-desc">Follow these rules exactly. A single mistake — like a handwritten return address — can get your package flagged before it even opens.</p>
+
+    <div class="rules-list">
+      <div class="rule-card">
+        <div class="rule-num">1</div>
+        <div class="rule-body">
+          <strong>Must ship via UPS, FedEx, or USPS</strong>
+          <p>No hand delivery. You cannot drop packages off at the facility in person — they will be rejected. All packages must be shipped through an approved carrier.</p>
+        </div>
+      </div>
+      <div class="rule-card">
+        <div class="rule-num">2</div>
+        <div class="rule-body">
+          <strong>Printed return address required</strong>
+          <p>A handwritten return address triggers automatic x-ray inspection and increased scrutiny. The return address must be printed — either by the carrier label or pre-printed on the box.</p>
+        </div>
+      </div>
+      <div class="rule-card">
+        <div class="rule-num">3</div>
+        <div class="rule-body">
+          <strong>Include the DIN number</strong>
+          <p>The inmate's Department Identification Number (DIN) must appear on the package. Without it, the package cannot be routed to the correct individual. You can find the DIN using the DOCCS inmate lookup tool.</p>
+        </div>
+      </div>
+      <div class="rule-card">
+        <div class="rule-num">4</div>
+        <div class="rule-body">
+          <strong>3 packages per month maximum</strong>
+          <p>Each incarcerated individual may receive a maximum of 3 packages per calendar month from all sources combined.</p>
+        </div>
+      </div>
+      <div class="rule-card">
+        <div class="rule-num">5</div>
+        <div class="rule-body">
+          <strong>30 lbs total weight for the month</strong>
+          <p>The combined weight of all packages received in a calendar month cannot exceed 30 pounds. This counts across all senders — not just yours.</p>
+        </div>
+      </div>
+      <div class="rule-card">
+        <div class="rule-num">6</div>
+        <div class="rule-body">
+          <strong>Items over $30 must include a receipt</strong>
+          <p>Any individual item valued at more than $30 must be accompanied by a printed receipt. Handwritten receipts are not accepted.</p>
+        </div>
+      </div>
+      <div class="rule-card">
+        <div class="rule-num">7</div>
+        <div class="rule-body">
+          <strong>One vendor per package</strong>
+          <p>Do not mix items from multiple vendors in one box. Each package must originate from a single approved vendor.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT VENDER RESALE -->
+<section class="directive-section" id="about-vender" aria-labelledby="about-heading">
+  <div class="about-inner">
+    <div class="section-label">About Vender Resale</div>
+    <h2 id="about-heading">We Handle Compliance So You Don't Have To</h2>
+    <p>Every product on our site has been verified against Directive 4911. When you order through us, you don't have to worry about your package being rejected — we only carry compliant items. We handle the shipping labels, the carrier requirements, and the documentation. You just pick what to send.</p>
+    <a href="shop.html" class="btn-primary">Shop Compliant Products</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="footer-logo">Vender<span>Resale</span></a>
+      <div class="footer-tagline">NY DOCCS Directive 4911 Compliant Vendor<br>Serving all 60+ NY State facilities</div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <a href="shop.html">All Products</a>
+      <a href="shop.html?top=Proteins+%26+Meat">Food &amp; Proteins</a>
+      <a href="shop.html?top=Clothing">Clothing</a>
+      <a href="shop.html?top=Hygiene+%26+Personal+Care">Hygiene</a>
+      <a href="shop.html?top=Electronics">Electronics</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Information</h4>
+      <a href="directive.html">Directive 4911 Guide</a>
+      <a href="cart.html">Order Now</a>
+      <a href="mailto:vender@nyctailblazers.com">vender@nyctailblazers.com</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Official Resources</h4>
+      <a href="https://doccs.ny.gov/system/files/documents/2024/11/4911_0.pdf" target="_blank" rel="noopener">Official Directive 4911 (PDF)</a>
+      <a href="https://doccs.ny.gov/mail-packages" target="_blank" rel="noopener">DOCCS Mail &amp; Packages Info</a>
+      <a href="https://doccs.ny.gov/system/files/documents/2026/03/incarcerated-individual-disapproved-package-vendor-list-3-10-2026.pdf" target="_blank" rel="noopener">Disapproved Vendor List (March 2026)</a>
+      <a href="https://doccs.ny.gov/family-guide-allowable-items" target="_blank" rel="noopener">DOCCS Family Guide</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-copy">&copy; 2026 Vender Resale &mdash; All rights reserved</div>
+    <div class="footer-copy">This guide summarizes Directive 4911. Always verify with official DOCCS documentation.</div>
+  </div>
+</footer>
+
+<script src="/js/store.js"></script>
+<script>
+(function () {
+  'use strict';
+  document.addEventListener('DOMContentLoaded', function () {
+    // Cart badge
+    function syncCartBadge() {
+      var count = VR.cart.count();
+      var badge = document.getElementById('cart-count-nav');
+      if (!badge) return;
+      badge.textContent = count > 0 ? count : '';
+    }
+    if (typeof VR !== 'undefined' && VR.cart) {
+      VR.cart.onChange(syncCartBadge);
+      syncCartBadge();
+    }
+  });
+}());
+</script>
+
+</body>
+</html>

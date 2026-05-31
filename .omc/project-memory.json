@@ -46,14 +46,14 @@
   "hotPaths": [
     {
       "path": "index.html",
-      "accessCount": 24,
-      "lastAccessed": 1780263558557,
+      "accessCount": 25,
+      "lastAccessed": 1780267453840,
       "type": "file"
     },
     {
       "path": "shop.html",
-      "accessCount": 23,
-      "lastAccessed": 1780263559454,
+      "accessCount": 24,
+      "lastAccessed": 1780267453903,
       "type": "file"
     },
     {
@@ -69,6 +69,12 @@
       "type": "file"
     },
     {
+      "path": ".claude/handoff.md",
+      "accessCount": 8,
+      "lastAccessed": 1780267642934,
+      "type": "file"
+    },
+    {
       "path": "js/store.js",
       "accessCount": 7,
       "lastAccessed": 1780258075881,
@@ -78,12 +84,6 @@
       "path": "scripts/enrich_upcs.py",
       "accessCount": 7,
       "lastAccessed": 1780266600654,
-      "type": "file"
-    },
-    {
-      "path": ".claude/handoff.md",
-      "accessCount": 6,
-      "lastAccessed": 1780263780341,
       "type": "file"
     },
     {
@@ -144,6 +144,12 @@
       "path": "research/price-research/README.md",
       "accessCount": 1,
       "lastAccessed": 1780264852197,
+      "type": "file"
+    },
+    {
+      "path": "directive.html",
+      "accessCount": 1,
+      "lastAccessed": 1780267601778,
       "type": "file"
     }
   ],
