@@ -1,0 +1,30 @@
+{
+  "nysapprovedvendor": {
+    "name": "NYS Approved Vendor",
+    "products_found": 85,
+    "pages_crawled": 3,
+    "errors": 0,
+    "output": "/Users/markususche/Desktop/Vender Resale/scripts/../docs/competitor-data/nysapprovedvendor.json"
+  },
+  "plugforinmates": {
+    "name": "Plug For Inmates",
+    "products_found": 3,
+    "pages_crawled": 3,
+    "errors": 0,
+    "output": "/Users/markususche/Desktop/Vender Resale/scripts/../docs/competitor-data/plugforinmates.json"
+  },
+  "cigessentials": {
+    "name": "CIG Essentials",
+    "products_found": 16,
+    "pages_crawled": 3,
+    "errors": 0,
+    "output": "/Users/markususche/Desktop/Vender Resale/scripts/../docs/competitor-data/cigessentials.json"
+  },
+  "emmaspremiumservices": {
+    "name": "Emma's Premium Services",
+    "products_found": 10,
+    "pages_crawled": 3,
+    "errors": 0,
+    "output": "/Users/markususche/Desktop/Vender Resale/scripts/../docs/competitor-data/emmaspremiumservices.json"
+  }
+}

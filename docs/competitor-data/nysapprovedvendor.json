@@ -1,0 +1,671 @@
+{
+  "site": "NYS Approved Vendor",
+  "slug": "nysapprovedvendor",
+  "pages_crawled": [
+    "https://nysapprovedvendor.com/",
+    "https://nysapprovedvendor.com/shop/",
+    "https://nysapprovedvendor.com/products/"
+  ],
+  "products": [
+    {
+      "image_alt": "Zip \u2013 How it works",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/t/15/assets/zip-announcementbar-img.png?v=135601307459037404401776841143",
+      "source_url": "https://nysapprovedvendor.com/",
+      "name": "Estimated total",
+      "price": 35.0,
+      "price_raw": "Pay with Affirm on orders over $35. [See if you qualify](javascript:void\\(0\\))"
+    },
+    {
+      "source_url": "https://nysapprovedvendor.com/",
+      "image_alt": "Hardwood Smoked Pulled Pork, 16oz",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-04-29T081323.313.png?v=1777464822&width=533",
+      "name": "[ Hardwood Smoked Pulled Chicken, 16oz ](https://nysapprovedvendor.com/products/hardwood-smoked-pulled-chicken-16oz)",
+      "price": 17.99,
+      "price_raw": "Regular price ~~$17.99 USD~~ Sale price $16.99 USD"
+    },
+    {
+      "name": "[ Hardwood Smoked Pulled Pork, 16oz ](https://nysapprovedvendor.com/products/hardwood-smoked-pulled-pork-16oz)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 17.99,
+      "price_raw": "Regular price ~~$17.99 USD~~ Sale price $15.99 USD",
+      "image_alt": "Sous Vide Turkey Breast Tenderloins, 16oz",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-04-29T081953.530.png?v=1777465205&width=533"
+    },
+    {
+      "name": "[ Sous Vide Turkey Breast Tenderloins, 16oz ](https://nysapprovedvendor.com/products/sous-vide-turkey-breast-tenderloins-16oz)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 17.99,
+      "price_raw": "Regular price ~~$17.99 USD~~ Sale price $16.99 USD",
+      "image_alt": "Sous Vide Chicken Thighs, 16oz",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-04-29T082644.519.png?v=1777465612&width=533"
+    },
+    {
+      "name": "[ Sous Vide Chicken Thighs, 16oz ](https://nysapprovedvendor.com/products/sous-vide-chicken-thighs-16oz)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 17.99,
+      "price_raw": "Regular price ~~$17.99 USD~~ Sale price $16.99 USD",
+      "image_alt": "Fully Cooked Pork Belly, 12oz",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-04-29T083849.619.png?v=1777466391&width=533"
+    },
+    {
+      "name": "[ Fully Cooked Pork Belly, 12oz ](https://nysapprovedvendor.com/products/fully-cooked-pork-belly-12oz)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 14.49,
+      "price_raw": "Regular price ~~$14.49 USD~~ Sale price $13.99 USD",
+      "image_alt": "Braised Beef Roast, 14oz",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-04-29T085105.525.png?v=1777467078&width=533"
+    },
+    {
+      "name": "[ Braised Beef Roast, 14oz ](https://nysapprovedvendor.com/products/braised-beef-roast-14oz)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 26.99,
+      "price_raw": "Regular price ~~$26.99 USD~~ Sale price $23.99 USD"
+    },
+    {
+      "source_url": "https://nysapprovedvendor.com/",
+      "name": "[ GV Herb & Garlic Tuna 24ct, 3.9lbs ](https://nysapprovedvendor.com/products/gv-herb-garlic-tuna-24ct-3-9lbs)",
+      "image_alt": "GV Hickory Smoked Tuna 24ct, 3.9lbs",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-05-25T114551.837.png?v=1779723961&width=533",
+      "price": 54.96,
+      "price_raw": "Regular price ~~$54.96 USD~~ Sale price $35.99 USD"
+    },
+    {
+      "name": "[ GV Hickory Smoked Tuna 24ct, 3.9lbs ](https://nysapprovedvendor.com/products/gv-hickory-smoked-tuna-24ct-3-9lbs)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 54.96,
+      "price_raw": "Regular price ~~$54.96 USD~~ Sale price $35.99 USD",
+      "image_alt": "GV Spicy Thai Chili Tuna 24ct, 3.9lbs",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-05-24T222451.953_d2d759ed-1d54-47a7-9047-e596239291e0.png?v=1779722992&width=533"
+    },
+    {
+      "name": "[ GV Spicy Thai Chili Tuna 24ct, 3.9lbs ](https://nysapprovedvendor.com/products/gv-spicy-thai-chili-tuna-24ct-3-9lbs)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 54.96,
+      "price_raw": "Regular price ~~$54.96 USD~~ Sale price $35.99 USD",
+      "image_alt": "GV Hot Buffalo Tuna 24ct, 3.9lbs",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitled_design_-_2026-05-25T120339.779.png?v=1779725038&width=533"
+    },
+    {
+      "name": "[ GV Hot Buffalo Tuna 24ct, 3.9lbs ](https://nysapprovedvendor.com/products/gv-hot-buffalo-tuna-24ct-3-9lbs)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 54.96,
+      "price_raw": "Regular price ~~$54.96 USD~~ Sale price $35.99 USD",
+      "image_alt": "GV Lemonade 12 - 10ct Boxes Discount, 1.32oz",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-05-24T222238.818.png?v=1779721094&width=533"
+    },
+    {
+      "name": "[ GV Lemonade 12 - 10ct Boxes Discount, 1.32oz ](https://nysapprovedvendor.com/products/gv-lemonade-12-10ct-boxes-discount-1-32oz)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 39.99,
+      "price_raw": "Regular price ~~$39.99 USD~~ Sale price $39.49 USD",
+      "image_alt": "GV Fruit Punch 12 - 10ct Boxes Discount, 1.32oz",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-05-24T222204.420.png?v=1779720447&width=533"
+    },
+    {
+      "name": "[ GV Fruit Punch 12 - 10ct Boxes Discount, 1.32oz ](https://nysapprovedvendor.com/products/gv-fruit-punch-12-10ct-boxes-discount-1-32oz)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 39.99,
+      "price_raw": "Regular price ~~$39.99 USD~~ Sale price $39.49 USD"
+    },
+    {
+      "source_url": "https://nysapprovedvendor.com/",
+      "name": "[ Artichoke Hand Stuffed Chicken Breast, 16 oz ](https://nysapprovedvendor.com/products/artichoke-hand-stuffed-chicken-breast-16-oz)",
+      "image_alt": "Beef Bourguignon, 16 oz",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2024-11-03T200538.541.png?v=1730682482&width=533",
+      "price": 13.99,
+      "price_raw": "Regular price ~~$13.99 USD~~ Sale price $11.99 USD"
+    },
+    {
+      "name": "[ Beef Bourguignon, 16 oz ](https://nysapprovedvendor.com/products/beef-bourguignon-16-oz)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 16.99,
+      "price_raw": "Regular price ~~$16.99 USD~~ Sale price $14.49 USD",
+      "image_alt": "Boneless Pork Ribs, 16oz",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2024-11-03T214232.799.png?v=1730688189&width=533"
+    },
+    {
+      "name": "[ Boneless Pork Ribs, 16oz ](https://nysapprovedvendor.com/products/boneless-pork-ribs-16oz)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 13.99,
+      "price_raw": "Regular price ~~$13.99 USD~~ Sale price $9.99 USD",
+      "image_alt": "Broccoli & Cheddar Stuffed Chicken Breast, 16 oz",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2024-11-03T210645.913.png?v=1730686115&width=533"
+    },
+    {
+      "name": "[ Broccoli & Cheddar Stuffed Chicken Breast, 16 oz ](https://nysapprovedvendor.com/products/broccoli-cheddar-stuffed-chicken-breast-16-oz)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 13.99,
+      "price_raw": "Regular price ~~$13.99 USD~~ Sale price $12.99 USD",
+      "image_alt": "Chicken in Korean Style BBQ Sauce",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2024-11-03T212416.666.png?v=1730687074&width=533"
+    },
+    {
+      "name": "[ Chicken in Korean Style BBQ Sauce ](https://nysapprovedvendor.com/products/chicken-in-korean-style-bbq-sauce)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 13.99,
+      "price_raw": "Regular price ~~$13.99 USD~~ Sale price $12.99 USD",
+      "image_alt": "Hawaiian Style Chicken, 16 oz",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2024-11-03T210124.875.png?v=1730685774&width=533"
+    },
+    {
+      "name": "[ Hawaiian Style Chicken, 16 oz ](https://nysapprovedvendor.com/products/hawaiian-style-chicken-16-oz)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 13.99,
+      "price_raw": "Regular price ~~$13.99 USD~~ Sale price $12.99 USD"
+    },
+    {
+      "source_url": "https://nysapprovedvendor.com/",
+      "name": "[ Basketball Shorts w/Polo Short Sleeve Set ](https://nysapprovedvendor.com/products/basketball-shorts-w-polo-short-sleeve-set-maroon)",
+      "image_alt": "Basketball Shorts w/Polo Short Sleeve Set",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-04-22T013638.331.png?v=1776837261&width=533",
+      "price": 27.49,
+      "price_raw": "Regular price Sale price $27.49 USD"
+    },
+    {
+      "name": "[ Basketball Shorts w/Polo Short Sleeve Set ](https://nysapprovedvendor.com/products/basketball-shorts-w-polo-short-sleeve-set-green)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 27.49,
+      "price_raw": "Regular price Sale price $27.49 USD",
+      "image_alt": "Basketball Shorts w/Polo Short Sleeve Set",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-04-22T013704.750.png?v=1776837711&width=533"
+    },
+    {
+      "name": "[ Basketball Shorts w/Polo Short Sleeve Set ](https://nysapprovedvendor.com/products/basketball-shorts-w-polo-short-sleeve-set-brown)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 27.49,
+      "price_raw": "Regular price Sale price $27.49 USD",
+      "image_alt": "Basketball Shorts w/Polo Short Sleeve Set",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-04-22T013738.007.png?v=1776838251&width=533"
+    },
+    {
+      "name": "[ Basketball Shorts w/Polo Short Sleeve Set ](https://nysapprovedvendor.com/products/basketball-shorts-w-polo-short-sleeve-set-beige)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 27.49,
+      "price_raw": "Regular price Sale price $27.49 USD",
+      "image_alt": "Basketball Shorts w/Polo Short Sleeve Set",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-04-22T013806.182.png?v=1776838510&width=533"
+    },
+    {
+      "name": "[ Basketball Shorts w/Polo Short Sleeve Set ](https://nysapprovedvendor.com/products/basketball-shorts-w-polo-short-sleeve-set-red)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 27.49,
+      "price_raw": "Regular price Sale price $27.49 USD",
+      "image_alt": "Basketball Shorts w/Polo Short Sleeve Set",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-04-22T013841.865.png?v=1776838710&width=533"
+    },
+    {
+      "name": "[ Basketball Shorts w/Polo Short Sleeve Set ](https://nysapprovedvendor.com/products/basketball-shorts-w-polo-short-sleeve-set-white)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 27.49,
+      "price_raw": "Regular price Sale price $27.49 USD"
+    },
+    {
+      "source_url": "https://nysapprovedvendor.com/",
+      "name": "[ Hereford Fully Cooked Shredded Beef with Beef Broth, Shelf Stable, 7oz ](https://nysapprovedvendor.com/products/hereford-fully-cooked-shredded-beef-with-beef-broth-shelf-stable-7oz)",
+      "image_alt": "Hereford Beef Ribs with BBQ Sauce, Shelf Stable, 6 oz Pouch",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-05-25T140656.092.png?v=1779732428&width=533",
+      "price": 7.99,
+      "price_raw": "Regular price Sale price $7.99 USD"
+    },
+    {
+      "name": "[ Hereford Beef Ribs with BBQ Sauce, Shelf Stable, 6 oz Pouch ](https://nysapprovedvendor.com/products/hereford-beef-ribs-with-bbq-sauce-shelf-stable-6-oz-pouch)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 5.99,
+      "price_raw": "Regular price Sale price $5.99 USD",
+      "image_alt": "Hereford Fully Cooked Beef Taco Filling, Shelf Stable Pouch, 6oz",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-05-25T140212.092.png?v=1779732147&width=533"
+    },
+    {
+      "name": "[ Hereford Fully Cooked Beef Taco Filling, Shelf Stable Pouch, 6oz ](https://nysapprovedvendor.com/products/hereford-fully-cooked-beef-taco-filling-shelf-stable-pouch-6oz)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 5.99,
+      "price_raw": "Regular price Sale price $5.99 USD",
+      "image_alt": "Hereford Fully Cooked Roast Beef with Gravy, Shelf Stable Pouch, 10oz",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-05-25T135644.085.png?v=1779731815&width=533"
+    },
+    {
+      "name": "[ Hereford Fully Cooked Roast Beef with Gravy, Shelf Stable Pouch, 10oz ](https://nysapprovedvendor.com/products/hereford-fully-cooked-roast-beef-with-gravy-shelf-stable-pouch-10oz)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 7.99,
+      "price_raw": "Regular price Sale price $7.99 USD",
+      "image_alt": "Hereford Meatballs with Spaghetti Sauce, Fully Cooked, Shelf Stable, 10oz",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-05-25T135006.368.png?v=1779731421&width=533"
+    },
+    {
+      "name": "[ Hereford Meatballs with Spaghetti Sauce, Fully Cooked, Shelf Stable, 10oz ](https://nysapprovedvendor.com/products/hereford-meatballs-with-spaghetti-sauce-fully-cooked-shelf-stable-10oz)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 5.99,
+      "price_raw": "Regular price Sale price $5.99 USD",
+      "image_alt": "Hereford Fully Cooked Beef Luncheon Loaf, Shelf Stable Pouch, 3.5oz",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-05-25T141823.747.png?v=1779733116&width=533"
+    },
+    {
+      "name": "[ Hereford Fully Cooked Beef Luncheon Loaf, Shelf Stable Pouch, 3.5oz ](https://nysapprovedvendor.com/products/hereford-fully-cooked-beef-luncheon-loaf-shelf-stable-pouch-3-5oz)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 2.99,
+      "price_raw": "Regular price Sale price $2.99 USD"
+    },
+    {
+      "source_url": "https://nysapprovedvendor.com/",
+      "image_alt": "Fresh Yellow Squash, 2ct",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2024-08-16T040850.060.png?v=1723795770&width=533",
+      "name": "[ Yellow Pepper, 2 count ](https://nysapprovedvendor.com/products/yellow-pepper-2-count)",
+      "price": 2.99,
+      "price_raw": "Regular price Sale price $2.99 USD"
+    },
+    {
+      "name": "[ Fresh Yellow Squash, 2ct ](https://nysapprovedvendor.com/products/fresh-yellow-squash-2ct)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 3.99,
+      "price_raw": "Regular price Sale price $3.99 USD",
+      "image_alt": "Microwaveable Russet Potato Whole Fresh, 2ct",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2024-08-16T033752.442.png?v=1723793923&width=533"
+    },
+    {
+      "name": "[ Microwaveable Russet Potato Whole Fresh, 2ct ](https://nysapprovedvendor.com/products/microwaveable-russet-potato-whole-fresh-2ct)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 4.29,
+      "price_raw": "Regular price Sale price $4.29 USD",
+      "image_alt": "Microwaveable Sweet Potato Whole Fresh, 2ct",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2024-08-16T032724.586.png?v=1723793380&width=533"
+    },
+    {
+      "name": "[ Microwaveable Sweet Potato Whole Fresh, 2ct ](https://nysapprovedvendor.com/products/microwaveable-sweet-potato-whole-fresh-2ct)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 3.99,
+      "price_raw": "Regular price Sale price $3.99 USD",
+      "image_alt": "Fresh Tomato on the Vine, Bag 1.9lbs",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2024-08-16T032245.934.png?v=1723792976&width=533"
+    },
+    {
+      "name": "[ Fresh Tomato on the Vine, Bag 1.9lbs ](https://nysapprovedvendor.com/products/fresh-tomato-on-the-vine-bag-1-9lbs)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 6.99,
+      "price_raw": "Regular price Sale price $6.99 USD",
+      "image_alt": "Fresh Garlic Sleeve, 3 Count",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2024-08-16T031313.284.png?v=1723792439&width=533"
+    },
+    {
+      "name": "[ Fresh Garlic Sleeve, 3 Count ](https://nysapprovedvendor.com/products/fresh-garlic-sleeve-3-count)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 3.19,
+      "price_raw": "Regular price Sale price $3.19 USD"
+    },
+    {
+      "source_url": "https://nysapprovedvendor.com/",
+      "name": "[ 10 Seasoning Kit ](https://nysapprovedvendor.com/products/10-seasoning-kit)",
+      "image_alt": "5 Seasonings Kit",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/5-seasonings-kit-958.webp?v=1761354856&width=533",
+      "price": 24.99,
+      "price_raw": "Regular price Sale price $24.99 USD"
+    },
+    {
+      "name": "[ 5 Seasonings Kit ](https://nysapprovedvendor.com/products/5-seasonings-kit)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 14.99,
+      "price_raw": "Regular price Sale price $14.99 USD",
+      "image_alt": "Steamer w/Flavors Kit",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/steamer-w-flavors-kit-533.webp?v=1761354865&width=533"
+    },
+    {
+      "name": "[ Steamer w/Flavors Kit ](https://nysapprovedvendor.com/products/steamer-w-flavors)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 25.99,
+      "price_raw": "Regular price Sale price $25.99 USD",
+      "image_alt": "Steamer w/Flavors 2 Kit",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/steamer-w-flavors-2-kit-945.webp?v=1761354869&width=533"
+    },
+    {
+      "name": "[ Steamer w/Flavors 2 Kit ](https://nysapprovedvendor.com/products/steamer-w-flavors-copy)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 31.99,
+      "price_raw": "Regular price Sale price $31.99 USD",
+      "image_alt": "GV Tuna & Crackers Kit",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/gv-tuna-crackers-kit-560.webp?v=1761354851&width=533"
+    },
+    {
+      "name": "[ GV Tuna & Crackers Kit ](https://nysapprovedvendor.com/products/gv-tuna-crackers)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 24.99,
+      "price_raw": "Regular price Sale price $24.99 USD",
+      "image_alt": "Chicken Dinner Kit",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/chicken-dinner-kit-802.webp?v=1761354874&width=533"
+    },
+    {
+      "name": "[ Chicken Dinner Kit ](https://nysapprovedvendor.com/products/chicken-dinner-kit)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 88.99,
+      "price_raw": "Regular price Sale price $88.99 USD"
+    },
+    {
+      "source_url": "https://nysapprovedvendor.com/",
+      "image_alt": "Soules Kitchen Fresh Creamy Garlic & Herb Chicken Meal Kit, 15oz",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitled_design_-_2026-05-14T004553.283.png?v=1778733966&width=533",
+      "name": "[ Soules Kitchen Fresh Meal Kit, Orange Sesame Chicken, 15oz ](https://nysapprovedvendor.com/products/soules-kitchen-fresh-meal-kit-orange-sesame-chicken-15oz)",
+      "price": 18.99,
+      "price_raw": "Regular price Sale price $18.99 USD"
+    },
+    {
+      "name": "[ Soules Kitchen Fresh Creamy Garlic & Herb Chicken Meal Kit, 15oz ](https://nysapprovedvendor.com/products/soules-kitchen-fresh-creamy-garlic-herb-chicken-meal-kit-15oz)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 18.99,
+      "price_raw": "Regular price Sale price $18.99 USD",
+      "image_alt": "John Soules Flame Grilled Chicken, 8oz",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitled_design_-_2025-12-24T075044.120.png?v=1766580669&width=533"
+    },
+    {
+      "name": "[ John Soules Flame Grilled Chicken, 8oz ](https://nysapprovedvendor.com/products/john-soules-flame-grilled-chicken-16oz)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 6.49,
+      "price_raw": "Regular price Sale price $6.49 USD",
+      "image_alt": "John Soules Chicken Fajitas Strips",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitled_design_-_2025-12-24T071349.981.png?v=1766578440&width=533"
+    },
+    {
+      "name": "[ John Soules Chicken Fajitas Strips ](https://nysapprovedvendor.com/products/john-soules-chicken-fajitas-strips)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 6.99,
+      "price_raw": "Regular price ~~$6.99 USD~~ Sale price $6.39 USD",
+      "image_alt": "John Soules Rotisserie Chicken",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitled_design_-_2025-12-24T072030.285.png?v=1766578841&width=533"
+    },
+    {
+      "name": "[ John Soules Rotisserie Chicken ](https://nysapprovedvendor.com/products/john-soules-rotisserie-chicken)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 6.99,
+      "price_raw": "Regular price ~~$6.99 USD~~ Sale price $6.39 USD",
+      "image_alt": "John Soules Steak Fajitas",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitled_design_-_2025-12-24T071720.431.png?v=1766578672&width=533"
+    },
+    {
+      "name": "[ John Soules Steak Fajitas ](https://nysapprovedvendor.com/products/john-soules-steak-fajitas)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 11.99,
+      "price_raw": "Regular price ~~$11.99 USD~~ Sale price $11.49 USD"
+    },
+    {
+      "source_url": "https://nysapprovedvendor.com/",
+      "name": "[ Belgian Butter Waffle Cookies, 8.8oz ](https://nysapprovedvendor.com/products/belgian-butter-waffle-cookies-8-8oz)",
+      "image_alt": "Blueberry Muffins, 14oz",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitled_300x300px_8.png?v=1773440398&width=533",
+      "price": 5.99,
+      "price_raw": "Regular price Sale price $5.99 USD"
+    },
+    {
+      "name": "[ Blueberry Muffins, 14oz ](https://nysapprovedvendor.com/products/blueberry-muffins-14oz)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 9.99,
+      "price_raw": "Regular price Sale price $9.99 USD",
+      "image_alt": "Dark Chocolate Dipped French Butter Cookies, 4.6oz",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitled_300x300px_1.png?v=1773436397&width=533"
+    },
+    {
+      "name": "[ Dark Chocolate Dipped French Butter Cookies, 4.6oz ](https://nysapprovedvendor.com/products/dark-chocolate-dipped-french-butter-cookies-4-6oz)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 6.99,
+      "price_raw": "Regular price ~~$6.99 USD~~ Sale price $5.99 USD",
+      "image_alt": "French Galettes Butter Cookies, 7.75oz",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitled_300x300px.png?v=1773432865&width=533"
+    },
+    {
+      "name": "[ French Galettes Butter Cookies, 7.75oz ](https://nysapprovedvendor.com/products/french-galettes-butter-cookies-7-75oz)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 7.99,
+      "price_raw": "Regular price ~~$7.99 USD~~ Sale price $6.99 USD",
+      "image_alt": "Raspberry Mousse Cakes, 5oz",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitled_300x300px_4.png?v=1773439280&width=533"
+    },
+    {
+      "name": "[ Raspberry Mousse Cakes, 5oz ](https://nysapprovedvendor.com/products/raspberry-mousse-cakes-5oz)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 7.99,
+      "price_raw": "Regular price Sale price $7.99 USD",
+      "image_alt": "Trader Joe's Fig Cookies, 10oz",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitled_300x300px_2.png?v=1773436774&width=533"
+    },
+    {
+      "name": "[ Trader Joe's Fig Cookies, 10oz ](https://nysapprovedvendor.com/products/trader-joes-fig-cookies-10oz)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 4.99,
+      "price_raw": "Regular price Sale price $4.99 USD"
+    },
+    {
+      "source_url": "https://nysapprovedvendor.com/",
+      "name": "[ Fire Retardant Blanket (Brown) ](https://nysapprovedvendor.com/products/fire-retardant-blanket-brown)",
+      "image_alt": "Fire Retardant Blanket \\(Purple\\)",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/261791e7-2fb2-4b24-a4db-6c4d43e273e5_ac8f7258-e35e-42ad-bf5c-26e57989e60e.png?v=1724297325&width=533",
+      "price": 41.99,
+      "price_raw": "Regular price ~~$41.99 USD~~ Sale price $26.99 USD"
+    },
+    {
+      "name": "[ Fire Retardant Blanket (Purple) ](https://nysapprovedvendor.com/products/fire-retardant-blanket-purple)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 37.99,
+      "price_raw": "Regular price ~~$37.99 USD~~ Sale price $26.99 USD",
+      "image_alt": "Fire Retardant Blanket \\(White\\)",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/a8f47fb7-943b-4e29-8ce5-3dfdd7abb3b7.png?v=1760499202&width=533"
+    },
+    {
+      "name": "[ Fire Retardant Blanket (White) ](https://nysapprovedvendor.com/products/fire-retardant-blanket-white)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 37.99,
+      "price_raw": "Regular price ~~$37.99 USD~~ Sale price $26.99 USD",
+      "image_alt": "Fire Retardant Blanket \\(Camel\\)",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/b1171d0f-cb80-4283-87ee-41bc1fbaa43a_34102c81-d669-4075-93dc-7b6c70feb2be.png?v=1724296861&width=533"
+    },
+    {
+      "name": "[ Fire Retardant Blanket (Camel) ](https://nysapprovedvendor.com/products/fire-retardant-blanket-camel)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 37.99,
+      "price_raw": "Regular price ~~$37.99 USD~~ Sale price $26.99 USD",
+      "image_alt": "Fire Retardant Blanket \\(Maroon\\)",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/94e9ea3b-5674-40de-9fb4-1473710d7a0e_f0920198-031e-4966-8dfc-8c28e24bb707.png?v=1724297200&width=533"
+    },
+    {
+      "name": "[ Fire Retardant Blanket (Maroon) ](https://nysapprovedvendor.com/products/fire-retardant-blanket-maroon)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 37.99,
+      "price_raw": "Regular price ~~$37.99 USD~~ Sale price $26.99 USD",
+      "image_alt": "Fire Retardant Blanket \\(Lilac-Light\\)",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/eb16d3a9-77cd-4a46-84e0-a167db17d5af_a722e7bd-72ce-4d8c-b62f-25a022c4ae0c.png?v=1724297440&width=533"
+    },
+    {
+      "name": "[ Fire Retardant Blanket (Lilac-Light) ](https://nysapprovedvendor.com/products/fire-retardant-blanket-lilac-light)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 37.99,
+      "price_raw": "Regular price ~~$37.99 USD~~ Sale price $26.99 USD"
+    },
+    {
+      "source_url": "https://nysapprovedvendor.com/",
+      "image_alt": "Earbuds Wired IEM in Ear Headphones, w/Mic",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitled_300x300px_13.png?v=1773616783&width=533",
+      "name": "[ Memory Wire, Headset Microphone, 3.5mm Jack Plug (Clear) w/Mic ](https://nysapprovedvendor.com/products/memory-wire-headset-microphone-3-5mm-jack-plug-clear-w-mic)",
+      "price": 31.99,
+      "price_raw": "Regular price Sale price $31.99 USD"
+    },
+    {
+      "name": "[ Earbuds Wired IEM in Ear Headphones, w/Mic ](https://nysapprovedvendor.com/products/earbuds-wired-iem-in-ear-headphones-w-mic)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 32.99,
+      "price_raw": "Regular price Sale price $32.99 USD",
+      "image_alt": "Clear Transparent in-Ear Bud, Retro Style, in-Line w/Mic",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitled_300x300px_14.png?v=1773619351&width=533"
+    },
+    {
+      "name": "[ Clear Transparent in-Ear Bud, Retro Style, in-Line w/Mic ](https://nysapprovedvendor.com/products/clear-transparent-in-ear-bud-retro-style-in-line-w-mic)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 19.99,
+      "price_raw": "Regular price Sale price $19.99 USD",
+      "image_alt": "Earphones for Running/Gym/Workouts with Dynamic Bass w/Mic",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitled_300x300px_15.png?v=1773620091&width=533"
+    },
+    {
+      "name": "[ Earphones for Running/Gym/Workouts with Dynamic Bass w/Mic ](https://nysapprovedvendor.com/products/earphones-for-running-gym-workouts-with-dynamic-bass-w-mic)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 24.99,
+      "price_raw": "Regular price Sale price $24.99 USD",
+      "image_alt": "HiFi Sport Headphones in Ear Earphone for Running w/Mic",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitled_300x300px_17.png?v=1773620659&width=533"
+    },
+    {
+      "name": "[ HiFi Sport Headphones in Ear Earphone for Running w/Mic ](https://nysapprovedvendor.com/products/hifi-sport-headphones-in-ear-earphone-for-running-w-mic)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 18.99,
+      "price_raw": "Regular price Sale price $18.99 USD",
+      "image_alt": "Deep Bass & Crystal Clear Hi-Res Sound,in-Ear Monitor, w/Mic",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitled_300x300px_18.png?v=1773621266&width=533"
+    },
+    {
+      "name": "[ Deep Bass & Crystal Clear Hi-Res Sound,in-Ear Monitor, w/Mic ](https://nysapprovedvendor.com/products/deep-bass-crystal-clear-hi-res-sound-in-ear-monitor-w-mic)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 25.99,
+      "price_raw": "Regular price Sale price $25.99 USD"
+    },
+    {
+      "source_url": "https://nysapprovedvendor.com/",
+      "name": "[ Uncle Ben's Garden Vegetable ](https://nysapprovedvendor.com/products/uncle-bens-garden-vegetable)",
+      "image_alt": "Uncle Ben\u2019s Long Grain White Rice",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/uncle-bens-long-grain-white-rice-302.webp?v=1761353803&width=533",
+      "price": 4.49,
+      "price_raw": "Regular price ~~$4.49 USD~~ Sale price $4.36 USD"
+    },
+    {
+      "name": "[ Uncle Ben's Long Grain White ](https://nysapprovedvendor.com/products/uncle-bens-long-grain-white)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 4.49,
+      "price_raw": "Regular price ~~$4.49 USD~~ Sale price $4.36 USD",
+      "image_alt": "Uncle Ben\u2019s Roasted Chicken Rice",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/uncle-bens-roasted-chicken-rice-687.webp?v=1761353785&width=533"
+    },
+    {
+      "name": "[ Uncle Ben's Roasted Chicken ](https://nysapprovedvendor.com/products/uncle-bens-roasted-chicken)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 4.49,
+      "price_raw": "Regular price ~~$4.49 USD~~ Sale price $4.36 USD",
+      "image_alt": "Uncle Ben\u2019s Spanish Style Rice Rice",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/uncle-bens-spanish-style-rice-312.webp?v=1761353776&width=533"
+    },
+    {
+      "name": "[ Uncle Ben's Spanish Style Rice ](https://nysapprovedvendor.com/products/uncle-bens-spanish-style-rice)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 4.49,
+      "price_raw": "Regular price ~~$4.49 USD~~ Sale price $4.36 USD",
+      "image_alt": "Uncle Ben\u2019s Jasmine Family Size 17.3oz Rice",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/uncle-bens-jasmine-family-size-17-3oz-rice-570.webp?v=1761353820&width=533"
+    },
+    {
+      "name": "[ Uncle Ben's Jasmine Family Size, 17.3oz ](https://nysapprovedvendor.com/products/uncle-bens-jasmine-family-size-17-3oz)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 6.29,
+      "price_raw": "Regular price Sale price $6.29 USD",
+      "image_alt": "Uncle Ben\u2019s Spanish Style 17.3oz Rice",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/uncle-bens-spanish-style-17-3oz-rice-767.webp?v=1761353816&width=533"
+    },
+    {
+      "name": "[ Uncle Ben's Spanish Style, 17.3oz ](https://nysapprovedvendor.com/products/uncle-bens-spanish-style-17-3oz)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 6.29,
+      "price_raw": "Regular price Sale price $6.29 USD"
+    },
+    {
+      "source_url": "https://nysapprovedvendor.com/",
+      "name": "[ Dutch Maid Duplex Creme Cookies, 16oz ](https://nysapprovedvendor.com/products/dutch-maid-duplex-creme-cookies-16oz)",
+      "image_alt": "Lil' Dutch Maid Vanilla Creme Cookies, 16oz",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitled_300x300px_21.png?v=1773627928&width=533",
+      "price": 2.99,
+      "price_raw": "Regular price ~~$2.99 USD~~ Sale price $2.49 USD"
+    },
+    {
+      "name": "[ Lil' Dutch Maid Vanilla Creme Cookies, 16oz ](https://nysapprovedvendor.com/products/lil-dutch-maid-vanilla-creme-cookies-16oz)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 2.99,
+      "price_raw": "Regular price ~~$2.99 USD~~ Sale price $2.49 USD",
+      "image_alt": "Lil' Dutch Maid Lemon Creme Cookies, 16oz",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitled_300x300px_20.png?v=1773627372&width=533"
+    },
+    {
+      "name": "[ Lil' Dutch Maid Lemon Creme Cookies, 16oz ](https://nysapprovedvendor.com/products/lil-dutch-maid-lemon-creme-cookies-16oz)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 2.99,
+      "price_raw": "Regular price ~~$2.99 USD~~ Sale price $2.49 USD",
+      "image_alt": "Dutch Maid Cookies, Butter Rings, 11.5oz",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitled_300x300px_23.png?v=1773628484&width=533"
+    },
+    {
+      "name": "[ Dutch Maid Cookies, Butter Rings, 11.5oz ](https://nysapprovedvendor.com/products/dutch-maid-cookies-butter-rings-11-5oz)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 2.99,
+      "price_raw": "Regular price ~~$2.99 USD~~ Sale price $2.49 USD",
+      "image_alt": "LIL DUTCH MAID Cookies, Almond Windmill, 10oz",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitled_300x300px_28.png?v=1773630808&width=533"
+    },
+    {
+      "name": "[ LIL DUTCH MAID Cookies, Almond Windmill, 10oz ](https://nysapprovedvendor.com/products/lil-dutch-maid-cookies-almond-windmill-10oz)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 2.99,
+      "price_raw": "Regular price ~~$2.99 USD~~ Sale price $2.49 USD",
+      "image_alt": "Dutch Maid Cookies, Chocolate Chip, 12oz",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitled_300x300px_27.png?v=1773629700&width=533"
+    },
+    {
+      "name": "[ Dutch Maid Cookies, Chocolate Chip, 12oz ](https://nysapprovedvendor.com/products/dutch-maid-cookies-chocolate-chip-12oz)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 2.99,
+      "price_raw": "Regular price ~~$2.99 USD~~ Sale price $2.49 USD"
+    },
+    {
+      "source_url": "https://nysapprovedvendor.com/",
+      "image_alt": "Basketball Shorts w/Polo Short Sleeve Set",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-04-22T013539.168_606eabcb-c4ed-4a59-b0c6-93859c5f89ab.png?v=1776836890&width=533",
+      "name": "[Basketball Shorts w/Polo Short Sleeve Set ](https://nysapprovedvendor.com/products/basketball-shorts-w-polo-short-sleeve-set-maroon)",
+      "price": 27.49,
+      "price_raw": "Regular price Sale price $27.49 USD"
+    },
+    {
+      "name": "[Basketball Shorts w/Polo Short Sleeve Set ](https://nysapprovedvendor.com/products/basketball-shorts-w-polo-short-sleeve-set-green)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 27.49,
+      "price_raw": "Regular price Sale price $27.49 USD",
+      "image_alt": "Basketball Shorts w/Polo Short Sleeve Set",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-04-22T013638.331.png?v=1776837261&width=533"
+    },
+    {
+      "name": "[Basketball Shorts w/Polo Short Sleeve Set ](https://nysapprovedvendor.com/products/basketball-shorts-w-polo-short-sleeve-set-brown)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 27.49,
+      "price_raw": "Regular price Sale price $27.49 USD",
+      "image_alt": "Basketball Shorts w/Polo Short Sleeve Set",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-04-22T013704.750.png?v=1776837711&width=533"
+    },
+    {
+      "name": "[Basketball Shorts w/Polo Short Sleeve Set ](https://nysapprovedvendor.com/products/basketball-shorts-w-polo-short-sleeve-set-beige)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 27.49,
+      "price_raw": "Regular price Sale price $27.49 USD",
+      "image_alt": "Basketball Shorts w/Polo Short Sleeve Set",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-04-22T013738.007.png?v=1776838251&width=533"
+    },
+    {
+      "name": "[Basketball Shorts w/Polo Short Sleeve Set ](https://nysapprovedvendor.com/products/basketball-shorts-w-polo-short-sleeve-set-red)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 27.49,
+      "price_raw": "Regular price Sale price $27.49 USD",
+      "image_alt": "Basketball Shorts w/Polo Short Sleeve Set",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-04-22T013806.182.png?v=1776838510&width=533"
+    },
+    {
+      "name": "[Basketball Shorts w/Polo Short Sleeve Set ](https://nysapprovedvendor.com/products/basketball-shorts-w-polo-short-sleeve-set-white)",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 27.49,
+      "price_raw": "Regular price Sale price $27.49 USD",
+      "image_alt": "Basketball Shorts w/Polo Short Sleeve Set",
+      "image_url": "https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2026-04-22T013841.865.png?v=1776838710&width=533"
+    }
+  ],
+  "raw_markdown": {
+    "https://nysapprovedvendor.com/": "![](https://bidagent.xad.com/conv/271827?ts=1780228578509)![](https://p.xad.com?id=271827&sid=7633332&ts=1780228578509) NYSDOCCS Approved Vendor | NYS Directive 4911 Compliant Food Packages \u2013 NYS Approved Vendor Corp. ![](https://bidagent.xad.com/conv/271827?ts=1780228578573)![](https://p.xad.com?id=271827&sid=7633332&ts=1780228578573) [ Skip to content ](https://nysapprovedvendor.com/#MainContent)\n## Your cart is empty\n[ Continue shopping ](https://nysapprovedvendor.com/collections/all)\nHave an account?\n[Log in](https://nysapprovedvendor.com/customer_authentication/redirect?locale=en&region_country=US) to check out faster. \n![](https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2024-08-17T175538.420.png?v=1723931781&width=1500)\n###  [All Food](https://nysapprovedvendor.com/collections/food)\n###  [All Food](https://nysapprovedvendor.com/collections/food)\n## Your cart\nLoading... \nOrder special instructions  Order special instructions\n## Estimated total\n$0.00 USD\nTaxes, discounts and [shipping](https://nysapprovedvendor.com/policies/shipping-policy) calculated at checkout. \nPay with Affirm on orders over $35. [See if you qualify](javascript:void\\(0\\))\n[ ![Zip \u2013 How it works](https://nysapprovedvendor.com/cdn/shop/t/15/assets/zip-announcementbar-img.png?v=135601307459037404401776841143) ](https://zip.co/us/how-it-works)\nEmail: contactus@nysapprovedvendor.com \n[ Call Us: (888)-371-1880 ](tel:8883711880)\nOFFICIAL NYS APPROVED VENDOR\n[ SHIPPING TO ALL NY STATE CORRECTIONAL FACILITIES](https://nysapprovedvendor.com/collections/all)\nYOUR TRUSTED SOURCE FOR AUTHENTIC NYS INMATE CARE PACKAGES\n  * Food \n    * [ Kits & Seasonings ](https://nysapprovedvendor.com/collections/package-deals)\n    * [ All Food ](https://nysapprovedvendor.com/collections/food)\n    * [ All Meats ](https://nysapprovedvendor.com/collections/all-meats)\n    * [ Soup ](https://nysapprovedvendor.com/collections/soup)\n    * Bread \n      * [ All Bread Brands ](https://nysapprovedvendor.com/collections/all-bread-brands)\n      * [ Arnold Bread ](https://nysapprovedvendor.com/collections/arnold-bread)\n      * [ Pepperidge Farm Farmhouse ](https://nysapprovedvendor.com/collections/pepperidge-farm-farmhouse)\n    * Cereal \n      * [ Cold Cereal ](https://nysapprovedvendor.com/collections/cold-cereal)\n      * [ Cereal Bars ](https://nysapprovedvendor.com/collections/cereal-bars)\n      * [ Hot Cereal ](https://nysapprovedvendor.com/collections/hot-cereal)\n      * [ All Cereal ](https://nysapprovedvendor.com/collections/all-cereal)\n    * [ Cheese ](https://nysapprovedvendor.com/collections/cheese)\n    * Fruits \n      * [ All Fruits ](https://nysapprovedvendor.com/collections/fruit)\n      * [ Apples ](https://nysapprovedvendor.com/collections/apples)\n      * [ Avocado ](https://nysapprovedvendor.com/collections/avocado)\n      * [ Cotton Candy Grapes ](https://nysapprovedvendor.com/collections/cotton-candy-grapes)\n      * [ Dragon Fruit ](https://nysapprovedvendor.com/collections/dragon-fruit)\n      * [ Oranges ](https://nysapprovedvendor.com/collections/oranges)\n      * [ Plantain ](https://nysapprovedvendor.com/collections/plantain)\n      * [ Plums ](https://nysapprovedvendor.com/collections/plums)\n      * [ Red Grapes ](https://nysapprovedvendor.com/collections/red-grapes)\n      * [ Mini Watermelon ](https://nysapprovedvendor.com/collections/mini-watermelon)\n      * [ Bananas ](https://nysapprovedvendor.com/collections/bananas)\n    * Snacks \n      * [ Cakes ](https://nysapprovedvendor.com/collections/cakes)\n      * [ Candy ](https://nysapprovedvendor.com/collections/candy)\n      * [ Cookies ](https://nysapprovedvendor.com/collections/cookies)\n      * [ Potato Chips ](https://nysapprovedvendor.com/collections/chips)\n      * [ All Snacks ](https://nysapprovedvendor.com/collections/all-snacks)\n    * [ Vegetables ](https://nysapprovedvendor.com/collections/vegetables-1)\n    * Peppers \n      * [ Green Pepper, 2ct ](https://nysapprovedvendor.com/products/green-pepper-2ct)\n      * [ Red Pepper, 2count ](https://nysapprovedvendor.com/products/red-pepper-2count)\n      * [ Yellow Pepper, 2 count ](https://nysapprovedvendor.com/products/yellow-pepper-2-count)\n      * [ Jalape\u00f1o Pepper, 3 count ](https://nysapprovedvendor.com/products/jalapeno-pepper-3-count)\n    * Lettuce \n      * [ Head Lettuce ](https://nysapprovedvendor.com/products/head-lettuce)\n      * [ Romain Lettuce Heart, 12oz ](https://nysapprovedvendor.com/products/romain-lettuce-heart-12oz)\n    * Onions \n      * [ Red Onion 2 count ](https://nysapprovedvendor.com/products/red-onion-2-count)\n      * [ Yellow Onion, 2 count ](https://nysapprovedvendor.com/products/yellow-onion-2-count)\n      * [ Scallion ](https://nysapprovedvendor.com/products/scallion)\n    * [ Bok Choy ](https://nysapprovedvendor.com/collections/bok-choy)\n    * [ Broccoli ](https://nysapprovedvendor.com/collections/broccoli)\n    * [ Sugar Snap Peas ](https://nysapprovedvendor.com/collections/snap-peas)\n    * [ Package Deals ](https://nysapprovedvendor.com/collections/package-deals)\n    * [ Food w/Seasonings ](https://nysapprovedvendor.com/collections/food-w-seasonings)\n    * [ Vegetable Medley ](https://nysapprovedvendor.com/collections/vegetable-medley)\n  * All Meat Brands \n    * Meat \n      * [ Beef ](https://nysapprovedvendor.com/collections/beef)\n      * [ Chicken ](https://nysapprovedvendor.com/collections/chicken)\n      * [ Fish ](https://nysapprovedvendor.com/collections/fish)\n      * [ Pork ](https://nysapprovedvendor.com/collections/pork)\n      * [ Turkey ](https://nysapprovedvendor.com/collections/turkey)\n      * [ Summer Sausage ](https://nysapprovedvendor.com/collections/summer-sausage)\n      * [ Specialty Meats ](https://nysapprovedvendor.com/collections/specialty-meat-section)\n      * [ Trader Joe's ](https://nysapprovedvendor.com/collections/trader-joes)\n      * [ Land O' Frost ](https://nysapprovedvendor.com/collections/land-o-frost)\n      * [ Hillshire Farm ](https://nysapprovedvendor.com/collections/hillshire-farms-1)\n      * [ Amylu ](https://nysapprovedvendor.com/collections/amylu)\n  * Beverages \n    * [ Coffee ](https://nysapprovedvendor.com/collections/coffee)\n    * [ Hot Cocoa ](https://nysapprovedvendor.com/collections/hot-cocoa)\n    * [ Juice ](https://nysapprovedvendor.com/collections/juice)\n    * [ Milk ](https://nysapprovedvendor.com/collections/milk)\n    * [ All Beverages ](https://nysapprovedvendor.com/collections/all-beverages)\n  * Ladies \n    * [ Ladies Underwear ](https://nysapprovedvendor.com/collections/ladies-underwear)\n    * [ Sweatshirt ](https://nysapprovedvendor.com/collections/sweatshirt)\n    * [ Sweatpants ](https://nysapprovedvendor.com/collections/sweatpants)\n    * [ Socks ](https://nysapprovedvendor.com/collections/socks)\n    * [ Thermal Set (Ladies) ](https://nysapprovedvendor.com/products/thermal-set-ladies)\n    * [ All Ladies ](https://nysapprovedvendor.com/collections/all-ladies)\n  * Gentlemen \n    * [ Socks ](https://nysapprovedvendor.com/collections/socks)\n    * [ Sweatpants ](https://nysapprovedvendor.com/collections/sweatpants)\n    * [ Sweatshirt ](https://nysapprovedvendor.com/collections/sweatshirt)\n    * [ Sweatsuits ](https://nysapprovedvendor.com/collections/sweatsuits)\n    * [ Thermal Set (Gentlemen) ](https://nysapprovedvendor.com/products/thermal-set-gentlemen)\n    * [ Gentlemen Underwear ](https://nysapprovedvendor.com/collections/gentlemen-underwear)\n    * [ All Gentlemen ](https://nysapprovedvendor.com/collections/all-gentlemen)\n    * [ Sweatsuit w/Hat, Scarf & Gloves Set ](https://nysapprovedvendor.com/collections/sweatsuit-w-hat-scarf-gloves-set)\n    * [ Shirts ](https://nysapprovedvendor.com/collections/shirts)\n    * [ Shorts ](https://nysapprovedvendor.com/collections/shorts)\n  * Bedding \n    * [ Fire Retardant Blankets ](https://nysapprovedvendor.com/collections/fire-retardant-blankets)\n    * [ Sheet Sets ](https://nysapprovedvendor.com/collections/sheet-sets)\n  * Cosmetics \n    * [ All Cosmetics ](https:/",
+    "https://nysapprovedvendor.com/shop/": "![](https://bidagent.xad.com/conv/271827?ts=1780228599310)![](https://p.xad.com?id=271827&sid=7633332&ts=1780228599310) NYSDOCCS Approved Vendor | NYS Directive 4911 Compliant Food Packages \u2013 NYS Approved Vendor Corp. ![](https://bidagent.xad.com/conv/271827?ts=1780228599318)![](https://p.xad.com?id=271827&sid=7633332&ts=1780228599318) [ Skip to content ](https://nysapprovedvendor.com/shop/#MainContent)\n## Your cart is empty\n[ Continue shopping ](https://nysapprovedvendor.com/collections/all)\nHave an account?\n[Log in](https://nysapprovedvendor.com/customer_authentication/redirect?locale=en&region_country=US) to check out faster. \n![](https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2024-08-17T175538.420.png?v=1723931781&width=1500)\n###  [All Food](https://nysapprovedvendor.com/collections/food)\n###  [All Food](https://nysapprovedvendor.com/collections/food)\n## Your cart\nLoading... \nOrder special instructions  Order special instructions\n## Estimated total\n$0.00 USD\nTaxes, discounts and [shipping](https://nysapprovedvendor.com/policies/shipping-policy) calculated at checkout. \nPay with Affirm on orders over $35. [See if you qualify](javascript:void\\(0\\))\n[ ![Zip \u2013 How it works](https://nysapprovedvendor.com/cdn/shop/t/15/assets/zip-announcementbar-img.png?v=135601307459037404401776841143) ](https://zip.co/us/how-it-works)\nEmail: contactus@nysapprovedvendor.com \n[ Call Us: (888)-371-1880 ](tel:8883711880)\nOFFICIAL NYS APPROVED VENDOR\n[ SHIPPING TO ALL NY STATE CORRECTIONAL FACILITIES](https://nysapprovedvendor.com/collections/all)\nYOUR TRUSTED SOURCE FOR AUTHENTIC NYS INMATE CARE PACKAGES\n  * Food \n    * [ Kits & Seasonings ](https://nysapprovedvendor.com/collections/package-deals)\n    * [ All Food ](https://nysapprovedvendor.com/collections/food)\n    * [ All Meats ](https://nysapprovedvendor.com/collections/all-meats)\n    * [ Soup ](https://nysapprovedvendor.com/collections/soup)\n    * Bread \n      * [ All Bread Brands ](https://nysapprovedvendor.com/collections/all-bread-brands)\n      * [ Arnold Bread ](https://nysapprovedvendor.com/collections/arnold-bread)\n      * [ Pepperidge Farm Farmhouse ](https://nysapprovedvendor.com/collections/pepperidge-farm-farmhouse)\n    * Cereal \n      * [ Cold Cereal ](https://nysapprovedvendor.com/collections/cold-cereal)\n      * [ Cereal Bars ](https://nysapprovedvendor.com/collections/cereal-bars)\n      * [ Hot Cereal ](https://nysapprovedvendor.com/collections/hot-cereal)\n      * [ All Cereal ](https://nysapprovedvendor.com/collections/all-cereal)\n    * [ Cheese ](https://nysapprovedvendor.com/collections/cheese)\n    * Fruits \n      * [ All Fruits ](https://nysapprovedvendor.com/collections/fruit)\n      * [ Apples ](https://nysapprovedvendor.com/collections/apples)\n      * [ Avocado ](https://nysapprovedvendor.com/collections/avocado)\n      * [ Cotton Candy Grapes ](https://nysapprovedvendor.com/collections/cotton-candy-grapes)\n      * [ Dragon Fruit ](https://nysapprovedvendor.com/collections/dragon-fruit)\n      * [ Oranges ](https://nysapprovedvendor.com/collections/oranges)\n      * [ Plantain ](https://nysapprovedvendor.com/collections/plantain)\n      * [ Plums ](https://nysapprovedvendor.com/collections/plums)\n      * [ Red Grapes ](https://nysapprovedvendor.com/collections/red-grapes)\n      * [ Mini Watermelon ](https://nysapprovedvendor.com/collections/mini-watermelon)\n      * [ Bananas ](https://nysapprovedvendor.com/collections/bananas)\n    * Snacks \n      * [ Cakes ](https://nysapprovedvendor.com/collections/cakes)\n      * [ Candy ](https://nysapprovedvendor.com/collections/candy)\n      * [ Cookies ](https://nysapprovedvendor.com/collections/cookies)\n      * [ Potato Chips ](https://nysapprovedvendor.com/collections/chips)\n      * [ All Snacks ](https://nysapprovedvendor.com/collections/all-snacks)\n    * [ Vegetables ](https://nysapprovedvendor.com/collections/vegetables-1)\n    * Peppers \n      * [ Green Pepper, 2ct ](https://nysapprovedvendor.com/products/green-pepper-2ct)\n      * [ Red Pepper, 2count ](https://nysapprovedvendor.com/products/red-pepper-2count)\n      * [ Yellow Pepper, 2 count ](https://nysapprovedvendor.com/products/yellow-pepper-2-count)\n      * [ Jalape\u00f1o Pepper, 3 count ](https://nysapprovedvendor.com/products/jalapeno-pepper-3-count)\n    * Lettuce \n      * [ Head Lettuce ](https://nysapprovedvendor.com/products/head-lettuce)\n      * [ Romain Lettuce Heart, 12oz ](https://nysapprovedvendor.com/products/romain-lettuce-heart-12oz)\n    * Onions \n      * [ Red Onion 2 count ](https://nysapprovedvendor.com/products/red-onion-2-count)\n      * [ Yellow Onion, 2 count ](https://nysapprovedvendor.com/products/yellow-onion-2-count)\n      * [ Scallion ](https://nysapprovedvendor.com/products/scallion)\n    * [ Bok Choy ](https://nysapprovedvendor.com/collections/bok-choy)\n    * [ Broccoli ](https://nysapprovedvendor.com/collections/broccoli)\n    * [ Sugar Snap Peas ](https://nysapprovedvendor.com/collections/snap-peas)\n    * [ Package Deals ](https://nysapprovedvendor.com/collections/package-deals)\n    * [ Food w/Seasonings ](https://nysapprovedvendor.com/collections/food-w-seasonings)\n    * [ Vegetable Medley ](https://nysapprovedvendor.com/collections/vegetable-medley)\n  * All Meat Brands \n    * Meat \n      * [ Beef ](https://nysapprovedvendor.com/collections/beef)\n      * [ Chicken ](https://nysapprovedvendor.com/collections/chicken)\n      * [ Fish ](https://nysapprovedvendor.com/collections/fish)\n      * [ Pork ](https://nysapprovedvendor.com/collections/pork)\n      * [ Turkey ](https://nysapprovedvendor.com/collections/turkey)\n      * [ Summer Sausage ](https://nysapprovedvendor.com/collections/summer-sausage)\n      * [ Specialty Meats ](https://nysapprovedvendor.com/collections/specialty-meat-section)\n      * [ Trader Joe's ](https://nysapprovedvendor.com/collections/trader-joes)\n      * [ Land O' Frost ](https://nysapprovedvendor.com/collections/land-o-frost)\n      * [ Hillshire Farm ](https://nysapprovedvendor.com/collections/hillshire-farms-1)\n      * [ Amylu ](https://nysapprovedvendor.com/collections/amylu)\n  * Beverages \n    * [ Coffee ](https://nysapprovedvendor.com/collections/coffee)\n    * [ Hot Cocoa ](https://nysapprovedvendor.com/collections/hot-cocoa)\n    * [ Juice ](https://nysapprovedvendor.com/collections/juice)\n    * [ Milk ](https://nysapprovedvendor.com/collections/milk)\n    * [ All Beverages ](https://nysapprovedvendor.com/collections/all-beverages)\n  * Ladies \n    * [ Ladies Underwear ](https://nysapprovedvendor.com/collections/ladies-underwear)\n    * [ Sweatshirt ](https://nysapprovedvendor.com/collections/sweatshirt)\n    * [ Sweatpants ](https://nysapprovedvendor.com/collections/sweatpants)\n    * [ Socks ](https://nysapprovedvendor.com/collections/socks)\n    * [ Thermal Set (Ladies) ](https://nysapprovedvendor.com/products/thermal-set-ladies)\n    * [ All Ladies ](https://nysapprovedvendor.com/collections/all-ladies)\n  * Gentlemen \n    * [ Socks ](https://nysapprovedvendor.com/collections/socks)\n    * [ Sweatpants ](https://nysapprovedvendor.com/collections/sweatpants)\n    * [ Sweatshirt ](https://nysapprovedvendor.com/collections/sweatshirt)\n    * [ Sweatsuits ](https://nysapprovedvendor.com/collections/sweatsuits)\n    * [ Thermal Set (Gentlemen) ](https://nysapprovedvendor.com/products/thermal-set-gentlemen)\n    * [ Gentlemen Underwear ](https://nysapprovedvendor.com/collections/gentlemen-underwear)\n    * [ All Gentlemen ](https://nysapprovedvendor.com/collections/all-gentlemen)\n    * [ Sweatsuit w/Hat, Scarf & Gloves Set ](https://nysapprovedvendor.com/collections/sweatsuit-w-hat-scarf-gloves-set)\n    * [ Shirts ](https://nysapprovedvendor.com/collections/shirts)\n    * [ Shorts ](https://nysapprovedvendor.com/collections/shorts)\n  * Bedding \n    * [ Fire Retardant Blankets ](https://nysapprovedvendor.com/collections/fire-retardant-blankets)\n    * [ Sheet Sets ](https://nysapprovedvendor.com/collections/sheet-sets)\n  * Cosmetics \n    * [ All Cosmetics ](ht",
+    "https://nysapprovedvendor.com/products/": "![](https://bidagent.xad.com/conv/271827?ts=1780228614934)![](https://p.xad.com?id=271827&sid=7633332&ts=1780228614934) Collections \u2013 NYS Approved Vendor Corp. ![](https://bidagent.xad.com/conv/271827?ts=1780228614941)![](https://p.xad.com?id=271827&sid=7633332&ts=1780228614941) [ Skip to content ](https://nysapprovedvendor.com/products/#MainContent)\n## Your cart is empty\n[ Continue shopping ](https://nysapprovedvendor.com/collections/all)\nHave an account?\n[Log in](https://nysapprovedvendor.com/customer_authentication/redirect?locale=en&region_country=US) to check out faster. \n![](https://nysapprovedvendor.com/cdn/shop/files/Untitleddesign-2024-08-17T175538.420.png?v=1723931781&width=1500)\n###  [All Food](https://nysapprovedvendor.com/collections/food)\n###  [All Food](https://nysapprovedvendor.com/collections/food)\n## Your cart\nLoading... \nOrder special instructions  Order special instructions\n## Estimated total\n$0.00 USD\nTaxes, discounts and [shipping](https://nysapprovedvendor.com/policies/shipping-policy) calculated at checkout. \nPay with Affirm on orders over $35. [See if you qualify](javascript:void\\(0\\))\n[ ![Zip \u2013 How it works](https://nysapprovedvendor.com/cdn/shop/t/15/assets/zip-announcementbar-img.png?v=135601307459037404401776841143) ](https://zip.co/us/how-it-works)\nEmail: contactus@nysapprovedvendor.com \n[ Call Us: (888)-371-1880 ](tel:8883711880)\nOFFICIAL NYS APPROVED VENDOR\n[ SHIPPING TO ALL NY STATE CORRECTIONAL FACILITIES](https://nysapprovedvendor.com/collections/all)\nYOUR TRUSTED SOURCE FOR AUTHENTIC NYS INMATE CARE PACKAGES\n  * Food \n    * [ Kits & Seasonings ](https://nysapprovedvendor.com/collections/package-deals)\n    * [ All Food ](https://nysapprovedvendor.com/collections/food)\n    * [ All Meats ](https://nysapprovedvendor.com/collections/all-meats)\n    * [ Soup ](https://nysapprovedvendor.com/collections/soup)\n    * Bread \n      * [ All Bread Brands ](https://nysapprovedvendor.com/collections/all-bread-brands)\n      * [ Arnold Bread ](https://nysapprovedvendor.com/collections/arnold-bread)\n      * [ Pepperidge Farm Farmhouse ](https://nysapprovedvendor.com/collections/pepperidge-farm-farmhouse)\n    * Cereal \n      * [ Cold Cereal ](https://nysapprovedvendor.com/collections/cold-cereal)\n      * [ Cereal Bars ](https://nysapprovedvendor.com/collections/cereal-bars)\n      * [ Hot Cereal ](https://nysapprovedvendor.com/collections/hot-cereal)\n      * [ All Cereal ](https://nysapprovedvendor.com/collections/all-cereal)\n    * [ Cheese ](https://nysapprovedvendor.com/collections/cheese)\n    * Fruits \n      * [ All Fruits ](https://nysapprovedvendor.com/collections/fruit)\n      * [ Apples ](https://nysapprovedvendor.com/collections/apples)\n      * [ Avocado ](https://nysapprovedvendor.com/collections/avocado)\n      * [ Cotton Candy Grapes ](https://nysapprovedvendor.com/collections/cotton-candy-grapes)\n      * [ Dragon Fruit ](https://nysapprovedvendor.com/collections/dragon-fruit)\n      * [ Oranges ](https://nysapprovedvendor.com/collections/oranges)\n      * [ Plantain ](https://nysapprovedvendor.com/collections/plantain)\n      * [ Plums ](https://nysapprovedvendor.com/collections/plums)\n      * [ Red Grapes ](https://nysapprovedvendor.com/collections/red-grapes)\n      * [ Mini Watermelon ](https://nysapprovedvendor.com/collections/mini-watermelon)\n      * [ Bananas ](https://nysapprovedvendor.com/collections/bananas)\n    * Snacks \n      * [ Cakes ](https://nysapprovedvendor.com/collections/cakes)\n      * [ Candy ](https://nysapprovedvendor.com/collections/candy)\n      * [ Cookies ](https://nysapprovedvendor.com/collections/cookies)\n      * [ Potato Chips ](https://nysapprovedvendor.com/collections/chips)\n      * [ All Snacks ](https://nysapprovedvendor.com/collections/all-snacks)\n    * [ Vegetables ](https://nysapprovedvendor.com/collections/vegetables-1)\n    * Peppers \n      * [ Green Pepper, 2ct ](https://nysapprovedvendor.com/products/green-pepper-2ct)\n      * [ Red Pepper, 2count ](https://nysapprovedvendor.com/products/red-pepper-2count)\n      * [ Yellow Pepper, 2 count ](https://nysapprovedvendor.com/products/yellow-pepper-2-count)\n      * [ Jalape\u00f1o Pepper, 3 count ](https://nysapprovedvendor.com/products/jalapeno-pepper-3-count)\n    * Lettuce \n      * [ Head Lettuce ](https://nysapprovedvendor.com/products/head-lettuce)\n      * [ Romain Lettuce Heart, 12oz ](https://nysapprovedvendor.com/products/romain-lettuce-heart-12oz)\n    * Onions \n      * [ Red Onion 2 count ](https://nysapprovedvendor.com/products/red-onion-2-count)\n      * [ Yellow Onion, 2 count ](https://nysapprovedvendor.com/products/yellow-onion-2-count)\n      * [ Scallion ](https://nysapprovedvendor.com/products/scallion)\n    * [ Bok Choy ](https://nysapprovedvendor.com/collections/bok-choy)\n    * [ Broccoli ](https://nysapprovedvendor.com/collections/broccoli)\n    * [ Sugar Snap Peas ](https://nysapprovedvendor.com/collections/snap-peas)\n    * [ Package Deals ](https://nysapprovedvendor.com/collections/package-deals)\n    * [ Food w/Seasonings ](https://nysapprovedvendor.com/collections/food-w-seasonings)\n    * [ Vegetable Medley ](https://nysapprovedvendor.com/collections/vegetable-medley)\n  * All Meat Brands \n    * Meat \n      * [ Beef ](https://nysapprovedvendor.com/collections/beef)\n      * [ Chicken ](https://nysapprovedvendor.com/collections/chicken)\n      * [ Fish ](https://nysapprovedvendor.com/collections/fish)\n      * [ Pork ](https://nysapprovedvendor.com/collections/pork)\n      * [ Turkey ](https://nysapprovedvendor.com/collections/turkey)\n      * [ Summer Sausage ](https://nysapprovedvendor.com/collections/summer-sausage)\n      * [ Specialty Meats ](https://nysapprovedvendor.com/collections/specialty-meat-section)\n      * [ Trader Joe's ](https://nysapprovedvendor.com/collections/trader-joes)\n      * [ Land O' Frost ](https://nysapprovedvendor.com/collections/land-o-frost)\n      * [ Hillshire Farm ](https://nysapprovedvendor.com/collections/hillshire-farms-1)\n      * [ Amylu ](https://nysapprovedvendor.com/collections/amylu)\n  * Beverages \n    * [ Coffee ](https://nysapprovedvendor.com/collections/coffee)\n    * [ Hot Cocoa ](https://nysapprovedvendor.com/collections/hot-cocoa)\n    * [ Juice ](https://nysapprovedvendor.com/collections/juice)\n    * [ Milk ](https://nysapprovedvendor.com/collections/milk)\n    * [ All Beverages ](https://nysapprovedvendor.com/collections/all-beverages)\n  * Ladies \n    * [ Ladies Underwear ](https://nysapprovedvendor.com/collections/ladies-underwear)\n    * [ Sweatshirt ](https://nysapprovedvendor.com/collections/sweatshirt)\n    * [ Sweatpants ](https://nysapprovedvendor.com/collections/sweatpants)\n    * [ Socks ](https://nysapprovedvendor.com/collections/socks)\n    * [ Thermal Set (Ladies) ](https://nysapprovedvendor.com/products/thermal-set-ladies)\n    * [ All Ladies ](https://nysapprovedvendor.com/collections/all-ladies)\n  * Gentlemen \n    * [ Socks ](https://nysapprovedvendor.com/collections/socks)\n    * [ Sweatpants ](https://nysapprovedvendor.com/collections/sweatpants)\n    * [ Sweatshirt ](https://nysapprovedvendor.com/collections/sweatshirt)\n    * [ Sweatsuits ](https://nysapprovedvendor.com/collections/sweatsuits)\n    * [ Thermal Set (Gentlemen) ](https://nysapprovedvendor.com/products/thermal-set-gentlemen)\n    * [ Gentlemen Underwear ](https://nysapprovedvendor.com/collections/gentlemen-underwear)\n    * [ All Gentlemen ](https://nysapprovedvendor.com/collections/all-gentlemen)\n    * [ Sweatsuit w/Hat, Scarf & Gloves Set ](https://nysapprovedvendor.com/collections/sweatsuit-w-hat-scarf-gloves-set)\n    * [ Shirts ](https://nysapprovedvendor.com/collections/shirts)\n    * [ Shorts ](https://nysapprovedvendor.com/collections/shorts)\n  * Bedding \n    * [ Fire Retardant Blankets ](https://nysapprovedvendor.com/collections/fire-retardant-blankets)\n    * [ Sheet Sets ](https://nysapprovedvendor.com/collections/sheet-sets)\n  * Cosmetics \n    * [ All Cosmetics ](https://nysapprovedvendor.com/collections/all-cosmetics)"
+  },
+  "errors": []
+}

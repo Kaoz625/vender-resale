@@ -1,0 +1,85 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1780227396217,
+  "projectRoot": "/Users/markususche/Desktop/Vender Resale",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "docs"
+    ],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "docs": {
+      "path": "docs",
+      "purpose": "Documentation",
+      "fileCount": 3,
+      "lastAccessed": 1780227395452,
+      "keyFiles": [
+        "competitors.md",
+        "directive-4911-compliance.md",
+        "launch-checklist.md"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "scripts/nightly_research.py",
+      "accessCount": 2,
+      "lastAccessed": 1780228713827,
+      "type": "file"
+    },
+    {
+      "path": "scripts/scrape_competitors.py",
+      "accessCount": 1,
+      "lastAccessed": 1780228217523,
+      "type": "file"
+    },
+    {
+      "path": "docs/disapproved-vendor-analysis.md",
+      "accessCount": 1,
+      "lastAccessed": 1780228560207,
+      "type": "file"
+    },
+    {
+      "path": "scripts/setup_cron.sh",
+      "accessCount": 1,
+      "lastAccessed": 1780228672837,
+      "type": "file"
+    },
+    {
+      "path": "docs/wholesale-suppliers.md",
+      "accessCount": 1,
+      "lastAccessed": 1780229097499,
+      "type": "file"
+    },
+    {
+      "path": "research/README.md",
+      "accessCount": 1,
+      "lastAccessed": 1780229110222,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}
