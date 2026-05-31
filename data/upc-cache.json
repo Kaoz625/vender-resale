@@ -5706,5 +5706,1291 @@
       "ingredients": null,
       "allergens": null
     }
+  },
+  "603": {
+    "product_id": 603,
+    "product_name": "Yellow Pepper, 2 count",
+    "upc": null,
+    "nutrition": null
+  },
+  "604": {
+    "product_id": 604,
+    "product_name": "Red Pepper, 2count",
+    "upc": "20039882",
+    "off_name": "Roasted Red Peppers",
+    "similarity": 0.69,
+    "nutrition": {
+      "serving_size": "650 g",
+      "calories": 39.0,
+      "total_fat_g": 0.5,
+      "saturated_fat_g": 0.5,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 620.0,
+      "total_carbs_g": 6.8,
+      "fiber_g": null,
+      "sugars_g": 6.8,
+      "added_sugars_g": 3.4,
+      "protein_g": 0.6,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "605": {
+    "product_id": 605,
+    "product_name": "Green Pepper, 2ct",
+    "upc": null,
+    "nutrition": null
+  },
+  "606": {
+    "product_id": 606,
+    "product_name": "Yellow Onion, 2 count",
+    "upc": "0033383600024",
+    "off_name": "Onion",
+    "similarity": 0.59,
+    "nutrition": {
+      "serving_size": "1 medium (110 g)",
+      "calories": 44.0,
+      "total_fat_g": 0.0,
+      "saturated_fat_g": null,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 4.0,
+      "total_carbs_g": 10.0,
+      "fiber_g": 3.0,
+      "sugars_g": null,
+      "added_sugars_g": 0.0,
+      "protein_g": 1.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "607": {
+    "product_id": 607,
+    "product_name": "Red Onion",
+    "upc": "5056053304720",
+    "off_name": "Red Onion & Rosemary Sausages",
+    "similarity": 0.47,
+    "nutrition": {
+      "serving_size": "1 sausage (45 g)",
+      "calories": 51.0,
+      "total_fat_g": 1.3,
+      "saturated_fat_g": 0.5,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 342.0,
+      "total_carbs_g": 1.6,
+      "fiber_g": 2.5,
+      "sugars_g": 0.8,
+      "added_sugars_g": 0.0,
+      "protein_g": 7.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "608": {
+    "product_id": 608,
+    "product_name": "Bok Choy, 12oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "609": {
+    "product_id": 609,
+    "product_name": "Scallion",
+    "upc": null,
+    "nutrition": null
+  },
+  "610": {
+    "product_id": 610,
+    "product_name": "Vegetable Medley, 12oz",
+    "upc": "0058496459420",
+    "off_name": "Vegetable Medley",
+    "similarity": 1.0,
+    "nutrition": {
+      "serving_size": "1 pouch (250 g)",
+      "calories": 360.0,
+      "total_fat_g": 5.0,
+      "saturated_fat_g": 0.5,
+      "trans_fat_g": 0.1,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 550.0,
+      "total_carbs_g": 71.0,
+      "fiber_g": 3.0,
+      "sugars_g": 2.0,
+      "added_sugars_g": 0.0,
+      "protein_g": 8.0,
+      "calcium_mg": 75.0,
+      "iron_mg": 1.0,
+      "potassium_mg": 550.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "611": {
+    "product_id": 611,
+    "product_name": "Broccoli, 12oz",
+    "upc": "4056489456476",
+    "off_name": "Buckwheat & broccoli",
+    "similarity": 0.57,
+    "nutrition": {
+      "serving_size": "200 g",
+      "calories": 158.0,
+      "total_fat_g": 5.4,
+      "saturated_fat_g": 0.6,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 410.0,
+      "total_carbs_g": 17.4,
+      "fiber_g": 6.4,
+      "sugars_g": 5.2,
+      "added_sugars_g": 1.0,
+      "protein_g": 6.6,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "612": {
+    "product_id": 612,
+    "product_name": "Sugar Snap Peas, 8oz",
+    "upc": "0681131328777",
+    "off_name": "Sugar Snap Peas",
+    "similarity": 1.0,
+    "nutrition": {
+      "serving_size": "1 cup (1 cup)",
+      "calories": 61.0,
+      "total_fat_g": 0.0,
+      "saturated_fat_g": 0.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": null,
+      "total_carbs_g": 7.1,
+      "fiber_g": 2.4,
+      "sugars_g": 3.5,
+      "added_sugars_g": 0.0,
+      "protein_g": 2.4,
+      "calcium_mg": 47.0,
+      "iron_mg": 2.3,
+      "potassium_mg": 200.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "613": {
+    "product_id": 613,
+    "product_name": "Romain Lettuce Heart, 12oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "614": {
+    "product_id": 614,
+    "product_name": "Head Lettuce",
+    "upc": "0000651011011",
+    "off_name": "2 heads lettuce",
+    "similarity": 0.89,
+    "nutrition": {
+      "serving_size": "0.167 MEDIUM HEAD (89 g)",
+      "calories": 10.0,
+      "total_fat_g": 0.0,
+      "saturated_fat_g": 0.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 10.0,
+      "total_carbs_g": 2.0,
+      "fiber_g": 1.0,
+      "sugars_g": 2.0,
+      "added_sugars_g": null,
+      "protein_g": 1.0,
+      "calcium_mg": 20.0,
+      "iron_mg": 0.4,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "615": {
+    "product_id": 615,
+    "product_name": "Uncle Ben's Risotto Roasted Garlic & Herb",
+    "upc": null,
+    "nutrition": null
+  },
+  "616": {
+    "product_id": 616,
+    "product_name": "Uncle Ben's Jasmine Family Size, 17.3oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "617": {
+    "product_id": 617,
+    "product_name": "Uncle Ben's Spanish Style, 17.3oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "618": {
+    "product_id": 618,
+    "product_name": "Uncle Ben's Butter & Garlic",
+    "upc": null,
+    "nutrition": null
+  },
+  "619": {
+    "product_id": 619,
+    "product_name": "Uncle Ben's Garden Vegetable",
+    "upc": "0054800032341",
+    "off_name": "Ready rice garden vegetable",
+    "similarity": 0.69,
+    "nutrition": {
+      "serving_size": "1 POUCH (250 g)",
+      "calories": 362.0,
+      "total_fat_g": 4.3,
+      "saturated_fat_g": 0.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 1380.0,
+      "total_carbs_g": 72.4,
+      "fiber_g": 1.8,
+      "sugars_g": 3.5,
+      "added_sugars_g": null,
+      "protein_g": 6.9,
+      "calcium_mg": 30.0,
+      "iron_mg": 1.8,
+      "potassium_mg": 70.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "620": {
+    "product_id": 620,
+    "product_name": "Uncle Ben's Long Grain White",
+    "upc": "0054800472307",
+    "off_name": "Ben\u2019s Original Long Grain White Orignal Enriched Parboiled Rice",
+    "similarity": 0.46,
+    "nutrition": {
+      "serving_size": "1 serving (45 g)",
+      "calories": 160.0,
+      "total_fat_g": 0.0,
+      "saturated_fat_g": null,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": null,
+      "total_carbs_g": 35.0,
+      "fiber_g": null,
+      "sugars_g": null,
+      "added_sugars_g": null,
+      "protein_g": 3.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "621": {
+    "product_id": 621,
+    "product_name": "Uncle Ben's Cilantro Lime",
+    "upc": null,
+    "nutrition": null
+  },
+  "622": {
+    "product_id": 622,
+    "product_name": "Uncle Ben's Long Grain & Wild",
+    "upc": null,
+    "nutrition": null
+  },
+  "623": {
+    "product_id": 623,
+    "product_name": "Uncle Ben's Whole Grain Brown",
+    "upc": null,
+    "nutrition": null
+  },
+  "624": {
+    "product_id": 624,
+    "product_name": "Uncle Ben's Roasted Chicken",
+    "upc": null,
+    "nutrition": null
+  },
+  "625": {
+    "product_id": 625,
+    "product_name": "Uncle Ben's Basmati Rice",
+    "upc": "5410673000422",
+    "off_name": "UNCLE BEN'S Basmati Rice 500g",
+    "similarity": 0.91,
+    "nutrition": null
+  },
+  "626": {
+    "product_id": 626,
+    "product_name": "Uncle Ben's Spanish Style Rice",
+    "upc": null,
+    "nutrition": null
+  },
+  "627": {
+    "product_id": 627,
+    "product_name": "Uncle Ben's Jasmine Rice",
+    "upc": "0054800420032",
+    "off_name": "Uncle ben's, jasmine enriched rice",
+    "similarity": 0.83,
+    "nutrition": {
+      "serving_size": "0.25 cup (47 g)",
+      "calories": 160.0,
+      "total_fat_g": 0.0,
+      "saturated_fat_g": 0.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": null,
+      "total_carbs_g": 37.0,
+      "fiber_g": 0.0,
+      "sugars_g": 0.0,
+      "added_sugars_g": null,
+      "protein_g": 3.0,
+      "calcium_mg": null,
+      "iron_mg": 1.8,
+      "potassium_mg": 35.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "628": {
+    "product_id": 628,
+    "product_name": "Uncle Ben's Spicy Mexican Style Rice",
+    "upc": null,
+    "nutrition": null
+  },
+  "639": {
+    "product_id": 639,
+    "product_name": "Oscar Mayer Real Bacon Bits",
+    "upc": "0004470007481",
+    "off_name": "oscar mayer real bacon bits",
+    "similarity": 1.0,
+    "nutrition": null
+  },
+  "640": {
+    "product_id": 640,
+    "product_name": "Oscar Mayer Turkey Bacon, 3-12oz. Packs",
+    "upc": null,
+    "nutrition": null
+  },
+  "641": {
+    "product_id": 641,
+    "product_name": "Oscar Mayer Turkey Bacon. 12oz",
+    "upc": "0071871548793",
+    "off_name": "Turkey bacon",
+    "similarity": 0.65,
+    "nutrition": {
+      "serving_size": "18g",
+      "calories": 40.0,
+      "total_fat_g": 3.0,
+      "saturated_fat_g": 1.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 170.0,
+      "total_carbs_g": 0.0,
+      "fiber_g": 0.0,
+      "sugars_g": 0.0,
+      "added_sugars_g": null,
+      "protein_g": 3.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "642": {
+    "product_id": 642,
+    "product_name": "Oscar Mayer Shaved Oven Roasted Turkey Breast, 16oz",
+    "upc": "0044700069646",
+    "off_name": "Premium Shaved Oven Roasted Turkey Breast & White Turkey",
+    "similarity": 0.71,
+    "nutrition": {
+      "serving_size": "2 ONZ (56 g)",
+      "calories": 60.0,
+      "total_fat_g": 2.5,
+      "saturated_fat_g": 0.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 430.0,
+      "total_carbs_g": 1.0,
+      "fiber_g": null,
+      "sugars_g": null,
+      "added_sugars_g": null,
+      "protein_g": 8.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "643": {
+    "product_id": 643,
+    "product_name": "Oscar Mayer Shaved Smoked Turkey Breast, 20oz",
+    "upc": "0078742104423",
+    "off_name": "Shaved Smoked Turkey Breast & White Turkey",
+    "similarity": 0.67,
+    "nutrition": {
+      "serving_size": "14.0g",
+      "calories": 100.0,
+      "total_fat_g": 11.0,
+      "saturated_fat_g": 7.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 90.0,
+      "total_carbs_g": 0.0,
+      "fiber_g": 0.0,
+      "sugars_g": 0.0,
+      "added_sugars_g": 0.0,
+      "protein_g": 0.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "644": {
+    "product_id": 644,
+    "product_name": "Oscar Mayer Cracked Black Pepper Turkey Breast, 16oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "645": {
+    "product_id": 645,
+    "product_name": "Oscar Mayer Rotisserie Seasoned Chicken Breast, 9oz",
+    "upc": "0044700031599",
+    "off_name": "Rotisserie Seasoned Chicken Breast",
+    "similarity": 0.85,
+    "nutrition": {
+      "serving_size": "1 portion (56 g)",
+      "calories": 50.0,
+      "total_fat_g": 1.0,
+      "saturated_fat_g": null,
+      "trans_fat_g": null,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 520.0,
+      "total_carbs_g": 1.0,
+      "fiber_g": 0.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": 0.0,
+      "protein_g": 8.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "646": {
+    "product_id": 646,
+    "product_name": "Oscar Mayer Black Forest Uncured Ham, 16oz",
+    "upc": "0044700032527",
+    "off_name": "BLACK FOREST UNCURED HAM",
+    "similarity": 0.8,
+    "nutrition": {
+      "serving_size": "1 serving (56 g)",
+      "calories": 60.0,
+      "total_fat_g": 1.5,
+      "saturated_fat_g": null,
+      "trans_fat_g": null,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 560.0,
+      "total_carbs_g": 1.0,
+      "fiber_g": null,
+      "sugars_g": 1.0,
+      "added_sugars_g": 0.0,
+      "protein_g": 9.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "647": {
+    "product_id": 647,
+    "product_name": "Oscar Mayer Black Forest Uncured Ham",
+    "upc": null,
+    "nutrition": null
+  },
+  "648": {
+    "product_id": 648,
+    "product_name": "Hillshire Farm Beef Lit'l Smokies",
+    "upc": null,
+    "nutrition": null
+  },
+  "649": {
+    "product_id": 649,
+    "product_name": "Hillshire Farm Summer Sausage (Pork), 19oz",
+    "upc": "0044500330465",
+    "off_name": "Hillshire farm, summer sausage",
+    "similarity": 0.98,
+    "nutrition": {
+      "serving_size": "2 ONZ (56 g)",
+      "calories": 190.0,
+      "total_fat_g": 16.0,
+      "saturated_fat_g": 6.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 710.0,
+      "total_carbs_g": 1.0,
+      "fiber_g": 1.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": null,
+      "protein_g": 11.0,
+      "calcium_mg": null,
+      "iron_mg": 0.7,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "650": {
+    "product_id": 650,
+    "product_name": "John Soules Chicken Fajitas, 1lb",
+    "upc": "0078742275796",
+    "off_name": "Chicken Fajitas",
+    "similarity": 0.71,
+    "nutrition": {
+      "serving_size": "See package",
+      "calories": 131.0,
+      "total_fat_g": 2.4,
+      "saturated_fat_g": 0.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 452.0,
+      "total_carbs_g": 4.8,
+      "fiber_g": 0.0,
+      "sugars_g": 1.2,
+      "added_sugars_g": null,
+      "protein_g": 21.4,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "651": {
+    "product_id": 651,
+    "product_name": "John Soules Chicken Breast Fajitas Strips, 2lbs",
+    "upc": "6153095725700",
+    "off_name": "Chicken fajitas fully cooked chicken breast strips",
+    "similarity": 0.64,
+    "nutrition": {
+      "serving_size": "1 serving (84 g)",
+      "calories": 110.0,
+      "total_fat_g": 2.0,
+      "saturated_fat_g": null,
+      "trans_fat_g": null,
+      "cholesterol_mg": 0.1,
+      "sodium_mg": 420.0,
+      "total_carbs_g": 3.0,
+      "fiber_g": null,
+      "sugars_g": 1.0,
+      "added_sugars_g": null,
+      "protein_g": 19.0,
+      "calcium_mg": 6.0,
+      "iron_mg": null,
+      "potassium_mg": 288.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "652": {
+    "product_id": 652,
+    "product_name": "John Soules Angus Beef Fajitas 24 oz.",
+    "upc": null,
+    "nutrition": null
+  },
+  "653": {
+    "product_id": 653,
+    "product_name": "John Soules Rotisserie Chicken",
+    "upc": null,
+    "nutrition": null
+  },
+  "654": {
+    "product_id": 654,
+    "product_name": "John Soules Flame Grilled Chicken, 8oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "655": {
+    "product_id": 655,
+    "product_name": "John Soules Chicken Fajitas Strips",
+    "upc": "1652393523643",
+    "off_name": "John Soules Foods Frozen Fire Grilled Chicken Fajitas Strips",
+    "similarity": 0.72,
+    "nutrition": {
+      "serving_size": "16 oz",
+      "calories": 131.0,
+      "total_fat_g": 2.4,
+      "saturated_fat_g": 0.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 464.0,
+      "total_carbs_g": 3.6,
+      "fiber_g": 0.0,
+      "sugars_g": 1.2,
+      "added_sugars_g": null,
+      "protein_g": 22.6,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "656": {
+    "product_id": 656,
+    "product_name": "John Soules Steak Fajitas",
+    "upc": "0034695123607",
+    "off_name": "Steak Fajitas",
+    "similarity": 0.68,
+    "nutrition": {
+      "serving_size": "1 portion (84 g)",
+      "calories": 120.0,
+      "total_fat_g": 3.5,
+      "saturated_fat_g": 1.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.1,
+      "sodium_mg": 370.0,
+      "total_carbs_g": 4.0,
+      "fiber_g": 0.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": 0.0,
+      "protein_g": 17.0,
+      "calcium_mg": 18.0,
+      "iron_mg": 2.0,
+      "potassium_mg": 280.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "657": {
+    "product_id": 657,
+    "product_name": "Hillshire Farm Turkey Polska Kielbasa",
+    "upc": "0044500341720",
+    "off_name": "Turkey Polska Kielbasa",
+    "similarity": 0.75,
+    "nutrition": {
+      "serving_size": "1 portion (56 g)",
+      "calories": 100.0,
+      "total_fat_g": 6.0,
+      "saturated_fat_g": 2.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 360.0,
+      "total_carbs_g": 3.0,
+      "fiber_g": 1.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": 1.0,
+      "protein_g": 8.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "658": {
+    "product_id": 658,
+    "product_name": "Hillshire Farm Beef Smoked Sausage",
+    "upc": "0044500313758",
+    "off_name": "Hillshire farm beef hot links beef smoked sausage",
+    "similarity": 0.82,
+    "nutrition": {
+      "serving_size": "1 link (64 g)",
+      "calories": 180.0,
+      "total_fat_g": 15.0,
+      "saturated_fat_g": 6.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 680.0,
+      "total_carbs_g": 3.0,
+      "fiber_g": null,
+      "sugars_g": 1.0,
+      "added_sugars_g": null,
+      "protein_g": 8.0,
+      "calcium_mg": null,
+      "iron_mg": 1.1,
+      "potassium_mg": 370.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "659": {
+    "product_id": 659,
+    "product_name": "Hillshire Farm Polska Kielbasa",
+    "upc": "0044500339048",
+    "off_name": "BEEF POLSKA KIELBASA",
+    "similarity": 0.72,
+    "nutrition": {
+      "serving_size": "1 serving (56 g)",
+      "calories": 170.0,
+      "total_fat_g": 14.0,
+      "saturated_fat_g": 6.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 510.0,
+      "total_carbs_g": 3.0,
+      "fiber_g": 1.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": 1.0,
+      "protein_g": 6.0,
+      "calcium_mg": null,
+      "iron_mg": 1.3,
+      "potassium_mg": 464.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "660": {
+    "product_id": 660,
+    "product_name": "Hillshire Farm Cajun Andouille",
+    "upc": null,
+    "nutrition": null
+  },
+  "661": {
+    "product_id": 661,
+    "product_name": "Hillshire Farm Ham, Honey Turkey & Beef",
+    "upc": null,
+    "nutrition": null
+  },
+  "662": {
+    "product_id": 662,
+    "product_name": "Hillshire Farm Honey Roasted Turkey & Ham",
+    "upc": "0044500329810",
+    "off_name": "Honey Roasted Turkey Breast Smoked Ham",
+    "similarity": 0.63,
+    "nutrition": {
+      "serving_size": "16 oz",
+      "calories": 125.0,
+      "total_fat_g": 1.8,
+      "saturated_fat_g": 0.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 875.0,
+      "total_carbs_g": 8.9,
+      "fiber_g": null,
+      "sugars_g": 5.4,
+      "added_sugars_g": null,
+      "protein_g": 17.9,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "663": {
+    "product_id": 663,
+    "product_name": "Hillshire Farm Oven Roasted Turkey Breast & Honey Ham",
+    "upc": null,
+    "nutrition": null
+  },
+  "664": {
+    "product_id": 664,
+    "product_name": "Hillshire Farm Ultra Thin Smoked Ham",
+    "upc": null,
+    "nutrition": null
+  },
+  "665": {
+    "product_id": 665,
+    "product_name": "Hillshire Farm Rotisserie Chicken Breast",
+    "upc": null,
+    "nutrition": null
+  },
+  "666": {
+    "product_id": 666,
+    "product_name": "Hillshire Farm Ultra Thin Roast Beef",
+    "upc": null,
+    "nutrition": null
+  },
+  "667": {
+    "product_id": 667,
+    "product_name": "Hillshire Farm Ultra Thin Pastrami",
+    "upc": null,
+    "nutrition": null
+  },
+  "668": {
+    "product_id": 668,
+    "product_name": "Hillshire Farm Mesquite Smoked Turkey",
+    "upc": "0044500977516",
+    "off_name": "Mesquite Smoked Turkey Breast",
+    "similarity": 0.67,
+    "nutrition": {
+      "serving_size": "2 onz (56 g)",
+      "calories": 60.0,
+      "total_fat_g": 0.5,
+      "saturated_fat_g": null,
+      "trans_fat_g": null,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 579.0,
+      "total_carbs_g": 2.0,
+      "fiber_g": null,
+      "sugars_g": 1.0,
+      "added_sugars_g": null,
+      "protein_g": 10.0,
+      "calcium_mg": null,
+      "iron_mg": 0.7,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "669": {
+    "product_id": 669,
+    "product_name": "Hillshire Farm Lower Sodium Ham",
+    "upc": null,
+    "nutrition": null
+  },
+  "670": {
+    "product_id": 670,
+    "product_name": "Hillshire Farm Honey Roasted Turkey",
+    "upc": "0044500966657",
+    "off_name": "Hillshire farm, deli select, honey roasted turkey breast",
+    "similarity": 0.77,
+    "nutrition": {
+      "serving_size": "2 ONZ (56 g)",
+      "calories": 60.0,
+      "total_fat_g": 0.5,
+      "saturated_fat_g": 0.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 380.0,
+      "total_carbs_g": 4.0,
+      "fiber_g": 0.0,
+      "sugars_g": 3.0,
+      "added_sugars_g": null,
+      "protein_g": 10.0,
+      "calcium_mg": null,
+      "iron_mg": 0.7,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "671": {
+    "product_id": 671,
+    "product_name": "Hillshire Farm Ultra Thin Hard Salami",
+    "upc": null,
+    "nutrition": null
+  },
+  "672": {
+    "product_id": 672,
+    "product_name": "Hillshire Farm Brown Sugar Ham",
+    "upc": "0044500977561",
+    "off_name": "Brown Sugar Ham",
+    "similarity": 0.67,
+    "nutrition": {
+      "serving_size": "4 Slices (56.699 g)",
+      "calories": 70.0,
+      "total_fat_g": 2.5,
+      "saturated_fat_g": 1.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 660.0,
+      "total_carbs_g": 3.0,
+      "fiber_g": 0.0,
+      "sugars_g": 3.0,
+      "added_sugars_g": 0.8,
+      "protein_g": 9.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "673": {
+    "product_id": 673,
+    "product_name": "Hillshire Farm Black Forest Ham",
+    "upc": null,
+    "nutrition": null
+  },
+  "674": {
+    "product_id": 674,
+    "product_name": "Hillshire Farm Lower Sodium Turkey",
+    "upc": null,
+    "nutrition": null
+  },
+  "675": {
+    "product_id": 675,
+    "product_name": "Hillshire Farm Ultra Thin Honey Ham",
+    "upc": null,
+    "nutrition": null
+  },
+  "676": {
+    "product_id": 676,
+    "product_name": "Hillshire Farm Oven Roasted Turkey",
+    "upc": null,
+    "nutrition": null
+  },
+  "677": {
+    "product_id": 677,
+    "product_name": "SWEET BREAD BUTTER PICKLE SNACK PACK",
+    "upc": null,
+    "nutrition": null
+  },
+  "678": {
+    "product_id": 678,
+    "product_name": "SPICY DILL PICKLE SNACK PACK",
+    "upc": null,
+    "nutrition": null
+  },
+  "679": {
+    "product_id": 679,
+    "product_name": "SWEET \u2019N HEAT 3-PEPPER PICKLE SNACK PACK",
+    "upc": null,
+    "nutrition": null
+  },
+  "680": {
+    "product_id": 680,
+    "product_name": "CLASSIC KOSHER DILL PICKLE PACK",
+    "upc": null,
+    "nutrition": null
+  },
+  "684": {
+    "product_id": 684,
+    "product_name": "LUCKY CHARMS & CINNAMON TOAST CRUNCH \u2013 MINI BARS VARIETY PACK",
+    "upc": null,
+    "nutrition": null
+  },
+  "685": {
+    "product_id": 685,
+    "product_name": "DOLE POWDER MIX LEMONADE PACK - 30 PACK",
+    "upc": null,
+    "nutrition": null
+  },
+  "686": {
+    "product_id": 686,
+    "product_name": "CRUSH BLUE RAZZ SLUSH POWDER DRINK",
+    "upc": null,
+    "nutrition": null
+  },
+  "687": {
+    "product_id": 687,
+    "product_name": "CRUSH PINK SLUSH POWDER DRINK",
+    "upc": null,
+    "nutrition": null
+  },
+  "690": {
+    "product_id": 690,
+    "product_name": "DOLE TROPICAL SPLASH POWDER DRINK",
+    "upc": null,
+    "nutrition": null
+  },
+  "691": {
+    "product_id": 691,
+    "product_name": "DOLE STRAWBERRY PINEAPPLE POWDER DRINK",
+    "upc": null,
+    "nutrition": null
+  },
+  "692": {
+    "product_id": 692,
+    "product_name": "HAWAIIAN MARSHMALLOW CLOUD DUST POWDER DRINK",
+    "upc": null,
+    "nutrition": null
+  },
+  "693": {
+    "product_id": 693,
+    "product_name": "HAWAIIAN PUNCH FAIRY DUST POWDER DRINK",
+    "upc": null,
+    "nutrition": null
+  },
+  "694": {
+    "product_id": 694,
+    "product_name": "PEAK H20 BLACKBERRY ENERGY POWDER DRINK",
+    "upc": null,
+    "nutrition": null
+  },
+  "695": {
+    "product_id": 695,
+    "product_name": "DOLE BERRY WHIP POWDER DRINK",
+    "upc": null,
+    "nutrition": null
+  },
+  "696": {
+    "product_id": 696,
+    "product_name": "DOLE PEACH MANGO POWDER DRINK",
+    "upc": null,
+    "nutrition": null
+  },
+  "697": {
+    "product_id": 697,
+    "product_name": "DOLE TROPICAL LEMONADE POWDER DRINK",
+    "upc": null,
+    "nutrition": null
+  },
+  "698": {
+    "product_id": 698,
+    "product_name": "KEN\u2019S ASIAN SESAME DRESSING",
+    "upc": "0041335328773",
+    "off_name": "Pan asian sesame dressing",
+    "similarity": 0.88,
+    "nutrition": null
+  },
+  "699": {
+    "product_id": 699,
+    "product_name": "OCEAN SPRAY BERRYBURST POWDER DRINK",
+    "upc": null,
+    "nutrition": null
+  },
+  "700": {
+    "product_id": 700,
+    "product_name": "PEAK H20 BERRYBLUE ENERGY POWDER DRINK",
+    "upc": null,
+    "nutrition": null
+  },
+  "701": {
+    "product_id": 701,
+    "product_name": "PEAK H20 LEMON LIME ENERGY POWDER DRINK",
+    "upc": null,
+    "nutrition": null
+  },
+  "702": {
+    "product_id": 702,
+    "product_name": "KEN\u2019S RANCH DRESSING",
+    "upc": "0041335332183",
+    "off_name": "Ranch Dressing",
+    "similarity": 0.82,
+    "nutrition": {
+      "serving_size": "2 Tbsp (30 g)",
+      "calories": 140.0,
+      "total_fat_g": 15.0,
+      "saturated_fat_g": 2.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 280.0,
+      "total_carbs_g": 2.0,
+      "fiber_g": 0.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": 1.0,
+      "protein_g": 0.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "703": {
+    "product_id": 703,
+    "product_name": "KEN\u2019S ITALIAN ZESTY DRESSING",
+    "upc": "13354442",
+    "off_name": "Zesty italian dressing",
+    "similarity": 0.76,
+    "nutrition": {
+      "serving_size": "See package",
+      "calories": 281.0,
+      "total_fat_g": 25.0,
+      "saturated_fat_g": 3.1,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 1750.0,
+      "total_carbs_g": 12.5,
+      "fiber_g": 0.0,
+      "sugars_g": 12.5,
+      "added_sugars_g": null,
+      "protein_g": 0.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "704": {
+    "product_id": 704,
+    "product_name": "KEN\u2019S HONEY MUSTARD DRESSING",
+    "upc": null,
+    "nutrition": null
+  },
+  "705": {
+    "product_id": 705,
+    "product_name": "KEN\u2019S HONEY DIJON DRESSING",
+    "upc": "0041335000099",
+    "off_name": "Honey dijon dressing",
+    "similarity": 0.87,
+    "nutrition": {
+      "serving_size": "2 Tbsp (30 g)",
+      "calories": 110.0,
+      "total_fat_g": 10.0,
+      "saturated_fat_g": 1.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 213.0,
+      "total_carbs_g": 5.0,
+      "fiber_g": 0.0,
+      "sugars_g": 5.0,
+      "added_sugars_g": null,
+      "protein_g": 0.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "706": {
+    "product_id": 706,
+    "product_name": "KEN\u2019S NASHVILLE HOT WING SAUCE",
+    "upc": null,
+    "nutrition": null
+  },
+  "707": {
+    "product_id": 707,
+    "product_name": "KEN\u2019S TERIYAKI MARINADE",
+    "upc": null,
+    "nutrition": null
+  },
+  "708": {
+    "product_id": 708,
+    "product_name": "KEN\u2019S SWEET VIDALIA ONION DRESSING",
+    "upc": "0041335001683",
+    "off_name": "Sweet Vidalia Onion Dressing",
+    "similarity": 0.9,
+    "nutrition": {
+      "serving_size": "2 tbsp (34 g)",
+      "calories": 90.0,
+      "total_fat_g": 5.0,
+      "saturated_fat_g": 0.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 80.0,
+      "total_carbs_g": 11.0,
+      "fiber_g": 0.0,
+      "sugars_g": 10.0,
+      "added_sugars_g": 10.0,
+      "protein_g": 0.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "709": {
+    "product_id": 709,
+    "product_name": "KEN\u2019S ROASTED SESAME DRESSING MARINADE",
+    "upc": null,
+    "nutrition": null
+  },
+  "710": {
+    "product_id": 710,
+    "product_name": "QUAKER INSTANT OATMEAL MAPLE BROWN SUGAR 40 PACKETS",
+    "upc": null,
+    "nutrition": null
+  },
+  "711": {
+    "product_id": 711,
+    "product_name": "QUAKER INSTANT OATMEAL FRUIT CREAM VARIETY 40 PACK",
+    "upc": "0038527014170",
+    "off_name": "Quaker Instant Oatmeal Fruit & Cream Variety 280G",
+    "similarity": 0.92,
+    "nutrition": {
+      "serving_size": "See package",
+      "calories": 380.0,
+      "total_fat_g": 6.2,
+      "saturated_fat_g": 1.2,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 200.0,
+      "total_carbs_g": 76.0,
+      "fiber_g": null,
+      "sugars_g": 33.0,
+      "added_sugars_g": null,
+      "protein_g": 8.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "712": {
+    "product_id": 712,
+    "product_name": "STARKIST TUNA CREATIONS BOLD JALAPE\u00d1O",
+    "upc": null,
+    "nutrition": null
+  },
+  "714": {
+    "product_id": 714,
+    "product_name": "HEINZ HORSERADISH SAUCE (15 PACKETS)",
+    "upc": null,
+    "nutrition": null
+  },
+  "715": {
+    "product_id": 715,
+    "product_name": "PISTACHIOS NO SHELLS DILL PICKLE",
+    "upc": null,
+    "nutrition": null
+  },
+  "716": {
+    "product_id": 716,
+    "product_name": "DRIED RAMEN TOPPINGS VEGGIE MIX",
+    "upc": "0860009996410",
+    "off_name": "Dried Ramen Toppings Veggie Mix",
+    "similarity": 1.0,
+    "nutrition": {
+      "serving_size": "1.0 portion (20.0 g)",
+      "calories": 70.0,
+      "total_fat_g": 0.5,
+      "saturated_fat_g": 0.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": null,
+      "sodium_mg": 60.0,
+      "total_carbs_g": 14.0,
+      "fiber_g": 3.0,
+      "sugars_g": 4.0,
+      "added_sugars_g": 0.0,
+      "protein_g": 4.0,
+      "calcium_mg": 65.0,
+      "iron_mg": 1.6,
+      "potassium_mg": 330.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "717": {
+    "product_id": 717,
+    "product_name": "DRIED RAMEN TOPPINGS SEAFOOD MIX",
+    "upc": null,
+    "nutrition": null
+  },
+  "718": {
+    "product_id": 718,
+    "product_name": "DRIED RAMEN TOPPINGS SPICY GARLIC MIX",
+    "upc": "0860009996427",
+    "off_name": "Dried Ramen Toppings - Spicy Garlic Mix",
+    "similarity": 0.97,
+    "nutrition": {
+      "serving_size": "1 serving (20 g)",
+      "calories": 65.0,
+      "total_fat_g": 1.0,
+      "saturated_fat_g": 0.1,
+      "trans_fat_g": null,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 212.0,
+      "total_carbs_g": 11.0,
+      "fiber_g": 3.0,
+      "sugars_g": 0.5,
+      "added_sugars_g": 0.0,
+      "protein_g": 3.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
   }
 }

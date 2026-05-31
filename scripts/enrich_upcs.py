@@ -15,9 +15,14 @@ Run: python3 scripts/enrich_upcs.py [--limit 500] [--resume]
 Expects ~20-40% hit rate (not all products are in OFF database).
 """
 
-import json, time, re, urllib.request, urllib.error
+import json, time, re, urllib.request, urllib.error, urllib.parse, os
 from pathlib import Path
 from difflib import SequenceMatcher
+
+# USDA FoodData Central API key
+# Free key: register at https://fdc.nal.usda.gov/api-guide.html (instant, no CAPTCHA)
+# DEMO_KEY works but is limited to 30 req/hour / 50/day
+USDA_API_KEY = os.environ.get("USDA_API_KEY", "DEMO_KEY")
 
 ROOT = Path(__file__).parent.parent
 CATALOG_PATH = ROOT / "data/catalog.json"
@@ -75,6 +80,77 @@ def search_off(product_name: str) -> dict | None:
         return None
 
     return best
+
+
+def search_usda(product_name: str) -> dict | None:
+    """Query USDA FoodData Central Branded Foods database."""
+    query = clean_name(product_name)
+    encoded = urllib.parse.quote(query)
+    url = (f"https://api.nal.usda.gov/fdc/v1/foods/search"
+           f"?query={encoded}&api_key={USDA_API_KEY}"
+           f"&dataType=Branded&pageSize=5")
+
+    req = urllib.request.Request(url, headers={"User-Agent": "VenderResale/1.0"})
+    try:
+        with urllib.request.urlopen(req, timeout=12) as resp:
+            data = json.loads(resp.read())
+    except Exception:
+        return None
+
+    foods = data.get("foods", [])
+    if not foods:
+        return None
+
+    best = None
+    best_score = 0.0
+    for food in foods:
+        fdesc = food.get("description") or food.get("lowercaseDescription") or ""
+        score = name_similarity(query, fdesc)
+        if score > best_score:
+            best_score = score
+            best = food
+
+    if best_score < 0.35:
+        return None
+    return best
+
+
+def extract_nutrition_usda(food: dict) -> dict | None:
+    """Convert USDA foodNutrients array to our nutrition format."""
+    nutrients = {n["nutrientName"]: n.get("value")
+                 for n in food.get("foodNutrients", [])}
+
+    def get(*keys):
+        for k in keys:
+            if k in nutrients and nutrients[k] is not None:
+                return round(float(nutrients[k]), 1)
+        return None
+
+    result = {
+        "serving_size": food.get("servingSize") or food.get("servingSizeUnit") or "See package",
+        "calories": get("Energy", "Energy (Atwater General Factors)"),
+        "total_fat_g": get("Total lipid (fat)"),
+        "saturated_fat_g": get("Fatty acids, total saturated"),
+        "trans_fat_g": get("Fatty acids, total trans"),
+        "cholesterol_mg": get("Cholesterol"),
+        "sodium_mg": get("Sodium, Na"),
+        "total_carbs_g": get("Carbohydrate, by difference"),
+        "fiber_g": get("Fiber, total dietary"),
+        "sugars_g": get("Sugars, total including NLEA", "Sugars, Total"),
+        "added_sugars_g": get("Sugars, added"),
+        "protein_g": get("Protein"),
+        "calcium_mg": get("Calcium, Ca"),
+        "iron_mg": get("Iron, Fe"),
+        "potassium_mg": get("Potassium, K"),
+        "ingredients": (food.get("ingredients") or "")[:300] or None,
+        "allergens": None,
+        "source": "usda",
+        "upc": food.get("gtinUpc"),  # USDA also provides UPC
+    }
+
+    if result["calories"] or result["protein_g"]:
+        return result
+    return None
 
 
 def extract_nutrition(p: dict) -> dict | None:
@@ -165,33 +241,58 @@ def main():
         name = product["name"]
         print(f"[{i+1}/{len(to_process)}] {name[:60]}...")
 
+        # Try Open Food Facts first
         off_product = search_off(name)
+        nutrition = None
+        upc = None
+        match_name = ""
+        source = None
 
         if off_product:
             upc = off_product.get("code")
             nutrition = extract_nutrition(off_product)
-            off_name = off_product.get("product_name", "")
-            similarity = name_similarity(clean_name(name), off_name)
+            match_name = off_product.get("product_name", "")
+            similarity = name_similarity(clean_name(name), match_name)
+            source = "openfoodfacts"
+            if nutrition:
+                cal_str = f"{nutrition['calories']} cal" if nutrition.get('calories') else "?"
+                print(f"  ✓ OFF | UPC:{upc} | {match_name[:35]} (sim={similarity:.2f}) | {cal_str}")
+            else:
+                print(f"  ~ OFF | UPC:{upc} | {match_name[:35]} (no nutrition)")
 
+        # If OFF failed or had no nutrition, try USDA FoodData Central
+        if not nutrition:
+            usda_product = search_usda(name)
+            if usda_product:
+                nutrition = extract_nutrition_usda(usda_product)
+                usda_upc = nutrition.pop("upc", None) if nutrition else None
+                if not upc and usda_upc:
+                    upc = usda_upc
+                match_name = usda_product.get("description", "")
+                similarity = name_similarity(clean_name(name), match_name)
+                source = "usda"
+                if nutrition:
+                    cal_str = f"{nutrition['calories']} cal" if nutrition.get('calories') else "?"
+                    print(f"  ✓ USDA| {match_name[:35]} (sim={similarity:.2f}) | {cal_str}")
+                else:
+                    print(f"  ~ USDA| {match_name[:35]} (no nutrition)")
+                time.sleep(0.3)  # Extra delay for USDA rate limiting
+
+        if nutrition or upc:
             upc_cache[pid] = {
                 "product_id": product["id"],
                 "product_name": name,
                 "upc": upc,
-                "off_name": off_name,
-                "similarity": round(similarity, 2),
+                "match_name": match_name,
+                "source": source,
                 "nutrition": nutrition,
             }
-
             if nutrition:
-                cal_str = f"{nutrition['calories']} cal" if nutrition.get('calories') else "?"
-                print(f"  ✓ UPC: {upc} | {off_name[:40]} (sim={similarity:.2f}) | {cal_str}")
                 found += 1
-            else:
-                print(f"  ~ UPC: {upc} | {off_name[:40]} (no nutrition data)")
         else:
             upc_cache[pid] = {"product_id": product["id"], "product_name": name,
-                               "upc": None, "nutrition": None}
-            print(f"  ✗ Not found in Open Food Facts")
+                               "upc": None, "nutrition": None, "source": None}
+            print(f"  ✗ Not found in OFF or USDA")
             not_found += 1
 
         # Save every 25 products

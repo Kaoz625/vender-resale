@@ -64,14 +64,20 @@
     },
     {
       "path": "product.html",
-      "accessCount": 11,
-      "lastAccessed": 1780265115174,
+      "accessCount": 12,
+      "lastAccessed": 1780266623110,
       "type": "file"
     },
     {
       "path": "js/store.js",
       "accessCount": 7,
       "lastAccessed": 1780258075881,
+      "type": "file"
+    },
+    {
+      "path": "scripts/enrich_upcs.py",
+      "accessCount": 7,
+      "lastAccessed": 1780266600654,
       "type": "file"
     },
     {
@@ -138,12 +144,6 @@
       "path": "research/price-research/README.md",
       "accessCount": 1,
       "lastAccessed": 1780264852197,
-      "type": "file"
-    },
-    {
-      "path": "scripts/enrich_upcs.py",
-      "accessCount": 1,
-      "lastAccessed": 1780265043555,
       "type": "file"
     }
   ],

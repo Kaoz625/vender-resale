@@ -1309,7 +1309,7 @@
       } catch (e) {}
     }
 
-    // 4. Fall back to name search if no UPC or UPC lookup failed
+    // 4. Fall back to Open Food Facts name search
     if (!offProduct) {
       try {
         var query = encodeURIComponent((productObj.name || '').replace(/[,()]/g, ' ').trim());
@@ -1321,14 +1321,56 @@
       } catch (e) {}
     }
 
-    if (!offProduct) {
-      try { localStorage.setItem(cacheKey, 'null'); } catch (e) {}
-      return null;
+    if (offProduct) {
+      var result = parseOFFNutriments(offProduct);
+      try { localStorage.setItem(cacheKey, JSON.stringify(result)); } catch (e) {}
+      return result;
     }
 
-    var result = parseOFFNutriments(offProduct);
-    try { localStorage.setItem(cacheKey, JSON.stringify(result)); } catch (e) {}
-    return result;
+    // 5. Final fallback — USDA FoodData Central (US government branded food database)
+    try {
+      var usdaQuery = encodeURIComponent((productObj.name || '').replace(/[,()]/g, ' ').trim());
+      var usdaUrl = 'https://api.nal.usda.gov/fdc/v1/foods/search?query=' + usdaQuery +
+                    '&api_key=DEMO_KEY&dataType=Branded&pageSize=3';
+      var usdaResp = await fetch(usdaUrl);
+      var usdaData = await usdaResp.json();
+      var usdaFood = usdaData.foods && usdaData.foods[0];
+      if (usdaFood && usdaFood.foodNutrients && usdaFood.foodNutrients.length > 3) {
+        var nutrients = {};
+        usdaFood.foodNutrients.forEach(function(n) { nutrients[n.nutrientName] = n.value; });
+        function uget() {
+          for (var i = 0; i < arguments.length; i++) {
+            if (nutrients[arguments[i]] !== undefined) return Math.round(nutrients[arguments[i]] * 10) / 10;
+          }
+          return null;
+        }
+        var usdaResult = {
+          servingSize: (usdaFood.servingSize ? usdaFood.servingSize + (usdaFood.servingSizeUnit || 'g') : 'See package'),
+          calories:     uget('Energy','Energy (Atwater General Factors)'),
+          totalFat:     uget('Total lipid (fat)'),
+          saturatedFat: uget('Fatty acids, total saturated'),
+          transFat:     uget('Fatty acids, total trans'),
+          cholesterol:  uget('Cholesterol'),
+          sodium:       uget('Sodium, Na'),
+          carbs:        uget('Carbohydrate, by difference'),
+          fiber:        uget('Fiber, total dietary'),
+          sugars:       uget('Sugars, total including NLEA','Sugars, Total'),
+          addedSugars:  uget('Sugars, added'),
+          protein:      uget('Protein'),
+          calcium:      uget('Calcium, Ca'),
+          iron:         uget('Iron, Fe'),
+          potassium:    uget('Potassium, K'),
+          ingredients:  (usdaFood.ingredients || '').slice(0,300) || null,
+        };
+        if (usdaResult.calories || usdaResult.protein) {
+          try { localStorage.setItem(cacheKey, JSON.stringify(usdaResult)); } catch (e) {}
+          return usdaResult;
+        }
+      }
+    } catch (e) {}
+
+    try { localStorage.setItem(cacheKey, 'null'); } catch (e) {}
+    return null;
   }
 
   // ─── Format nutrition value ──────────────────────────────────────────────────
