@@ -45,9 +45,27 @@
   },
   "hotPaths": [
     {
+      "path": "index.html",
+      "accessCount": 13,
+      "lastAccessed": 1780231468497,
+      "type": "file"
+    },
+    {
+      "path": "js/store.js",
+      "accessCount": 5,
+      "lastAccessed": 1780231468438,
+      "type": "file"
+    },
+    {
       "path": "scripts/nightly_research.py",
       "accessCount": 2,
       "lastAccessed": 1780228713827,
+      "type": "file"
+    },
+    {
+      "path": ".claude/handoff.md",
+      "accessCount": 2,
+      "lastAccessed": 1780229558667,
       "type": "file"
     },
     {
@@ -78,6 +96,30 @@
       "path": "research/README.md",
       "accessCount": 1,
       "lastAccessed": 1780229110222,
+      "type": "file"
+    },
+    {
+      "path": "scripts/scrape_shopify.py",
+      "accessCount": 1,
+      "lastAccessed": 1780230811080,
+      "type": "file"
+    },
+    {
+      "path": "shop.html",
+      "accessCount": 1,
+      "lastAccessed": 1780231441202,
+      "type": "file"
+    },
+    {
+      "path": "product.html",
+      "accessCount": 1,
+      "lastAccessed": 1780231544178,
+      "type": "file"
+    },
+    {
+      "path": "cart.html",
+      "accessCount": 1,
+      "lastAccessed": 1780231603729,
       "type": "file"
     }
   ],

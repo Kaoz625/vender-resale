@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vender Resale — NY DOCCS Directive 4911 compliant care package product detail.">
+  <title>Product — Vender Resale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:  #0b1628;
+      --navy2: #111f38;
+      --navy3: #1a2f50;
+      --gold:  #c9a84c;
+      --gold2: #e8c96a;
+      --white: #fff;
+      --muted: #8a9ab5;
+      --text:  #d4dde8;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--navy);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    /* Grain overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 999;
+      opacity: 0.4;
+    }
+
+    /* ─── NAV ─── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 1.1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      background: rgba(11,22,40,0.85);
+      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(201,168,76,0.22);
+    }
+
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .nav-logo span { color: var(--gold); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex: 1;
+      justify-content: center;
+    }
+
+    .nav-links a {
+      font-size: 0.78rem;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--gold); }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-shrink: 0;
+    }
+
+    .nav-cart {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+      padding: 0.3rem;
+    }
+
+    .nav-cart:hover { color: var(--gold); }
+
+    .cart-count {
+      position: absolute;
+      top: -4px;
+      right: -6px;
+      min-width: 16px;
+      height: 16px;
+      background: var(--gold);
+      color: var(--navy);
+      font-size: 0.6rem;
+      font-weight: 700;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 3px;
+      line-height: 1;
+    }
+
+    .cart-count:empty { display: none; }
+
+    .nav-cta {
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--navy);
+      background: var(--gold);
+      padding: 0.55rem 1.2rem;
+      border-radius: 2px;
+      text-decoration: none;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+
+    .nav-cta:hover { background: var(--gold2); }
+
+    /* ─── BUTTONS ─── */
+    .btn-primary {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.9rem 2rem;
+      border-radius: 2px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .btn-primary:hover { background: var(--gold2); transform: translateY(-1px); }
+
+    .btn-secondary {
+      display: inline-block;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.9rem 2rem;
+      border-radius: 2px;
+      text-decoration: none;
+      background: transparent;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--gold2);
+      background: rgba(201,168,76,0.08);
+    }
+
+    /* ─── TOAST ─── */
+    #vr-toast {
+      background: var(--navy2) !important;
+      color: var(--text) !important;
+      border: 1px solid var(--gold) !important;
+      font-size: 0.85rem !important;
+      font-family: 'DM Sans', sans-serif !important;
+      border-radius: 4px !important;
+      padding: 0.75rem 1.2rem !important;
+    }
+
+    /* ─── MAIN CONTENT ─── */
+    .page-wrap {
+      padding-top: 80px;
+      min-height: 100vh;
+    }
+
+    /* ─── BREADCRUMB ─── */
+    .breadcrumb {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1.5rem 2rem 0;
+      font-size: 0.78rem;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    .breadcrumb a {
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .breadcrumb a:hover { color: var(--gold); }
+
+    .breadcrumb-sep { opacity: 0.45; }
+
+    .breadcrumb-current { color: var(--text); }
+
+    /* ─── PRODUCT LAYOUT ─── */
+    .product-section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 2rem 4rem;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: 55% 45%;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    /* ─── IMAGE COLUMN ─── */
+    .image-col {
+      position: sticky;
+      top: 90px;
+    }
+
+    .main-image-wrap {
+      width: 100%;
+      background: var(--navy2);
+      border-radius: 4px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 340px;
+      max-height: 500px;
+    }
+
+    .main-image-wrap img {
+      width: 100%;
+      height: 100%;
+      max-height: 500px;
+      object-fit: contain;
+      display: block;
+      transition: opacity 0.25s ease;
+    }
+
+    .main-image-wrap img.fading { opacity: 0; }
+
+    .thumb-row {
+      display: flex;
+      gap: 0.6rem;
+      margin-top: 0.85rem;
+      flex-wrap: wrap;
+    }
+
+    .thumb {
+      width: 64px;
+      height: 64px;
+      object-fit: cover;
+      border-radius: 3px;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: border-color 0.2s, opacity 0.2s;
+      background: var(--navy2);
+    }
+
+    .thumb:hover { border-color: rgba(201,168,76,0.5); opacity: 0.9; }
+    .thumb.selected { border-color: var(--gold); }
+
+    /* ─── INFO COLUMN ─── */
+    .info-col {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    /* Category badge */
+    .cat-badge {
+      display: inline-block;
+      background: rgba(201,168,76,0.1);
+      border: 1px solid rgba(201,168,76,0.3);
+      color: var(--gold);
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.75rem;
+      border-radius: 100px;
+    }
+
+    /* Product name */
+    .product-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.18;
+    }
+
+    /* Source badge */
+    .source-badge {
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    /* Price */
+    .product-price {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: var(--gold);
+      font-family: 'Cormorant Garamond', serif;
+      letter-spacing: 0.01em;
+    }
+
+    /* Compliance pill */
+    .compliance-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: #2d5a27;
+      color: #6fcf6f;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      padding: 0.3rem 0.85rem;
+      border-radius: 100px;
+    }
+
+    /* Description */
+    .product-desc {
+      font-size: 0.92rem;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* Variants */
+    .variants-label {
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.5rem;
+    }
+
+    .variant-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .variant-pill {
+      padding: 0.4rem 0.9rem;
+      border-radius: 100px;
+      font-size: 0.8rem;
+      font-weight: 400;
+      cursor: pointer;
+      border: 1px solid var(--gold);
+      background: var(--navy2);
+      color: var(--gold);
+      transition: background 0.15s, color 0.15s;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .variant-pill:hover {
+      background: rgba(201,168,76,0.12);
+    }
+
+    .variant-pill.active {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    /* Quantity row */
+    .qty-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .qty-label {
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      min-width: 2rem;
+    }
+
+    .qty-control {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      border: 1px solid rgba(201,168,76,0.3);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .qty-btn {
+      width: 36px;
+      height: 36px;
+      background: var(--navy2);
+      border: none;
+      color: var(--gold);
+      font-size: 1.1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.15s;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .qty-btn:hover { background: var(--navy3); }
+
+    .qty-display {
+      min-width: 40px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--white);
+      background: var(--navy2);
+      border-left: 1px solid rgba(201,168,76,0.2);
+      border-right: 1px solid rgba(201,168,76,0.2);
+    }
+
+    /* Add to cart */
+    .add-to-cart-btn {
+      width: 100%;
+      padding: 1rem;
+      font-size: 0.9rem;
+      letter-spacing: 0.12em;
+    }
+
+    /* Shipping note */
+    .shipping-note {
+      font-size: 0.75rem;
+      color: var(--muted);
+      line-height: 1.55;
+      padding-top: 0.4rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    /* Back link */
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .back-link:hover { color: var(--gold); }
+
+    /* ─── RELATED SECTION ─── */
+    .related-section {
+      background: var(--navy2);
+      padding: 3.5rem 0;
+    }
+
+    .related-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .related-heading {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 1.5rem;
+    }
+
+    .related-scroll {
+      display: flex;
+      gap: 1.25rem;
+      overflow-x: auto;
+      padding-bottom: 1rem;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(201,168,76,0.3) transparent;
+    }
+
+    .related-scroll::-webkit-scrollbar { height: 4px; }
+    .related-scroll::-webkit-scrollbar-track { background: transparent; }
+    .related-scroll::-webkit-scrollbar-thumb { background: rgba(201,168,76,0.3); border-radius: 2px; }
+
+    .related-scroll .vr-product-card {
+      flex: 0 0 220px;
+      background: var(--navy) !important;
+      border: 1px solid rgba(255,255,255,0.06) !important;
+      border-radius: 6px !important;
+      overflow: hidden;
+      position: relative;
+      transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s !important;
+    }
+
+    .related-scroll .vr-product-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--gold), var(--gold2));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s;
+      z-index: 1;
+    }
+
+    .related-scroll .vr-product-card:hover {
+      transform: translateY(-3px) !important;
+      box-shadow: 0 12px 36px rgba(0,0,0,0.35) !important;
+      border-color: rgba(201,168,76,0.26) !important;
+    }
+
+    .related-scroll .vr-product-card:hover::before { transform: scaleX(1); }
+
+    /* ─── NOT FOUND ─── */
+    .not-found {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 60vh;
+      gap: 1.5rem;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .not-found h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    .not-found p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    /* ─── SKELETON ─── */
+    .skeleton-wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 2rem 4rem;
+    }
+
+    .skeleton-product-grid {
+      display: grid;
+      grid-template-columns: 55% 45%;
+      gap: 3rem;
+    }
+
+    .sk-block {
+      background: linear-gradient(90deg, var(--navy2) 25%, var(--navy3) 50%, var(--navy2) 75%);
+      background-size: 200% 100%;
+      animation: sk-shimmer 1.4s infinite linear;
+      border-radius: 4px;
+    }
+
+    @keyframes sk-shimmer {
+      0%   { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: #070f1d;
+      padding: 2.5rem 2rem;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr auto auto;
+      align-items: start;
+      gap: 2rem;
+    }
+
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--white);
+      text-decoration: none;
+    }
+
+    .footer-logo span { color: var(--gold); }
+
+    .footer-logo-tagline {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 0.3rem;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .footer-links a {
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--gold); }
+
+    .footer-copy {
+      font-size: 0.72rem;
+      color: rgba(138,154,181,0.5);
+      text-align: right;
+      line-height: 1.7;
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 860px) {
+      .product-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .skeleton-product-grid { grid-template-columns: 1fr; }
+      .image-col { position: static; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+    }
+
+    @media (max-width: 600px) {
+      nav { padding: 1rem 1.2rem; }
+      .product-section { padding: 1.5rem 1.2rem 3rem; }
+      .related-inner { padding: 0 1.2rem; }
+      .breadcrumb { padding: 1.2rem 1.2rem 0; }
+      .footer-inner { grid-template-columns: 1fr; }
+      .footer-copy { text-align: left; }
+      .product-name { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">Vender<span>Resale</span></a>
+  <div class="nav-links">
+    <a href="shop.html">Shop</a>
+    <a href="index.html#how">How It Works</a>
+    <a href="index.html#about">About</a>
+  </div>
+  <div class="nav-right">
+    <a href="cart.html" class="nav-cart" aria-label="Shopping cart">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+        <path d="M1 1h4l2.68 13.39a2 2 0 001.99 1.61h9.72a2 2 0 001.98-1.69L23 6H6"/>
+      </svg>
+      <span class="cart-count" id="cart-count-nav"></span>
+    </a>
+    <a href="cart.html" class="nav-cta">Order Now</a>
+  </div>
+</nav>
+
+<!-- PAGE CONTENT -->
+<div class="page-wrap" id="page-wrap">
+  <!-- Skeleton while loading -->
+  <div id="skeleton-view">
+    <div class="skeleton-wrap">
+      <div style="height:14px;width:260px;margin-bottom:2rem;" class="sk-block"></div>
+      <div class="skeleton-product-grid">
+        <div>
+          <div class="sk-block" style="width:100%;padding-top:75%;margin-bottom:0.85rem;"></div>
+          <div style="display:flex;gap:0.6rem;">
+            <div class="sk-block" style="width:64px;height:64px;"></div>
+            <div class="sk-block" style="width:64px;height:64px;"></div>
+            <div class="sk-block" style="width:64px;height:64px;"></div>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:1rem;">
+          <div class="sk-block" style="height:24px;width:80px;border-radius:100px;"></div>
+          <div class="sk-block" style="height:40px;width:85%;"></div>
+          <div class="sk-block" style="height:14px;width:160px;"></div>
+          <div class="sk-block" style="height:36px;width:100px;"></div>
+          <div class="sk-block" style="height:80px;width:100%;"></div>
+          <div class="sk-block" style="height:48px;width:100%;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Not found view (hidden initially) -->
+  <div id="not-found-view" style="display:none;">
+    <div class="not-found">
+      <h2>Product Not Found</h2>
+      <p>This product doesn't exist or may have been removed.</p>
+      <a href="shop.html" class="btn-primary">Back to Shop</a>
+    </div>
+  </div>
+
+  <!-- Product content (hidden until loaded) -->
+  <div id="product-view" style="display:none;">
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep">/</span>
+      <a href="shop.html" id="bc-category-link">Shop</a>
+      <span class="breadcrumb-sep">/</span>
+      <span class="breadcrumb-current" id="bc-name"></span>
+    </nav>
+
+    <!-- Two-column product layout -->
+    <div class="product-section">
+      <div class="product-grid">
+
+        <!-- IMAGE COLUMN -->
+        <div class="image-col">
+          <div class="main-image-wrap">
+            <img id="main-img" src="" alt="" loading="eager">
+          </div>
+          <div class="thumb-row" id="thumb-row"></div>
+        </div>
+
+        <!-- INFO COLUMN -->
+        <div class="info-col">
+          <div>
+            <span class="cat-badge" id="cat-badge"></span>
+          </div>
+
+          <h1 class="product-name" id="product-name"></h1>
+
+          <div class="source-badge" id="source-badge"></div>
+
+          <div class="product-price" id="product-price"></div>
+
+          <div>
+            <span class="compliance-pill">&#10003; Directive 4911 Verified</span>
+          </div>
+
+          <p class="product-desc" id="product-desc"></p>
+
+          <!-- Variants -->
+          <div id="variants-section" style="display:none;">
+            <div class="variants-label">Options:</div>
+            <div class="variant-pills" id="variant-pills"></div>
+          </div>
+
+          <!-- Quantity row -->
+          <div class="qty-row">
+            <span class="qty-label">Qty</span>
+            <div class="qty-control">
+              <button class="qty-btn" id="qty-minus" aria-label="Decrease quantity">&#8722;</button>
+              <div class="qty-display" id="qty-display">1</div>
+              <button class="qty-btn" id="qty-plus" aria-label="Increase quantity">&#43;</button>
+            </div>
+          </div>
+
+          <!-- Add to Cart -->
+          <button class="btn-primary add-to-cart-btn" id="add-to-cart-btn">Add to Cart</button>
+
+          <div class="shipping-note">
+            Ships via UPS, FedEx, or USPS directly to the DOCCS facility
+          </div>
+
+          <a href="shop.html" class="back-link" id="back-link">&#8592; Continue Shopping</a>
+        </div>
+
+      </div>
+    </div>
+
+  </div><!-- /product-view -->
+</div>
+
+<!-- RELATED PRODUCTS (outside page-wrap so it renders below) -->
+<div id="related-section" class="related-section" style="display:none;">
+  <div class="related-inner">
+    <h2 class="related-heading" id="related-heading">More Products</h2>
+    <div class="related-scroll" id="related-scroll"></div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <a href="/" class="footer-logo">Vender<span>Resale</span></a>
+      <div class="footer-logo-tagline">NY DOCCS Directive 4911 Compliant Vendor</div>
+    </div>
+    <div class="footer-links">
+      <a href="shop.html">Shop All Products</a>
+      <a href="mailto:vender@nyctailblazers.com">vender@nyctailblazers.com</a>
+      <a href="https://doccs.ny.gov/mail-packages" target="_blank" rel="noopener">DOCCS Package Info</a>
+    </div>
+    <div class="footer-copy">
+      &copy; 2026 Vender Resale<br>
+      All rights reserved
+    </div>
+  </div>
+</footer>
+
+<script src="/js/store.js"></script>
+<script>
+(function () {
+  'use strict';
+
+  // ─── Source slug → display name map ────────────────────────────────────────
+  var SOURCE_NAMES = {
+    'nys-approved-vendor':   'NYS Approved Vendor',
+    'nys_approved_vendor':   'NYS Approved Vendor',
+    'emmas':                 "Emma's",
+    'emma-s':                "Emma's",
+    'emma_s':                "Emma's",
+    'cig-essentials':        'CIG Essentials',
+    'cig_essentials':        'CIG Essentials',
+    'cigessentials':         'CIG Essentials'
+  };
+
+  function sourceDisplay(slug) {
+    if (!slug) return null;
+    var key = slug.toLowerCase().trim();
+    return SOURCE_NAMES[key] || slug;
+  }
+
+  // ─── State ──────────────────────────────────────────────────────────────────
+  var _product         = null;
+  var _qty             = 1;
+  var _selectedVariant = null;
+
+  // ─── Cart badge sync ────────────────────────────────────────────────────────
+  function syncCartBadge() {
+    var count = VR.cart.count();
+    var badges = document.querySelectorAll('.cart-count');
+    for (var i = 0; i < badges.length; i++) {
+      badges[i].textContent = count > 0 ? count : '';
+    }
+  }
+
+  // ─── Show main image with fade ──────────────────────────────────────────────
+  function swapMainImage(src, clickedThumb) {
+    var img = document.getElementById('main-img');
+    img.classList.add('fading');
+    setTimeout(function () {
+      img.src = src;
+      img.onload = function () { img.classList.remove('fading'); };
+      img.onerror = function () { img.classList.remove('fading'); };
+    }, 150);
+
+    // Update thumb selected state
+    var thumbs = document.querySelectorAll('.thumb');
+    for (var i = 0; i < thumbs.length; i++) {
+      thumbs[i].classList.remove('selected');
+    }
+    if (clickedThumb) clickedThumb.classList.add('selected');
+  }
+
+  // ─── Render thumbnails ──────────────────────────────────────────────────────
+  function renderThumbs(images) {
+    var row = document.getElementById('thumb-row');
+    if (!images || images.length <= 1) {
+      row.style.display = 'none';
+      return;
+    }
+    var html = '';
+    for (var i = 0; i < images.length; i++) {
+      html += '<img class="thumb' + (i === 0 ? ' selected' : '') + '" src="' + images[i] + '" alt="Product image ' + (i + 1) + '" loading="lazy" onerror="this.style.display=\'none\'">';
+    }
+    row.innerHTML = html;
+
+    // Bind thumb clicks
+    var thumbEls = row.querySelectorAll('.thumb');
+    for (var j = 0; j < thumbEls.length; j++) {
+      (function (el, src) {
+        el.addEventListener('click', function () {
+          swapMainImage(src, el);
+        });
+      }(thumbEls[j], images[j]));
+    }
+  }
+
+  // ─── Render variants ────────────────────────────────────────────────────────
+  function renderVariants(variants) {
+    var section = document.getElementById('variants-section');
+    var pillsWrap = document.getElementById('variant-pills');
+
+    // Filter out default/blank
+    var real = (variants || []).filter(function (v) {
+      return v && v.title && v.title.toLowerCase() !== 'default title' && v.title.trim() !== '';
+    });
+
+    if (!real.length) {
+      section.style.display = 'none';
+      _selectedVariant = null;
+      return;
+    }
+
+    section.style.display = 'block';
+    _selectedVariant = real[0].title;
+
+    var html = '';
+    for (var i = 0; i < real.length; i++) {
+      html += '<button class="variant-pill' + (i === 0 ? ' active' : '') + '" data-variant="' + escAttr(real[i].title) + '">' + escHtml(real[i].title) + '</button>';
+    }
+    pillsWrap.innerHTML = html;
+
+    pillsWrap.addEventListener('click', function (e) {
+      var btn = e.target.closest('.variant-pill');
+      if (!btn) return;
+      var allPills = pillsWrap.querySelectorAll('.variant-pill');
+      for (var j = 0; j < allPills.length; j++) allPills[j].classList.remove('active');
+      btn.classList.add('active');
+      _selectedVariant = btn.getAttribute('data-variant');
+    });
+  }
+
+  // ─── Render product ─────────────────────────────────────────────────────────
+  function renderProduct(product) {
+    _product = product;
+
+    var images = product.images && product.images.length
+      ? product.images
+      : [product.image_url];
+    // Remove empty entries
+    images = images.filter(function (u) { return u && u.trim(); });
+    if (!images.length) images = [product.image_url || ''];
+
+    // Main image
+    var mainImg = document.getElementById('main-img');
+    mainImg.src = images[0];
+    mainImg.alt = product.name || 'Product image';
+
+    // Thumbs
+    renderThumbs(images);
+
+    // Breadcrumb
+    var catLink = document.getElementById('bc-category-link');
+    catLink.textContent = product.category || 'Shop';
+    catLink.href = 'shop.html' + (product.category ? '?category=' + encodeURIComponent(product.category) : '');
+    document.getElementById('bc-name').textContent = truncate(product.name || '', 40);
+
+    // Title tag
+    document.title = (product.name || 'Product') + ' — Vender Resale';
+
+    // Category badge
+    document.getElementById('cat-badge').textContent = product.category || '';
+
+    // Name
+    document.getElementById('product-name').textContent = product.name || '';
+
+    // Source badge
+    var srcDisplay = sourceDisplay(product.source);
+    var srcEl = document.getElementById('source-badge');
+    if (srcDisplay) {
+      srcEl.textContent = 'Sourced from ' + srcDisplay;
+    } else {
+      srcEl.style.display = 'none';
+    }
+
+    // Price
+    var priceEl = document.getElementById('product-price');
+    var p = parseFloat(product.price) || 0;
+    var pmax = parseFloat(product.price_max) || p;
+    if (p !== pmax && pmax > p) {
+      priceEl.textContent = 'From ' + VR.formatPrice(p);
+    } else {
+      priceEl.textContent = VR.formatPrice(p);
+    }
+
+    // Description
+    document.getElementById('product-desc').textContent = product.description || '';
+
+    // Variants
+    renderVariants(product.variants);
+
+    // Back link
+    document.getElementById('back-link').href = 'shop.html' + (product.category ? '?category=' + encodeURIComponent(product.category) : '');
+
+    // Show product view
+    document.getElementById('skeleton-view').style.display = 'none';
+    document.getElementById('product-view').style.display = 'block';
+  }
+
+  // ─── Render related products ────────────────────────────────────────────────
+  function renderRelated(catalog, product) {
+    var same = VR.filterByCategory(catalog, product.category).filter(function (p) {
+      return p.id !== product.id;
+    });
+
+    if (!same.length) return;
+
+    var section = document.getElementById('related-section');
+    var scroll  = document.getElementById('related-scroll');
+    var heading = document.getElementById('related-heading');
+
+    heading.textContent = 'More ' + (product.category || '') + ' Products';
+
+    var shown = same.slice(0, 6);
+    var html = '';
+    for (var i = 0; i < shown.length; i++) {
+      html += VR.productCardHTML(shown[i]);
+    }
+    scroll.innerHTML = html;
+    section.style.display = 'block';
+  }
+
+  // ─── Quantity controls ──────────────────────────────────────────────────────
+  function initQtyControls() {
+    document.getElementById('qty-minus').addEventListener('click', function () {
+      if (_qty > 1) {
+        _qty--;
+        document.getElementById('qty-display').textContent = _qty;
+      }
+    });
+
+    document.getElementById('qty-plus').addEventListener('click', function () {
+      if (_qty < 20) {
+        _qty++;
+        document.getElementById('qty-display').textContent = _qty;
+      }
+    });
+  }
+
+  // ─── Add to cart ─────────────────────────────────────────────────────────────
+  function initAddToCart() {
+    document.getElementById('add-to-cart-btn').addEventListener('click', function () {
+      if (!_product) return;
+      VR.cart.add(_product, _qty, _selectedVariant);
+      syncCartBadge();
+      VR.showToast('Added to cart!');
+    });
+  }
+
+  // ─── Utilities ──────────────────────────────────────────────────────────────
+  function escHtml(str) {
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  function escAttr(str) {
+    return String(str).replace(/"/g, '&quot;');
+  }
+
+  function truncate(str, len) {
+    if (!str) return '';
+    return str.length > len ? str.slice(0, len) + '…' : str;
+  }
+
+  // ─── Init ────────────────────────────────────────────────────────────────────
+  document.addEventListener('DOMContentLoaded', function () {
+    VR.cart.onChange(syncCartBadge);
+    syncCartBadge();
+    initQtyControls();
+    initAddToCart();
+
+    var idParam = VR.getParam('id');
+    var id = parseInt(idParam, 10);
+
+    if (!idParam || isNaN(id)) {
+      document.getElementById('skeleton-view').style.display = 'none';
+      document.getElementById('not-found-view').style.display = 'block';
+      return;
+    }
+
+    VR.getProduct(id)
+      .then(function (product) {
+        if (!product) {
+          document.getElementById('skeleton-view').style.display = 'none';
+          document.getElementById('not-found-view').style.display = 'block';
+          return;
+        }
+
+        renderProduct(product);
+
+        // Load related after main render
+        VR.getCatalog().then(function (catalog) {
+          renderRelated(catalog, product);
+        });
+      })
+      .catch(function () {
+        document.getElementById('skeleton-view').style.display = 'none';
+        document.getElementById('not-found-view').style.display = 'block';
+      });
+  });
+
+}());
+</script>
+
+</body>
+</html>

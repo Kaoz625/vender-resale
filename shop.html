@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vender Resale — Full product catalog. 3,016 DOCCS Directive 4911 compliant care package items for NY State facilities.">
+  <meta property="og:title" content="Shop All Products — Vender Resale">
+  <meta property="og:description" content="Browse 3,016 products: snacks, proteins, produce, hygiene, clothing, bedding, electronics and more.">
+  <meta property="og:type" content="website">
+  <title>Shop All Products — Vender Resale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:  #0b1628;
+      --navy2: #111f38;
+      --navy3: #1a2f50;
+      --gold:  #c9a84c;
+      --gold2: #e8c96a;
+      --white: #ffffff;
+      --muted: #8a9ab5;
+      --text:  #d4dde8;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--navy);
+      color: var(--text);
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    /* grain overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 999;
+      opacity: 0.4;
+    }
+
+    /* ─── NAV ─── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 200;
+      padding: 1.1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(11,22,40,0.88);
+      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(201,168,76,0.18);
+    }
+
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--white);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+    .nav-logo span { color: var(--gold); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.8rem;
+    }
+    .nav-links a {
+      font-size: 0.78rem;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover,
+    .nav-links a.active { color: var(--gold); }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .nav-cart {
+      position: relative;
+      display: flex;
+      align-items: center;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+      padding: 0.3rem;
+    }
+    .nav-cart:hover { color: var(--gold); }
+    .nav-cart svg { display: block; }
+
+    .cart-count {
+      position: absolute;
+      top: -4px;
+      right: -6px;
+      min-width: 17px;
+      height: 17px;
+      background: var(--gold);
+      color: var(--navy);
+      font-size: 0.62rem;
+      font-weight: 700;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 3px;
+      line-height: 1;
+    }
+    .cart-count:empty,
+    .cart-count[data-zero="true"] { display: none; }
+
+    .nav-cta {
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--navy);
+      background: var(--gold);
+      padding: 0.5rem 1.1rem;
+      border-radius: 2px;
+      text-decoration: none;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+    .nav-cta:hover { background: var(--gold2); }
+
+    /* ─── PAGE HEADER ─── */
+    .page-header {
+      padding: 6.5rem 2rem 2rem;
+      background: var(--navy2);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .page-header-inner {
+      max-width: 1380px;
+      margin: 0 auto;
+    }
+    .page-header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 0.4rem;
+    }
+    .page-header-sub {
+      font-size: 0.88rem;
+      color: var(--muted);
+      font-weight: 300;
+    }
+    .page-header-sub strong {
+      color: var(--gold);
+      font-weight: 500;
+    }
+
+    /* ─── MAIN LAYOUT ─── */
+    .shop-layout {
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 2rem 2rem 4rem;
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+
+    /* ─── SIDEBAR ─── */
+    .sidebar {
+      width: 280px;
+      flex-shrink: 0;
+      position: sticky;
+      top: 76px;
+      max-height: calc(100vh - 96px);
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(201,168,76,0.2) transparent;
+    }
+    .sidebar::-webkit-scrollbar { width: 4px; }
+    .sidebar::-webkit-scrollbar-track { background: transparent; }
+    .sidebar::-webkit-scrollbar-thumb { background: rgba(201,168,76,0.2); border-radius: 2px; }
+
+    .sidebar-section {
+      margin-bottom: 1.75rem;
+    }
+    .sidebar-label {
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+    }
+
+    /* Search */
+    .search-wrap {
+      position: relative;
+    }
+    .search-wrap svg {
+      position: absolute;
+      left: 0.75rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted);
+      pointer-events: none;
+    }
+    #search-input {
+      width: 100%;
+      background: var(--navy2);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 4px;
+      padding: 0.62rem 0.75rem 0.62rem 2.2rem;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.85rem;
+      color: var(--text);
+      transition: border-color 0.2s;
+      outline: none;
+    }
+    #search-input::placeholder { color: var(--muted); }
+    #search-input:focus { border-color: rgba(201,168,76,0.4); }
+
+    /* Category checkboxes */
+    .cat-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+    .cat-item {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      cursor: pointer;
+      padding: 0.3rem 0.4rem;
+      border-radius: 3px;
+      transition: background 0.15s;
+    }
+    .cat-item:hover { background: rgba(255,255,255,0.04); }
+    .cat-item input[type="checkbox"] {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 15px;
+      height: 15px;
+      border: 1px solid rgba(201,168,76,0.35);
+      border-radius: 3px;
+      background: var(--navy2);
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: background 0.15s, border-color 0.15s;
+      position: relative;
+    }
+    .cat-item input[type="checkbox"]:checked {
+      background: var(--gold);
+      border-color: var(--gold);
+    }
+    .cat-item input[type="checkbox"]:checked::after {
+      content: '';
+      position: absolute;
+      left: 4px;
+      top: 1px;
+      width: 5px;
+      height: 8px;
+      border: 2px solid var(--navy);
+      border-top: none;
+      border-left: none;
+      transform: rotate(45deg);
+    }
+    .cat-item-label {
+      font-size: 0.84rem;
+      color: var(--text);
+      flex: 1;
+    }
+    .cat-count {
+      font-size: 0.72rem;
+      color: var(--muted);
+    }
+
+    /* Price range */
+    .price-range {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .price-range input {
+      flex: 1;
+      min-width: 0;
+      background: var(--navy2);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 4px;
+      padding: 0.55rem 0.6rem;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+      color: var(--text);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .price-range input:focus { border-color: rgba(201,168,76,0.4); }
+    .price-range input::placeholder { color: var(--muted); }
+    .price-sep { color: var(--muted); font-size: 0.8rem; flex-shrink: 0; }
+
+    /* Sort */
+    #sort-select {
+      width: 100%;
+      background: var(--navy2);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 4px;
+      padding: 0.6rem 0.75rem;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.84rem;
+      color: var(--text);
+      outline: none;
+      cursor: pointer;
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238a9ab5' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.75rem center;
+      transition: border-color 0.2s;
+    }
+    #sort-select:focus { border-color: rgba(201,168,76,0.4); }
+    #sort-select option { background: var(--navy2); }
+
+    /* Clear filters */
+    #clear-filters {
+      display: none;
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 0.5rem 0;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.78rem;
+      color: var(--muted);
+      cursor: pointer;
+      text-align: left;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: color 0.2s;
+    }
+    #clear-filters:hover { color: var(--text); }
+    #clear-filters.visible { display: block; }
+
+    /* ─── CONTENT AREA ─── */
+    .shop-content {
+      flex: 1;
+      min-width: 0;
+    }
+
+    /* ─── PRODUCT GRID ─── */
+    #product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1.25rem;
+    }
+
+    /* ─── PRODUCT CARD (design system) ─── */
+    .vr-product-card {
+      background: var(--navy2) !important;
+      border: 1px solid rgba(255,255,255,0.06) !important;
+      border-radius: 6px !important;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+      cursor: default;
+    }
+    .vr-product-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--gold), var(--gold2));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.28s ease;
+      z-index: 1;
+    }
+    .vr-product-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(201,168,76,0.22) !important;
+      box-shadow: 0 10px 36px rgba(0,0,0,0.32);
+    }
+    .vr-product-card:hover::before { transform: scaleX(1); }
+
+    /* ─── NO RESULTS ─── */
+    #no-results {
+      display: none;
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 5rem 2rem;
+      color: var(--muted);
+    }
+    #no-results h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+    }
+    #no-results p { font-size: 0.9rem; }
+
+    /* ─── PAGINATION ─── */
+    .pagination {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 2.5rem;
+    }
+    .pagination-info {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .pagination-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .page-btn {
+      min-width: 36px;
+      height: 36px;
+      padding: 0 0.4rem;
+      background: var(--navy2);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 4px;
+      color: var(--muted);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s, color 0.15s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .page-btn:hover:not(:disabled) {
+      background: var(--navy3);
+      border-color: rgba(201,168,76,0.3);
+      color: var(--text);
+    }
+    .page-btn.active {
+      background: rgba(201,168,76,0.12);
+      border-color: var(--gold);
+      color: var(--gold);
+      font-weight: 500;
+    }
+    .page-btn:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+    }
+    .page-btn.ellipsis {
+      background: none;
+      border: none;
+      color: var(--muted);
+      cursor: default;
+      pointer-events: none;
+    }
+
+    /* ─── MOBILE FILTER TRIGGER ─── */
+    #mobile-filter-btn {
+      display: none;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--navy2);
+      border: 1px solid rgba(201,168,76,0.25);
+      border-radius: 4px;
+      color: var(--gold);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 500;
+      padding: 0.55rem 1rem;
+      cursor: pointer;
+      margin-bottom: 1.25rem;
+      transition: background 0.15s;
+    }
+    #mobile-filter-btn:hover { background: var(--navy3); }
+
+    /* Mobile active filter count badge */
+    .filter-active-badge {
+      display: none;
+      background: var(--gold);
+      color: var(--navy);
+      font-size: 0.62rem;
+      font-weight: 700;
+      min-width: 16px;
+      height: 16px;
+      border-radius: 100px;
+      padding: 0 3px;
+      align-items: center;
+      justify-content: center;
+    }
+    .filter-active-badge.visible { display: flex; }
+
+    /* ─── DRAWER ─── */
+    .drawer-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 300;
+      -webkit-backdrop-filter: blur(2px);
+      backdrop-filter: blur(2px);
+    }
+    .drawer-overlay.open { display: block; }
+
+    .filter-drawer {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 300px;
+      max-width: 90vw;
+      background: var(--navy2);
+      border-right: 1px solid rgba(201,168,76,0.12);
+      z-index: 301;
+      overflow-y: auto;
+      transform: translateX(-100%);
+      transition: transform 0.28s cubic-bezier(0.4,0,0.2,1);
+      padding: 1.5rem;
+    }
+    .filter-drawer.open { transform: translateX(0); }
+
+    .drawer-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+    }
+    .drawer-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--white);
+    }
+    .drawer-close {
+      background: none;
+      border: none;
+      color: var(--muted);
+      cursor: pointer;
+      padding: 0.3rem;
+      transition: color 0.2s;
+    }
+    .drawer-close:hover { color: var(--white); }
+
+    /* ─── TOAST (custom — overrides VR default for design system match) ─── */
+    #vr-shop-toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--navy2);
+      color: var(--text);
+      border: 1px solid var(--gold);
+      border-radius: 5px;
+      padding: 12px 18px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 400;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.45);
+      z-index: 9999;
+      max-width: 300px;
+      opacity: 0;
+      transform: translateY(8px);
+      transition: opacity 0.22s ease, transform 0.22s ease;
+      pointer-events: none;
+    }
+    #vr-shop-toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ─── BUTTONS ─── */
+    .btn-primary {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.65rem 1.4rem;
+      border-radius: 2px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-primary:hover { background: var(--gold2); }
+
+    .btn-secondary {
+      display: inline-block;
+      background: none;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.65rem 1.4rem;
+      border-radius: 2px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-secondary:hover { background: rgba(201,168,76,0.08); }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: #070f1d;
+      padding: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--white);
+      text-decoration: none;
+    }
+    .footer-logo span { color: var(--gold); }
+    .footer-links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .footer-links a {
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-copy {
+      font-size: 0.75rem;
+      color: rgba(138,154,181,0.5);
+      text-align: right;
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 960px) {
+      .sidebar { display: none; }
+      #mobile-filter-btn { display: flex; }
+      .shop-layout { padding: 1.5rem 1.2rem 3rem; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .page-header { padding: 5.5rem 1.2rem 1.5rem; }
+    }
+
+    @media (max-width: 560px) {
+      nav { padding: 1rem 1.2rem; }
+      #product-grid { grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)); gap: 0.9rem; }
+      .pagination-controls { gap: 0.2rem; }
+      .page-btn { min-width: 32px; height: 32px; font-size: 0.78rem; }
+      .footer-inner { flex-direction: column; align-items: flex-start; }
+      .footer-copy { text-align: left; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">Vender<span>Resale</span></a>
+  <div class="nav-links">
+    <a href="shop.html" class="active">Shop</a>
+    <a href="/#how">How It Works</a>
+    <a href="/#about">About</a>
+  </div>
+  <div class="nav-right">
+    <a href="cart.html" class="nav-cart" aria-label="Cart">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <path d="M16 10a4 4 0 01-8 0"/>
+      </svg>
+      <span class="cart-count">0</span>
+    </a>
+    <a href="cart.html" class="nav-cta">Order Now</a>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="page-header-inner">
+    <h1>Our Products</h1>
+    <p class="page-header-sub">Showing <strong id="result-count">0</strong> of <strong>3,016</strong> products</p>
+  </div>
+</div>
+
+<!-- DRAWER OVERLAY -->
+<div class="drawer-overlay" id="drawer-overlay"></div>
+
+<!-- FILTER DRAWER (mobile) -->
+<div class="filter-drawer" id="filter-drawer" aria-label="Filters">
+  <div class="drawer-header">
+    <span class="drawer-title">Filters</span>
+    <button class="drawer-close" id="drawer-close" aria-label="Close filters">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+  </div>
+  <div id="drawer-filter-content"></div>
+</div>
+
+<!-- MAIN -->
+<div class="shop-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div id="sidebar-filter-content"></div>
+  </aside>
+
+  <!-- CONTENT -->
+  <div class="shop-content">
+    <!-- Mobile filter button -->
+    <button id="mobile-filter-btn" aria-label="Open filters">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <line x1="4" y1="6" x2="20" y2="6"/>
+        <line x1="8" y1="12" x2="16" y2="12"/>
+        <line x1="11" y1="18" x2="13" y2="18"/>
+      </svg>
+      Filters
+      <span class="filter-active-badge" id="mobile-active-badge"></span>
+    </button>
+
+    <!-- PRODUCT GRID -->
+    <div id="product-grid">
+      <!-- Skeletons or cards injected here -->
+    </div>
+
+    <!-- NO RESULTS -->
+    <div id="no-results">
+      <h3>No products found</h3>
+      <p>Try adjusting your filters or search query.</p>
+    </div>
+
+    <!-- PAGINATION -->
+    <div class="pagination" id="pagination">
+      <div class="pagination-info" id="pagination-info"></div>
+      <div class="pagination-controls" id="pagination-controls"></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <a href="/" class="footer-logo">Vender<span>Resale</span></a>
+    <div class="footer-links">
+      <a href="https://nyctailblazers.com">nyctailblazers.com</a>
+      <a href="mailto:vender@nyctailblazers.com">vender@nyctailblazers.com</a>
+      <a href="https://doccs.ny.gov/mail-packages" target="_blank" rel="noopener">DOCCS Package Info</a>
+    </div>
+    <div class="footer-copy">&copy; 2026 Vender Resale<br>NY DOCCS Directive 4911 Compliant</div>
+  </div>
+</footer>
+
+<!-- TOAST -->
+<div id="vr-shop-toast"></div>
+
+<script src="/js/store.js"></script>
+<script>
+(function () {
+  'use strict';
+
+  // ─── CONFIG ──────────────────────────────────────────────────────────────
+  var PAGE_SIZE = 48;
+
+  var CATEGORIES = [
+    { key: 'Snacks',      label: 'Snacks',       count: 1082 },
+    { key: 'Grocery',     label: 'Grocery',       count: 376  },
+    { key: 'Proteins',    label: 'Proteins',      count: 366  },
+    { key: 'Produce',     label: 'Produce',       count: 110  },
+    { key: 'Hygiene',     label: 'Hygiene',       count: 143  },
+    { key: 'Clothing',    label: 'Clothing',      count: 122  },
+    { key: 'Bedding',     label: 'Bedding',       count: 28   },
+    { key: 'Electronics', label: 'Electronics',   count: 17   },
+    { key: 'Footwear',    label: 'Footwear',      count: 6    },
+    { key: 'Other',       label: 'Other',         count: 671  }
+  ];
+
+  // ─── STATE ───────────────────────────────────────────────────────────────
+  var _catalog       = [];
+  var _filtered      = [];
+  var _currentPage   = 1;
+  var _searchDebounce = null;
+
+  var _state = {
+    q:          '',
+    categories: [],   // array of selected category keys (OR logic)
+    priceMin:   null,
+    priceMax:   null,
+    sort:       'featured'
+  };
+
+  // ─── TOAST ───────────────────────────────────────────────────────────────
+  var _toastTimer = null;
+  function showToast(msg) {
+    var el = document.getElementById('vr-shop-toast');
+    if (!el) return;
+    el.textContent = msg;
+    el.classList.add('show');
+    if (_toastTimer) clearTimeout(_toastTimer);
+    _toastTimer = setTimeout(function () {
+      el.classList.remove('show');
+    }, 2500);
+  }
+
+  // ─── URL PARAMS ──────────────────────────────────────────────────────────
+  function readParams() {
+    var params = new URLSearchParams(window.location.search);
+    _state.q          = params.get('q')        || '';
+    _state.sort       = params.get('sort')     || 'featured';
+    _state.priceMin   = params.get('min')  ? parseFloat(params.get('min'))  : null;
+    _state.priceMax   = params.get('max')  ? parseFloat(params.get('max'))  : null;
+    _currentPage      = parseInt(params.get('page') || '1', 10) || 1;
+
+    var cat = params.get('category');
+    _state.categories = cat ? cat.split(',').filter(Boolean) : [];
+  }
+
+  function writeParams() {
+    var obj = {
+      q:        _state.q        || null,
+      sort:     _state.sort !== 'featured' ? _state.sort : null,
+      min:      _state.priceMin  != null ? _state.priceMin  : null,
+      max:      _state.priceMax  != null ? _state.priceMax  : null,
+      page:     _currentPage > 1 ? _currentPage : null,
+      category: _state.categories.length ? _state.categories.join(',') : null
+    };
+    VR.setParams(obj);
+  }
+
+  // ─── FILTER + SORT ───────────────────────────────────────────────────────
+  function applyFilters(catalog) {
+    var result = catalog.slice();
+
+    // Search
+    if (_state.q) {
+      var q = _state.q.toLowerCase();
+      result = result.filter(function (p) {
+        return (
+          (p.name        && p.name.toLowerCase().indexOf(q)        !== -1) ||
+          (p.description && p.description.toLowerCase().indexOf(q) !== -1)
+        );
+      });
+    }
+
+    // Categories (OR)
+    if (_state.categories.length) {
+      var cats = _state.categories.map(function (c) { return c.toLowerCase(); });
+      result = result.filter(function (p) {
+        return p.category && cats.indexOf(p.category.toLowerCase()) !== -1;
+      });
+    }
+
+    // Price range
+    if (_state.priceMin != null) {
+      result = result.filter(function (p) { return (p.price || 0) >= _state.priceMin; });
+    }
+    if (_state.priceMax != null) {
+      result = result.filter(function (p) { return (p.price || 0) <= _state.priceMax; });
+    }
+
+    // Sort
+    if (_state.sort === 'price-asc') {
+      result.sort(function (a, b) { return (a.price || 0) - (b.price || 0); });
+    } else if (_state.sort === 'price-desc') {
+      result.sort(function (a, b) { return (b.price || 0) - (a.price || 0); });
+    } else if (_state.sort === 'name-asc') {
+      result.sort(function (a, b) { return (a.name || '').localeCompare(b.name || ''); });
+    }
+    // 'featured' = natural catalog order
+
+    return result;
+  }
+
+  function isFiltersActive() {
+    return (
+      _state.q ||
+      _state.categories.length ||
+      _state.priceMin != null ||
+      _state.priceMax != null ||
+      _state.sort !== 'featured'
+    );
+  }
+
+  // ─── RENDER GRID ─────────────────────────────────────────────────────────
+  function renderGrid() {
+    var grid = document.getElementById('product-grid');
+    var noResults = document.getElementById('no-results');
+
+    _filtered = applyFilters(_catalog);
+
+    var total = _filtered.length;
+    document.getElementById('result-count').textContent = total.toLocaleString();
+
+    if (total === 0) {
+      grid.innerHTML = '';
+      noResults.style.display = 'block';
+      document.getElementById('pagination').style.display = 'none';
+      return;
+    }
+
+    noResults.style.display = 'none';
+    document.getElementById('pagination').style.display = 'flex';
+
+    var totalPages = Math.ceil(total / PAGE_SIZE);
+    if (_currentPage > totalPages) _currentPage = 1;
+
+    var start = (_currentPage - 1) * PAGE_SIZE;
+    var end   = Math.min(start + PAGE_SIZE, total);
+    var slice = _filtered.slice(start, end);
+
+    var html = '';
+    for (var i = 0; i < slice.length; i++) {
+      var card = VR.productCardHTML(slice[i]);
+      // Wrap in design-system card class for hover effects
+      html += card.replace(
+        'class="vr-product-card"',
+        'class="vr-product-card"'
+      );
+    }
+    grid.innerHTML = html;
+
+    // Apply card styles via class (store.js renders inline styles — we layer on top)
+    var cards = grid.querySelectorAll('.vr-product-card');
+    for (var j = 0; j < cards.length; j++) {
+      // Reset store.js inline bg/border so our CSS vars take over
+      cards[j].style.background    = 'var(--navy2)';
+      cards[j].style.borderRadius  = '6px';
+      cards[j].style.animation     = 'fadeIn 0.22s ease ' + Math.min(j * 0.025, 0.5) + 's both';
+    }
+
+    renderPagination(totalPages, total, start, end);
+    updateClearBtn();
+    updateMobileBadge();
+  }
+
+  // ─── PAGINATION ──────────────────────────────────────────────────────────
+  function renderPagination(totalPages, total, start, end) {
+    var info = document.getElementById('pagination-info');
+    var controls = document.getElementById('pagination-controls');
+
+    info.textContent = 'Showing ' + (start + 1).toLocaleString() + '–' + end.toLocaleString() + ' of ' + total.toLocaleString();
+
+    if (totalPages <= 1) {
+      controls.innerHTML = '';
+      return;
+    }
+
+    var pages = buildPageList(_currentPage, totalPages);
+    var html = '';
+
+    html += '<button class="page-btn" id="prev-btn"' + (_currentPage <= 1 ? ' disabled' : '') + ' aria-label="Previous page">';
+    html += '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>&nbsp;Prev</button>';
+
+    for (var i = 0; i < pages.length; i++) {
+      if (pages[i] === '...') {
+        html += '<button class="page-btn ellipsis" disabled>&hellip;</button>';
+      } else {
+        html += '<button class="page-btn' + (pages[i] === _currentPage ? ' active' : '') + '" data-page="' + pages[i] + '">' + pages[i] + '</button>';
+      }
+    }
+
+    html += '<button class="page-btn" id="next-btn"' + (_currentPage >= totalPages ? ' disabled' : '') + ' aria-label="Next page">';
+    html += 'Next&nbsp;<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>';
+
+    controls.innerHTML = html;
+
+    controls.addEventListener('click', function (e) {
+      var btn = e.target.closest('.page-btn');
+      if (!btn || btn.disabled || btn.classList.contains('ellipsis')) return;
+
+      var pg = parseInt(btn.getAttribute('data-page'), 10);
+      if (btn.id === 'prev-btn') pg = _currentPage - 1;
+      if (btn.id === 'next-btn') pg = _currentPage + 1;
+      if (!pg || isNaN(pg)) return;
+
+      _currentPage = pg;
+      writeParams();
+      renderGrid();
+      // Scroll to top of grid
+      var grid = document.getElementById('product-grid');
+      var top = grid.getBoundingClientRect().top + window.pageYOffset - 90;
+      window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+    }, { once: true });
+  }
+
+  function buildPageList(current, total) {
+    if (total <= 7) {
+      var arr = [];
+      for (var i = 1; i <= total; i++) arr.push(i);
+      return arr;
+    }
+    var pages = [];
+    var left  = Math.max(2, current - 2);
+    var right = Math.min(total - 1, current + 2);
+
+    pages.push(1);
+    if (left > 2)  pages.push('...');
+    for (var p = left; p <= right; p++) pages.push(p);
+    if (right < total - 1) pages.push('...');
+    pages.push(total);
+    return pages;
+  }
+
+  // ─── SIDEBAR FILTER HTML ─────────────────────────────────────────────────
+  function buildFilterHTML(prefix) {
+    var html = '';
+
+    // Search
+    html += '<div class="sidebar-section">';
+    html += '<div class="sidebar-label">Search</div>';
+    html += '<div class="search-wrap">';
+    html += '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>';
+    html += '<input type="text" id="' + prefix + 'search-input" placeholder="Search products…" value="' + escapeAttr(_state.q) + '" autocomplete="off">';
+    html += '</div></div>';
+
+    // Categories
+    html += '<div class="sidebar-section">';
+    html += '<div class="sidebar-label">Categories</div>';
+    html += '<div class="cat-list">';
+    for (var i = 0; i < CATEGORIES.length; i++) {
+      var cat = CATEGORIES[i];
+      var checked = _state.categories.indexOf(cat.key) !== -1 ? ' checked' : '';
+      html += '<label class="cat-item">';
+      html += '<input type="checkbox" data-cat="' + cat.key + '"' + checked + '>';
+      html += '<span class="cat-item-label">' + cat.label + '</span>';
+      html += '<span class="cat-count">' + cat.count.toLocaleString() + '</span>';
+      html += '</label>';
+    }
+    html += '</div></div>';
+
+    // Price range
+    html += '<div class="sidebar-section">';
+    html += '<div class="sidebar-label">Price Range</div>';
+    html += '<div class="price-range">';
+    html += '<input type="number" id="' + prefix + 'price-min" placeholder="Min $" min="0" value="' + (_state.priceMin != null ? _state.priceMin : '') + '">';
+    html += '<span class="price-sep">&ndash;</span>';
+    html += '<input type="number" id="' + prefix + 'price-max" placeholder="Max $" min="0" value="' + (_state.priceMax != null ? _state.priceMax : '') + '">';
+    html += '</div></div>';
+
+    // Sort
+    html += '<div class="sidebar-section">';
+    html += '<div class="sidebar-label">Sort By</div>';
+    html += '<select id="' + prefix + 'sort-select">';
+    html += '<option value="featured"'    + (_state.sort === 'featured'   ? ' selected' : '') + '>Featured</option>';
+    html += '<option value="price-asc"'   + (_state.sort === 'price-asc'  ? ' selected' : '') + '>Price: Low to High</option>';
+    html += '<option value="price-desc"'  + (_state.sort === 'price-desc' ? ' selected' : '') + '>Price: High to Low</option>';
+    html += '<option value="name-asc"'    + (_state.sort === 'name-asc'   ? ' selected' : '') + '>A to Z</option>';
+    html += '</select></div>';
+
+    // Clear button
+    html += '<button id="' + prefix + 'clear-filters" class="' + (isFiltersActive() ? 'visible' : '') + '">Clear All Filters</button>';
+
+    return html;
+  }
+
+  function escapeAttr(s) {
+    return String(s || '').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+  }
+
+  // ─── BIND FILTER CONTROLS ────────────────────────────────────────────────
+  function bindFilterControls(prefix) {
+    // Search
+    var searchEl = document.getElementById(prefix + 'search-input');
+    if (searchEl) {
+      searchEl.addEventListener('input', function () {
+        clearTimeout(_searchDebounce);
+        var val = this.value;
+        _searchDebounce = setTimeout(function () {
+          _state.q = val;
+          _currentPage = 1;
+          syncFilterInputs(prefix === 'mob-' ? '' : 'mob-');
+          writeParams();
+          renderGrid();
+        }, 300);
+      });
+    }
+
+    // Category checkboxes
+    var catInputs = document.querySelectorAll('#' + (prefix ? prefix.replace(/-$/, '') + '-filter-content' : 'sidebar-filter-content') + ' input[type="checkbox"][data-cat]');
+    for (var i = 0; i < catInputs.length; i++) {
+      catInputs[i].addEventListener('change', onCatChange);
+    }
+
+    // Price
+    var minEl = document.getElementById(prefix + 'price-min');
+    var maxEl = document.getElementById(prefix + 'price-max');
+    if (minEl) minEl.addEventListener('input', onPriceChange);
+    if (maxEl) maxEl.addEventListener('input', onPriceChange);
+
+    // Sort
+    var sortEl = document.getElementById(prefix + 'sort-select');
+    if (sortEl) {
+      sortEl.addEventListener('change', function () {
+        _state.sort = this.value;
+        _currentPage = 1;
+        syncFilterInputs(prefix === 'mob-' ? '' : 'mob-');
+        writeParams();
+        renderGrid();
+      });
+    }
+
+    // Clear
+    var clearEl = document.getElementById(prefix + 'clear-filters');
+    if (clearEl) {
+      clearEl.addEventListener('click', function () {
+        clearAllFilters();
+      });
+    }
+  }
+
+  function onCatChange() {
+    var key = this.getAttribute('data-cat');
+    var idx = _state.categories.indexOf(key);
+    if (this.checked && idx === -1) {
+      _state.categories.push(key);
+    } else if (!this.checked && idx !== -1) {
+      _state.categories.splice(idx, 1);
+    }
+    _currentPage = 1;
+    syncCategoryCheckboxes();
+    writeParams();
+    renderGrid();
+  }
+
+  function onPriceChange() {
+    var minEl = document.getElementById('price-min') || document.getElementById('mob-price-min');
+    var maxEl = document.getElementById('price-max') || document.getElementById('mob-price-max');
+    // Read from whichever just changed
+    var allMin = [document.getElementById('price-min'), document.getElementById('mob-price-min')];
+    var allMax = [document.getElementById('price-max'), document.getElementById('mob-price-max')];
+
+    var minVal = null, maxVal = null;
+    for (var i = 0; i < allMin.length; i++) {
+      if (allMin[i] && allMin[i].value !== '') { minVal = parseFloat(allMin[i].value); break; }
+    }
+    for (var j = 0; j < allMax.length; j++) {
+      if (allMax[j] && allMax[j].value !== '') { maxVal = parseFloat(allMax[j].value); break; }
+    }
+
+    _state.priceMin = isNaN(minVal) ? null : minVal;
+    _state.priceMax = isNaN(maxVal) ? null : maxVal;
+    _currentPage = 1;
+    writeParams();
+    renderGrid();
+  }
+
+  function clearAllFilters() {
+    _state.q = '';
+    _state.categories = [];
+    _state.priceMin = null;
+    _state.priceMax = null;
+    _state.sort = 'featured';
+    _currentPage = 1;
+
+    // Re-render both filter panels
+    renderFilterPanels();
+    writeParams();
+    renderGrid();
+  }
+
+  // Sync category checkboxes across both panels
+  function syncCategoryCheckboxes() {
+    var allCheckboxes = document.querySelectorAll('input[type="checkbox"][data-cat]');
+    for (var i = 0; i < allCheckboxes.length; i++) {
+      var key = allCheckboxes[i].getAttribute('data-cat');
+      allCheckboxes[i].checked = _state.categories.indexOf(key) !== -1;
+    }
+  }
+
+  // Sync non-checkbox inputs across panels (search, sort)
+  function syncFilterInputs(otherPrefix) {
+    var searchEl = document.getElementById(otherPrefix + 'search-input');
+    if (searchEl && searchEl !== document.activeElement) searchEl.value = _state.q;
+    var sortEl = document.getElementById(otherPrefix + 'sort-select');
+    if (sortEl) sortEl.value = _state.sort;
+  }
+
+  function updateClearBtn() {
+    var active = isFiltersActive();
+    var btns = document.querySelectorAll('#clear-filters, #mob-clear-filters');
+    for (var i = 0; i < btns.length; i++) {
+      if (active) btns[i].classList.add('visible');
+      else btns[i].classList.remove('visible');
+    }
+  }
+
+  function updateMobileBadge() {
+    var badge = document.getElementById('mobile-active-badge');
+    if (!badge) return;
+    var count = _state.categories.length
+      + (_state.q ? 1 : 0)
+      + (_state.priceMin != null ? 1 : 0)
+      + (_state.priceMax != null ? 1 : 0)
+      + (_state.sort !== 'featured' ? 1 : 0);
+    if (count > 0) {
+      badge.textContent = count;
+      badge.classList.add('visible');
+    } else {
+      badge.textContent = '';
+      badge.classList.remove('visible');
+    }
+  }
+
+  // ─── RENDER FILTER PANELS ────────────────────────────────────────────────
+  function renderFilterPanels() {
+    var sidebarContent = document.getElementById('sidebar-filter-content');
+    var drawerContent  = document.getElementById('drawer-filter-content');
+
+    if (sidebarContent) {
+      sidebarContent.innerHTML = buildFilterHTML('');
+      bindFilterControls('');
+    }
+    if (drawerContent) {
+      drawerContent.innerHTML = buildFilterHTML('mob-');
+      bindFilterControls('mob-');
+    }
+  }
+
+  // ─── DRAWER (mobile) ─────────────────────────────────────────────────────
+  function initDrawer() {
+    var overlay  = document.getElementById('drawer-overlay');
+    var drawer   = document.getElementById('filter-drawer');
+    var openBtn  = document.getElementById('mobile-filter-btn');
+    var closeBtn = document.getElementById('drawer-close');
+
+    function openDrawer() {
+      overlay.classList.add('open');
+      drawer.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeDrawer() {
+      overlay.classList.remove('open');
+      drawer.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    if (openBtn)  openBtn.addEventListener('click', openDrawer);
+    if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+    if (overlay)  overlay.addEventListener('click', closeDrawer);
+  }
+
+  // ─── CART BADGE INIT ─────────────────────────────────────────────────────
+  function initCartBadge() {
+    function updateBadge() {
+      var count = VR.cart.count();
+      var badges = document.querySelectorAll('.cart-count');
+      for (var i = 0; i < badges.length; i++) {
+        badges[i].textContent = count > 0 ? count : '';
+        badges[i].setAttribute('data-zero', count === 0 ? 'true' : 'false');
+      }
+    }
+    VR.cart.onChange(updateBadge);
+    updateBadge();
+  }
+
+  // ─── SKELETON ────────────────────────────────────────────────────────────
+  function showSkeleton() {
+    var grid = document.getElementById('product-grid');
+    VR.renderSkeleton(grid, PAGE_SIZE);
+  }
+
+  // ─── INIT ────────────────────────────────────────────────────────────────
+  document.addEventListener('DOMContentLoaded', function () {
+    readParams();
+    renderFilterPanels();
+    initDrawer();
+    initCartBadge();
+    showSkeleton();
+
+    VR.getCatalog().then(function (catalog) {
+      _catalog = catalog;
+      renderGrid();
+    }).catch(function (err) {
+      var grid = document.getElementById('product-grid');
+      grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:4rem 2rem;color:var(--muted)"><p>Failed to load catalog. Please refresh.</p></div>';
+      console.error('Catalog load error:', err);
+    });
+
+    // Cart add via event delegation on grid
+    document.getElementById('product-grid').addEventListener('click', function (e) {
+      var btn = e.target.closest ? e.target.closest('.vr-add-to-cart') : null;
+      if (!btn) return;
+      var id = parseInt(btn.getAttribute('data-id'), 10);
+      if (isNaN(id)) return;
+      VR.getProduct(id).then(function (product) {
+        if (!product) return;
+        VR.cart.add(product, 1, null);
+        showToast((product.name.length > 40 ? product.name.slice(0, 40) + '…' : product.name) + ' added to cart');
+      });
+    });
+  });
+
+}());
+</script>
+</body>
+</html>
