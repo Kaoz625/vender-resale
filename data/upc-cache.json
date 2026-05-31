@@ -11285,5 +11285,1256 @@
     "upc": null,
     "nutrition": null,
     "source": null
+  },
+  "1276": {
+    "product_id": 1276,
+    "product_name": "KEN'S BLUE CHEESE PACKETS (4 PACKETS)",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1278": {
+    "product_id": 1278,
+    "product_name": "PEPPERIDGE FARM ITALIAN BREAD",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1279": {
+    "product_id": 1279,
+    "product_name": "PEPPERIDGE FARM FARMHOUSE SWEET HAWAIIAN BREAD",
+    "upc": "0014100049890",
+    "match_name": "Farmhouse sweet hawaiian bread",
+    "source": "openfoodfacts",
+    "nutrition": {
+      "serving_size": "1 slice (45 g)",
+      "calories": 130.0,
+      "total_fat_g": 1.5,
+      "saturated_fat_g": null,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 210.0,
+      "total_carbs_g": 22.0,
+      "fiber_g": 1.0,
+      "sugars_g": 6.0,
+      "added_sugars_g": 1.4,
+      "protein_g": 6.0,
+      "calcium_mg": 30.0,
+      "iron_mg": 1.7,
+      "potassium_mg": 50.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "1280": {
+    "product_id": 1280,
+    "product_name": "PEPPERIDGE FARM FARMHOUSE BUTTER BREAD",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1281": {
+    "product_id": 1281,
+    "product_name": "PEPPERIDGE FARM FARMHOUSE BRIOCHE BREAD",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1282": {
+    "product_id": 1282,
+    "product_name": "MURDERVILLE 3: THE BLACK DAHLIA BY ASHLEY AND JAQUAVIS",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1283": {
+    "product_id": 1283,
+    "product_name": "MIDNIGHT: A GANGSTER LOVE BY SISTER SOULJAH",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1284": {
+    "product_id": 1284,
+    "product_name": "NIKE MANOA BOOTS: Available on StepTwoFootwear.com",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1285": {
+    "product_id": 1285,
+    "product_name": "BIC BLACK INK PENS 10 CT",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1286": {
+    "product_id": 1286,
+    "product_name": "STARKIST CHICKEN CREATIONS ZESTY LEMON PEPPER",
+    "upc": "0080000517647",
+    "match_name": "Chicken Creations Premium White Chicken in Sauce Zesty Lemon Pepper",
+    "source": "openfoodfacts",
+    "nutrition": {
+      "serving_size": "1 pouch (74 g)",
+      "calories": 95.0,
+      "total_fat_g": 2.7,
+      "saturated_fat_g": 0.7,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.1,
+      "sodium_mg": 541.0,
+      "total_carbs_g": 2.7,
+      "fiber_g": 0.0,
+      "sugars_g": 1.4,
+      "added_sugars_g": 1.4,
+      "protein_g": 14.9,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": 176.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "1293": {
+    "product_id": 1293,
+    "product_name": "KEN'S GREEK DRESSING (4 PACKETS)",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1294": {
+    "product_id": 1294,
+    "product_name": "KEN'S THOUSAND ISLAND DRESSING (4 PACKETS)",
+    "upc": "0041335000532",
+    "match_name": "Thousand Island Dressing",
+    "source": "openfoodfacts",
+    "nutrition": {
+      "serving_size": "2 Tbsp (30 g)",
+      "calories": 135.0,
+      "total_fat_g": 13.5,
+      "saturated_fat_g": 1.9,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 236.0,
+      "total_carbs_g": 3.9,
+      "fiber_g": 0.0,
+      "sugars_g": 3.9,
+      "added_sugars_g": 2.9,
+      "protein_g": 0.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "1295": {
+    "product_id": 1295,
+    "product_name": "KEN'S GOLDEN ITALIAN DRESSING (4 PACKETS)",
+    "upc": "0041335085898",
+    "match_name": "Golden Italian Dressing",
+    "source": "openfoodfacts",
+    "nutrition": {
+      "serving_size": "See package",
+      "calories": 372.0,
+      "total_fat_g": 39.5,
+      "saturated_fat_g": 5.8,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 907.0,
+      "total_carbs_g": 7.0,
+      "fiber_g": 0.0,
+      "sugars_g": 7.0,
+      "added_sugars_g": 7.0,
+      "protein_g": 0.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "1296": {
+    "product_id": 1296,
+    "product_name": "KEN'S CAESAR DRESSING (4 PACKETS)",
+    "upc": "0041335082798",
+    "match_name": "Caesar Dressing",
+    "source": "openfoodfacts",
+    "nutrition": {
+      "serving_size": "1 serving (43 g)",
+      "calories": 210.0,
+      "total_fat_g": 23.0,
+      "saturated_fat_g": 4.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 400.0,
+      "total_carbs_g": 1.0,
+      "fiber_g": 0.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": 1.0,
+      "protein_g": 1.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "1297": {
+    "product_id": 1297,
+    "product_name": "KEN'S FRENCH COUNTRY DRESSING (4 PACKETS)",
+    "upc": "0041335000655",
+    "match_name": "Kens steakhouse lite country french dressing bottles",
+    "source": "openfoodfacts",
+    "nutrition": {
+      "serving_size": "2 Tbsp (33 g)",
+      "calories": 100.0,
+      "total_fat_g": 6.0,
+      "saturated_fat_g": 1.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 244.0,
+      "total_carbs_g": 11.0,
+      "fiber_g": 0.0,
+      "sugars_g": 10.0,
+      "added_sugars_g": 17.8,
+      "protein_g": 0.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "1310": {
+    "product_id": 1310,
+    "product_name": "JACK LINK'S ORIGINAL BEEF STEAK",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1311": {
+    "product_id": 1311,
+    "product_name": "JACK LINK'S SWEET BBQ CHICKEN TENDER BITES",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1312": {
+    "product_id": 1312,
+    "product_name": "DORITOS FLAMIN HOT NACHOS (50 PACK)",
+    "upc": "0028400325226",
+    "match_name": "Doritos Flamin hot nacho",
+    "source": "openfoodfacts",
+    "nutrition": {
+      "serving_size": "1 12 chips (28 g)",
+      "calories": 150.0,
+      "total_fat_g": 8.0,
+      "saturated_fat_g": 1.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": null,
+      "total_carbs_g": 17.0,
+      "fiber_g": 1.0,
+      "sugars_g": null,
+      "added_sugars_g": null,
+      "protein_g": 2.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "1313": {
+    "product_id": 1313,
+    "product_name": "BIG SHOULDERS SMOKEHOUSE PULLED CHICKEN - ORIGINAL BBQ SAUCE",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1314": {
+    "product_id": 1314,
+    "product_name": "BIG SHOULDERS SMOKEHOUSE FULLY COOKED PORK CARNITAS",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1315": {
+    "product_id": 1315,
+    "product_name": "BIG SHOULDERS SMOKEHOUSE BONELESS PORK RIBS - ORIGINAL BBQ SAUCE",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1316": {
+    "product_id": 1316,
+    "product_name": "LAY'S SOUR CREAM & ONION (50 BAGS)",
+    "upc": "4062139005888",
+    "match_name": "Sour Cream & Onion",
+    "source": "openfoodfacts",
+    "nutrition": {
+      "serving_size": "150 g",
+      "calories": 775.0,
+      "total_fat_g": 45.0,
+      "saturated_fat_g": 3.6,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 708.0,
+      "total_carbs_g": 78.0,
+      "fiber_g": null,
+      "sugars_g": 4.0,
+      "added_sugars_g": 0.9,
+      "protein_g": 10.4,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "1317": {
+    "product_id": 1317,
+    "product_name": "DORITOS COOL RANCH (50 PACK)",
+    "upc": "0028400052979",
+    "match_name": "1.00oz doritos cra cool ranch",
+    "source": "openfoodfacts",
+    "nutrition": {
+      "serving_size": "1 package (28.3 g)",
+      "calories": 130.0,
+      "total_fat_g": 5.0,
+      "saturated_fat_g": 1.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 160.0,
+      "total_carbs_g": 19.0,
+      "fiber_g": 2.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": null,
+      "protein_g": 2.0,
+      "calcium_mg": 40.0,
+      "iron_mg": 0.4,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "1318": {
+    "product_id": 1318,
+    "product_name": "JACK LINK'S PEPPERED BEEF STEAK",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1319": {
+    "product_id": 1319,
+    "product_name": "JACK LINK'S BEEF TERIYAKI STEAK",
+    "upc": "0017082000736",
+    "match_name": "Teriyaki Beef Steak",
+    "source": "openfoodfacts",
+    "nutrition": {
+      "serving_size": "1 package (28 g)",
+      "calories": 70.0,
+      "total_fat_g": 1.5,
+      "saturated_fat_g": 0.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 520.0,
+      "total_carbs_g": 4.0,
+      "fiber_g": 0.0,
+      "sugars_g": 4.0,
+      "added_sugars_g": 3.0,
+      "protein_g": 9.0,
+      "calcium_mg": 20.0,
+      "iron_mg": null,
+      "potassium_mg": 188.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "1320": {
+    "product_id": 1320,
+    "product_name": "JACK LINK'S BEEF TERIYAKI STICK",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1321": {
+    "product_id": 1321,
+    "product_name": "JACK LINK'S ORIGINAL BEEF TENDER BITES",
+    "upc": "0017082112071",
+    "match_name": "Jack link's, beef steak tender bites, original",
+    "source": "openfoodfacts",
+    "nutrition": {
+      "serving_size": "1 ONZ (28 g)",
+      "calories": 70.0,
+      "total_fat_g": 1.0,
+      "saturated_fat_g": 0.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 490.0,
+      "total_carbs_g": 7.0,
+      "fiber_g": 0.0,
+      "sugars_g": 6.0,
+      "added_sugars_g": null,
+      "protein_g": 10.0,
+      "calcium_mg": null,
+      "iron_mg": 1.1,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "1322": {
+    "product_id": 1322,
+    "product_name": "SWEET SUE PREMIUM CHICKEN BREAST POUCH",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1323": {
+    "product_id": 1323,
+    "product_name": "BUMBLE BEE TUNA - TERIYAKI",
+    "upc": "0086600241074",
+    "match_name": "Wild Caught Tuna seasoned with Teriyaki",
+    "source": "openfoodfacts",
+    "nutrition": {
+      "serving_size": "71g",
+      "calories": 100.0,
+      "total_fat_g": 1.0,
+      "saturated_fat_g": 0.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 540.0,
+      "total_carbs_g": 6.0,
+      "fiber_g": 0.0,
+      "sugars_g": 6.0,
+      "added_sugars_g": 4.0,
+      "protein_g": 17.0,
+      "calcium_mg": 10.0,
+      "iron_mg": 0.5,
+      "potassium_mg": 200.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "1324": {
+    "product_id": 1324,
+    "product_name": "BUMBLE BEE TUNA - APPLEWOOD SMOKE",
+    "upc": "0086600241036",
+    "match_name": "Applewood Smoke Wild Caught Tuna",
+    "source": "openfoodfacts",
+    "nutrition": {
+      "serving_size": "2 pouch (142 g)",
+      "calories": 160.0,
+      "total_fat_g": 2.0,
+      "saturated_fat_g": 1.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": 0.1,
+      "sodium_mg": 680.0,
+      "total_carbs_g": 4.0,
+      "fiber_g": null,
+      "sugars_g": 4.0,
+      "added_sugars_g": 2.0,
+      "protein_g": 30.0,
+      "calcium_mg": 20.0,
+      "iron_mg": 1.4,
+      "potassium_mg": 361.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "1325": {
+    "product_id": 1325,
+    "product_name": "BUMBLE BEE TUNA - ROASTED GARLIC & HERB",
+    "upc": "0086600240978",
+    "match_name": "Roasted Garlic & Herb Wild Caught Tuna",
+    "source": "openfoodfacts",
+    "nutrition": {
+      "serving_size": "1 pouch (71 g)",
+      "calories": 80.0,
+      "total_fat_g": 1.0,
+      "saturated_fat_g": 0.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.1,
+      "sodium_mg": 280.0,
+      "total_carbs_g": 2.0,
+      "fiber_g": 0.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": 1.0,
+      "protein_g": 16.0,
+      "calcium_mg": 10.0,
+      "iron_mg": 0.7,
+      "potassium_mg": 210.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "1326": {
+    "product_id": 1326,
+    "product_name": "BUMBLE BEE TUNA - CRACKED PEPPER & SEA SALT",
+    "upc": "0086600240961",
+    "match_name": "Wild Caught Tuna Seasoned with Cracked Pepper & Sea Salt",
+    "source": "openfoodfacts",
+    "nutrition": {
+      "serving_size": "71g",
+      "calories": 70.0,
+      "total_fat_g": 0.5,
+      "saturated_fat_g": 0.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 360.0,
+      "total_carbs_g": 1.0,
+      "fiber_g": 0.0,
+      "sugars_g": 0.0,
+      "added_sugars_g": 0.0,
+      "protein_g": 15.0,
+      "calcium_mg": 10.0,
+      "iron_mg": 0.7,
+      "potassium_mg": 180.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "1327": {
+    "product_id": 1327,
+    "product_name": "BUMBLE BEE TUNA SALAD",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1328": {
+    "product_id": 1328,
+    "product_name": "BUMBLE BEE TUNA - WILD CAUGHT ALBACORE",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1329": {
+    "product_id": 1329,
+    "product_name": "BUMBLE BEE TUNA - LEMON SESAME & GINGER",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1330": {
+    "product_id": 1330,
+    "product_name": "BUMBLE BEE TUNA - CHIPOTLE",
+    "upc": "0086600000145",
+    "match_name": "Bumble bee, albacore tuna with chipotle & olive oil",
+    "source": "openfoodfacts",
+    "nutrition": {
+      "serving_size": "1/4 cup (56 g)",
+      "calories": 140.0,
+      "total_fat_g": 9.0,
+      "saturated_fat_g": 1.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 260.0,
+      "total_carbs_g": 1.0,
+      "fiber_g": 0.0,
+      "sugars_g": 1.0,
+      "added_sugars_g": null,
+      "protein_g": 12.0,
+      "calcium_mg": 20.0,
+      "iron_mg": 0.4,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "1331": {
+    "product_id": 1331,
+    "product_name": "BUMBLE BEE TUNA - SUNDRIED TOMATO & BASIL",
+    "upc": "0086600717289",
+    "match_name": "Bumble bee, sensations, seasoned tuna medley, sundried tomato & basil",
+    "source": "openfoodfacts",
+    "nutrition": {
+      "serving_size": "1 BOWL (113 g)",
+      "calories": 150.0,
+      "total_fat_g": 6.0,
+      "saturated_fat_g": 1.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 420.0,
+      "total_carbs_g": 3.0,
+      "fiber_g": 2.0,
+      "sugars_g": 2.0,
+      "added_sugars_g": null,
+      "protein_g": 21.0,
+      "calcium_mg": 20.0,
+      "iron_mg": 1.8,
+      "potassium_mg": 299.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "1332": {
+    "product_id": 1332,
+    "product_name": "SNAPPLE TO GO DIET KIWI STRAWBERRY",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1333": {
+    "product_id": 1333,
+    "product_name": "SNAPPLE TO GO DIET FRUIT PUNCH",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1334": {
+    "product_id": 1334,
+    "product_name": "NERDS TO GO PACKETS STRAWBERRY",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1335": {
+    "product_id": 1335,
+    "product_name": "HAWAIIAN PUNCH - LEMON BERRY SQUEEZE",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1336": {
+    "product_id": 1336,
+    "product_name": "A&W ROOT BEER TO GO PACKETS",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1337": {
+    "product_id": 1337,
+    "product_name": "7UP TO GO PACKETS CHERRY",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1338": {
+    "product_id": 1338,
+    "product_name": "BELGIOIOSO ASIAGO WEDGE BLOCK",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1339": {
+    "product_id": 1339,
+    "product_name": "BELGIOIOSO SHARP PROVOLONE WEDGE BLOCK",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1340": {
+    "product_id": 1340,
+    "product_name": "PISTACHIOS NO SHELLS HONEY ROASTED",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1341": {
+    "product_id": 1341,
+    "product_name": "PISTACHIOS NO SHELLS SALT & PEPPER",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1342": {
+    "product_id": 1342,
+    "product_name": "PISTACHIOS NO SHELLS SALT & VINEGAR",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1343": {
+    "product_id": 1343,
+    "product_name": "CHATA SHREDDED SEASONED SOY (CHILORIO DE SOYA)",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1344": {
+    "product_id": 1344,
+    "product_name": "CHATA MACHACHA DE RES (SHREDDED BEEF)",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1345": {
+    "product_id": 1345,
+    "product_name": "CHATA PORK MEAT PASTOR STYLE (CARNE AL PASTOR)",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1346": {
+    "product_id": 1346,
+    "product_name": "CHATA REFRIED BLACK BEANS",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1347": {
+    "product_id": 1347,
+    "product_name": "CHATA REFRIED PINTO BEANS",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1348": {
+    "product_id": 1348,
+    "product_name": "CHATA PORK CRACKLING IN GREEN SAUCE",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1349": {
+    "product_id": 1349,
+    "product_name": "CHATA PORK CARNITAS",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1350": {
+    "product_id": 1350,
+    "product_name": "CHATA CHILORIO SHREDDED TURKEY",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1351": {
+    "product_id": 1351,
+    "product_name": "CHATA CHILORIO SHREDDED PORK MEAT & COLORED WITH ANNATO (COCHINITA PIBIL)",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1352": {
+    "product_id": 1352,
+    "product_name": "CHATA CHILORIO SHREDDED PORK",
+    "upc": "0041319012780",
+    "match_name": "Chata, Chilorio Shredded Seasoned Pork Meat",
+    "source": "openfoodfacts",
+    "nutrition": {
+      "serving_size": "57 g (0.25 cup)",
+      "calories": 190.0,
+      "total_fat_g": 17.0,
+      "saturated_fat_g": 3.5,
+      "trans_fat_g": 0.5,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 396.0,
+      "total_carbs_g": 0.0,
+      "fiber_g": 0.0,
+      "sugars_g": 0.0,
+      "added_sugars_g": null,
+      "protein_g": 8.0,
+      "calcium_mg": null,
+      "iron_mg": 0.4,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "1353": {
+    "product_id": 1353,
+    "product_name": "CHATA CHILORIO SHREDDED CHICKEN",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1354": {
+    "product_id": 1354,
+    "product_name": "CRAYOLA CRAYONS 48CT",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1355": {
+    "product_id": 1355,
+    "product_name": "TASTYKAKE CRUNCH MINI DOUGHNUT",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1356": {
+    "product_id": 1356,
+    "product_name": "ARNOLDS SMOKED SWEETS SAUSAGE",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1357": {
+    "product_id": 1357,
+    "product_name": "STARKIST TUNA CREATIONS - HERB & GARLIC",
+    "upc": "0080000513045",
+    "match_name": "Tuna Creations Herb & Garlic",
+    "source": "openfoodfacts",
+    "nutrition": {
+      "serving_size": "1 pouch (74 g)",
+      "calories": 110.0,
+      "total_fat_g": 4.0,
+      "saturated_fat_g": 0.5,
+      "trans_fat_g": null,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 390.0,
+      "total_carbs_g": 2.0,
+      "fiber_g": 0.5,
+      "sugars_g": 0.5,
+      "added_sugars_g": 0.5,
+      "protein_g": 16.0,
+      "calcium_mg": null,
+      "iron_mg": 0.7,
+      "potassium_mg": 180.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "1358": {
+    "product_id": 1358,
+    "product_name": "QUAKER RICE CAKES SALT FREE",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1359": {
+    "product_id": 1359,
+    "product_name": "JACK LINK'S TERIYAKI BEEF JERKY (HALF POUND)",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1360": {
+    "product_id": 1360,
+    "product_name": "JACK LINK'S ORIGINAL BEEF JERKY (HALF POUND)",
+    "upc": "0017082884008",
+    "match_name": "Jack Link's, Original Beef Jerky large peg bag",
+    "source": "openfoodfacts",
+    "nutrition": {
+      "serving_size": "1 portion (28 g)",
+      "calories": 80.0,
+      "total_fat_g": 1.5,
+      "saturated_fat_g": 0.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 520.0,
+      "total_carbs_g": 6.0,
+      "fiber_g": 0.0,
+      "sugars_g": 6.0,
+      "added_sugars_g": 6.0,
+      "protein_g": 10.0,
+      "calcium_mg": 10.0,
+      "iron_mg": 150.0,
+      "potassium_mg": 150.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "1361": {
+    "product_id": 1361,
+    "product_name": "JACK LINK'S PEPPERED BEEF JERKY",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1362": {
+    "product_id": 1362,
+    "product_name": "KNORR PASTA SIDES - CREAMY CHICKEN",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1363": {
+    "product_id": 1363,
+    "product_name": "CORTES CHORIZO COLOMBIANO",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1364": {
+    "product_id": 1364,
+    "product_name": "AWAKEN DELUXE TWEEZERS",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1365": {
+    "product_id": 1365,
+    "product_name": "AWAKEN TOENAIL CLIP",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1366": {
+    "product_id": 1366,
+    "product_name": "AWAKEN DELUXE NAIL CLIP",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1367": {
+    "product_id": 1367,
+    "product_name": "AWAKEN EMERY BOARDS 8 PACK",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1369": {
+    "product_id": 1369,
+    "product_name": "NY BAKERY TEXAS TOAST SEASONED CROUTONS",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1370": {
+    "product_id": 1370,
+    "product_name": "BEN'S ORIGINAL RICE - GARDEN VEGETABLE",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1371": {
+    "product_id": 1371,
+    "product_name": "BEN'S ORIGINAL RICE - BASMATI",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1372": {
+    "product_id": 1372,
+    "product_name": "KNORR CHICKEN CUBE BOUILLON",
+    "upc": "8710522941058",
+    "match_name": "Knorr zero salt chicken stock cubes",
+    "source": "openfoodfacts",
+    "nutrition": {
+      "serving_size": "1 portion (100 ml)",
+      "calories": 9.0,
+      "total_fat_g": 0.5,
+      "saturated_fat_g": 0.2,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": null,
+      "total_carbs_g": 1.1,
+      "fiber_g": 0.5,
+      "sugars_g": 0.5,
+      "added_sugars_g": 55.6,
+      "protein_g": 0.5,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "1373": {
+    "product_id": 1373,
+    "product_name": "CHEEZ-IT PUFF'D DOUBLE CHEESE WHITE CHEDDAR",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1374": {
+    "product_id": 1374,
+    "product_name": "LIFESAVERS HARD CANDY - FRUIT VARIETY",
+    "upc": "0022000280244",
+    "match_name": "Life savers fruit variety hard candy",
+    "source": "openfoodfacts",
+    "nutrition": {
+      "serving_size": "4 PIECES (15 g)",
+      "calories": 72.0,
+      "total_fat_g": 0.0,
+      "saturated_fat_g": 0.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": null,
+      "total_carbs_g": 2.2,
+      "fiber_g": 0.0,
+      "sugars_g": 1.8,
+      "added_sugars_g": null,
+      "protein_g": 0.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "1376": {
+    "product_id": 1376,
+    "product_name": "CADBURY MILK CHOCOLATE BAR",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1377": {
+    "product_id": 1377,
+    "product_name": "TROLLI SOUR GUMMI CANDIES",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1378": {
+    "product_id": 1378,
+    "product_name": "BORDEN DAIRY MUENSTER CHUNK CHEESE BLOCK",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1379": {
+    "product_id": 1379,
+    "product_name": "CRACKER BARREL EXTRA SHARP YELLOW CHEDDAR BLOCK CHEESE",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1381": {
+    "product_id": 1381,
+    "product_name": "TASTYKAKE CREME FILLED SWISS ROLLS",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1382": {
+    "product_id": 1382,
+    "product_name": "TASTYKAKE GLAZED HONEY BUNS",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1383": {
+    "product_id": 1383,
+    "product_name": "CRYSTAL LIGHT- PINK LEMONADE",
+    "upc": "02033962",
+    "match_name": "Pink Lemonade",
+    "source": "openfoodfacts",
+    "nutrition": {
+      "serving_size": "1.8 g (1.8 g)",
+      "calories": 5.0,
+      "total_fat_g": 0.0,
+      "saturated_fat_g": null,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": null,
+      "total_carbs_g": 0.0,
+      "fiber_g": null,
+      "sugars_g": 0.0,
+      "added_sugars_g": null,
+      "protein_g": 0.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "1384": {
+    "product_id": 1384,
+    "product_name": "CRYSTAL LIGHT- RASPBERRY LEMONADE",
+    "upc": "0043000949641",
+    "match_name": "Crystal Light Raspberry Lemonade",
+    "source": "openfoodfacts",
+    "nutrition": {
+      "serving_size": "1.2 g (1.2 g)",
+      "calories": 5.0,
+      "total_fat_g": 0.0,
+      "saturated_fat_g": null,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": null,
+      "total_carbs_g": 0.0,
+      "fiber_g": null,
+      "sugars_g": 0.0,
+      "added_sugars_g": null,
+      "protein_g": 0.0,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "1385": {
+    "product_id": 1385,
+    "product_name": "ULTIMATE WORD FINDS",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1387": {
+    "product_id": 1387,
+    "product_name": "JUMBO LARGE PRINT WORD FINDS",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1388": {
+    "product_id": 1388,
+    "product_name": "CROSS WORD FOR ADULTS",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1390": {
+    "product_id": 1390,
+    "product_name": "REESE'S PIECES",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1391": {
+    "product_id": 1391,
+    "product_name": "HILLSHIRE FARM SMOKED BEEF SAUSAGE (4 PACK)",
+    "upc": "0044500313758",
+    "match_name": "Hillshire farm beef hot links beef smoked sausage",
+    "source": "openfoodfacts",
+    "nutrition": {
+      "serving_size": "1 link (64 g)",
+      "calories": 180.0,
+      "total_fat_g": 15.0,
+      "saturated_fat_g": 6.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 680.0,
+      "total_carbs_g": 3.0,
+      "fiber_g": null,
+      "sugars_g": 1.0,
+      "added_sugars_g": null,
+      "protein_g": 8.0,
+      "calcium_mg": null,
+      "iron_mg": 1.1,
+      "potassium_mg": 370.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "1392": {
+    "product_id": 1392,
+    "product_name": "PAY DAY CANDY BAR",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1393": {
+    "product_id": 1393,
+    "product_name": "FILLO'S WALKING TAMALES BEAN SALSA VERDE",
+    "upc": "0852605008567",
+    "match_name": "BEAN SALSA VERDE CORN BAR",
+    "source": "openfoodfacts",
+    "nutrition": {
+      "serving_size": "1 package (113 g)",
+      "calories": 250.0,
+      "total_fat_g": 10.0,
+      "saturated_fat_g": 1.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 490.0,
+      "total_carbs_g": 35.0,
+      "fiber_g": 6.0,
+      "sugars_g": 3.0,
+      "added_sugars_g": 0.0,
+      "protein_g": 6.0,
+      "calcium_mg": 70.0,
+      "iron_mg": 1.7,
+      "potassium_mg": 250.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "1394": {
+    "product_id": 1394,
+    "product_name": "FILLO'S WALKING TAMALES BEAN SALSA ROJA",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1395": {
+    "product_id": 1395,
+    "product_name": "FILLO'S WALKING TAMALES BEAN SALSA HABANERO",
+    "upc": "0852605008581",
+    "match_name": "BEAN SALSA HABANERO CORN BAR",
+    "source": "openfoodfacts",
+    "nutrition": {
+      "serving_size": "1 package (113g)",
+      "calories": 260.0,
+      "total_fat_g": 11.0,
+      "saturated_fat_g": 1.5,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 580.0,
+      "total_carbs_g": 34.0,
+      "fiber_g": 6.0,
+      "sugars_g": 3.0,
+      "added_sugars_g": 0.0,
+      "protein_g": 7.0,
+      "calcium_mg": 30.0,
+      "iron_mg": 1.5,
+      "potassium_mg": 470.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "1396": {
+    "product_id": 1396,
+    "product_name": "FILLO'S TEX-MEX PINTO BEANS",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1397": {
+    "product_id": 1397,
+    "product_name": "FILLO'S PUERTO RICAN RICE & GANDULES",
+    "upc": "0852605008154",
+    "match_name": "Puerto Rican Rice and Gandules",
+    "source": "openfoodfacts",
+    "nutrition": {
+      "serving_size": "8 oz",
+      "calories": 159.0,
+      "total_fat_g": 2.7,
+      "saturated_fat_g": 0.0,
+      "trans_fat_g": null,
+      "cholesterol_mg": null,
+      "sodium_mg": 398.0,
+      "total_carbs_g": 28.3,
+      "fiber_g": 1.8,
+      "sugars_g": 0.9,
+      "added_sugars_g": null,
+      "protein_g": 3.5,
+      "calcium_mg": null,
+      "iron_mg": null,
+      "potassium_mg": null,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "1398": {
+    "product_id": 1398,
+    "product_name": "FILLO'S MEXICAN MAYOCOBA BEANS",
+    "upc": null,
+    "nutrition": null,
+    "source": null
+  },
+  "1399": {
+    "product_id": 1399,
+    "product_name": "FILLO'S HOPPIN JOHN (CAROLINA PEAS & RICE)",
+    "upc": "0852605008178",
+    "match_name": "Hoppin' John",
+    "source": "openfoodfacts",
+    "nutrition": {
+      "serving_size": "1 pouch (226 g)",
+      "calories": 320.0,
+      "total_fat_g": 6.0,
+      "saturated_fat_g": 1.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 860.0,
+      "total_carbs_g": 57.0,
+      "fiber_g": 3.0,
+      "sugars_g": 2.0,
+      "added_sugars_g": 0.0,
+      "protein_g": 8.0,
+      "calcium_mg": 50.0,
+      "iron_mg": 4.0,
+      "potassium_mg": 300.0,
+      "ingredients": null,
+      "allergens": null
+    }
   }
 }
