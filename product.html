@@ -1234,51 +1234,101 @@
   }
 
   // ─── Nutrition Facts API ─────────────────────────────────────────────────────
-  async function fetchNutrition(productName, handle) {
-    var cacheKey = 'nutrition_' + handle;
-    var cached   = null;
+  function parseOFFNutriments(product) {
+    var n = product.nutriments || {};
+    function get(a, b) { return n[a] !== undefined ? n[a] : (n[b] !== undefined ? n[b] : null); }
+    return {
+      servingSize:  product.serving_size || product.quantity || 'See package',
+      calories:     get('energy-kcal_serving','energy-kcal_100g'),
+      totalFat:     get('fat_serving','fat_100g'),
+      saturatedFat: get('saturated-fat_serving','saturated-fat_100g'),
+      transFat:     get('trans-fat_serving','trans-fat_100g'),
+      cholesterol:  get('cholesterol_serving','cholesterol_100g'),
+      sodium:       n['sodium_serving'] ? Math.round(n['sodium_serving']*1000) : (n['sodium_100g'] ? Math.round(n['sodium_100g']*1000) : null),
+      carbs:        get('carbohydrates_serving','carbohydrates_100g'),
+      fiber:        get('fiber_serving','fiber_100g'),
+      sugars:       get('sugars_serving','sugars_100g'),
+      addedSugars:  get('added-sugars_serving','added-sugars_100g'),
+      protein:      get('proteins_serving','proteins_100g'),
+      vitaminD:     get('vitamin-d_serving','vitamin-d_100g'),
+      calcium:      n['calcium_serving'] ? Math.round(n['calcium_serving']*1000) : null,
+      iron:         n['iron_serving']    ? Math.round(n['iron_serving']*1000) : null,
+      potassium:    n['potassium_serving'] ? Math.round(n['potassium_serving']*1000) : null,
+      ingredients:  (product.ingredients_text || '').slice(0,300) || null,
+      allergens:    product.allergens_from_ingredients || null,
+    };
+  }
+
+  // fetchNutrition: UPC-first lookup, falls back to name search
+  // Pass the full product object so we can use embedded nutrition or UPC
+  async function fetchNutrition(productObj) {
+    var cacheKey  = 'nutrition_' + (productObj.handle || String(productObj.id));
+
+    // 1. If nutrition is already embedded in catalog (from enrich_upcs.py) — use it instantly
+    if (productObj.nutrition) {
+      var emb = productObj.nutrition;
+      // Convert snake_case fields to camelCase expected by renderNutritionLabel
+      return {
+        servingSize:  emb.serving_size || 'See package',
+        calories:     emb.calories_kcal || emb.calories || null,
+        totalFat:     emb.total_fat_g,
+        saturatedFat: emb.saturated_fat_g,
+        transFat:     emb.trans_fat_g,
+        cholesterol:  emb.cholesterol_mg,
+        sodium:       emb.sodium_mg,
+        carbs:        emb.total_carbs_g,
+        fiber:        emb.fiber_g,
+        sugars:       emb.sugars_g,
+        addedSugars:  emb.added_sugars_g,
+        protein:      emb.protein_g,
+        calcium:      emb.calcium_mg,
+        iron:         emb.iron_mg,
+        potassium:    emb.potassium_mg,
+        ingredients:  emb.ingredients || null,
+        allergens:    emb.allergens || null,
+      };
+    }
+
+    // 2. Check localStorage cache
     try {
       var raw = localStorage.getItem(cacheKey);
-      if (raw !== null) cached = JSON.parse(raw);
+      if (raw === 'null') return null;
+      if (raw) return JSON.parse(raw);
     } catch (e) {}
-    if (cached !== undefined && cached !== null || cached === null && localStorage.getItem(cacheKey) === 'null') {
-      return cached;
+
+    var offProduct = null;
+
+    // 3. UPC direct lookup (exact match — most accurate)
+    if (productObj.upc) {
+      try {
+        var upcResp = await fetch('https://world.openfoodfacts.org/api/v0/product/' + productObj.upc + '.json');
+        var upcData = await upcResp.json();
+        if (upcData.status === 1 && upcData.product && upcData.product.nutriments) {
+          offProduct = upcData.product;
+        }
+      } catch (e) {}
     }
 
-    var query = encodeURIComponent(productName.replace(/[,()]/g, ' ').trim());
-    var url   = 'https://world.openfoodfacts.org/cgi/search.pl?search_terms=' + query + '&json=1&page_size=1&search_simple=1';
+    // 4. Fall back to name search if no UPC or UPC lookup failed
+    if (!offProduct) {
+      try {
+        var query = encodeURIComponent((productObj.name || '').replace(/[,()]/g, ' ').trim());
+        var searchUrl = 'https://world.openfoodfacts.org/cgi/search.pl?search_terms=' + query + '&json=1&page_size=1&search_simple=1';
+        var searchResp = await fetch(searchUrl);
+        var searchData = await searchResp.json();
+        offProduct = searchData.products && searchData.products[0];
+        if (offProduct && !offProduct.nutriments) offProduct = null;
+      } catch (e) {}
+    }
 
-    try {
-      var resp = await fetch(url);
-      var data = await resp.json();
-      var product = data.products && data.products[0];
-      if (!product || !product.nutriments) {
-        try { localStorage.setItem(cacheKey, 'null'); } catch (e) {}
-        return null;
-      }
-      var n = product.nutriments;
-      var result = {
-        servingSize:  product.serving_size || product.quantity || 'See package',
-        calories:     n['energy-kcal_serving'] || n['energy-kcal_100g'] || null,
-        totalFat:     n['fat_serving']          !== undefined ? n['fat_serving']          : n['fat_100g'],
-        saturatedFat: n['saturated-fat_serving'] !== undefined ? n['saturated-fat_serving'] : n['saturated-fat_100g'],
-        transFat:     n['trans-fat_serving']    !== undefined ? n['trans-fat_serving']    : n['trans-fat_100g'],
-        cholesterol:  n['cholesterol_serving']  !== undefined ? n['cholesterol_serving']  : n['cholesterol_100g'],
-        sodium:       n['sodium_serving']  ? Math.round(n['sodium_serving']  * 1000) : (n['sodium_100g']  ? Math.round(n['sodium_100g']  * 1000) : null),
-        carbs:        n['carbohydrates_serving'] !== undefined ? n['carbohydrates_serving'] : n['carbohydrates_100g'],
-        fiber:        n['fiber_serving']   !== undefined ? n['fiber_serving']   : n['fiber_100g'],
-        sugars:       n['sugars_serving']  !== undefined ? n['sugars_serving']  : n['sugars_100g'],
-        protein:      n['proteins_serving'] !== undefined ? n['proteins_serving'] : n['proteins_100g'],
-        vitaminD:     n['vitamin-d_serving'] || null,
-        calcium:      n['calcium_serving']   ? Math.round(n['calcium_serving']   * 1000) : null,
-        iron:         n['iron_serving']      ? Math.round(n['iron_serving']      * 1000) : null,
-        potassium:    n['potassium_serving'] ? Math.round(n['potassium_serving'] * 1000) : null
-      };
-      try { localStorage.setItem(cacheKey, JSON.stringify(result)); } catch (e) {}
-      return result;
-    } catch (err) {
+    if (!offProduct) {
+      try { localStorage.setItem(cacheKey, 'null'); } catch (e) {}
       return null;
     }
+
+    var result = parseOFFNutriments(offProduct);
+    try { localStorage.setItem(cacheKey, JSON.stringify(result)); } catch (e) {}
+    return result;
   }
 
   // ─── Format nutrition value ──────────────────────────────────────────────────
@@ -1357,7 +1407,7 @@
     document.getElementById('nutrition-label-wrap').style.display = 'none';
     document.getElementById('nutrition-na').style.display = 'none';
 
-    var nutrition = await fetchNutrition(product.name, product.handle || String(product.id));
+    var nutrition = await fetchNutrition(product);
 
     document.getElementById('nutrition-loading').style.display = 'none';
 

@@ -1,0 +1,192 @@
+{
+  "0": {
+    "product_id": 0,
+    "product_name": "Hillshire Rotisserie Chicken Breast Meat, 9 oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "1": {
+    "product_id": 1,
+    "product_name": "Dietz & Watson Black Angus Beef Franks 14oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "2": {
+    "product_id": 2,
+    "product_name": "HORMEL COMPLEATS Beef Pot Roast, 9 OZ",
+    "upc": null,
+    "nutrition": null
+  },
+  "3": {
+    "product_id": 3,
+    "product_name": "Hormel Compleats Salisbury Streak 9oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "4": {
+    "product_id": 4,
+    "product_name": "Hormel Compleats Roast Beef & Mashed Potatoes 9oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "5": {
+    "product_id": 5,
+    "product_name": "Del Real Beef Birria 15oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "6": {
+    "product_id": 6,
+    "product_name": "Lyodd's BBQ Shredded Beef",
+    "upc": null,
+    "nutrition": null
+  },
+  "7": {
+    "product_id": 7,
+    "product_name": "Marketside Beef Brisket Burnt Ends",
+    "upc": "0194346001637",
+    "off_name": "Smoked & Seasoned Beef Brisket Burnt Ends in BBQ Sauce",
+    "similarity": 0.66,
+    "nutrition": {
+      "serving_size": "1.0 portion (140.0 g)",
+      "calories": 306.0,
+      "total_fat_g": 20.0,
+      "saturated_fat_g": 8.0,
+      "trans_fat_g": 0.0,
+      "cholesterol_mg": 0.1,
+      "sodium_mg": 1260.0,
+      "total_carbs_g": 18.0,
+      "fiber_g": 0.0,
+      "sugars_g": 15.0,
+      "added_sugars_g": 14.0,
+      "protein_g": 15.0,
+      "calcium_mg": 36.0,
+      "iron_mg": 2.0,
+      "potassium_mg": 340.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "8": {
+    "product_id": 8,
+    "product_name": "Park Street Deli Beef Steak Tips in Mushroom Gravy 16oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "12": {
+    "product_id": 12,
+    "product_name": "Park Street Deli Beef Steak Tips in Gravy 16oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "25": {
+    "product_id": 25,
+    "product_name": "Hereford Meatballs w/Spaghetti Sauce, Fully Cooked, Shelf Stable, 10oz each (Case of 12)",
+    "upc": null,
+    "nutrition": null
+  },
+  "26": {
+    "product_id": 26,
+    "product_name": "Hereford Fully Cooked Shredded Beef Brisket w/BBQ, Shelf Stable, 6oz each (Case of 12)",
+    "upc": null,
+    "nutrition": null
+  },
+  "27": {
+    "product_id": 27,
+    "product_name": "Hereford Fully Cooked Roast Beef with Gravy, Shelf Stable, 10oz each (Case of 12)",
+    "upc": null,
+    "nutrition": null
+  },
+  "28": {
+    "product_id": 28,
+    "product_name": "Hereford Beef Ribs with Barbecue Sauce, Shelf Stable Pouch, 6oz each (Case of 12)",
+    "upc": null,
+    "nutrition": null
+  },
+  "29": {
+    "product_id": 29,
+    "product_name": "Hereford Fully Cooked Beef Taco Filling, Shelf Stable, 6oz each (Case of 12)",
+    "upc": null,
+    "nutrition": null
+  },
+  "30": {
+    "product_id": 30,
+    "product_name": "Hereford Fully Cooked Beef Luncheon Loaf, Shelf Stable Pouch, 3.5oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "31": {
+    "product_id": 31,
+    "product_name": "Hereford Fully Cooked Shredded Beef with Beef Broth, Shelf Stable, 7oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "32": {
+    "product_id": 32,
+    "product_name": "Hereford Beef Ribs with BBQ Sauce, Shelf Stable, 6 oz Pouch",
+    "upc": null,
+    "nutrition": null
+  },
+  "33": {
+    "product_id": 33,
+    "product_name": "Hereford Fully Cooked Beef Taco Filling, Shelf Stable Pouch, 6oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "34": {
+    "product_id": 34,
+    "product_name": "Hereford Fully Cooked Roast Beef with Gravy, Shelf Stable Pouch, 10oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "35": {
+    "product_id": 35,
+    "product_name": "Hereford Meatballs with Spaghetti Sauce, Fully Cooked, Shelf Stable, 10oz",
+    "upc": null,
+    "nutrition": null
+  },
+  "36": {
+    "product_id": 36,
+    "product_name": "StarKist Light Tuna 25% Less Sodium, 2.6 oz (24 pack), 3.9lbs",
+    "upc": null,
+    "nutrition": null
+  },
+  "37": {
+    "product_id": 37,
+    "product_name": "StarKist Albacore White Tuna in Water, 2.6oz (24 pack), 3.9lbs",
+    "upc": "0080000495228",
+    "off_name": "Wild Caught Albacore White Tuna in Water",
+    "similarity": 0.81,
+    "nutrition": {
+      "serving_size": "1 pouch (74 g)",
+      "calories": 80.0,
+      "total_fat_g": 1.5,
+      "saturated_fat_g": 0.5,
+      "trans_fat_g": null,
+      "cholesterol_mg": 0.0,
+      "sodium_mg": 244.0,
+      "total_carbs_g": 0.0,
+      "fiber_g": null,
+      "sugars_g": null,
+      "added_sugars_g": 0.0,
+      "protein_g": 17.0,
+      "calcium_mg": null,
+      "iron_mg": 0.4,
+      "potassium_mg": 210.0,
+      "ingredients": null,
+      "allergens": null
+    }
+  },
+  "38": {
+    "product_id": 38,
+    "product_name": "StarKist Light Tuna in Sunflower Oil, 2.6 oz (24 pack), 3.9lbs",
+    "upc": null,
+    "nutrition": null
+  },
+  "39": {
+    "product_id": 39,
+    "product_name": "StarKist Light Tuna in Water, 2.6 oz (24 pack), 3.9lbs",
+    "upc": null,
+    "nutrition": null
+  }
+}
