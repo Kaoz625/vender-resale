@@ -46,20 +46,20 @@
   "hotPaths": [
     {
       "path": "index.html",
-      "accessCount": 17,
-      "lastAccessed": 1780241787024,
+      "accessCount": 21,
+      "lastAccessed": 1780255728090,
       "type": "file"
     },
     {
       "path": "shop.html",
-      "accessCount": 11,
-      "lastAccessed": 1780241755107,
+      "accessCount": 13,
+      "lastAccessed": 1780255914317,
       "type": "file"
     },
     {
       "path": "js/store.js",
-      "accessCount": 5,
-      "lastAccessed": 1780231468438,
+      "accessCount": 6,
+      "lastAccessed": 1780255728219,
       "type": "file"
     },
     {
