@@ -1,0 +1,7 @@
+{
+  "tool_name": "WebFetch",
+  "tool_input_preview": "{\"url\":\"https://ocfs.ny.gov/main/contracts/funding/IFB1197/IFB1197-App-F-DOCCS-Specific-Terms.pdf\",\"prompt\":\"What are the vendor requirements, background check, insurance, and bonding requirements for...",
+  "error": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()",
+  "timestamp": "2026-05-31T00:49:24.830Z",
+  "retry_count": 2
+}
