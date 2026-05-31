@@ -46,8 +46,14 @@
   "hotPaths": [
     {
       "path": "index.html",
-      "accessCount": 15,
-      "lastAccessed": 1780240461010,
+      "accessCount": 17,
+      "lastAccessed": 1780241787024,
+      "type": "file"
+    },
+    {
+      "path": "shop.html",
+      "accessCount": 11,
+      "lastAccessed": 1780241755107,
       "type": "file"
     },
     {
@@ -63,12 +69,6 @@
       "type": "file"
     },
     {
-      "path": "shop.html",
-      "accessCount": 4,
-      "lastAccessed": 1780240434864,
-      "type": "file"
-    },
-    {
       "path": "product.html",
       "accessCount": 3,
       "lastAccessed": 1780231943402,
@@ -78,6 +78,12 @@
       "path": "cart.html",
       "accessCount": 3,
       "lastAccessed": 1780232032944,
+      "type": "file"
+    },
+    {
+      "path": "scripts/recategorize.py",
+      "accessCount": 3,
+      "lastAccessed": 1780241643857,
       "type": "file"
     },
     {
@@ -120,12 +126,6 @@
       "path": "scripts/scrape_shopify.py",
       "accessCount": 1,
       "lastAccessed": 1780230811080,
-      "type": "file"
-    },
-    {
-      "path": "scripts/recategorize.py",
-      "accessCount": 1,
-      "lastAccessed": 1780240369276,
       "type": "file"
     }
   ],

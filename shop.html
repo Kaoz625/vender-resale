@@ -223,10 +223,36 @@
     #search-input:focus { border-color: rgba(201,168,76,0.4); }
 
     /* Category checkboxes */
-    .cat-list {
+    .cat-list { display:flex; flex-direction:column; gap:0.3rem; }
+
+    /* Accordion groups */
+    .cat-group { border:none; margin-bottom:0.2rem; }
+    .cat-group summary { list-style:none; }
+    .cat-group summary::-webkit-details-marker { display:none; }
+    .cat-group-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      cursor: pointer;
+      padding: 0.4rem 0.4rem;
+      border-radius: 3px;
+      -webkit-user-select: none;
+      user-select: none;
+      transition: background 0.15s;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--white);
+    }
+    .cat-group-header:hover { background: rgba(255,255,255,0.05); }
+    .cat-group[open] .cat-group-header { color: var(--gold); }
+    .cat-group-icon { font-size: 1rem; flex-shrink: 0; }
+    .cat-group-name { flex: 1; }
+    .cat-group-subs {
+      padding-left: 1.6rem;
       display: flex;
       flex-direction: column;
-      gap: 0.3rem;
+      gap: 0.15rem;
+      margin-bottom: 0.3rem;
     }
     .cat-item {
       display: flex;
@@ -787,40 +813,75 @@
   // ─── CONFIG ──────────────────────────────────────────────────────────────
   var PAGE_SIZE = 48;
 
-  var CATEGORIES = [
-    { key: 'Meat & Proteins',       label: 'Meat & Proteins',       count: 409 },
-    { key: 'Poultry',               label: 'Poultry',               count: 173 },
-    { key: 'Seafood & Fish',        label: 'Seafood & Fish',        count: 128 },
-    { key: 'Snacks & Chips',        label: 'Snacks & Chips',        count: 271 },
-    { key: 'Cookies & Cakes',       label: 'Cookies & Cakes',       count: 191 },
-    { key: 'Candy & Sweets',        label: 'Candy & Sweets',        count: 88  },
-    { key: 'Bread & Bakery',        label: 'Bread & Bakery',        count: 140 },
-    { key: 'Dairy & Cheese',        label: 'Dairy & Cheese',        count: 160 },
-    { key: 'Rice & Grains',         label: 'Rice & Grains',         count: 99  },
-    { key: 'Breakfast & Cereal',    label: 'Breakfast & Cereal',    count: 69  },
-    { key: 'Beverages',             label: 'Beverages',             count: 166 },
-    { key: 'Condiments & Sauces',   label: 'Condiments & Sauces',   count: 105 },
-    { key: 'Produce & Vegetables',  label: 'Produce & Vegetables',  count: 195 },
-    { key: 'Canned & Packaged Food',label: 'Canned & Packaged Food',count: 271 },
-    { key: 'Hygiene & Soap',        label: 'Hygiene & Soap',        count: 142 },
-    { key: 'Hair Care',             label: 'Hair Care',             count: 15  },
-    { key: 'Skin Care & Lotion',    label: 'Skin Care & Lotion',    count: 7   },
-    { key: 'Deodorant',             label: 'Deodorant',             count: 12  },
-    { key: 'Sweatsuits & Sets',     label: 'Sweatsuits & Sets',     count: 85  },
-    { key: 'Shirts & Tops',         label: 'Shirts & Tops',         count: 14  },
-    { key: 'Pants & Bottoms',       label: 'Pants & Bottoms',       count: 13  },
-    { key: 'Winter Gear',           label: 'Winter Gear',           count: 21  },
-    { key: 'Socks & Underwear',     label: 'Socks & Underwear',     count: 16  },
-    { key: 'Footwear',              label: 'Footwear',              count: 8   },
-    { key: 'Electronics & Headphones', label: 'Electronics & Headphones', count: 26 },
-    { key: 'Bedding & Linens',      label: 'Bedding & Linens',      count: 20  },
-    { key: 'Towels',                label: 'Towels',                count: 8   },
-    { key: 'Tobacco',               label: 'Tobacco',               count: 15  },
-    { key: 'Kitchen & Supplies',    label: 'Kitchen & Supplies',    count: 30  },
-    { key: 'Bundles',               label: 'Bundles',               count: 59  },
-    { key: 'Books & Cards',         label: 'Books & Cards',         count: 62  },
-    { key: 'Gift Cards',            label: 'Gift Cards',            count: 1   },
+  // Two-level taxonomy: top groups → subcategories
+  var TAXONOMY = [
+    { top: 'Proteins & Meat', count: 761, icon: '🥩', subs: [
+      { key: 'Beef',              count: 251 },
+      { key: 'Poultry',           count: 207 },
+      { key: 'Pork',              count: 108 },
+      { key: 'Seafood & Fish',    count: 123 },
+      { key: 'Nuts & Seeds',      count: 57  },
+      { key: 'Jerky & Meat Snacks', count: 15 },
+    ]},
+    { top: 'Snacks', count: 510, icon: '🍿', subs: [
+      { key: 'Chips & Crisps',    count: 106 },
+      { key: 'Cookies & Cakes',   count: 188 },
+      { key: 'Candy & Sweets',    count: 74  },
+      { key: 'Crackers',          count: 23  },
+      { key: 'Popcorn',           count: 15  },
+      { key: 'Other Snacks',      count: 104 },
+    ]},
+    { top: 'Grocery', count: 993, icon: '🛒', subs: [
+      { key: 'Bread & Bakery',        count: 144 },
+      { key: 'Dairy & Cheese',        count: 156 },
+      { key: 'Rice & Grains',         count: 101 },
+      { key: 'Breakfast & Cereal',    count: 66  },
+      { key: 'Beverages',             count: 164 },
+      { key: 'Condiments & Sauces',   count: 89  },
+      { key: 'Canned & Packaged Food',count: 264 },
+      { key: 'Soup',                  count: 9   },
+    ]},
+    { top: 'Produce', count: 214, icon: '🥦', subs: [
+      { key: 'Fresh Vegetables',  count: 129 },
+      { key: 'Fresh Fruit',       count: 85  },
+    ]},
+    { top: 'Hygiene & Personal Care', count: 173, icon: '🧴', subs: [
+      { key: 'Soap & Body Wash',  count: 136 },
+      { key: 'Oral Care',         count: 1   },
+      { key: 'Deodorant',         count: 10  },
+      { key: 'Hair Care',         count: 15  },
+      { key: 'Skin Care & Lotion',count: 7   },
+      { key: 'Feminine Care',     count: 3   },
+      { key: 'Shaving',           count: 1   },
+    ]},
+    { top: 'Clothing', count: 155, icon: '👕', subs: [
+      { key: 'Sweatsuits & Sets', count: 85 },
+      { key: 'Shirts & Tops',     count: 14 },
+      { key: 'Pants & Bottoms',   count: 12 },
+      { key: 'Winter Gear',       count: 20 },
+      { key: 'Socks & Underwear', count: 16 },
+      { key: 'Footwear',          count: 8  },
+    ]},
+    { top: 'Bedding & Home', count: 53, icon: '🛏', subs: [
+      { key: 'Blankets & Bedding',count: 20 },
+      { key: 'Towels',            count: 8  },
+      { key: 'Kitchen & Supplies',count: 25 },
+    ]},
+    { top: 'Electronics', count: 25, icon: '🎧', subs: [
+      { key: 'Headphones & Earbuds',     count: 15 },
+      { key: 'Radios',                   count: 3  },
+      { key: 'Electronics Accessories',  count: 7  },
+    ]},
+    { top: 'Other', count: 135, icon: '📦', subs: [
+      { key: 'Tobacco',       count: 15 },
+      { key: 'Bundles',       count: 57 },
+      { key: 'Books & Cards', count: 62 },
+      { key: 'Gift Cards',    count: 1  },
+    ]},
   ];
+  // Flat subcategory list for filtering
+  var CATEGORIES = [];
+  TAXONOMY.forEach(function(g) { g.subs.forEach(function(s) { CATEGORIES.push({ key: s.key, label: s.key, count: s.count }); }); });
 
   // ─── STATE ───────────────────────────────────────────────────────────────
   var _catalog       = [];
@@ -889,11 +950,12 @@
       });
     }
 
-    // Categories (OR)
+    // Categories (OR) — match subcategory OR top_category
     if (_state.categories.length) {
       var cats = _state.categories.map(function (c) { return c.toLowerCase(); });
       result = result.filter(function (p) {
-        return p.category && cats.indexOf(p.category.toLowerCase()) !== -1;
+        return (p.category && cats.indexOf(p.category.toLowerCase()) !== -1) ||
+               (p.top_category && cats.indexOf(p.top_category.toLowerCase()) !== -1);
       });
     }
 
@@ -1060,20 +1122,34 @@
     html += '<input type="text" id="' + prefix + 'search-input" placeholder="Search products…" value="' + escapeAttr(_state.q) + '" autocomplete="off">';
     html += '</div></div>';
 
-    // Categories
+    // Categories — two-level accordion
     html += '<div class="sidebar-section">';
     html += '<div class="sidebar-label">Categories</div>';
-    html += '<div class="cat-list">';
-    for (var i = 0; i < CATEGORIES.length; i++) {
-      var cat = CATEGORIES[i];
-      var checked = _state.categories.indexOf(cat.key) !== -1 ? ' checked' : '';
-      html += '<label class="cat-item">';
-      html += '<input type="checkbox" data-cat="' + cat.key + '"' + checked + '>';
-      html += '<span class="cat-item-label">' + cat.label + '</span>';
-      html += '<span class="cat-count">' + cat.count.toLocaleString() + '</span>';
-      html += '</label>';
+    for (var gi = 0; gi < TAXONOMY.length; gi++) {
+      var grp = TAXONOMY[gi];
+      // Check if any sub in this group is selected
+      var groupActive = grp.subs.some(function(s) { return _state.categories.indexOf(s.key) !== -1; });
+      var groupOpen = groupActive ? ' open' : '';
+      html += '<details class="cat-group"' + groupOpen + '>';
+      html += '<summary class="cat-group-header">';
+      html += '<span class="cat-group-icon">' + grp.icon + '</span>';
+      html += '<span class="cat-group-name">' + grp.top + '</span>';
+      html += '<span class="cat-count">' + grp.count.toLocaleString() + '</span>';
+      html += '</summary>';
+      html += '<div class="cat-group-subs">';
+      for (var si = 0; si < grp.subs.length; si++) {
+        var sub = grp.subs[si];
+        if (!sub.count) continue;
+        var checked = _state.categories.indexOf(sub.key) !== -1 ? ' checked' : '';
+        html += '<label class="cat-item">';
+        html += '<input type="checkbox" data-cat="' + sub.key + '"' + checked + '>';
+        html += '<span class="cat-item-label">' + sub.key + '</span>';
+        html += '<span class="cat-count">' + sub.count.toLocaleString() + '</span>';
+        html += '</label>';
+      }
+      html += '</div></details>';
     }
-    html += '</div></div>';
+    html += '</div>';
 
     // Price range
     html += '<div class="sidebar-section">';
