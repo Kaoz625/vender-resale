@@ -1,0 +1,76 @@
+{
+  "site": "Plug For Inmates",
+  "slug": "plugforinmates",
+  "date": "2026-07-26",
+  "products": [
+    {
+      "name": "BGE Magazine Issue 9 - Kay Flock & Bentley Bugz",
+      "source_url": "https://plugforinmates.com/",
+      "price": 14.99,
+      "price_raw": "$14.99",
+      "image_alt": "BGE Magazine Issue 8 - GloRilla \u2014 DOC approved product for inmates",
+      "image_url": "https://hherhjgenkwvqyrckyzm.supabase.co/storage/v1/object/public/magazine-covers/bge-issue-8-glorilla.jpeg"
+    },
+    {
+      "name": "BGE Magazine Issue 8 - GloRilla",
+      "source_url": "https://plugforinmates.com/",
+      "price": 14.99,
+      "price_raw": "$14.99",
+      "image_alt": "BGE Magazine Issue 9 - K-Ca$h \u2014 DOC approved product for inmates",
+      "image_url": "https://hherhjgenkwvqyrckyzm.supabase.co/storage/v1/object/public/magazine-covers/bge-issue-9-k-cash.jpeg"
+    },
+    {
+      "name": "BGE Magazine Issue 9 - K-Ca$h",
+      "source_url": "https://plugforinmates.com/",
+      "price": 14.99,
+      "price_raw": "$14.99",
+      "image_alt": "BGE Magazine Issue 10 - Arkeino \u2014 DOC approved product for inmates",
+      "image_url": "https://hherhjgenkwvqyrckyzm.supabase.co/storage/v1/object/public/magazine-covers/bge-issue-10-arkeino.jpeg"
+    },
+    {
+      "name": "BGE Magazine Issue 10 - Arkeino",
+      "source_url": "https://plugforinmates.com/",
+      "price": 14.99,
+      "price_raw": "$14.99",
+      "image_alt": "BGE Magazine Issue 11 - Bay Swag \u2014 DOC approved product for inmates",
+      "image_url": "https://hherhjgenkwvqyrckyzm.supabase.co/storage/v1/object/public/magazine-covers/bge-issue-11-bay-swag.jpeg"
+    },
+    {
+      "name": "BGE Magazine Issue 11 - Bay Swag",
+      "source_url": "https://plugforinmates.com/",
+      "price": 14.99,
+      "price_raw": "$14.99",
+      "image_alt": "Industry Intel Vol. I - Dorian J \u2014 DOC approved product for inmates",
+      "image_url": "https://hherhjgenkwvqyrckyzm.supabase.co/storage/v1/object/public/magazine-covers/industry-intel-vol-1-dorian-j.jpeg"
+    },
+    {
+      "name": "Industry Intel Vol. I - Dorian J",
+      "source_url": "https://plugforinmates.com/",
+      "price": 14.99,
+      "price_raw": "$14.99"
+    },
+    {
+      "name": "Male Inmates Survival Kit",
+      "source_url": "https://plugforinmates.com/",
+      "price": 222.99,
+      "price_raw": "$222.99"
+    },
+    {
+      "name": "Female Inmates Survival Kit",
+      "source_url": "https://plugforinmates.com/",
+      "price": 199.99,
+      "price_raw": "$199.99"
+    },
+    {
+      "name": "Flat Shipping Rate",
+      "source_url": "https://plugforinmates.com/",
+      "price": 14.99,
+      "price_raw": "We only charge $14.99 for shipping, covering any additional shipping costs."
+    }
+  ],
+  "errors": [],
+  "pages_crawled": [
+    "https://plugforinmates.com/collections/all",
+    "https://plugforinmates.com/"
+  ]
+}

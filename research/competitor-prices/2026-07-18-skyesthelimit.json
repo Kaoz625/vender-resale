@@ -1,0 +1,32 @@
+{
+  "site": "Skye's The Limit",
+  "slug": "skyesthelimit",
+  "date": "2026-07-18",
+  "products": [
+    {
+      "name": "Skye's the Limit Book Store & Care Packages",
+      "source_url": "https://skyesthelimitcatalog.com/",
+      "image_alt": "Skye's The Limit Catalog",
+      "image_url": "https://d2j6dbq0eux0bg.cloudfront.net/images/18257138/1139526931.jpg",
+      "price": 10.0,
+      "price_raw": "We make it easy to send your loved ones packages without you having to worry about all the shopping and shipping, We only charge $10 per shipment. ($15 if you are sending perishables)."
+    },
+    {
+      "name": "Featured Products",
+      "source_url": "https://skyesthelimitcatalog.com/",
+      "image_alt": "Taster&#39;s Choice Instant Coffee Sticks     Hazelnut 16ct",
+      "image_url": "https://d2j6dbq0eux0bg.cloudfront.net/images/18257138/5038282380.jpg",
+      "price": 12.99,
+      "price_raw": "$12.99"
+    }
+  ],
+  "errors": [
+    {
+      "url": "https://skyesthelimitcatalog.com/shop/",
+      "error": "Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):\nError: Failed on navigating ACS-GOTO:\nPage.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://skyesthelimitcatalog.com/shop/\", waiting until \"domcontentloaded\"\n\n\nCode context:\n 773                                   tag=\"GOTO\",\n 774                                   params={\"url\": url},\n 775                               )\n 776                               response = None\n 777                           else:\n 778 \u2192                             raise RuntimeError(f\"Failed on navigating ACS-GOTO:\\n{str(e)}\")\n 779   \n 780                       # \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n 781                       # Walk the redirect chain.  Playwright returns only the last\n 782                       # hop, so we trace the `request.redirected_from` links until the\n 783                       # first response that differs from the final one and surface its"
+    }
+  ],
+  "pages_crawled": [
+    "https://skyesthelimitcatalog.com/"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "site": "Emma's Premium Services",
+  "slug": "emmaspremiumservices",
+  "date": "2026-07-20",
+  "products": [
+    {
+      "name": "Clothing",
+      "source_url": "https://emmaspremiumservices.com/collections/clothing",
+      "price": 12.0,
+      "price_raw": "Sale price$12.00"
+    },
+    {
+      "name": "Summer gear is here!",
+      "source_url": "https://emmaspremiumservices.com/collections/clothing",
+      "price": 14.99,
+      "price_raw": "Sale price$14.99 Regular price$17.89"
+    },
+    {
+      "name": "Electronics",
+      "source_url": "https://emmaspremiumservices.com/collections/electronics",
+      "price": 23.99,
+      "price_raw": "Sale price$23.99 Regular price$35.00"
+    }
+  ],
+  "errors": [
+    {
+      "url": "https://emmaspremiumservices.com/collections/all",
+      "error": "Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):\nError: Failed on navigating ACS-GOTO:\nPage.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://emmaspremiumservices.com/collections/all\", waiting until \"domcontentloaded\"\n\n\nCode context:\n 773                                   tag=\"GOTO\",\n 774                                   params={\"url\": url},\n 775                               )\n 776                               response = None\n 777                           else:\n 778 \u2192                             raise RuntimeError(f\"Failed on navigating ACS-GOTO:\\n{str(e)}\")\n 779   \n 780                       # \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n 781                       # Walk the redirect chain.  Playwright returns only the last\n 782                       # hop, so we trace the `request.redirected_from` links until the\n 783                       # first response that differs from the final one and surface its"
+    },
+    {
+      "url": "https://emmaspremiumservices.com/collections/food-snacks",
+      "error": "Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):\nError: Failed on navigating ACS-GOTO:\nPage.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://emmaspremiumservices.com/collections/food-snacks\", waiting until \"domcontentloaded\"\n\n\nCode context:\n 773                                   tag=\"GOTO\",\n 774                                   params={\"url\": url},\n 775                               )\n 776                               response = None\n 777                           else:\n 778 \u2192                             raise RuntimeError(f\"Failed on navigating ACS-GOTO:\\n{str(e)}\")\n 779   \n 780                       # \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n 781                       # Walk the redirect chain.  Playwright returns only the last\n 782                       # hop, so we trace the `request.redirected_from` links until the\n 783                       # first response that differs from the final one and surface its"
+    }
+  ],
+  "pages_crawled": [
+    "https://emmaspremiumservices.com/collections/hygiene",
+    "https://emmaspremiumservices.com/collections/clothing",
+    "https://emmaspremiumservices.com/collections/electronics"
+  ]
+}

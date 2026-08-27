@@ -1,0 +1,47 @@
+[
+  {
+    "name": "BGE Magazine Issue 9 - Kay Flock & Bentley Bugz",
+    "price": 14.99,
+    "image_url": "https://hherhjgenkwvqyrckyzm.supabase.co/storage/v1/object/public/magazine-covers/xxxdealers-issue-1.jpeg",
+    "source_site": "Plug For Inmates",
+    "source_url": "https://plugforinmates.com/",
+    "category": "stationery",
+    "date_found": "2026-07-02"
+  },
+  {
+    "name": "XXXDealers Magazine Issue 1",
+    "price": 19.99,
+    "image_url": "https://hherhjgenkwvqyrckyzm.supabase.co/storage/v1/object/public/magazine-covers/bge-issue-9-k-cash.jpeg",
+    "source_site": "Plug For Inmates",
+    "source_url": "https://plugforinmates.com/",
+    "category": "stationery",
+    "date_found": "2026-07-02"
+  },
+  {
+    "name": "BGE Magazine Issue 9 - K-Ca$h",
+    "price": 14.99,
+    "image_url": "https://hherhjgenkwvqyrckyzm.supabase.co/storage/v1/object/public/magazine-covers/bge-issue-10-arkeino.jpeg",
+    "source_site": "Plug For Inmates",
+    "source_url": "https://plugforinmates.com/",
+    "category": "stationery",
+    "date_found": "2026-07-02"
+  },
+  {
+    "name": "BGE Magazine Issue 10 - Arkeino",
+    "price": 14.99,
+    "image_url": "https://hherhjgenkwvqyrckyzm.supabase.co/storage/v1/object/public/magazine-covers/bge-issue-11-bay-swag.jpeg",
+    "source_site": "Plug For Inmates",
+    "source_url": "https://plugforinmates.com/",
+    "category": "stationery",
+    "date_found": "2026-07-02"
+  },
+  {
+    "name": "BGE Magazine Issue 8 - GloRilla",
+    "price": 14.99,
+    "image_url": null,
+    "source_site": "Plug For Inmates",
+    "source_url": "https://plugforinmates.com/",
+    "category": "stationery",
+    "date_found": "2026-07-02"
+  }
+]

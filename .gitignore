@@ -1,3 +1,6 @@
 .DS_Store
 .omc/state/
 *.jsonl
+
+# Agent runtime state. Session-local, regenerated.
+.omc/

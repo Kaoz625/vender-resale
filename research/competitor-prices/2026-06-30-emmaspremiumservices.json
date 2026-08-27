@@ -1,0 +1,39 @@
+{
+  "site": "Emma's Premium Services",
+  "slug": "emmaspremiumservices",
+  "date": "2026-06-30",
+  "products": [
+    {
+      "name": "All products",
+      "source_url": "https://emmaspremiumservices.com/collections/all",
+      "price": 11.0,
+      "price_raw": "Sale price$11.00"
+    },
+    {
+      "name": "Summer gear is here!",
+      "source_url": "https://emmaspremiumservices.com/collections/all",
+      "price": 10.0,
+      "price_raw": "Sale price$10.00 Regular price$12.00"
+    },
+    {
+      "name": "Clothing",
+      "source_url": "https://emmaspremiumservices.com/collections/clothing",
+      "price": 12.0,
+      "price_raw": "Sale price$12.00"
+    },
+    {
+      "name": "Electronics",
+      "source_url": "https://emmaspremiumservices.com/collections/electronics",
+      "price": 23.99,
+      "price_raw": "Sale price$23.99 Regular price$35.00"
+    }
+  ],
+  "errors": [],
+  "pages_crawled": [
+    "https://emmaspremiumservices.com/collections/all",
+    "https://emmaspremiumservices.com/collections/food-snacks",
+    "https://emmaspremiumservices.com/collections/hygiene",
+    "https://emmaspremiumservices.com/collections/clothing",
+    "https://emmaspremiumservices.com/collections/electronics"
+  ]
+}

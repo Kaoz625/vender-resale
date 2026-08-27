@@ -1,0 +1,76 @@
+{
+  "site": "Plug For Inmates",
+  "slug": "plugforinmates",
+  "date": "2026-08-02",
+  "products": [
+    {
+      "name": "Gospel & Inspirational Cassette Tape",
+      "source_url": "https://plugforinmates.com/",
+      "price": 19.99,
+      "price_raw": "$19.99",
+      "image_alt": "Old School Favorites Cassette Tape \u2014 DOC approved product for inmates",
+      "image_url": "https://plugforinmates.com/products/ent-tapes.jpg"
+    },
+    {
+      "name": "Old School Favorites Cassette Tape",
+      "source_url": "https://plugforinmates.com/",
+      "price": 19.99,
+      "price_raw": "$19.99",
+      "image_alt": "Classic R&B Cassette Tape \u2014 DOC approved product for inmates",
+      "image_url": "https://plugforinmates.com/products/ent-tapes.jpg"
+    },
+    {
+      "name": "Classic R&B Cassette Tape",
+      "source_url": "https://plugforinmates.com/",
+      "price": 19.99,
+      "price_raw": "$19.99",
+      "image_alt": "Hip-Hop Essentials Cassette Tape \u2014 DOC approved product for inmates",
+      "image_url": "https://plugforinmates.com/products/ent-tapes.jpg"
+    },
+    {
+      "name": "Hip-Hop Essentials Cassette Tape",
+      "source_url": "https://plugforinmates.com/",
+      "price": 19.99,
+      "price_raw": "$19.99",
+      "image_alt": "Ultimate Entertainment Bundle \u2014 Player + Headphones + 6 Tapes + Batteries \u2014 DOC approved product for inmates",
+      "image_url": "https://plugforinmates.com/products/ent-bundle.jpg"
+    },
+    {
+      "name": "Ultimate Entertainment Bundle \u2014 Player + Headphones + 6 Tapes + Batteries",
+      "source_url": "https://plugforinmates.com/",
+      "price": 199.99,
+      "price_raw": "$199.99",
+      "image_alt": "Custom Curated Mix Cassette Tape \u2014 DOC approved product for inmates",
+      "image_url": "https://plugforinmates.com/products/ent-tapes.jpg"
+    },
+    {
+      "name": "Custom Curated Mix Cassette Tape",
+      "source_url": "https://plugforinmates.com/",
+      "price": 24.99,
+      "price_raw": "$24.99"
+    },
+    {
+      "name": "Male Inmates Survival Kit",
+      "source_url": "https://plugforinmates.com/",
+      "price": 222.99,
+      "price_raw": "$222.99"
+    },
+    {
+      "name": "Female Inmates Survival Kit",
+      "source_url": "https://plugforinmates.com/",
+      "price": 199.99,
+      "price_raw": "$199.99"
+    },
+    {
+      "name": "Flat Shipping Rate",
+      "source_url": "https://plugforinmates.com/",
+      "price": 14.99,
+      "price_raw": "We only charge $14.99 for shipping, covering any additional shipping costs."
+    }
+  ],
+  "errors": [],
+  "pages_crawled": [
+    "https://plugforinmates.com/collections/all",
+    "https://plugforinmates.com/"
+  ]
+}

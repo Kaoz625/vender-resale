@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Miss Yummy Pen Pal Magazine - Spaghetti & Meatballs Edition (Volume 1)",
+    "price": 19.99,
+    "image_url": "https://hherhjgenkwvqyrckyzm.supabase.co/storage/v1/object/public/product-images/miss-yummy-caribbean-feast.png",
+    "source_site": "Plug For Inmates",
+    "source_url": "https://plugforinmates.com/",
+    "category": "stationery",
+    "date_found": "2026-08-06"
+  },
+  {
+    "name": "Miss Yummy Pen Pal Magazine - Caribbean Feast Edition (Volume 1)",
+    "price": 19.99,
+    "image_url": "https://hherhjgenkwvqyrckyzm.supabase.co/storage/v1/object/public/product-images/miss-yummy-egg-foo-young.png",
+    "source_site": "Plug For Inmates",
+    "source_url": "https://plugforinmates.com/",
+    "category": "stationery",
+    "date_found": "2026-08-06"
+  },
+  {
+    "name": "Miss Yummy Pen Pal Magazine - Egg Foo Young Edition (Volume 1)",
+    "price": 19.99,
+    "image_url": "https://hherhjgenkwvqyrckyzm.supabase.co/storage/v1/object/public/product-images/miss-yummy-yellow-rice.png",
+    "source_site": "Plug For Inmates",
+    "source_url": "https://plugforinmates.com/",
+    "category": "stationery",
+    "date_found": "2026-08-06"
+  },
+  {
+    "name": "Miss Yummy Pen Pal Magazine - Yellow Rice Edition (Volume 1)",
+    "price": 19.99,
+    "image_url": "https://hherhjgenkwvqyrckyzm.supabase.co/storage/v1/object/public/product-images/bundle-silver.jpg",
+    "source_site": "Plug For Inmates",
+    "source_url": "https://plugforinmates.com/",
+    "category": "food",
+    "date_found": "2026-08-06"
+  }
+]

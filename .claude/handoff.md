@@ -1,43 +1,42 @@
-Working on: Vender Resale — directive.html page built and written to disk
-Last action: Created directive.html — full Directive 4911 plain-English guide (2026-05-31)
+Working on: Vender Resale — major session complete
+Last action: Final UPC/nutrition batch pushed (commit 90632a7) — 1,597 products with full nutrition facts
 
-Next step — PRIORITY ORDER:
-  1) PAYMENT PROCESSING — site still cannot take money (biggest blocker, kills all conversions)
-     Fastest: Add PayPal checkout button to cart.html
-     Better:  Stripe Payment Links — generate per-order, email customer post-form-submit
-     Full:    Migrate to Shopify (all 4 competitors run on Shopify)
-  2) Update nav on index.html and shop.html — add "Directive 4911" link
-     index.html nav currently: Shop / How It Works / About
-     Should be:                Shop / Directive 4911 / About
-     shop.html nav currently:  Shop / How It Works / About → same fix
-  3) Add phone number to nav header (Google Voice — every competitor has one)
-  4) Add policy pages: Refund, Substitution, Shipping Schedule, Privacy, Terms of Service
-  5) Add DOCCS Inmate Lookup link to cart checkout → doccs.ny.gov
-  6) Add "Guaranteed Facility Acceptance or Full Refund" badge to hero + cart
+## What Was Built This Session
+- directive.html: plain-English Directive 4911 guide (allowed/prohibited/package rules)
+- Directive 4911 nav link on all pages + official PDF links in footers
+- Cart compliance: weight scale (30lb shipment / 40lb food monthly), blocked facilities hard stop, tobacco age-21 checkbox, electronics permit checkbox, receipt notice for items >$30
+- UPC enrichment: 1,625 products have verified UPCs, 1,597 have nutrition facts (USDA + Open Food Facts)
+- Categorization fixed: word-boundary matching, 0 mislabeled items
+- 492 products have weight_oz field for cart weight tracker
+- Perplexity price research script — finds cheapest buy links per product
+- 100+ Directive 4911 rules documented (see research output)
 
-Still-open blocker (GitHub Actions auto-deploy):
-  → https://github.com/Kaoz625/vender-resale/settings/secrets/actions
-  → CLOUDFLARE_API_TOKEN = (from ~/.credentials/api-keys.env → CLOUDFLARE_WRANGLER_OAUTH)
-  → CLOUDFLARE_ACCOUNT_ID = 4589ead053bd6785d78f5096068625ba
+## Next Directive 4911 Features (prioritized)
+1. Clothing color filter — block blue/black/gray/orange from cart
+2. Price caps — clothing $90, watch $50, audio $150, headphones $50
+3. Quantity caps — blanket max 1, sheets max 2, cigarettes max 2 cartons
+4. Deodorant stick-only warning
+5. Shoe size tolerance warning (within 1 size)
 
-Live URLs:
-  - https://vender-resale.pages.dev (always works)
-  - https://vender.nyctailblazers.com (custom domain)
+## CRITICAL MISSING — Revenue Blockers
+- PAYMENT PROCESSING — orders go via email only, no checkout
+  → Fastest: PayPal button in cart.html
+  → Better: Stripe Payment Links
+  → Best: Shopify migration
+- Phone number in nav
+- Policy pages: Refund, Substitution, Shipping Schedule, Privacy, Terms
 
-Key files:
-  - directive.html — NEW: Directive 4911 plain-English guide
-  - index.html / shop.html / product.html / cart.html
-  - js/store.js — cart + catalog logic
-  - data/catalog.json — 3,016 products
-  - .github/workflows/deploy.yml — auto-deploy on push
-  - scripts/nightly_research.py — 2am cron, price refresh + compliance check
+## Key Credentials
+- USDA_API_KEY: n8kbiAgNFDF0v2JyI4lLVtPfmIvamOBYrahY9ZLt (in ~/.credentials/api-keys.env)
+- Cloudflare Pages: vender-resale project (account 4589ead053bd6785d78f5096068625ba)
+- Formspree: https://formspree.io/f/mvzynowp
 
-Formspree: https://formspree.io/f/mvzynowp (orders → vender@nyctailblazers.com)
-Cloudflare Pages project: vender-resale (account 4589ead053bd6785d78f5096068625ba)
+## Live URLs
+- https://vender-resale.pages.dev
+- https://vender.nyctailblazers.com
 
-Competitive summary (2026-05-31):
-  STRENGTHS: best design, largest catalog (3,016), best product detail pages, nutrition facts
-  GAPS: no real payments, no BNPL, no order tracking, no phone, no reviews, no guarantee badge,
-        no bundles, no policy pages, no sort/filter, no Rikers section, no blog/SEO content
-  Biggest single gap: payment processing — without it nothing converts
-  Full prioritized roadmap: ask claude to re-run analysis or see docs/competitors.md
+## Key Files
+- index.html / shop.html / product.html / cart.html / directive.html
+- js/store.js, data/catalog.json (3,019 products), data/upc-cache.json
+- scripts/enrich_upcs.py, scripts/price_research.py, scripts/nightly_research.py
+- .github/workflows/deploy.yml (auto-deploy on push)

@@ -1,0 +1,30 @@
+{
+  "site": "Plug For Inmates",
+  "slug": "plugforinmates",
+  "date": "2026-06-05",
+  "products": [
+    {
+      "name": "Male Inmates Survival Kit",
+      "source_url": "https://plugforinmates.com/",
+      "price": 129.99,
+      "price_raw": "$129.99"
+    },
+    {
+      "name": "Female Inmates Survival Kit",
+      "source_url": "https://plugforinmates.com/",
+      "price": 129.99,
+      "price_raw": "$129.99"
+    },
+    {
+      "name": "Flat Shipping Rate",
+      "source_url": "https://plugforinmates.com/",
+      "price": 9.99,
+      "price_raw": "We only charge $9.99 for shipping, covering any additional shipping costs."
+    }
+  ],
+  "errors": [],
+  "pages_crawled": [
+    "https://plugforinmates.com/collections/all",
+    "https://plugforinmates.com/"
+  ]
+}

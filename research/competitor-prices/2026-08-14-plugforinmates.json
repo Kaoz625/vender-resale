@@ -1,0 +1,76 @@
+{
+  "site": "Plug For Inmates",
+  "slug": "plugforinmates",
+  "date": "2026-08-14",
+  "products": [
+    {
+      "name": "Miss Yummy Pen Pal Magazine - Spaghetti & Meatballs Edition (Volume 1)",
+      "source_url": "https://plugforinmates.com/",
+      "price": 19.99,
+      "price_raw": "$19.99",
+      "image_alt": "Miss Yummy Pen Pal Magazine - Caribbean Feast Edition \\(Volume 1\\) \u2014 DOC approved product for inmates",
+      "image_url": "https://hherhjgenkwvqyrckyzm.supabase.co/storage/v1/object/public/product-images/miss-yummy-caribbean-feast.png"
+    },
+    {
+      "name": "Miss Yummy Pen Pal Magazine - Caribbean Feast Edition (Volume 1)",
+      "source_url": "https://plugforinmates.com/",
+      "price": 19.99,
+      "price_raw": "$19.99",
+      "image_alt": "Miss Yummy Pen Pal Magazine - Egg Foo Young Edition \\(Volume 1\\) \u2014 DOC approved product for inmates",
+      "image_url": "https://hherhjgenkwvqyrckyzm.supabase.co/storage/v1/object/public/product-images/miss-yummy-egg-foo-young.png"
+    },
+    {
+      "name": "Miss Yummy Pen Pal Magazine - Egg Foo Young Edition (Volume 1)",
+      "source_url": "https://plugforinmates.com/",
+      "price": 19.99,
+      "price_raw": "$19.99",
+      "image_alt": "Miss Yummy Pen Pal Magazine - Yellow Rice Edition \\(Volume 1\\) \u2014 DOC approved product for inmates",
+      "image_url": "https://hherhjgenkwvqyrckyzm.supabase.co/storage/v1/object/public/product-images/miss-yummy-yellow-rice.png"
+    },
+    {
+      "name": "Miss Yummy Pen Pal Magazine - Yellow Rice Edition (Volume 1)",
+      "source_url": "https://plugforinmates.com/",
+      "price": 19.99,
+      "price_raw": "$19.99",
+      "image_alt": "Silver Protein Bundle - High-Protein Favorites \u2014 DOC approved product for inmates",
+      "image_url": "https://hherhjgenkwvqyrckyzm.supabase.co/storage/v1/object/public/product-images/bundle-silver.jpg"
+    },
+    {
+      "name": "Silver Protein Bundle - High-Protein Favorites",
+      "source_url": "https://plugforinmates.com/",
+      "price": 69.99,
+      "price_raw": "$69.99",
+      "image_alt": "Diamond Comfort Bundle - Complete Comfort \u2014 DOC approved product for inmates",
+      "image_url": "https://hherhjgenkwvqyrckyzm.supabase.co/storage/v1/object/public/product-images/bundle-diamond.jpg"
+    },
+    {
+      "name": "Diamond Comfort Bundle - Complete Comfort",
+      "source_url": "https://plugforinmates.com/",
+      "price": 149.99,
+      "price_raw": "$149.99"
+    },
+    {
+      "name": "Male Inmates Survival Kit",
+      "source_url": "https://plugforinmates.com/",
+      "price": 222.99,
+      "price_raw": "$222.99"
+    },
+    {
+      "name": "Female Inmates Survival Kit",
+      "source_url": "https://plugforinmates.com/",
+      "price": 199.99,
+      "price_raw": "$199.99"
+    },
+    {
+      "name": "Flat Shipping Rate",
+      "source_url": "https://plugforinmates.com/",
+      "price": 14.99,
+      "price_raw": "We only charge $14.99 for shipping, covering any additional shipping costs."
+    }
+  ],
+  "errors": [],
+  "pages_crawled": [
+    "https://plugforinmates.com/collections/all",
+    "https://plugforinmates.com/"
+  ]
+}

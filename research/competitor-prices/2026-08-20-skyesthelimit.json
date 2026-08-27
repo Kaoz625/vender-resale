@@ -1,0 +1,28 @@
+{
+  "site": "Skye's The Limit",
+  "slug": "skyesthelimit",
+  "date": "2026-08-20",
+  "products": [
+    {
+      "name": "Skye's the Limit Book Store & Care Packages",
+      "source_url": "https://skyesthelimitcatalog.com/",
+      "image_alt": "Skye's The Limit Catalog",
+      "image_url": "https://d2j6dbq0eux0bg.cloudfront.net/images/18257138/1139526931.jpg",
+      "price": 10.0,
+      "price_raw": "We make it easy to send your loved ones packages without you having to worry about all the shopping and shipping, We only charge $10 per shipment. ($15 if you are sending perishables)."
+    },
+    {
+      "name": "Featured Products",
+      "source_url": "https://skyesthelimitcatalog.com/",
+      "image_alt": "Taster&#39;s Choice Instant Coffee Sticks     Hazelnut 16ct",
+      "image_url": "https://d2j6dbq0eux0bg.cloudfront.net/images/18257138/5038282380.jpg",
+      "price": 12.99,
+      "price_raw": "$12.99"
+    }
+  ],
+  "errors": [],
+  "pages_crawled": [
+    "https://skyesthelimitcatalog.com/",
+    "https://skyesthelimitcatalog.com/shop/"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "site": "Plug For Inmates",
+  "slug": "plugforinmates",
+  "date": "2026-08-05",
+  "products": [
+    {
+      "name": "Silver Protein Bundle - High-Protein Favorites",
+      "source_url": "https://plugforinmates.com/",
+      "price": 69.99,
+      "price_raw": "$69.99",
+      "image_alt": "Diamond Comfort Bundle - Complete Comfort \u2014 DOC approved product for inmates",
+      "image_url": "https://hherhjgenkwvqyrckyzm.supabase.co/storage/v1/object/public/product-images/bundle-diamond.jpg"
+    },
+    {
+      "name": "Diamond Comfort Bundle - Complete Comfort",
+      "source_url": "https://plugforinmates.com/",
+      "price": 149.99,
+      "price_raw": "$149.99",
+      "image_alt": "Gold Sneaker Bundle - Best Value \u2014 DOC approved product for inmates",
+      "image_url": "https://hherhjgenkwvqyrckyzm.supabase.co/storage/v1/object/public/product-images/bundle-gold.jpg"
+    },
+    {
+      "name": "Gold Sneaker Bundle - Best Value",
+      "source_url": "https://plugforinmates.com/",
+      "price": 99.99,
+      "price_raw": "$99.99",
+      "image_alt": "Bronze Food Bundle - Everyday Favorites \u2014 DOC approved product for inmates",
+      "image_url": "https://hherhjgenkwvqyrckyzm.supabase.co/storage/v1/object/public/product-images/bundle-bronze.jpg"
+    },
+    {
+      "name": "Bronze Food Bundle - Everyday Favorites",
+      "source_url": "https://plugforinmates.com/",
+      "price": 39.99,
+      "price_raw": "$39.99",
+      "image_alt": "Jim Jones - The Landlord \\(Cassette\\) \u2014 DOC approved product for inmates",
+      "image_url": "https://plugforinmates.com/products/ent-tapes.jpg"
+    },
+    {
+      "name": "Jim Jones - The Landlord (Cassette)",
+      "source_url": "https://plugforinmates.com/",
+      "price": 6.99,
+      "price_raw": "$6.99",
+      "image_alt": "Max B & French Montana - Cosmos \\(Cassette\\) \u2014 DOC approved product for inmates",
+      "image_url": "https://plugforinmates.com/products/ent-tapes.jpg"
+    },
+    {
+      "name": "Max B & French Montana - Cosmos (Cassette)",
+      "source_url": "https://plugforinmates.com/",
+      "price": 6.99,
+      "price_raw": "$6.99"
+    },
+    {
+      "name": "Male Inmates Survival Kit",
+      "source_url": "https://plugforinmates.com/",
+      "price": 222.99,
+      "price_raw": "$222.99"
+    },
+    {
+      "name": "Female Inmates Survival Kit",
+      "source_url": "https://plugforinmates.com/",
+      "price": 199.99,
+      "price_raw": "$199.99"
+    },
+    {
+      "name": "Flat Shipping Rate",
+      "source_url": "https://plugforinmates.com/",
+      "price": 14.99,
+      "price_raw": "We only charge $14.99 for shipping, covering any additional shipping costs."
+    }
+  ],
+  "errors": [],
+  "pages_crawled": [
+    "https://plugforinmates.com/collections/all",
+    "https://plugforinmates.com/"
+  ]
+}

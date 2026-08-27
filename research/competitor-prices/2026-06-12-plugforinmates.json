@@ -1,0 +1,76 @@
+{
+  "site": "Plug For Inmates",
+  "slug": "plugforinmates",
+  "date": "2026-06-12",
+  "products": [
+    {
+      "name": "Fantasy Girls Magazine - White Edition Issue 01",
+      "source_url": "https://plugforinmates.com/",
+      "price": 19.99,
+      "price_raw": "$19.99",
+      "image_alt": "Fantasy Girls Magazine - Latin Edition Issue 01 \u2014 DOC approved product for inmates",
+      "image_url": "https://eadn-wc03-397762.nxedge.io/cdn/pub/media/catalog/product/cache/c3e17016e32b57e191b46100951f9db4/f/a/fantasy-latin-202501.jpg.webp"
+    },
+    {
+      "name": "Fantasy Girls Magazine - Latin Edition Issue 01",
+      "source_url": "https://plugforinmates.com/",
+      "price": 19.99,
+      "price_raw": "$19.99",
+      "image_alt": "Fantasy Girls Magazine - Asian Edition Issue 01 \u2014 DOC approved product for inmates",
+      "image_url": "https://eadn-wc03-397762.nxedge.io/cdn/pub/media/catalog/product/cache/c3e17016e32b57e191b46100951f9db4/f/a/fantasy-asian-202501.jpg.webp"
+    },
+    {
+      "name": "Fantasy Girls Magazine - Asian Edition Issue 01",
+      "source_url": "https://plugforinmates.com/",
+      "price": 19.99,
+      "price_raw": "$19.99",
+      "image_alt": "Fantasy Girls Magazine - Ebony Edition Issue 01 \u2014 DOC approved product for inmates",
+      "image_url": "https://eadn-wc03-397762.nxedge.io/cdn/pub/media/catalog/product/cache/c3e17016e32b57e191b46100951f9db4/f/a/fantasy-ebony-202501.jpg.webp"
+    },
+    {
+      "name": "Fantasy Girls Magazine - Ebony Edition Issue 01",
+      "source_url": "https://plugforinmates.com/",
+      "price": 19.99,
+      "price_raw": "$19.99",
+      "image_alt": "Fantasy Girls Magazine - White Edition Issue 02 \u2014 DOC approved product for inmates",
+      "image_url": "https://eadn-wc03-397762.nxedge.io/cdn/pub/media/catalog/product/cache/c3e17016e32b57e191b46100951f9db4/f/a/fantasy-white-202502.jpg.webp"
+    },
+    {
+      "name": "Fantasy Girls Magazine - White Edition Issue 02",
+      "source_url": "https://plugforinmates.com/",
+      "price": 19.99,
+      "price_raw": "$19.99",
+      "image_alt": "BGE Magazine Issue 11 - Bay Swag \u2014 DOC approved product for inmates",
+      "image_url": "https://hherhjgenkwvqyrckyzm.supabase.co/storage/v1/object/public/magazine-covers/bge-issue-11-bay-swag.jpeg"
+    },
+    {
+      "name": "BGE Magazine Issue 11 - Bay Swag",
+      "source_url": "https://plugforinmates.com/",
+      "price": 14.99,
+      "price_raw": "$14.99"
+    },
+    {
+      "name": "Male Inmates Survival Kit",
+      "source_url": "https://plugforinmates.com/",
+      "price": 129.99,
+      "price_raw": "$129.99"
+    },
+    {
+      "name": "Female Inmates Survival Kit",
+      "source_url": "https://plugforinmates.com/",
+      "price": 129.99,
+      "price_raw": "$129.99"
+    },
+    {
+      "name": "Flat Shipping Rate",
+      "source_url": "https://plugforinmates.com/",
+      "price": 9.99,
+      "price_raw": "We only charge $9.99 for shipping, covering any additional shipping costs."
+    }
+  ],
+  "errors": [],
+  "pages_crawled": [
+    "https://plugforinmates.com/collections/all",
+    "https://plugforinmates.com/"
+  ]
+}

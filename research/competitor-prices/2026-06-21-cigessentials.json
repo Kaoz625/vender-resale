@@ -1,0 +1,114 @@
+{
+  "site": "CIG Essentials",
+  "slug": "cigessentials",
+  "date": "2026-06-21",
+  "products": [
+    {
+      "name": "Bread Favorites",
+      "source_url": "https://cigessentials.com/",
+      "price": 14.49,
+      "price_raw": "$14.49  Regular price"
+    },
+    {
+      "name": "New Snack Collection",
+      "source_url": "https://cigessentials.com/",
+      "price": 17.99,
+      "price_raw": "$17.99  Regular price"
+    },
+    {
+      "name": "Speciality cheese collection",
+      "source_url": "https://cigessentials.com/",
+      "price": 15.49,
+      "price_raw": "$15.49  Regular price"
+    },
+    {
+      "name": "Chicken Collection",
+      "source_url": "https://cigessentials.com/",
+      "price": 9.99,
+      "price_raw": "$9.99  Regular price"
+    },
+    {
+      "name": "Drink Collection",
+      "source_url": "https://cigessentials.com/",
+      "price": 6.99,
+      "price_raw": "$6.99  Regular price"
+    },
+    {
+      "name": "Fruits and Vegetables",
+      "source_url": "https://cigessentials.com/",
+      "price": 4.99,
+      "price_raw": "$4.99  Regular price"
+    },
+    {
+      "name": "Condiments/Sides",
+      "source_url": "https://cigessentials.com/",
+      "price": 35.94,
+      "price_raw": "$35.94  Regular price"
+    },
+    {
+      "name": "Seafood Collection",
+      "source_url": "https://cigessentials.com/",
+      "price": 24.99,
+      "price_raw": "$24.99  Regular price"
+    },
+    {
+      "name": "All Turkey Essentials",
+      "source_url": "https://cigessentials.com/",
+      "price": 18.99,
+      "price_raw": "$18.99  Regular price"
+    },
+    {
+      "name": "Pork Collection",
+      "source_url": "https://cigessentials.com/",
+      "price": 23.99,
+      "price_raw": "~~$23.99~~ Unit price"
+    },
+    {
+      "name": "New Breakfast Favorites",
+      "source_url": "https://cigessentials.com/",
+      "price": 10.5,
+      "price_raw": "$10.50  Regular price"
+    },
+    {
+      "name": "Beef Selection",
+      "source_url": "https://cigessentials.com/",
+      "price": 29.99,
+      "price_raw": "$29.99  Regular price"
+    },
+    {
+      "name": "Chips Collection",
+      "source_url": "https://cigessentials.com/",
+      "price": 7.49,
+      "price_raw": "$7.49  Regular price"
+    },
+    {
+      "name": "vegan collection",
+      "source_url": "https://cigessentials.com/",
+      "price": 9.99,
+      "price_raw": "$9.99  Regular price"
+    },
+    {
+      "name": "Personal Essentials",
+      "source_url": "https://cigessentials.com/",
+      "price": 14.96,
+      "price_raw": "$14.96  Regular price"
+    },
+    {
+      "name": "Food Storage Collection",
+      "source_url": "https://cigessentials.com/",
+      "price": 5.0,
+      "price_raw": "$5.00  Regular price"
+    },
+    {
+      "name": "Collection:  Products",
+      "source_url": "https://cigessentials.com/collections/all",
+      "price": 8.99,
+      "price_raw": "$8.99  Regular price"
+    }
+  ],
+  "errors": [],
+  "pages_crawled": [
+    "https://cigessentials.com/",
+    "https://cigessentials.com/collections/all"
+  ]
+}
