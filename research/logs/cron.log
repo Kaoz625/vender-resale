@@ -11150,3 +11150,117 @@ Report saved to: /Users/markususche/Desktop/Vender Resale/research/2026-08-27-da
 Latest report: /Users/markususche/Desktop/Vender Resale/research/latest-report.md
 
 Done.
+
+============================================================
+Vender Resale — Nightly Research — 2026-08-28 02:00
+============================================================
+
+
+[2026-08-28 02:00] Scraping 5 competitor sites...
+[FETCH]... ↓ https://plugforinmates.com/collections/all                         
+| ✓ | ⏱: 7.91s 
+[SCRAPE].. ◆ https://plugforinmates.com/collections/all                         
+| ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://plugforinmates.com/collections/all                         
+| ✓ | ⏱: 7.99s 
+  [plugforinmates] https://plugforinmates.com/collections/all → 0 products
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[FETCH]... ↓ https://skyesthelimitcatalog.com/                                  
+| ✓ | ⏱: 17.11s 
+[SCRAPE].. ◆ https://skyesthelimitcatalog.com/                                  
+| ✓ | ⏱: 0.41s 
+[COMPLETE] ● https://skyesthelimitcatalog.com/                                  
+| ✓ | ⏱: 17.70s 
+  [skyesthelimit] https://skyesthelimitcatalog.com/ → 2 products
+[FETCH]... ↓ https://plugforinmates.com/                                        
+| ✓ | ⏱: 10.63s 
+[SCRAPE].. ◆ https://plugforinmates.com/                                        
+| ✓ | ⏱: 0.29s 
+[COMPLETE] ● https://plugforinmates.com/                                        
+| ✓ | ⏱: 10.99s 
+  [plugforinmates] https://plugforinmates.com/ → 9 products
+[FETCH]... ↓ https://cigessentials.com/                                         
+| ✓ | ⏱: 20.09s 
+[SCRAPE].. ◆ https://cigessentials.com/                                         
+| ✓ | ⏱: 0.78s 
+[COMPLETE] ● https://cigessentials.com/                                         
+| ✓ | ⏱: 20.92s 
+  [cigessentials] https://cigessentials.com/ → 16 products
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[FETCH]... ↓ https://skyesthelimitcatalog.com/shop/                             
+| ✓ | ⏱: 8.25s 
+[SCRAPE].. ◆ https://skyesthelimitcatalog.com/shop/                             
+| ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://skyesthelimitcatalog.com/shop/                             
+| ✓ | ⏱: 8.30s 
+  [skyesthelimit] https://skyesthelimitcatalog.com/shop/ → 0 products
+[FETCH]... ↓ https://cigessentials.com/collections/all                          
+| ✓ | ⏱: 5.61s 
+[SCRAPE].. ◆ https://cigessentials.com/collections/all                          
+| ✓ | ⏱: 0.20s 
+[COMPLETE] ● https://cigessentials.com/collections/all                          
+| ✓ | ⏱: 5.85s 
+  [cigessentials] https://cigessentials.com/collections/all → 1 products
+[FETCH]... ↓ https://emmaspremiumservices.com/collections/all                   
+| ✓ | ⏱: 27.53s 
+[SCRAPE].. ◆ https://emmaspremiumservices.com/collections/all                   
+| ✓ | ⏱: 0.60s 
+[COMPLETE] ● https://emmaspremiumservices.com/collections/all                   
+| ✓ | ⏱: 28.17s 
+  [emmaspremiumservices] https://emmaspremiumservices.com/collections/all → 2 products
+[FETCH]... ↓ https://nysapprovedvendor.com/                                     
+| ✓ | ⏱: 29.30s 
+[SCRAPE].. ◆ https://nysapprovedvendor.com/                                     
+| ✓ | ⏱: 0.58s 
+[COMPLETE] ● https://nysapprovedvendor.com/                                     
+| ✓ | ⏱: 29.92s 
+  [nysapprovedvendor] https://nysapprovedvendor.com/ → 79 products
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[FETCH]... ↓ https://emmaspremiumservices.com/collections/food-snacks           
+| ✓ | ⏱: 6.63s 
+[SCRAPE].. ◆ https://emmaspremiumservices.com/collections/food-snacks           
+| ✓ | ⏱: 0.31s 
+[COMPLETE] ● https://emmaspremiumservices.com/collections/food-snacks           
+| ✓ | ⏱: 6.99s 
+  [emmaspremiumservices] https://emmaspremiumservices.com/collections/food-snacks → 0 products
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[FETCH]... ↓ https://nysapprovedvendor.com/shop/                                
+| ✓ | ⏱: 11.88s 
+[SCRAPE].. ◆ https://nysapprovedvendor.com/shop/                                
+| ✓ | ⏱: 0.63s 
+[COMPLETE] ● https://nysapprovedvendor.com/shop/                                
+| ✓ | ⏱: 12.56s 
+  [nysapprovedvendor] https://nysapprovedvendor.com/shop/ → 79 products
+[FETCH]... ↓ https://emmaspremiumservices.com/collections/hygiene               
+| ✓ | ⏱: 8.12s 
+[SCRAPE].. ◆ https://emmaspremiumservices.com/collections/hygiene               
+| ✓ | ⏱: 0.21s 
+[COMPLETE] ● https://emmaspremiumservices.com/collections/hygiene               
+| ✓ | ⏱: 8.37s 
+  [emmaspremiumservices] https://emmaspremiumservices.com/collections/hygiene → 0 products
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[FETCH]... ↓ https://emmaspremiumservices.com/collections/clothing              
+| ✓ | ⏱: 10.56s 
+[SCRAPE].. ◆ https://emmaspremiumservices.com/collections/clothing              
+| ✓ | ⏱: 0.48s 
+[COMPLETE] ● https://emmaspremiumservices.com/collections/clothing              
+| ✓ | ⏱: 11.08s 
+  [emmaspremiumservices] https://emmaspremiumservices.com/collections/clothing → 2 products
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[FETCH]... ↓ https://emmaspremiumservices.com/collections/electronics           
+| ✓ | ⏱: 10.44s 
+[SCRAPE].. ◆ https://emmaspremiumservices.com/collections/electronics           
+| ✓ | ⏱: 0.45s 
+[COMPLETE] ● https://emmaspremiumservices.com/collections/electronics           
+| ✓ | ⏱: 10.93s 
+  [emmaspremiumservices] https://emmaspremiumservices.com/collections/electronics → 2 products
+
+Compliance check: ['No changes on DOCCS mail/packages page', 'Disapproved vendor list — no changes detected']
+New compliant products found: 0
+
+Report saved to: /Users/markususche/Desktop/Vender Resale/research/2026-08-28-daily-report.md
+Latest report: /Users/markususche/Desktop/Vender Resale/research/latest-report.md
+
+Done.
