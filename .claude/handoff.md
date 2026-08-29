@@ -27,8 +27,10 @@ Last action: Final UPC/nutrition batch pushed (commit 90632a7) — 1,597 product
 - Policy pages: Refund, Substitution, Shipping Schedule, Privacy, Terms
 
 ## Key Credentials
-- USDA_API_KEY: n8kbiAgNFDF0v2JyI4lLVtPfmIvamOBYrahY9ZLt (in ~/.credentials/api-keys.env)
-- Cloudflare Pages: vender-resale project (account 4589ead053bd6785d78f5096068625ba)
+- USDA_API_KEY — value lives ONLY in ~/.credentials/api-keys.env.
+  Load it with: set -a; . ~/.credentials/api-keys.env; set +a
+  NEVER write the value into this file. This repo is PUBLIC.
+- Cloudflare Pages: vender-resale project (account id: see ~/.credentials/api-keys.env)
 - Formspree: https://formspree.io/f/mvzynowp
 
 ## Live URLs
