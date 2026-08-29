@@ -1,44 +1,51 @@
-Working on: Vender Resale — major session complete
-Last action: Final UPC/nutrition batch pushed (commit 90632a7) — 1,597 products with full nutrition facts
+Working on: Vender Resale — MK-7 payment blocker (PayPal button on cart.html)
+Last action: Pushed commit 8ca9731 — PayPal Smart Buttons added to cart.html, PLACEHOLDER client ID only
 
 ## What Was Built This Session
-- directive.html: plain-English Directive 4911 guide (allowed/prohibited/package rules)
-- Directive 4911 nav link on all pages + official PDF links in footers
-- Cart compliance: weight scale (30lb shipment / 40lb food monthly), blocked facilities hard stop, tobacco age-21 checkbox, electronics permit checkbox, receipt notice for items >$30
-- UPC enrichment: 1,625 products have verified UPCs, 1,597 have nutrition facts (USDA + Open Food Facts)
-- Categorization fixed: word-boundary matching, 0 mislabeled items
-- 492 products have weight_oz field for cart weight tracker
-- Perplexity price research script — finds cheapest buy links per product
-- 100+ Directive 4911 rules documented (see research output)
+- New "Pay Online Now" section in cart.html's cart-totals panel (below Clear Cart)
+- PayPal Smart Payment Buttons (client-side SDK, no backend) loaded dynamically via JS
+- `createOrder` reads `VR.cart.total()` at click time — always charges the live
+  running total, never a hardcoded amount
+- Graceful fallback: if the SDK fails to load (placeholder key, network issue),
+  the button container shows "Online payment is not set up yet — please use
+  the order form to the right." instead of breaking the page
+- Existing mailto/Formspree email-order flow is UNTOUCHED — this is an ADD,
+  not a replacement. Email is still the only flow that actually ships an order.
 
-## Next Directive 4911 Features (prioritized)
-1. Clothing color filter — block blue/black/gray/orange from cart
-2. Price caps — clothing $90, watch $50, audio $150, headphones $50
-3. Quantity caps — blanket max 1, sheets max 2, cigarettes max 2 cartons
-4. Deodorant stick-only warning
-5. Shoe size tolerance warning (within 1 size)
+## STATUS: NOT LIVE — placeholder client ID
+- Checked `~/.credentials/api-keys.env` — no `PAYPAL_*` key exists (grep -i paypal
+  returned nothing)
+- `PAYPAL_CLIENT_ID` in cart.html (search for `PAYPAL_CLIENT_ID_PLACEHOLDER_REPLACE_BEFORE_LIVE`)
+  is a fake string, not a working credential
+- Real PayPal Business client ID needed from https://developer.paypal.com/dashboard/applications
+  before this button can take one real dollar
+- Until that key is swapped in: the SDK script tag 404s/fails as designed, the
+  fallback message shows, and no money can move through this button
 
-## CRITICAL MISSING — Revenue Blockers
-- PAYMENT PROCESSING — orders go via email only, no checkout
-  → Fastest: PayPal button in cart.html
-  → Better: Stripe Payment Links
-  → Best: Shopify migration
-- Phone number in nav
-- Policy pages: Refund, Substitution, Shipping Schedule, Privacy, Terms
+## Verified (do NOT attempt a real transaction — placeholder key can't process one)
+- Local static server (`python3 -m http.server`) + headless Chromium
+  (`playwright-pp-cli --browser chromium`, per the local-fixture exception —
+  not a live site, no login involved)
+- Seeded cart with 2 test items (2×$12.50 + 1×$7.25 = $32.25)
+- `#subtotal-display` → $32.25, `#form-summary-subtotal` → $32.25 (both correct)
+- `#paypal-button-container` → renders the fallback message after SDK load
+  fails, exactly as designed — page does not break
 
-## Key Credentials
-- USDA_API_KEY — value lives ONLY in ~/.credentials/api-keys.env.
-  Load it with: set -a; . ~/.credentials/api-keys.env; set +a
-  NEVER write the value into this file. This repo is PUBLIC.
-- Cloudflare Pages: vender-resale project (account id: see ~/.credentials/api-keys.env)
-- Formspree: https://formspree.io/f/mvzynowp
-
-## Live URLs
-- https://vender-resale.pages.dev
-- https://vender.nyctailblazers.com
+## Next Step (exact)
+1. Get real PayPal Business client ID (developer.paypal.com → My Apps & Credentials → Live)
+2. Save it to ~/.credentials/api-keys.env as PAYPAL_CLIENT_ID=... (never in this repo — public)
+3. In cart.html, replace `PAYPAL_CLIENT_ID_PLACEHOLDER_REPLACE_BEFORE_LIVE` with the real ID
+4. Test ONE real $0.01-scale transaction before telling customers it's live
+5. Still-open revenue/compliance items from prior handoff: phone number in nav,
+   Refund/Substitution/Shipping/Privacy/Terms policy pages, clothing color
+   filter, price/quantity caps (see prior handoff history in git log for full list)
 
 ## Key Files
-- index.html / shop.html / product.html / cart.html / directive.html
-- js/store.js, data/catalog.json (3,019 products), data/upc-cache.json
-- scripts/enrich_upcs.py, scripts/price_research.py, scripts/nightly_research.py
-- .github/workflows/deploy.yml (auto-deploy on push)
+- cart.html — PayPal section: CSS `.paypal-section*` (~line 415), HTML
+  `#paypal-button-container` (~line 745), JS `loadPayPalSdk`/`renderPayPalButtons`
+  (near the "Subscribe to cart changes" block, before "Initial render")
+- js/store.js — VR.cart.total() is the source of truth for the charge amount
+
+## Blockers
+Real PayPal Business client ID — needs Markus's PayPal account, cannot be
+generated by an agent.
