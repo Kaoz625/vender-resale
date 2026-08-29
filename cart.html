@@ -413,6 +413,34 @@
     }
     .clear-cart-link:hover { color: #e05a5a; }
 
+    /* ─── PAYPAL (ONLINE PAYMENT) ─── */
+    .paypal-section {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+    .paypal-section-label {
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-align: center;
+      margin: 0 0 0.7rem;
+    }
+    .paypal-section-note {
+      font-size: 0.72rem;
+      color: var(--muted);
+      text-align: center;
+      margin: 0.6rem 0 0;
+      line-height: 1.4;
+    }
+    .paypal-fallback-msg {
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-align: center;
+      padding: 0.6rem 0.5rem;
+      background: rgba(255,255,255,0.03);
+      border-radius: 6px;
+    }
+
     /* ─── ORDER FORM CARD ─── */
     .order-card {
       background: var(--navy2);
@@ -740,6 +768,16 @@
           </div>
           <p class="totals-shipping">Shipping: Calculated at confirmation</p>
           <button class="clear-cart-link" id="clear-cart-btn" type="button">Clear Cart</button>
+
+          <!-- PAYPAL — pay online now, in addition to the email order form -->
+          <div class="paypal-section">
+            <p class="paypal-section-label">Pay Online Now</p>
+            <div id="paypal-button-container"><!-- PayPal Smart Buttons render here via JS --></div>
+            <p class="paypal-section-note">
+              Paying online does not send your delivery details. Please also submit
+              the order form to the right so we know where to ship.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -879,6 +917,7 @@
       var weightTracker     = document.getElementById('weight-tracker');
       var weightTrackerBody = document.getElementById('weight-tracker-body');
       var complianceNotices = document.getElementById('compliance-notices');
+      var paypalContainer   = document.getElementById('paypal-button-container');
 
       var _toastTimer = null;
 
@@ -1450,6 +1489,83 @@
         complianceNotices.innerHTML = '';
       });
 
+      // ─── PAYPAL — pay online, in ADDITION to the mailto/Formspree email flow ──
+      // above. Email order requests keep working untouched; this is a second,
+      // faster way to pay that charges the cart's live running total.
+      //
+      // *** PLACEHOLDER CLIENT ID — NOT A REAL PAYPAL KEY ***
+      // This is not a working PayPal account. Replace it with the real Business
+      // client ID from https://developer.paypal.com/dashboard/applications
+      // before this button can take a single real dollar. Until then the SDK
+      // load will fail (expected) and the fallback message below shows instead,
+      // and the email order form remains the only way an order actually goes out.
+      var PAYPAL_CLIENT_ID = 'PAYPAL_CLIENT_ID_PLACEHOLDER_REPLACE_BEFORE_LIVE';
+
+      var _paypalButtonsRendered = false;
+
+      function paypalShowFallback(message) {
+        if (!paypalContainer) return;
+        paypalContainer.innerHTML = '<p class="paypal-fallback-msg">' + escHtml(message) + '</p>';
+      }
+
+      function renderPayPalButtons() {
+        if (_paypalButtonsRendered || !paypalContainer) return;
+        if (typeof paypal === 'undefined' || !paypal.Buttons) {
+          paypalShowFallback('Online payment is not set up yet — please use the order form to the right.');
+          return;
+        }
+
+        try {
+          paypal.Buttons({
+            style: { layout: 'vertical', color: 'gold', shape: 'rect', label: 'paypal' },
+
+            // Amount is read fresh at click time, so it always matches the
+            // cart's current running total (VR.cart.total()), never a
+            // hardcoded number.
+            createOrder: function (data, actions) {
+              var total = VR.cart.total();
+              if (!total || total <= 0) {
+                showPageToast('Your cart is empty.');
+                return Promise.reject(new Error('Empty cart'));
+              }
+              return actions.order.create({
+                purchase_units: [{
+                  amount: { value: total.toFixed(2), currency_code: 'USD' }
+                }]
+              });
+            },
+
+            onApprove: function (data, actions) {
+              return actions.order.capture().then(function () {
+                showPageToast('Payment received — thank you! Please still submit the order form so we know where to ship.');
+              });
+            },
+
+            onError: function () {
+              showPageToast('PayPal could not process that. Please try again, or use the order form below.');
+            }
+          }).render('#paypal-button-container').then(function () {
+            _paypalButtonsRendered = true;
+          }).catch(function () {
+            paypalShowFallback('Online payment is temporarily unavailable — please use the order form to the right.');
+          });
+        } catch (e) {
+          paypalShowFallback('Online payment is temporarily unavailable — please use the order form to the right.');
+        }
+      }
+
+      function loadPayPalSdk() {
+        if (!paypalContainer) return;
+        var script = document.createElement('script');
+        script.src = 'https://www.paypal.com/sdk/js?client-id=' +
+          encodeURIComponent(PAYPAL_CLIENT_ID) + '&currency=USD&intent=capture';
+        script.onload  = renderPayPalButtons;
+        script.onerror = function () {
+          paypalShowFallback('Online payment is not set up yet — please use the order form to the right.');
+        };
+        document.head.appendChild(script);
+      }
+
       // ─── Initial render ───────────────────────────────────────────────────────
       // Ensure catalog is loaded before first weight render
       VR.getCatalog().then(function () {
@@ -1457,6 +1573,8 @@
       }).catch(function () {
         renderCart(); // render cart anyway even if catalog fails
       });
+
+      loadPayPalSdk();
 
     }());
   </script>
