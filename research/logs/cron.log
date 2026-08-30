@@ -11376,3 +11376,161 @@ Report saved to: /Users/markususche/Desktop/Vender Resale/research/2026-08-29-da
 Latest report: /Users/markususche/Desktop/Vender Resale/research/latest-report.md
 
 Done.
+
+============================================================
+Vender Resale — Nightly Research — 2026-08-30 02:00
+============================================================
+
+
+[2026-08-30 02:00] Scraping 5 competitor sites...
+[FETCH]... ↓ https://plugforinmates.com/collections/all                         
+| ✓ | ⏱: 13.38s 
+[SCRAPE].. ◆ https://plugforinmates.com/collections/all                         
+| ✓ | ⏱: 0.25s 
+[COMPLETE] ● https://plugforinmates.com/collections/all                         
+| ✓ | ⏱: 14.73s 
+  [plugforinmates] https://plugforinmates.com/collections/all → 0 products
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[FETCH]... ↓ https://skyesthelimitcatalog.com/                                  
+| ✓ | ⏱: 25.73s 
+[SCRAPE].. ◆ https://skyesthelimitcatalog.com/                                  
+| ✓ | ⏱: 2.08s 
+[COMPLETE] ● https://skyesthelimitcatalog.com/                                  
+| ✓ | ⏱: 28.17s 
+  [skyesthelimit] https://skyesthelimitcatalog.com/ → 2 products
+[FETCH]... ↓ https://plugforinmates.com/                                        
+| ✓ | ⏱: 15.21s 
+[SCRAPE].. ◆ https://plugforinmates.com/                                        
+| ✓ | ⏱: 0.65s 
+[COMPLETE] ● https://plugforinmates.com/                                        
+| ✓ | ⏱: 16.01s 
+  [plugforinmates] https://plugforinmates.com/ → 9 products
+[FETCH]... ↓ https://cigessentials.com/                                         
+| ✓ | ⏱: 37.98s 
+[SCRAPE].. ◆ https://cigessentials.com/                                         
+| ✓ | ⏱: 3.56s 
+[COMPLETE] ● https://cigessentials.com/                                         
+| ✓ | ⏱: 41.94s 
+  [cigessentials] https://cigessentials.com/ → 16 products
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[FETCH]... ↓ https://emmaspremiumservices.com/collections/all                   
+| ✓ | ⏱: 50.76s 
+[SCRAPE].. ◆ https://emmaspremiumservices.com/collections/all                   
+| ✓ | ⏱: 3.10s 
+[COMPLETE] ● https://emmaspremiumservices.com/collections/all                   
+| ✓ | ⏱: 54.04s 
+  [emmaspremiumservices] https://emmaspremiumservices.com/collections/all → 2 products
+[FETCH]... ↓ https://cigessentials.com/collections/all                          
+| ✓ | ⏱: 16.09s 
+[SCRAPE].. ◆ https://cigessentials.com/collections/all                          
+| ✓ | ⏱: 1.20s 
+[COMPLETE] ● https://cigessentials.com/collections/all                          
+| ✓ | ⏱: 17.41s 
+  [cigessentials] https://cigessentials.com/collections/all → 1 products
+[ANTIBOT]. ℹ https://skyesthelimitcatalog.com/shop/             | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://skyesthelimitcatalog.com/shop/", waiting until 
+"domcontentloaded"
+ 
+[ERROR]... × https://skyesthelimitcatalog.com/shop/             | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://skyesthelimitcatalog.com/shop/", waiting until 
+"domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [skyesthelimit] FAIL https://skyesthelimitcatalog.com/shop/: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://skyesthelimitcatalog.com/shop/", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+[FETCH]... ↓ https://nysapprovedvendor.com/                                     
+| ✓ | ⏱: 61.05s 
+[SCRAPE].. ◆ https://nysapprovedvendor.com/                                     
+| ✓ | ⏱: 2.40s 
+[COMPLETE] ● https://nysapprovedvendor.com/                                     
+| ✓ | ⏱: 63.70s 
+  [nysapprovedvendor] https://nysapprovedvendor.com/ → 79 products
+[FETCH]... ↓ https://emmaspremiumservices.com/collections/food-snacks           
+| ✓ | ⏱: 17.63s 
+[SCRAPE].. ◆ https://emmaspremiumservices.com/collections/food-snacks           
+| ✓ | ⏱: 1.26s 
+[COMPLETE] ● https://emmaspremiumservices.com/collections/food-snacks           
+| ✓ | ⏱: 19.14s 
+  [emmaspremiumservices] https://emmaspremiumservices.com/collections/food-snacks → 0 products
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[FETCH]... ↓ https://emmaspremiumservices.com/collections/hygiene               
+| ✓ | ⏱: 17.88s 
+[SCRAPE].. ◆ https://emmaspremiumservices.com/collections/hygiene               
+| ✓ | ⏱: 1.50s 
+[COMPLETE] ● https://emmaspremiumservices.com/collections/hygiene               
+| ✓ | ⏱: 19.55s 
+  [emmaspremiumservices] https://emmaspremiumservices.com/collections/hygiene → 0 products
+[FETCH]... ↓ https://nysapprovedvendor.com/shop/                                
+| ✓ | ⏱: 31.75s 
+[SCRAPE].. ◆ https://nysapprovedvendor.com/shop/                                
+| ✓ | ⏱: 2.76s 
+[COMPLETE] ● https://nysapprovedvendor.com/shop/                                
+| ✓ | ⏱: 34.72s 
+  [nysapprovedvendor] https://nysapprovedvendor.com/shop/ → 79 products
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[FETCH]... ↓ https://emmaspremiumservices.com/collections/clothing              
+| ✓ | ⏱: 22.41s 
+[SCRAPE].. ◆ https://emmaspremiumservices.com/collections/clothing              
+| ✓ | ⏱: 2.18s 
+[COMPLETE] ● https://emmaspremiumservices.com/collections/clothing              
+| ✓ | ⏱: 24.74s 
+  [emmaspremiumservices] https://emmaspremiumservices.com/collections/clothing → 2 products
+[FETCH]... ↓ https://emmaspremiumservices.com/collections/electronics           
+| ✓ | ⏱: 16.31s 
+[SCRAPE].. ◆ https://emmaspremiumservices.com/collections/electronics           
+| ✓ | ⏱: 1.51s 
+[COMPLETE] ● https://emmaspremiumservices.com/collections/electronics           
+| ✓ | ⏱: 17.91s 
+  [emmaspremiumservices] https://emmaspremiumservices.com/collections/electronics → 2 products
+
+Compliance check: ['No changes on DOCCS mail/packages page', 'Disapproved vendor list — no changes detected']
+New compliant products found: 0
+
+Report saved to: /Users/markususche/Desktop/Vender Resale/research/2026-08-30-daily-report.md
+Latest report: /Users/markususche/Desktop/Vender Resale/research/latest-report.md
+
+Done.
