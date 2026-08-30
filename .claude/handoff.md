@@ -1,3 +1,27 @@
+# Vender Resale handoff
+
+Working on: nothing in flight. The nightly research cron's 30 Aug run was sitting
+uncommitted; it is saved.
+Last action: `1205e74` pushed — 111 products across five competitors, no DOCCS
+compliance changes. Data only, no code touched.
+Next step: `cd ~/Desktop/"Vender Resale" && git status --short`  (expect empty; the
+cron writes a new report every night at 02:00 and nothing commits it on its own)
+Key files: `research/2026-08-30-daily-report.md`, `research/competitor-prices/*.json`,
+`research/.state.json`, `research/logs/cron.log`
+Blockers: none here. MK-7 below is still open and is Markus's — the PayPal button
+is live with a PLACEHOLDER client ID and cannot take money until he pastes the
+real one in.
+
+## The cron leaves work behind every night
+
+`research/` is committed by hand. The 28th and 29th were saved by earlier
+sessions ("Save the 28 Aug competitor price run", "Save the 29 Aug ..."), the
+30th was not, and it showed up as 14 dirty files. Scanned for keys/tokens in the
+report, the five price files and the cron log before committing — clean.
+
+---
+
+## Earlier
 Working on: Vender Resale — MK-7 payment blocker (PayPal button on cart.html)
 Last action: Pushed commit 8ca9731 — PayPal Smart Buttons added to cart.html, PLACEHOLDER client ID only
 
