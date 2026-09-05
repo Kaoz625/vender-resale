@@ -1,7 +1,7 @@
 {
   "site": "CIG Essentials",
   "slug": "cigessentials",
-  "date": "2026-09-05",
+  "date": "2026-09-03",
   "products": [
     {
       "name": "Fruits and Vegetables",
@@ -18,8 +18,8 @@
     {
       "name": "Chicken Collection",
       "source_url": "https://cigessentials.com/",
-      "price": 28.98,
-      "price_raw": "$28.98  Regular price"
+      "price": 9.99,
+      "price_raw": "$9.99  Regular price"
     },
     {
       "name": "New Snack Collection",
@@ -54,8 +54,8 @@
     {
       "name": "Seafood Collection",
       "source_url": "https://cigessentials.com/",
-      "price": 15.99,
-      "price_raw": "$15.99  Regular price"
+      "price": 4.99,
+      "price_raw": "$4.99  Regular price"
     },
     {
       "name": "All Turkey Essentials",

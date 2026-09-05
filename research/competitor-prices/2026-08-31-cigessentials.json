@@ -1,7 +1,7 @@
 {
   "site": "CIG Essentials",
   "slug": "cigessentials",
-  "date": "2026-09-05",
+  "date": "2026-08-31",
   "products": [
     {
       "name": "Fruits and Vegetables",
@@ -12,14 +12,14 @@
     {
       "name": "Bread Favorites",
       "source_url": "https://cigessentials.com/",
-      "price": 14.99,
-      "price_raw": "$14.99  Regular price"
+      "price": 7.99,
+      "price_raw": "$7.99  Regular price"
     },
     {
       "name": "Chicken Collection",
       "source_url": "https://cigessentials.com/",
-      "price": 28.98,
-      "price_raw": "$28.98  Regular price"
+      "price": 6.99,
+      "price_raw": "$6.99  Regular price"
     },
     {
       "name": "New Snack Collection",
@@ -60,8 +60,8 @@
     {
       "name": "All Turkey Essentials",
       "source_url": "https://cigessentials.com/",
-      "price": 18.99,
-      "price_raw": "$18.99  Regular price"
+      "price": 6.99,
+      "price_raw": "$6.99  Regular price"
     },
     {
       "name": "Pork Collection",

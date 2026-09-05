@@ -1,14 +1,14 @@
 # Vender Resale — Daily Research Report
-**Date:** 2026-09-05  
-**Generated:** 2026-09-05 02:00
+**Date:** 2026-09-04  
+**Generated:** 2026-09-04 02:00
 
 ---
 
 ## Compliance Check
-- DOCCS pages checked: 2026-09-05 02:00
-- Changes detected: No
+- DOCCS pages checked: 2026-09-04 02:00
+- Changes detected: **YES — ACTION REQUIRED**
 
-- No changes on DOCCS mail/packages page
+- DOCCS mail/packages page content changed — review immediately
 - Disapproved vendor list — no changes detected
 
 ---
@@ -19,11 +19,11 @@
 ### Emma's Premium Services
 - Products found: 6
 - Errors: 0
-- Price range: $8.79 – $77.00
+- Price range: $12.00 – $77.00
 - Sample products:
   - All products — $26.99
   - [Product's name](https://emmaspremiumservices.com/collections/all#) — $77.00
-  - All Clothing — $8.79
+  - All Clothing — $12.00
   - [Product's name](https://emmaspremiumservices.com/collections/clothing#) — $77.00
   - Electronics — $23.99
 
@@ -62,7 +62,7 @@
 
 ### Skye's The Limit
 - Products found: 2
-- Errors: 0
+- Errors: 1
 - Price range: $10.00 – $12.99
 - Sample products:
   - Skye's the Limit Catalog & Care Packages — $10.00
@@ -78,4 +78,5 @@ No new compliant products identified today.
 ---
 
 ## Action Items
+- [ ] **URGENT: Review DOCCS compliance changes — check what changed**
 - [ ] Check pricing vs competitors and adjust as needed

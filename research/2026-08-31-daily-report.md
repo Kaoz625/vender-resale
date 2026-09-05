@@ -1,11 +1,11 @@
 # Vender Resale — Daily Research Report
-**Date:** 2026-09-05  
-**Generated:** 2026-09-05 02:00
+**Date:** 2026-08-31  
+**Generated:** 2026-08-31 02:00
 
 ---
 
 ## Compliance Check
-- DOCCS pages checked: 2026-09-05 02:00
+- DOCCS pages checked: 2026-08-31 02:00
 - Changes detected: No
 
 - No changes on DOCCS mail/packages page
@@ -14,17 +14,15 @@
 ---
 
 ## Competitor Price Scrape
-**Total products scraped:** 113
+**Total products scraped:** 31
 
 ### Emma's Premium Services
-- Products found: 6
-- Errors: 0
-- Price range: $8.79 – $77.00
+- Products found: 3
+- Errors: 1
+- Price range: $12.00 – $23.99
 - Sample products:
-  - All products — $26.99
-  - [Product's name](https://emmaspremiumservices.com/collections/all#) — $77.00
-  - All Clothing — $8.79
-  - [Product's name](https://emmaspremiumservices.com/collections/clothing#) — $77.00
+  - Clothing — $12.00
+  - Recently Viewed — $14.99
   - Electronics — $23.99
 
 ### Plug For Inmates
@@ -39,15 +37,8 @@
   - Silver Protein Bundle - High-Protein Favorites — $69.99
 
 ### NYS Approved Vendor
-- Products found: 79
-- Errors: 0
-- Price range: $2.99 – $88.99
-- Sample products:
-  - Estimated total — $35.00
-  - [ Hardwood Smoked Pulled Chicken, 16oz ](https://nysapprovedvendor.com/products/hardwood-smoked-pulled-chicken-16oz) — $17.99
-  - [ Hardwood Smoked Pulled Pork, 16oz ](https://nysapprovedvendor.com/products/hardwood-smoked-pulled-pork-16oz) — $17.99
-  - [ Sous Vide Turkey Breast Tenderloins, 16oz ](https://nysapprovedvendor.com/products/sous-vide-turkey-breast-tenderloins-16oz) — $17.99
-  - [ Sous Vide Chicken Thighs, 16oz ](https://nysapprovedvendor.com/products/sous-vide-chicken-thighs-16oz) — $17.99
+- Products found: 0
+- Errors: 2
 
 ### CIG Essentials
 - Products found: 17
@@ -55,14 +46,14 @@
 - Price range: $4.59 – $55.00
 - Sample products:
   - Fruits and Vegetables — $5.00
-  - Bread Favorites — $14.99
-  - Chicken Collection — $28.98
+  - Bread Favorites — $7.99
+  - Chicken Collection — $6.99
   - New Snack Collection — $9.99
   - Speciality cheese collection — $15.49
 
 ### Skye's The Limit
 - Products found: 2
-- Errors: 0
+- Errors: 1
 - Price range: $10.00 – $12.99
 - Sample products:
   - Skye's the Limit Catalog & Care Packages — $10.00

@@ -1,7 +1,7 @@
 {
   "site": "Emma's Premium Services",
   "slug": "emmaspremiumservices",
-  "date": "2026-09-05",
+  "date": "2026-09-02",
   "products": [
     {
       "name": "All products",
@@ -18,8 +18,8 @@
     {
       "name": "All Clothing",
       "source_url": "https://emmaspremiumservices.com/collections/clothing",
-      "price": 8.79,
-      "price_raw": "Sale price$8.79 Regular price$16.49"
+      "price": 17.0,
+      "price_raw": "Sale priceFrom $17.00"
     },
     {
       "name": "[Product's name](https://emmaspremiumservices.com/collections/clothing#)",

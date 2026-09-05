@@ -1,11 +1,11 @@
 # Vender Resale — Daily Research Report
-**Date:** 2026-09-05  
-**Generated:** 2026-09-05 02:00
+**Date:** 2026-09-01  
+**Generated:** 2026-09-01 02:00
 
 ---
 
 ## Compliance Check
-- DOCCS pages checked: 2026-09-05 02:00
+- DOCCS pages checked: 2026-09-01 02:00
 - Changes detected: No
 
 - No changes on DOCCS mail/packages page
@@ -14,17 +14,16 @@
 ---
 
 ## Competitor Price Scrape
-**Total products scraped:** 113
+**Total products scraped:** 111
 
 ### Emma's Premium Services
-- Products found: 6
+- Products found: 4
 - Errors: 0
-- Price range: $8.79 – $77.00
+- Price range: $10.00 – $26.99
 - Sample products:
   - All products — $26.99
-  - [Product's name](https://emmaspremiumservices.com/collections/all#) — $77.00
-  - All Clothing — $8.79
-  - [Product's name](https://emmaspremiumservices.com/collections/clothing#) — $77.00
+  - Recently Viewed — $10.00
+  - Clothing — $12.00
   - Electronics — $23.99
 
 ### Plug For Inmates
@@ -55,8 +54,8 @@
 - Price range: $4.59 – $55.00
 - Sample products:
   - Fruits and Vegetables — $5.00
-  - Bread Favorites — $14.99
-  - Chicken Collection — $28.98
+  - Bread Favorites — $7.99
+  - Chicken Collection — $9.99
   - New Snack Collection — $9.99
   - Speciality cheese collection — $15.49
 

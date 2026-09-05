@@ -1,11 +1,11 @@
 # Vender Resale — Daily Research Report
-**Date:** 2026-09-05  
-**Generated:** 2026-09-05 02:00
+**Date:** 2026-09-02  
+**Generated:** 2026-09-02 02:00
 
 ---
 
 ## Compliance Check
-- DOCCS pages checked: 2026-09-05 02:00
+- DOCCS pages checked: 2026-09-02 02:00
 - Changes detected: No
 
 - No changes on DOCCS mail/packages page
@@ -19,11 +19,11 @@
 ### Emma's Premium Services
 - Products found: 6
 - Errors: 0
-- Price range: $8.79 – $77.00
+- Price range: $17.00 – $77.00
 - Sample products:
   - All products — $26.99
   - [Product's name](https://emmaspremiumservices.com/collections/all#) — $77.00
-  - All Clothing — $8.79
+  - All Clothing — $17.00
   - [Product's name](https://emmaspremiumservices.com/collections/clothing#) — $77.00
   - Electronics — $23.99
 
@@ -56,7 +56,7 @@
 - Sample products:
   - Fruits and Vegetables — $5.00
   - Bread Favorites — $14.99
-  - Chicken Collection — $28.98
+  - Chicken Collection — $9.99
   - New Snack Collection — $9.99
   - Speciality cheese collection — $15.49
 
