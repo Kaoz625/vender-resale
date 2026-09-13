@@ -12444,3 +12444,2222 @@ Report saved to: /Users/markususche/Desktop/Vender Resale/research/2026-09-05-da
 Latest report: /Users/markususche/Desktop/Vender Resale/research/latest-report.md
 
 Done.
+
+============================================================
+Vender Resale — Nightly Research — 2026-09-06 02:51
+============================================================
+
+
+[2026-09-06 02:51] Scraping 5 competitor sites...
+[ANTIBOT]. ℹ https://cigessentials.com/                         | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://cigessentials.com/", waiting until "domcontentloaded"
+ 
+[ERROR]... × https://cigessentials.com/                         | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://cigessentials.com/", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [cigessentials] FAIL https://cigessentials.com/: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://cigessentials.com/", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+[ANTIBOT]. ℹ https://emmaspremiumservices.com/collections/all   | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/all", waiting 
+until "domcontentloaded"
+ 
+[ERROR]... × https://emmaspremiumservices.com/collections/all   | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/all", waiting 
+until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [emmaspremiumservices] FAIL https://emmaspremiumservices.com/collections/all: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/all", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+[ANTIBOT]. ℹ https://skyesthelimitcatalog.com/                  | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://skyesthelimitcatalog.com/", waiting until 
+"domcontentloaded"
+ 
+[ERROR]... × https://skyesthelimitcatalog.com/                  | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://skyesthelimitcatalog.com/", waiting until 
+"domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [skyesthelimit] FAIL https://skyesthelimitcatalog.com/: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://skyesthelimitcatalog.com/", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+[ANTIBOT]. ℹ https://nysapprovedvendor.com/                     | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://nysapprovedvendor.com/", waiting until 
+"domcontentloaded"
+ 
+[ERROR]... × https://nysapprovedvendor.com/                     | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://nysapprovedvendor.com/", waiting until 
+"domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [nysapprovedvendor] FAIL https://nysapprovedvendor.com/: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://nysapprovedvendor.com/", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+[FETCH]... ↓ https://plugforinmates.com/collections/all                         
+| ✓ | ⏱: 224.00s 
+[SCRAPE].. ◆ https://plugforinmates.com/collections/all                         
+| ✓ | ⏱: 0.70s 
+[COMPLETE] ● https://plugforinmates.com/collections/all                         
+| ✓ | ⏱: 226.99s 
+  [plugforinmates] https://plugforinmates.com/collections/all → 0 products
+[ANTIBOT]. ℹ https://emmaspremiumser...collections/food-snacks  | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/food-snacks", 
+waiting until "domcontentloaded"
+ 
+[ERROR]... × https://emmaspremiumser...collections/food-snacks  | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/food-snacks", 
+waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [emmaspremiumservices] FAIL https://emmaspremiumservices.com/collections/food-snacks: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/food-snacks", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+[ANTIBOT]. ℹ https://cigessentials.com/collections/all          | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://cigessentials.com/collections/all", waiting until 
+"domcontentloaded"
+ 
+[ERROR]... × https://cigessentials.com/collections/all          | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://cigessentials.com/collections/all", waiting until 
+"domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [cigessentials] FAIL https://cigessentials.com/collections/all: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://cigessentials.com/collections/all", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+[ANTIBOT]. ℹ https://nysapprovedvendor.com/shop/                | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://nysapprovedvendor.com/shop/", waiting until 
+"domcontentloaded"
+ 
+[ERROR]... × https://nysapprovedvendor.com/shop/                | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://nysapprovedvendor.com/shop/", waiting until 
+"domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [nysapprovedvendor] FAIL https://nysapprovedvendor.com/shop/: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://nysapprovedvendor.com/shop/", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+[FETCH]... ↓ https://skyesthelimitcatalog.com/shop/                             
+| ✓ | ⏱: 77.85s 
+[SCRAPE].. ◆ https://skyesthelimitcatalog.com/shop/                             
+| ✓ | ⏱: 0.02s 
+[COMPLETE] ● https://skyesthelimitcatalog.com/shop/                             
+| ✓ | ⏱: 80.00s 
+  [skyesthelimit] https://skyesthelimitcatalog.com/shop/ → 0 products
+[ANTIBOT]. ℹ https://emmaspremiumser...com/collections/hygiene  | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/hygiene", 
+waiting until "domcontentloaded"
+ 
+[ERROR]... × https://emmaspremiumser...com/collections/hygiene  | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/hygiene", 
+waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [emmaspremiumservices] FAIL https://emmaspremiumservices.com/collections/hygiene: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/hygiene", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+[ANTIBOT]. ℹ https://emmaspremiumser...om/collections/clothing  | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/clothing", 
+waiting until "domcontentloaded"
+ 
+[ERROR]... × https://emmaspremiumser...om/collections/clothing  | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/clothing", 
+waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [emmaspremiumservices] FAIL https://emmaspremiumservices.com/collections/clothing: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/clothing", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[FETCH]... ↓ https://plugforinmates.com/                                        
+| ✓ | ⏱: 172.31s 
+[SCRAPE].. ◆ https://plugforinmates.com/                                        
+| ✓ | ⏱: 8.56s 
+[COMPLETE] ● https://plugforinmates.com/                                        
+| ✓ | ⏱: 181.98s 
+  [plugforinmates] https://plugforinmates.com/ → 9 products
+[ANTIBOT]. ℹ https://emmaspremiumser...collections/electronics  | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/electronics", 
+waiting until "domcontentloaded"
+ 
+[ERROR]... × https://emmaspremiumser...collections/electronics  | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/electronics", 
+waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [emmaspremiumservices] FAIL https://emmaspremiumservices.com/collections/electronics: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/electronics", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+
+Compliance check: ['No changes on DOCCS mail/packages page', 'Disapproved vendor list — no changes detected']
+New compliant products found: 0
+
+Report saved to: /Users/markususche/Desktop/Vender Resale/research/2026-09-06-daily-report.md
+Latest report: /Users/markususche/Desktop/Vender Resale/research/latest-report.md
+
+Done.
+
+============================================================
+Vender Resale — Nightly Research — 2026-09-07 02:00
+============================================================
+
+
+[2026-09-07 02:00] Scraping 5 competitor sites...
+[FETCH]... ↓ https://plugforinmates.com/collections/all                         
+| ✓ | ⏱: 10.85s 
+[SCRAPE].. ◆ https://plugforinmates.com/collections/all                         
+| ✓ | ⏱: 0.22s 
+[COMPLETE] ● https://plugforinmates.com/collections/all                         
+| ✓ | ⏱: 11.18s 
+  [plugforinmates] https://plugforinmates.com/collections/all → 0 products
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[FETCH]... ↓ https://plugforinmates.com/                                        
+| ✓ | ⏱: 10.96s 
+[SCRAPE].. ◆ https://plugforinmates.com/                                        
+| ✓ | ⏱: 0.40s 
+[COMPLETE] ● https://plugforinmates.com/                                        
+| ✓ | ⏱: 11.52s 
+  [plugforinmates] https://plugforinmates.com/ → 9 products
+[FETCH]... ↓ https://skyesthelimitcatalog.com/                                  
+| ✓ | ⏱: 23.64s 
+[SCRAPE].. ◆ https://skyesthelimitcatalog.com/                                  
+| ✓ | ⏱: 0.69s 
+[COMPLETE] ● https://skyesthelimitcatalog.com/                                  
+| ✓ | ⏱: 24.45s 
+  [skyesthelimit] https://skyesthelimitcatalog.com/ → 2 products
+[FETCH]... ↓ https://cigessentials.com/                                         
+| ✓ | ⏱: 27.36s 
+[SCRAPE].. ◆ https://cigessentials.com/                                         
+| ✓ | ⏱: 1.77s 
+[COMPLETE] ● https://cigessentials.com/                                         
+| ✓ | ⏱: 29.30s 
+  [cigessentials] https://cigessentials.com/ → 16 products
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[FETCH]... ↓ https://emmaspremiumservices.com/collections/all                   
+| ✓ | ⏱: 37.51s 
+[SCRAPE].. ◆ https://emmaspremiumservices.com/collections/all                   
+| ✓ | ⏱: 0.68s 
+[COMPLETE] ● https://emmaspremiumservices.com/collections/all                   
+| ✓ | ⏱: 38.27s 
+  [emmaspremiumservices] https://emmaspremiumservices.com/collections/all → 2 products
+[FETCH]... ↓ https://cigessentials.com/collections/all                          
+| ✓ | ⏱: 10.33s 
+[SCRAPE].. ◆ https://cigessentials.com/collections/all                          
+| ✓ | ⏱: 0.42s 
+[COMPLETE] ● https://cigessentials.com/collections/all                          
+| ✓ | ⏱: 10.81s 
+  [cigessentials] https://cigessentials.com/collections/all → 1 products
+[FETCH]... ↓ https://nysapprovedvendor.com/                                     
+| ✓ | ⏱: 39.97s 
+[SCRAPE].. ◆ https://nysapprovedvendor.com/                                     
+| ✓ | ⏱: 1.88s 
+[COMPLETE] ● https://nysapprovedvendor.com/                                     
+| ✓ | ⏱: 41.99s 
+  [nysapprovedvendor] https://nysapprovedvendor.com/ → 79 products
+[FETCH]... ↓ https://skyesthelimitcatalog.com/shop/                             
+| ✓ | ⏱: 20.22s 
+[SCRAPE].. ◆ https://skyesthelimitcatalog.com/shop/                             
+| ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://skyesthelimitcatalog.com/shop/                             
+| ✓ | ⏱: 20.25s 
+  [skyesthelimit] https://skyesthelimitcatalog.com/shop/ → 0 products
+[FETCH]... ↓ https://emmaspremiumservices.com/collections/food-snacks           
+| ✓ | ⏱: 10.89s 
+[SCRAPE].. ◆ https://emmaspremiumservices.com/collections/food-snacks           
+| ✓ | ⏱: 0.44s 
+[COMPLETE] ● https://emmaspremiumservices.com/collections/food-snacks           
+| ✓ | ⏱: 11.40s 
+  [emmaspremiumservices] https://emmaspremiumservices.com/collections/food-snacks → 0 products
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[FETCH]... ↓ https://emmaspremiumservices.com/collections/hygiene               
+| ✓ | ⏱: 17.98s 
+[SCRAPE].. ◆ https://emmaspremiumservices.com/collections/hygiene               
+| ✓ | ⏱: 0.65s 
+[COMPLETE] ● https://emmaspremiumservices.com/collections/hygiene               
+| ✓ | ⏱: 18.68s 
+  [emmaspremiumservices] https://emmaspremiumservices.com/collections/hygiene → 0 products
+[FETCH]... ↓ https://nysapprovedvendor.com/shop/                                
+| ✓ | ⏱: 28.47s 
+[SCRAPE].. ◆ https://nysapprovedvendor.com/shop/                                
+| ✓ | ⏱: 0.94s 
+[COMPLETE] ● https://nysapprovedvendor.com/shop/                                
+| ✓ | ⏱: 29.51s 
+  [nysapprovedvendor] https://nysapprovedvendor.com/shop/ → 79 products
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[FETCH]... ↓ https://emmaspremiumservices.com/collections/clothing              
+| ✓ | ⏱: 14.13s 
+[SCRAPE].. ◆ https://emmaspremiumservices.com/collections/clothing              
+| ✓ | ⏱: 0.54s 
+[COMPLETE] ● https://emmaspremiumservices.com/collections/clothing              
+| ✓ | ⏱: 14.73s 
+  [emmaspremiumservices] https://emmaspremiumservices.com/collections/clothing → 2 products
+[FETCH]... ↓ https://emmaspremiumservices.com/collections/electronics           
+| ✓ | ⏱: 11.56s 
+[SCRAPE].. ◆ https://emmaspremiumservices.com/collections/electronics           
+| ✓ | ⏱: 0.50s 
+[COMPLETE] ● https://emmaspremiumservices.com/collections/electronics           
+| ✓ | ⏱: 12.17s 
+  [emmaspremiumservices] https://emmaspremiumservices.com/collections/electronics → 2 products
+
+Compliance check: ['No changes on DOCCS mail/packages page', 'Disapproved vendor list — no changes detected']
+New compliant products found: 0
+
+Report saved to: /Users/markususche/Desktop/Vender Resale/research/2026-09-07-daily-report.md
+Latest report: /Users/markususche/Desktop/Vender Resale/research/latest-report.md
+
+Done.
+
+============================================================
+Vender Resale — Nightly Research — 2026-09-08 02:00
+============================================================
+
+
+[2026-09-08 02:00] Scraping 5 competitor sites...
+[FETCH]... ↓ https://plugforinmates.com/collections/all                         
+| ✓ | ⏱: 5.95s 
+[SCRAPE].. ◆ https://plugforinmates.com/collections/all                         
+| ✓ | ⏱: 0.19s 
+[COMPLETE] ● https://plugforinmates.com/collections/all                         
+| ✓ | ⏱: 6.62s 
+  [plugforinmates] https://plugforinmates.com/collections/all → 0 products
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[FETCH]... ↓ https://cigessentials.com/                                         
+| ✓ | ⏱: 16.23s 
+[SCRAPE].. ◆ https://cigessentials.com/                                         
+| ✓ | ⏱: 0.46s 
+[COMPLETE] ● https://cigessentials.com/                                         
+| ✓ | ⏱: 16.73s 
+  [cigessentials] https://cigessentials.com/ → 16 products
+[FETCH]... ↓ https://plugforinmates.com/                                        
+| ✓ | ⏱: 9.98s 
+[SCRAPE].. ◆ https://plugforinmates.com/                                        
+| ✓ | ⏱: 0.08s 
+[COMPLETE] ● https://plugforinmates.com/                                        
+| ✓ | ⏱: 10.08s 
+  [plugforinmates] https://plugforinmates.com/ → 9 products
+[FETCH]... ↓ https://emmaspremiumservices.com/collections/all                   
+| ✓ | ⏱: 20.18s 
+[SCRAPE].. ◆ https://emmaspremiumservices.com/collections/all                   
+| ✓ | ⏱: 0.63s 
+[COMPLETE] ● https://emmaspremiumservices.com/collections/all                   
+| ✓ | ⏱: 20.88s 
+  [emmaspremiumservices] https://emmaspremiumservices.com/collections/all → 2 products
+[FETCH]... ↓ https://cigessentials.com/collections/all                          
+| ✓ | ⏱: 5.86s 
+[SCRAPE].. ◆ https://cigessentials.com/collections/all                          
+| ✓ | ⏱: 0.24s 
+[COMPLETE] ● https://cigessentials.com/collections/all                          
+| ✓ | ⏱: 6.13s 
+  [cigessentials] https://cigessentials.com/collections/all → 1 products
+[FETCH]... ↓ https://nysapprovedvendor.com/                                     
+| ✓ | ⏱: 23.69s 
+[SCRAPE].. ◆ https://nysapprovedvendor.com/                                     
+| ✓ | ⏱: 0.67s 
+[COMPLETE] ● https://nysapprovedvendor.com/                                     
+| ✓ | ⏱: 24.40s 
+  [nysapprovedvendor] https://nysapprovedvendor.com/ → 79 products
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[FETCH]... ↓ https://emmaspremiumservices.com/collections/food-snacks           
+| ✓ | ⏱: 7.45s 
+[SCRAPE].. ◆ https://emmaspremiumservices.com/collections/food-snacks           
+| ✓ | ⏱: 0.20s 
+[COMPLETE] ● https://emmaspremiumservices.com/collections/food-snacks           
+| ✓ | ⏱: 7.68s 
+  [emmaspremiumservices] https://emmaspremiumservices.com/collections/food-snacks → 0 products
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[ANTIBOT]. ℹ https://skyesthelimitcatalog.com/                  | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://skyesthelimitcatalog.com/", waiting until 
+"domcontentloaded"
+ 
+[ERROR]... × https://skyesthelimitcatalog.com/                  | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://skyesthelimitcatalog.com/", waiting until 
+"domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [skyesthelimit] FAIL https://skyesthelimitcatalog.com/: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://skyesthelimitcatalog.com/", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+[FETCH]... ↓ https://skyesthelimitcatalog.com/shop/                             
+| ✓ | ⏱: 1.48s 
+[SCRAPE].. ◆ https://skyesthelimitcatalog.com/shop/                             
+| ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://skyesthelimitcatalog.com/shop/                             
+| ✓ | ⏱: 1.56s 
+  [skyesthelimit] https://skyesthelimitcatalog.com/shop/ → 0 products
+[FETCH]... ↓ https://nysapprovedvendor.com/shop/                                
+| ✓ | ⏱: 12.24s 
+[SCRAPE].. ◆ https://nysapprovedvendor.com/shop/                                
+| ✓ | ⏱: 2.41s 
+[COMPLETE] ● https://nysapprovedvendor.com/shop/                                
+| ✓ | ⏱: 14.89s 
+  [nysapprovedvendor] https://nysapprovedvendor.com/shop/ → 79 products
+[FETCH]... ↓ https://emmaspremiumservices.com/collections/hygiene               
+| ✓ | ⏱: 10.05s 
+[SCRAPE].. ◆ https://emmaspremiumservices.com/collections/hygiene               
+| ✓ | ⏱: 1.06s 
+[COMPLETE] ● https://emmaspremiumservices.com/collections/hygiene               
+| ✓ | ⏱: 11.15s 
+  [emmaspremiumservices] https://emmaspremiumservices.com/collections/hygiene → 0 products
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[FETCH]... ↓ https://emmaspremiumservices.com/collections/clothing              
+| ✓ | ⏱: 11.13s 
+[SCRAPE].. ◆ https://emmaspremiumservices.com/collections/clothing              
+| ✓ | ⏱: 0.46s 
+[COMPLETE] ● https://emmaspremiumservices.com/collections/clothing              
+| ✓ | ⏱: 11.65s 
+  [emmaspremiumservices] https://emmaspremiumservices.com/collections/clothing → 2 products
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[FETCH]... ↓ https://emmaspremiumservices.com/collections/electronics           
+| ✓ | ⏱: 10.88s 
+[SCRAPE].. ◆ https://emmaspremiumservices.com/collections/electronics           
+| ✓ | ⏱: 0.33s 
+[COMPLETE] ● https://emmaspremiumservices.com/collections/electronics           
+| ✓ | ⏱: 11.24s 
+  [emmaspremiumservices] https://emmaspremiumservices.com/collections/electronics → 2 products
+
+Compliance check: ['No changes on DOCCS mail/packages page', 'Disapproved vendor list — no changes detected']
+New compliant products found: 0
+
+Report saved to: /Users/markususche/Desktop/Vender Resale/research/2026-09-08-daily-report.md
+Latest report: /Users/markususche/Desktop/Vender Resale/research/latest-report.md
+
+Done.
+
+============================================================
+Vender Resale — Nightly Research — 2026-09-09 02:00
+============================================================
+
+
+[2026-09-09 02:00] Scraping 5 competitor sites...
+[ANTIBOT]. ℹ https://emmaspremiumservices.com/collections/all   | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/all", waiting 
+until "domcontentloaded"
+ 
+[ERROR]... × https://emmaspremiumservices.com/collections/all   | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/all", waiting 
+until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [emmaspremiumservices] FAIL https://emmaspremiumservices.com/collections/all: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/all", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+[ANTIBOT]. ℹ https://nysapprovedvendor.com/                     | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://nysapprovedvendor.com/", waiting until 
+"domcontentloaded"
+ 
+[ERROR]... × https://nysapprovedvendor.com/                     | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://nysapprovedvendor.com/", waiting until 
+"domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [nysapprovedvendor] FAIL https://nysapprovedvendor.com/: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://nysapprovedvendor.com/", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+[ANTIBOT]. ℹ https://cigessentials.com/                         | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://cigessentials.com/", waiting until "domcontentloaded"
+ 
+[ERROR]... × https://cigessentials.com/                         | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://cigessentials.com/", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [cigessentials] FAIL https://cigessentials.com/: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://cigessentials.com/", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+[ANTIBOT]. ℹ https://skyesthelimitcatalog.com/                  | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://skyesthelimitcatalog.com/", waiting until 
+"domcontentloaded"
+ 
+[ERROR]... × https://skyesthelimitcatalog.com/                  | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://skyesthelimitcatalog.com/", waiting until 
+"domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [skyesthelimit] FAIL https://skyesthelimitcatalog.com/: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://skyesthelimitcatalog.com/", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+[FETCH]... ↓ https://plugforinmates.com/collections/all                         
+| ✓ | ⏱: 111.89s 
+[SCRAPE].. ◆ https://plugforinmates.com/collections/all                         
+| ✓ | ⏱: 1.01s 
+[COMPLETE] ● https://plugforinmates.com/collections/all                         
+| ✓ | ⏱: 114.78s 
+  [plugforinmates] https://plugforinmates.com/collections/all → 0 products
+[ANTIBOT]. ℹ https://nysapprovedvendor.com/shop/                | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://nysapprovedvendor.com/shop/", waiting until 
+"domcontentloaded"
+ 
+[ERROR]... × https://nysapprovedvendor.com/shop/                | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://nysapprovedvendor.com/shop/", waiting until 
+"domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [nysapprovedvendor] FAIL https://nysapprovedvendor.com/shop/: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://nysapprovedvendor.com/shop/", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+[FETCH]... ↓ https://skyesthelimitcatalog.com/shop/                             
+| ✓ | ⏱: 37.63s 
+[SCRAPE].. ◆ https://skyesthelimitcatalog.com/shop/                             
+| ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://skyesthelimitcatalog.com/shop/                             
+| ✓ | ⏱: 39.77s 
+  [skyesthelimit] https://skyesthelimitcatalog.com/shop/ → 0 products
+[ANTIBOT]. ℹ https://emmaspremiumser...collections/food-snacks  | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/food-snacks", 
+waiting until "domcontentloaded"
+ 
+[ERROR]... × https://emmaspremiumser...collections/food-snacks  | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/food-snacks", 
+waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [emmaspremiumservices] FAIL https://emmaspremiumservices.com/collections/food-snacks: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/food-snacks", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+[ANTIBOT]. ℹ https://cigessentials.com/collections/all          | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://cigessentials.com/collections/all", waiting until 
+"domcontentloaded"
+ 
+[ERROR]... × https://cigessentials.com/collections/all          | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://cigessentials.com/collections/all", waiting until 
+"domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [cigessentials] FAIL https://cigessentials.com/collections/all: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://cigessentials.com/collections/all", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[ANTIBOT]. ℹ https://emmaspremiumser...com/collections/hygiene  | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/hygiene", 
+waiting until "domcontentloaded"
+ 
+[ERROR]... × https://emmaspremiumser...com/collections/hygiene  | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/hygiene", 
+waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [emmaspremiumservices] FAIL https://emmaspremiumservices.com/collections/hygiene: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/hygiene", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+[FETCH]... ↓ https://plugforinmates.com/                                        
+| ✓ | ⏱: 71.08s 
+[SCRAPE].. ◆ https://plugforinmates.com/                                        
+| ✓ | ⏱: 5.80s 
+[COMPLETE] ● https://plugforinmates.com/                                        
+| ✓ | ⏱: 77.74s 
+  [plugforinmates] https://plugforinmates.com/ → 9 products
+[ANTIBOT]. ℹ https://emmaspremiumser...om/collections/clothing  | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/clothing", 
+waiting until "domcontentloaded"
+ 
+[ERROR]... × https://emmaspremiumser...om/collections/clothing  | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/clothing", 
+waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [emmaspremiumservices] FAIL https://emmaspremiumservices.com/collections/clothing: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/clothing", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+[ANTIBOT]. ℹ https://emmaspremiumser...collections/electronics  | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/electronics", 
+waiting until "domcontentloaded"
+ 
+[ERROR]... × https://emmaspremiumser...collections/electronics  | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/electronics", 
+waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [emmaspremiumservices] FAIL https://emmaspremiumservices.com/collections/electronics: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/electronics", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+
+Compliance check: ['No changes on DOCCS mail/packages page', 'Disapproved vendor list — no changes detected']
+New compliant products found: 0
+
+Report saved to: /Users/markususche/Desktop/Vender Resale/research/2026-09-09-daily-report.md
+Latest report: /Users/markususche/Desktop/Vender Resale/research/latest-report.md
+
+Done.
+
+============================================================
+Vender Resale — Nightly Research — 2026-09-10 02:00
+============================================================
+
+
+[2026-09-10 02:00] Scraping 5 competitor sites...
+[ANTIBOT]. ℹ https://emmaspremiumservices.com/collections/all   | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/all", waiting 
+until "domcontentloaded"
+ 
+[ERROR]... × https://emmaspremiumservices.com/collections/all   | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/all", waiting 
+until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [emmaspremiumservices] FAIL https://emmaspremiumservices.com/collections/all: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/all", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+[ANTIBOT]. ℹ https://cigessentials.com/                         | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://cigessentials.com/", waiting until "domcontentloaded"
+ 
+[ERROR]... × https://cigessentials.com/                         | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://cigessentials.com/", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [cigessentials] FAIL https://cigessentials.com/: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://cigessentials.com/", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+[ANTIBOT]. ℹ https://skyesthelimitcatalog.com/                  | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://skyesthelimitcatalog.com/", waiting until 
+"domcontentloaded"
+ 
+[ERROR]... × https://skyesthelimitcatalog.com/                  | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://skyesthelimitcatalog.com/", waiting until 
+"domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [skyesthelimit] FAIL https://skyesthelimitcatalog.com/: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://skyesthelimitcatalog.com/", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+[ANTIBOT]. ℹ https://nysapprovedvendor.com/                     | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://nysapprovedvendor.com/", waiting until 
+"domcontentloaded"
+ 
+[ERROR]... × https://nysapprovedvendor.com/                     | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://nysapprovedvendor.com/", waiting until 
+"domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [nysapprovedvendor] FAIL https://nysapprovedvendor.com/: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://nysapprovedvendor.com/", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+[FETCH]... ↓ https://plugforinmates.com/collections/all                         
+| ✓ | ⏱: 113.82s 
+[SCRAPE].. ◆ https://plugforinmates.com/collections/all                         
+| ✓ | ⏱: 0.05s 
+[COMPLETE] ● https://plugforinmates.com/collections/all                         
+| ✓ | ⏱: 116.10s 
+  [plugforinmates] https://plugforinmates.com/collections/all → 0 products
+[FETCH]... ↓ https://skyesthelimitcatalog.com/shop/                             
+| ✓ | ⏱: 35.17s 
+[SCRAPE].. ◆ https://skyesthelimitcatalog.com/shop/                             
+| ✓ | ⏱: 0.01s 
+[COMPLETE] ● https://skyesthelimitcatalog.com/shop/                             
+| ✓ | ⏱: 36.28s 
+  [skyesthelimit] https://skyesthelimitcatalog.com/shop/ → 0 products
+[ANTIBOT]. ℹ https://cigessentials.com/collections/all          | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://cigessentials.com/collections/all", waiting until 
+"domcontentloaded"
+ 
+[ERROR]... × https://cigessentials.com/collections/all          | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://cigessentials.com/collections/all", waiting until 
+"domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [cigessentials] FAIL https://cigessentials.com/collections/all: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://cigessentials.com/collections/all", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+[ANTIBOT]. ℹ https://nysapprovedvendor.com/shop/                | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://nysapprovedvendor.com/shop/", waiting until 
+"domcontentloaded"
+ 
+[ERROR]... × https://nysapprovedvendor.com/shop/                | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://nysapprovedvendor.com/shop/", waiting until 
+"domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [nysapprovedvendor] FAIL https://nysapprovedvendor.com/shop/: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://nysapprovedvendor.com/shop/", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+[ANTIBOT]. ℹ https://emmaspremiumser...collections/food-snacks  | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/food-snacks", 
+waiting until "domcontentloaded"
+ 
+[ERROR]... × https://emmaspremiumser...collections/food-snacks  | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/food-snacks", 
+waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [emmaspremiumservices] FAIL https://emmaspremiumservices.com/collections/food-snacks: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/food-snacks", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[ANTIBOT]. ℹ https://emmaspremiumser...com/collections/hygiene  | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/hygiene", 
+waiting until "domcontentloaded"
+ 
+[ERROR]... × https://emmaspremiumser...com/collections/hygiene  | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/hygiene", 
+waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [emmaspremiumservices] FAIL https://emmaspremiumservices.com/collections/hygiene: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/hygiene", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+[PAGE_SCAN] ℹ Full page scan timed out after 30.0s, continuing with partial 
+scroll 
+[FETCH]... ↓ https://plugforinmates.com/                                        
+| ✓ | ⏱: 87.68s 
+[SCRAPE].. ◆ https://plugforinmates.com/                                        
+| ✓ | ⏱: 6.16s 
+[COMPLETE] ● https://plugforinmates.com/                                        
+| ✓ | ⏱: 96.25s 
+  [plugforinmates] https://plugforinmates.com/ → 3 products
+[ANTIBOT]. ℹ https://emmaspremiumser...om/collections/clothing  | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/clothing", 
+waiting until "domcontentloaded"
+ 
+[ERROR]... × https://emmaspremiumser...om/collections/clothing  | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/clothing", 
+waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [emmaspremiumservices] FAIL https://emmaspremiumservices.com/collections/clothing: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/clothing", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+[ANTIBOT]. ℹ https://emmaspremiumser...collections/electronics  | Error: Proxy 
+direct failed: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/electronics", 
+waiting until "domcontentloaded"
+ 
+[ERROR]... × https://emmaspremiumser...collections/electronics  | Error: 
+Unexpected error in _crawl_web at line 778 in _crawl_web 
+(Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py
+):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/electronics", 
+waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating 
+ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # 
+──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only 
+the last
+ 782                       # hop, so we trace the `request.redirected_from` 
+links until the
+ 783                       # first response that differs from the final one and 
+surface its 
+  [emmaspremiumservices] FAIL https://emmaspremiumservices.com/collections/electronics: Unexpected error in _crawl_web at line 778 in _crawl_web (Library/Python/3.14/lib/python/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Failed on navigating ACS-GOTO:
+Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://emmaspremiumservices.com/collections/electronics", waiting until "domcontentloaded"
+
+
+Code context:
+ 773                                   tag="GOTO",
+ 774                                   params={"url": url},
+ 775                               )
+ 776                               response = None
+ 777                           else:
+ 778 →                             raise RuntimeError(f"Failed on navigating ACS-GOTO:\n{str(e)}")
+ 779   
+ 780                       # ──────────────────────────────────────────────────────────────
+ 781                       # Walk the redirect chain.  Playwright returns only the last
+ 782                       # hop, so we trace the `request.redirected_from` links until the
+ 783                       # first response that differs from the final one and surface its
+
+Compliance check: ['No changes on DOCCS mail/packages page', 'Disapproved vendor list — no changes detected']
+New compliant products found: 0
+
+Report saved to: /Users/markususche/Desktop/Vender Resale/research/2026-09-10-daily-report.md
+Latest report: /Users/markususche/Desktop/Vender Resale/research/latest-report.md
+
+Done.
+
+============================================================
+Vender Resale — Nightly Research — 2026-09-11 02:00
+============================================================
+
+
+[2026-09-11 02:00] Scraping 5 competitor sites...
+[FETCH]... ↓ https://plugforinmates.com/collections/all                         
+| ✓ | ⏱: 10.22s 
+[SCRAPE].. ◆ https://plugforinmates.com/collections/all                         
+| ✓ | ⏱: 0.03s 
+[COMPLETE] ● https://plugforinmates.com/collections/all                         
+| ✓ | ⏱: 10.72s 
+  [plugforinmates] https://plugforinmates.com/collections/all → 0 products
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[FETCH]... ↓ https://skyesthelimitcatalog.com/                                  
+| ✓ | ⏱: 17.94s 
+[SCRAPE].. ◆ https://skyesthelimitcatalog.com/                                  
+| ✓ | ⏱: 0.33s 
+[COMPLETE] ● https://skyesthelimitcatalog.com/                                  
+| ✓ | ⏱: 18.33s 
+  [skyesthelimit] https://skyesthelimitcatalog.com/ → 2 products
+[FETCH]... ↓ https://plugforinmates.com/                                        
+| ✓ | ⏱: 9.54s 
+[SCRAPE].. ◆ https://plugforinmates.com/                                        
+| ✓ | ⏱: 0.19s 
+[COMPLETE] ● https://plugforinmates.com/                                        
+| ✓ | ⏱: 9.83s 
+  [plugforinmates] https://plugforinmates.com/ → 9 products
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[FETCH]... ↓ https://cigessentials.com/                                         
+| ✓ | ⏱: 21.21s 
+[SCRAPE].. ◆ https://cigessentials.com/                                         
+| ✓ | ⏱: 0.58s 
+[COMPLETE] ● https://cigessentials.com/                                         
+| ✓ | ⏱: 21.84s 
+  [cigessentials] https://cigessentials.com/ → 16 products
+[FETCH]... ↓ https://skyesthelimitcatalog.com/shop/                             
+| ✓ | ⏱: 5.43s 
+[SCRAPE].. ◆ https://skyesthelimitcatalog.com/shop/                             
+| ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://skyesthelimitcatalog.com/shop/                             
+| ✓ | ⏱: 5.45s 
+  [skyesthelimit] https://skyesthelimitcatalog.com/shop/ → 0 products
+[FETCH]... ↓ https://emmaspremiumservices.com/collections/all                   
+| ✓ | ⏱: 26.53s 
+[SCRAPE].. ◆ https://emmaspremiumservices.com/collections/all                   
+| ✓ | ⏱: 0.55s 
+[COMPLETE] ● https://emmaspremiumservices.com/collections/all                   
+| ✓ | ⏱: 27.12s 
+  [emmaspremiumservices] https://emmaspremiumservices.com/collections/all → 2 products
+[FETCH]... ↓ https://nysapprovedvendor.com/                                     
+| ✓ | ⏱: 27.77s 
+[SCRAPE].. ◆ https://nysapprovedvendor.com/                                     
+| ✓ | ⏱: 0.43s 
+[COMPLETE] ● https://nysapprovedvendor.com/                                     
+| ✓ | ⏱: 28.44s 
+  [nysapprovedvendor] https://nysapprovedvendor.com/ → 79 products
+[FETCH]... ↓ https://cigessentials.com/collections/all                          
+| ✓ | ⏱: 11.51s 
+[SCRAPE].. ◆ https://cigessentials.com/collections/all                          
+| ✓ | ⏱: 0.14s 
+[COMPLETE] ● https://cigessentials.com/collections/all                          
+| ✓ | ⏱: 11.68s 
+  [cigessentials] https://cigessentials.com/collections/all → 1 products
+[FETCH]... ↓ https://emmaspremiumservices.com/collections/food-snacks           
+| ✓ | ⏱: 6.73s 
+[SCRAPE].. ◆ https://emmaspremiumservices.com/collections/food-snacks           
+| ✓ | ⏱: 0.20s 
+[COMPLETE] ● https://emmaspremiumservices.com/collections/food-snacks           
+| ✓ | ⏱: 6.96s 
+  [emmaspremiumservices] https://emmaspremiumservices.com/collections/food-snacks → 0 products
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[FETCH]... ↓ https://nysapprovedvendor.com/shop/                                
+| ✓ | ⏱: 12.58s 
+[SCRAPE].. ◆ https://nysapprovedvendor.com/shop/                                
+| ✓ | ⏱: 0.36s 
+[COMPLETE] ● https://nysapprovedvendor.com/shop/                                
+| ✓ | ⏱: 12.98s 
+  [nysapprovedvendor] https://nysapprovedvendor.com/shop/ → 79 products
+[FETCH]... ↓ https://emmaspremiumservices.com/collections/hygiene               
+| ✓ | ⏱: 8.20s 
+[SCRAPE].. ◆ https://emmaspremiumservices.com/collections/hygiene               
+| ✓ | ⏱: 0.15s 
+[COMPLETE] ● https://emmaspremiumservices.com/collections/hygiene               
+| ✓ | ⏱: 8.38s 
+  [emmaspremiumservices] https://emmaspremiumservices.com/collections/hygiene → 0 products
+[FETCH]... ↓ https://emmaspremiumservices.com/collections/clothing              
+| ✓ | ⏱: 8.91s 
+[SCRAPE].. ◆ https://emmaspremiumservices.com/collections/clothing              
+| ✓ | ⏱: 0.42s 
+[COMPLETE] ● https://emmaspremiumservices.com/collections/clothing              
+| ✓ | ⏱: 9.38s 
+  [emmaspremiumservices] https://emmaspremiumservices.com/collections/clothing → 2 products
+[FETCH]... ↓ https://emmaspremiumservices.com/collections/electronics           
+| ✓ | ⏱: 9.38s 
+[SCRAPE].. ◆ https://emmaspremiumservices.com/collections/electronics           
+| ✓ | ⏱: 0.38s 
+[COMPLETE] ● https://emmaspremiumservices.com/collections/electronics           
+| ✓ | ⏱: 9.80s 
+  [emmaspremiumservices] https://emmaspremiumservices.com/collections/electronics → 2 products
+
+Compliance check: ['No changes on DOCCS mail/packages page', 'Disapproved vendor list — no changes detected']
+New compliant products found: 0
+
+Report saved to: /Users/markususche/Desktop/Vender Resale/research/2026-09-11-daily-report.md
+Latest report: /Users/markususche/Desktop/Vender Resale/research/latest-report.md
+
+Done.
+
+============================================================
+Vender Resale — Nightly Research — 2026-09-12 02:00
+============================================================
+
+
+[2026-09-12 02:00] Scraping 5 competitor sites...
+[FETCH]... ↓ https://plugforinmates.com/collections/all                         
+| ✓ | ⏱: 8.52s 
+[SCRAPE].. ◆ https://plugforinmates.com/collections/all                         
+| ✓ | ⏱: 0.06s 
+[COMPLETE] ● https://plugforinmates.com/collections/all                         
+| ✓ | ⏱: 9.10s 
+  [plugforinmates] https://plugforinmates.com/collections/all → 0 products
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[FETCH]... ↓ https://skyesthelimitcatalog.com/                                  
+| ✓ | ⏱: 18.44s 
+[SCRAPE].. ◆ https://skyesthelimitcatalog.com/                                  
+| ✓ | ⏱: 0.56s 
+[COMPLETE] ● https://skyesthelimitcatalog.com/                                  
+| ✓ | ⏱: 19.36s 
+  [skyesthelimit] https://skyesthelimitcatalog.com/ → 2 products
+[FETCH]... ↓ https://plugforinmates.com/                                        
+| ✓ | ⏱: 11.61s 
+[SCRAPE].. ◆ https://plugforinmates.com/                                        
+| ✓ | ⏱: 0.29s 
+[COMPLETE] ● https://plugforinmates.com/                                        
+| ✓ | ⏱: 12.11s 
+  [plugforinmates] https://plugforinmates.com/ → 9 products
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[FETCH]... ↓ https://cigessentials.com/                                         
+| ✓ | ⏱: 24.95s 
+[SCRAPE].. ◆ https://cigessentials.com/                                         
+| ✓ | ⏱: 0.96s 
+[COMPLETE] ● https://cigessentials.com/                                         
+| ✓ | ⏱: 25.97s 
+  [cigessentials] https://cigessentials.com/ → 16 products
+[FETCH]... ↓ https://skyesthelimitcatalog.com/shop/                             
+| ✓ | ⏱: 9.34s 
+[SCRAPE].. ◆ https://skyesthelimitcatalog.com/shop/                             
+| ✓ | ⏱: 0.00s 
+[COMPLETE] ● https://skyesthelimitcatalog.com/shop/                             
+| ✓ | ⏱: 9.38s 
+  [skyesthelimit] https://skyesthelimitcatalog.com/shop/ → 0 products
+[FETCH]... ↓ https://emmaspremiumservices.com/collections/all                   
+| ✓ | ⏱: 31.25s 
+[SCRAPE].. ◆ https://emmaspremiumservices.com/collections/all                   
+| ✓ | ⏱: 0.59s 
+[COMPLETE] ● https://emmaspremiumservices.com/collections/all                   
+| ✓ | ⏱: 31.91s 
+  [emmaspremiumservices] https://emmaspremiumservices.com/collections/all → 2 products
+[FETCH]... ↓ https://cigessentials.com/collections/all                          
+| ✓ | ⏱: 6.76s 
+[SCRAPE].. ◆ https://cigessentials.com/collections/all                          
+| ✓ | ⏱: 0.61s 
+[COMPLETE] ● https://cigessentials.com/collections/all                          
+| ✓ | ⏱: 7.51s 
+  [cigessentials] https://cigessentials.com/collections/all → 1 products
+[FETCH]... ↓ https://nysapprovedvendor.com/                                     
+| ✓ | ⏱: 34.10s 
+[SCRAPE].. ◆ https://nysapprovedvendor.com/                                     
+| ✓ | ⏱: 0.94s 
+[COMPLETE] ● https://nysapprovedvendor.com/                                     
+| ✓ | ⏱: 35.12s 
+  [nysapprovedvendor] https://nysapprovedvendor.com/ → 79 products
+[FETCH]... ↓ https://emmaspremiumservices.com/collections/food-snacks           
+| ✓ | ⏱: 8.54s 
+[SCRAPE].. ◆ https://emmaspremiumservices.com/collections/food-snacks           
+| ✓ | ⏱: 0.33s 
+[COMPLETE] ● https://emmaspremiumservices.com/collections/food-snacks           
+| ✓ | ⏱: 8.91s 
+  [emmaspremiumservices] https://emmaspremiumservices.com/collections/food-snacks → 0 products
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[FETCH]... ↓ https://emmaspremiumservices.com/collections/hygiene               
+| ✓ | ⏱: 7.21s 
+[SCRAPE].. ◆ https://emmaspremiumservices.com/collections/hygiene               
+| ✓ | ⏱: 0.22s 
+[COMPLETE] ● https://emmaspremiumservices.com/collections/hygiene               
+| ✓ | ⏱: 7.46s 
+  [emmaspremiumservices] https://emmaspremiumservices.com/collections/hygiene → 0 products
+[FETCH]... ↓ https://nysapprovedvendor.com/shop/                                
+| ✓ | ⏱: 13.53s 
+[SCRAPE].. ◆ https://nysapprovedvendor.com/shop/                                
+| ✓ | ⏱: 0.69s 
+[COMPLETE] ● https://nysapprovedvendor.com/shop/                                
+| ✓ | ⏱: 14.46s 
+  [nysapprovedvendor] https://nysapprovedvendor.com/shop/ → 79 products
+[FETCH]... ↓ https://emmaspremiumservices.com/collections/clothing              
+| ✓ | ⏱: 10.10s 
+[SCRAPE].. ◆ https://emmaspremiumservices.com/collections/clothing              
+| ✓ | ⏱: 0.54s 
+[COMPLETE] ● https://emmaspremiumservices.com/collections/clothing              
+| ✓ | ⏱: 10.72s 
+  [emmaspremiumservices] https://emmaspremiumservices.com/collections/clothing → 2 products
+[SCRAPE].. ◆ Some images failed to load within timeout 
+[FETCH]... ↓ https://emmaspremiumservices.com/collections/electronics           
+| ✓ | ⏱: 10.24s 
+[SCRAPE].. ◆ https://emmaspremiumservices.com/collections/electronics           
+| ✓ | ⏱: 0.37s 
+[COMPLETE] ● https://emmaspremiumservices.com/collections/electronics           
+| ✓ | ⏱: 10.66s 
+  [emmaspremiumservices] https://emmaspremiumservices.com/collections/electronics → 2 products
+
+Compliance check: ['No changes on DOCCS mail/packages page', 'Disapproved vendor list — no changes detected']
+New compliant products found: 0
+
+Report saved to: /Users/markususche/Desktop/Vender Resale/research/2026-09-12-daily-report.md
+Latest report: /Users/markususche/Desktop/Vender Resale/research/latest-report.md
+
+Done.

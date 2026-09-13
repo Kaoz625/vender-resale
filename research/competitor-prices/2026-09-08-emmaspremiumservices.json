@@ -1,0 +1,51 @@
+{
+  "site": "Emma's Premium Services",
+  "slug": "emmaspremiumservices",
+  "date": "2026-09-08",
+  "products": [
+    {
+      "name": "All products",
+      "source_url": "https://emmaspremiumservices.com/collections/all",
+      "price": 26.99,
+      "price_raw": "Sale price$26.99"
+    },
+    {
+      "name": "[Product's name](https://emmaspremiumservices.com/collections/all#)",
+      "source_url": "https://emmaspremiumservices.com/collections/all",
+      "price": 77.0,
+      "price_raw": "$77.00 $87.00"
+    },
+    {
+      "name": "All Clothing",
+      "source_url": "https://emmaspremiumservices.com/collections/clothing",
+      "price": 7.29,
+      "price_raw": "Sale price$7.29 Regular price$9.29"
+    },
+    {
+      "name": "[Product's name](https://emmaspremiumservices.com/collections/clothing#)",
+      "source_url": "https://emmaspremiumservices.com/collections/clothing",
+      "price": 77.0,
+      "price_raw": "$77.00 $87.00"
+    },
+    {
+      "name": "Electronics",
+      "source_url": "https://emmaspremiumservices.com/collections/electronics",
+      "price": 23.99,
+      "price_raw": "Sale price$23.99 Regular price$35.00"
+    },
+    {
+      "name": "[Product's name](https://emmaspremiumservices.com/collections/electronics#)",
+      "source_url": "https://emmaspremiumservices.com/collections/electronics",
+      "price": 77.0,
+      "price_raw": "$77.00 $87.00"
+    }
+  ],
+  "errors": [],
+  "pages_crawled": [
+    "https://emmaspremiumservices.com/collections/all",
+    "https://emmaspremiumservices.com/collections/food-snacks",
+    "https://emmaspremiumservices.com/collections/hygiene",
+    "https://emmaspremiumservices.com/collections/clothing",
+    "https://emmaspremiumservices.com/collections/electronics"
+  ]
+}

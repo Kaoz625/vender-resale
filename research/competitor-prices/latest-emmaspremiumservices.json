@@ -1,19 +1,19 @@
 {
   "site": "Emma's Premium Services",
   "slug": "emmaspremiumservices",
-  "date": "2026-09-05",
+  "date": "2026-09-12",
   "products": [
     {
       "name": "All products",
       "source_url": "https://emmaspremiumservices.com/collections/all",
-      "price": 26.99,
-      "price_raw": "Sale price$26.99"
+      "price": 11.0,
+      "price_raw": "Sale price$11.00"
     },
     {
-      "name": "[Product's name](https://emmaspremiumservices.com/collections/all#)",
+      "name": "Recently Viewed",
       "source_url": "https://emmaspremiumservices.com/collections/all",
-      "price": 77.0,
-      "price_raw": "$77.00 $87.00"
+      "price": 17.95,
+      "price_raw": "Sale price$17.95 Regular price$19.89"
     },
     {
       "name": "All Clothing",
@@ -22,22 +22,10 @@
       "price_raw": "Sale price$8.79 Regular price$16.49"
     },
     {
-      "name": "[Product's name](https://emmaspremiumservices.com/collections/clothing#)",
-      "source_url": "https://emmaspremiumservices.com/collections/clothing",
-      "price": 77.0,
-      "price_raw": "$77.00 $87.00"
-    },
-    {
       "name": "Electronics",
       "source_url": "https://emmaspremiumservices.com/collections/electronics",
       "price": 23.99,
       "price_raw": "Sale price$23.99 Regular price$35.00"
-    },
-    {
-      "name": "[Product's name](https://emmaspremiumservices.com/collections/electronics#)",
-      "source_url": "https://emmaspremiumservices.com/collections/electronics",
-      "price": 77.0,
-      "price_raw": "$77.00 $87.00"
     }
   ],
   "errors": [],
