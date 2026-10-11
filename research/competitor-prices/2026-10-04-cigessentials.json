@@ -1,0 +1,140 @@
+{
+  "site": "CIG Essentials",
+  "slug": "cigessentials",
+  "date": "2026-10-04",
+  "products": [
+    {
+      "name": "Best Sellers",
+      "source_url": "https://cigessentials.com/",
+      "price": 48.99,
+      "price_raw": "Sale price$48.99",
+      "image_alt": "Caribbean Jerk Style Wings \\(Great Value Buy\\)",
+      "image_url": "https://cigessentials.com/cdn/shop/files/NewCaribbeanJerkWingsLabel.png?v=1770996221&width=1259"
+    },
+    {
+      "name": "Pork Best Sellers",
+      "source_url": "https://cigessentials.com/",
+      "price": 19.99,
+      "price_raw": "Sale price$19.99 Regular price$21.98",
+      "image_alt": "Sweet and Smoky Pork Burnt Ends \\(Premium Item\\) Limited",
+      "image_url": "https://cigessentials.com/cdn/shop/products/SweetandSmokyBBQPorkBurntEnds1lbs..webp?v=1674674718&width=3000"
+    },
+    {
+      "name": "Cheese Favorites",
+      "source_url": "https://cigessentials.com/",
+      "image_alt": "Cracker Barrel Gouda",
+      "image_url": "https://cigessentials.com/cdn/shop/files/Screenshot2026-09-16112756.png?v=1789573057&width=871",
+      "price": 7.79,
+      "price_raw": "Sale price$7.79"
+    },
+    {
+      "name": "Seafood Favorites",
+      "source_url": "https://cigessentials.com/",
+      "price": 9.99,
+      "price_raw": "Sale price$9.99 Regular price$10.89",
+      "image_alt": "Wild Caught Surimi Snow Leg 2pk. $10.14 Per Pound \\(Great Value Buy\\)",
+      "image_url": "https://cigessentials.com/cdn/shop/files/ChatGPTImageSep22_2026_11_29_37AM.png?v=1790090992&width=1254"
+    },
+    {
+      "name": "Chicken Favorites",
+      "source_url": "https://cigessentials.com/",
+      "image_alt": "6 Fire Grilled Boneless Chicken Breast \\(Great Value Buy\\)",
+      "image_url": "https://cigessentials.com/cdn/shop/files/FireGrilledChickenBreast.png?v=1691016424&width=550",
+      "price": 8.28,
+      "price_raw": "Sale price$8.28"
+    },
+    {
+      "name": "Turkey Favorites",
+      "source_url": "https://cigessentials.com/",
+      "image_alt": "Hormel Family Size Turkey w/Gravy \\(Serves 6\\) Great Value Buy",
+      "image_url": "https://cigessentials.com/cdn/shop/files/Screenshot2026-09-01130221.png?v=1788282162&width=642",
+      "price": 7.89,
+      "price_raw": "Sale price$7.89"
+    },
+    {
+      "name": "Bread Favorites",
+      "source_url": "https://cigessentials.com/",
+      "image_alt": "Pumpkin & Spice Brioche Style Li\u00e8ge Waffles",
+      "image_url": "https://cigessentials.com/cdn/shop/files/Pumpkin_SpiceBriocheStyleLiegeWaffles.webp?v=1789230645&width=492",
+      "price": 12.29,
+      "price_raw": "Sale price$12.29"
+    },
+    {
+      "name": "Drink Favorites",
+      "source_url": "https://cigessentials.com/",
+      "image_alt": "Klass Sandia \\(Watermelon\\) Drink Mix",
+      "image_url": "https://cigessentials.com/cdn/shop/files/KLassWatermelon.jpg?v=1786632828&width=447",
+      "price": 10.99,
+      "price_raw": "Sale price$10.99"
+    },
+    {
+      "name": "Hot Drinks",
+      "source_url": "https://cigessentials.com/",
+      "image_alt": "Caf\u00e9 Bustelo Coffee",
+      "image_url": "https://cigessentials.com/cdn/shop/products/CafeBusteloCoffee10oz..jpg?v=1614877294&width=700",
+      "price": 7.99,
+      "price_raw": "Sale price$7.99"
+    },
+    {
+      "name": "Snack Favorites",
+      "source_url": "https://cigessentials.com/",
+      "price": 7.49,
+      "price_raw": "Sale price$7.49",
+      "image_alt": "Welch's Fruit Snacks Variety Pack 20ct./$1.34 each \\(Great Value Buy\\)",
+      "image_url": "https://cigessentials.com/cdn/shop/products/Welchersfruitsnacksvarietypack2.25lbs..jpg?v=1672873310&width=2560"
+    },
+    {
+      "name": "Fresh Fruits and Vegetables",
+      "source_url": "https://cigessentials.com/",
+      "image_alt": "Mini Seedless Watermelon",
+      "image_url": "https://cigessentials.com/cdn/shop/files/Miniwatermelon.webp?v=1786444828&width=1000",
+      "price": 8.99,
+      "price_raw": "Sale price$8.99"
+    },
+    {
+      "name": "Plant-Based Favorites",
+      "source_url": "https://cigessentials.com/",
+      "image_alt": "Lightlife Smart Bacon \\(Plant Based Bacon\\)",
+      "image_url": "https://cigessentials.com/cdn/shop/files/LightlifeSmartBacon5oz..webp?v=1706579328&width=800",
+      "price": 9.89,
+      "price_raw": "Sale price$9.89 Regular price$10.49"
+    },
+    {
+      "name": "Condiments & Side Dish Favorites",
+      "source_url": "https://cigessentials.com/",
+      "image_alt": "Chick-fil-A Polynesian Sauce",
+      "image_url": "https://cigessentials.com/cdn/shop/files/ChickFilASauce16.oz.polnesian.webp?v=1755697866&width=546",
+      "price": 8.19,
+      "price_raw": "Sale price$8.19"
+    },
+    {
+      "name": "Breakfast Favorites",
+      "source_url": "https://cigessentials.com/",
+      "image_alt": "Oscar Mayer Fully Cooked Bacon \\(Best Brand and Value\\)",
+      "image_url": "https://cigessentials.com/cdn/shop/products/OscarMayerFullyCookedBacon.jpg?v=1614697187&width=800",
+      "price": 7.0,
+      "price_raw": "Sale price$7.00"
+    },
+    {
+      "name": "Hair & Skin Care Essentials",
+      "source_url": "https://cigessentials.com/",
+      "image_alt": "Lusti Coconut Oil Leave-In-Conditioner",
+      "image_url": "https://cigessentials.com/cdn/shop/files/LeaveinConditioner.webp?v=1707520846&width=720",
+      "price": 8.99,
+      "price_raw": "Sale price$8.99"
+    },
+    {
+      "name": "All products",
+      "source_url": "https://cigessentials.com/collections/all",
+      "image_alt": "\\(Sugar Free\\) Chocolate Chip Cookies",
+      "image_url": "https://cigessentials.com/cdn/shop/products/SugarFreeChocolateChip8oz..webp?v=1662770675&width=699",
+      "price": 10.99,
+      "price_raw": "Sale price$10.99"
+    }
+  ],
+  "errors": [],
+  "pages_crawled": [
+    "https://cigessentials.com/",
+    "https://cigessentials.com/collections/all"
+  ]
+}

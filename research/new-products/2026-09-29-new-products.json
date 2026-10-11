@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Ready-to-Eat Rice",
+    "price": 6.29,
+    "image_url": "https://cdn.shopify.com/s/files/1/0890/2449/5918/files/uncle-bens-roasted-chicken-rice-687.webp?v=1761353785",
+    "source_site": "NYS Approved Vendor",
+    "source_url": "https://nysapprovedvendor.com/",
+    "category": "food",
+    "date_found": "2026-09-29"
+  },
+  {
+    "name": "Cookies",
+    "price": 2.49,
+    "image_url": "https://cdn.shopify.com/s/files/1/0890/2449/5918/files/Untitled_300x300px_22.png?v=1773628187",
+    "source_site": "NYS Approved Vendor",
+    "source_url": "https://nysapprovedvendor.com/",
+    "category": "food",
+    "date_found": "2026-09-29"
+  }
+]

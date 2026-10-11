@@ -1,28 +1,9 @@
 {
   "site": "Skye's The Limit",
   "slug": "skyesthelimit",
-  "date": "2026-09-12",
-  "products": [
-    {
-      "name": "Skye's the Limit Catalog & Care Packages",
-      "source_url": "https://skyesthelimitcatalog.com/",
-      "image_alt": "Skye's The Limit Catalog",
-      "image_url": "https://d2j6dbq0eux0bg.cloudfront.net/images/18257138/1139526931.jpg",
-      "price": 10.0,
-      "price_raw": "We make it easy to send your loved ones packages without you having to worry about all the shopping and shipping, We only charge $10 per shipment. ($15 if you are sending perishables)."
-    },
-    {
-      "name": "Featured Products",
-      "source_url": "https://skyesthelimitcatalog.com/",
-      "image_alt": "Bar S Sausage Links     3 Individually Wrapped 2ct - Cheddar",
-      "image_url": "https://d2j6dbq0eux0bg.cloudfront.net/images/18257138/products/858601305/5038378804.jpg",
-      "price": 12.99,
-      "price_raw": "$12.99"
-    }
-  ],
-  "errors": [],
-  "pages_crawled": [
-    "https://skyesthelimitcatalog.com/",
-    "https://skyesthelimitcatalog.com/shop/"
+  "date": "2026-10-11",
+  "products": [],
+  "errors": [
+    "BrowserType.launch: Executable doesn't exist at /Users/markususche/Library/Caches/ms-playwright/chromium-1208/chrome-mac-x64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing\n\u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557\n\u2551 Looks like Playwright was just installed or updated.       \u2551\n\u2551 Please run the following command to download new browsers: \u2551\n\u2551                                                            \u2551\n\u2551     playwright install                                     \u2551\n\u2551                                                            \u2551\n\u2551 <3 Playwright Team                                         \u2551\n\u255a\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u255d"
   ]
 }

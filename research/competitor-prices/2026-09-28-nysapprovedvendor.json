@@ -1,0 +1,28 @@
+{
+  "site": "NYS Approved Vendor",
+  "slug": "nysapprovedvendor",
+  "date": "2026-09-28",
+  "products": [
+    {
+      "name": "Care that fits their needs",
+      "source_url": "https://nysapprovedvendor.com/",
+      "price": 6.99,
+      "price_raw": "[![Hillshire Farm Black Forest Ham Meat](https://cdn.shopify.com/s/files/1/0890/2449/5918/files/hillshire-farm-black-forest-ham-meat-211.webp?v=1761353527) Hillshire Farm Black Forest Ham $6.99 ](https://nysapprovedvendor.com/products/hillshire-farms-ultra-thin-black-forest-ham)",
+      "image_alt": "Hillshire Farm Oven Roasted Turkey Meat",
+      "image_url": "https://cdn.shopify.com/s/files/1/0890/2449/5918/files/hillshire-farm-oven-roasted-turkey-meat-360.webp?v=1761353513"
+    },
+    {
+      "name": "Send a Package with Confidence.",
+      "source_url": "https://nysapprovedvendor.com/shop/",
+      "price": 6.39,
+      "price_raw": "[![John Soules Rotisserie Chicken](https://cdn.shopify.com/s/files/1/0890/2449/5918/files/Untitled_design_-_2025-12-24T072030.285.png?v=1766578841) John Soules Rotisserie Chicken $6.39 ](https://nysapprovedvendor.com/products/john-soules-rotisserie-chicken)",
+      "image_alt": "Hillshire Farm Oven Roasted Turkey Meat",
+      "image_url": "https://cdn.shopify.com/s/files/1/0890/2449/5918/files/hillshire-farm-oven-roasted-turkey-meat-360.webp?v=1761353513"
+    }
+  ],
+  "errors": [],
+  "pages_crawled": [
+    "https://nysapprovedvendor.com/",
+    "https://nysapprovedvendor.com/shop/"
+  ]
+}

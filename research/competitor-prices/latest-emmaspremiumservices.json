@@ -1,39 +1,9 @@
 {
   "site": "Emma's Premium Services",
   "slug": "emmaspremiumservices",
-  "date": "2026-09-12",
-  "products": [
-    {
-      "name": "All products",
-      "source_url": "https://emmaspremiumservices.com/collections/all",
-      "price": 11.0,
-      "price_raw": "Sale price$11.00"
-    },
-    {
-      "name": "Recently Viewed",
-      "source_url": "https://emmaspremiumservices.com/collections/all",
-      "price": 17.95,
-      "price_raw": "Sale price$17.95 Regular price$19.89"
-    },
-    {
-      "name": "All Clothing",
-      "source_url": "https://emmaspremiumservices.com/collections/clothing",
-      "price": 8.79,
-      "price_raw": "Sale price$8.79 Regular price$16.49"
-    },
-    {
-      "name": "Electronics",
-      "source_url": "https://emmaspremiumservices.com/collections/electronics",
-      "price": 23.99,
-      "price_raw": "Sale price$23.99 Regular price$35.00"
-    }
-  ],
-  "errors": [],
-  "pages_crawled": [
-    "https://emmaspremiumservices.com/collections/all",
-    "https://emmaspremiumservices.com/collections/food-snacks",
-    "https://emmaspremiumservices.com/collections/hygiene",
-    "https://emmaspremiumservices.com/collections/clothing",
-    "https://emmaspremiumservices.com/collections/electronics"
+  "date": "2026-10-11",
+  "products": [],
+  "errors": [
+    "BrowserType.launch: Executable doesn't exist at /Users/markususche/Library/Caches/ms-playwright/chromium-1208/chrome-mac-x64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing\n\u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557\n\u2551 Looks like Playwright was just installed or updated.       \u2551\n\u2551 Please run the following command to download new browsers: \u2551\n\u2551                                                            \u2551\n\u2551     playwright install                                     \u2551\n\u2551                                                            \u2551\n\u2551 <3 Playwright Team                                         \u2551\n\u255a\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u255d"
   ]
 }
